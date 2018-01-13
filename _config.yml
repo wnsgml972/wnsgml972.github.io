@@ -1,6 +1,6 @@
 # Site settings
 title: JunHee Blog
-name: 김준희 # your name
+name: KimJunHee # your name
 email: wnsgml972@gmail.com # your email address
 description: Software Programmer
 baseurl: "/wnsgml972.github.io" # the subpath of your site, e.g. /blog
