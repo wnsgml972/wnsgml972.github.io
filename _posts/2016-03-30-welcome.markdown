@@ -11,7 +11,7 @@ finished: true
 
 ## Welcome
 
-I think many blog themes are over designed, so I created this one. 
+I think many blog themes are over designed, so I created this one.
 
 Just for using, not showing off.
 
@@ -56,9 +56,9 @@ Star it, fork it, and download it.
 
 Change the settings in `_config.yml` file and then you can use this theme.
 
-Easy, right? 
+Easy, right?
 
-If you wanna do more, then change whatever you want. But first, you should know what you are doing. 
+If you wanna do more, then change whatever you want. But first, you should know what you are doing.
 
 If you make all codes a mess, do not worry, just come back and download again.
 
@@ -73,5 +73,3 @@ A normal person just wanna see this world.
 ## License
 
 Use MIT License.
-
-

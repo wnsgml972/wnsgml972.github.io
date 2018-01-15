@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Welcome to Nice Blog"
+subtitle: "A simple Jekyll blog theme."
+date: 2016-03-30
+author: Benjamin
+category: git
+tags: jekyll github blog
+finished: true
+---
+
+## Welcome
+
+I think many blog themes are over designed, so I created this one.
+
+Just for using, not showing off.
+
+## Nice Blog
