@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Welcome to Nice Blog"
-subtitle: "A simple Jekyll blog theme."
-date: 2016-03-30
-author: Benjamin
+title: "Welcome to JunHee Blog"
+subtitle: "JunHee Good"
+date: 2018-01-15
+author: KimJunHee
 category: git
-tags: jekyll github blog
+tags: jekyll github blog git
 finished: true
 ---
 
