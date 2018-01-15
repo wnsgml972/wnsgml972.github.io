@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Welcome to Nice Blog"
-subtitle: "A simple Jekyll blog theme."
-date: 2016-03-30
-author: Benjamin
-category: Jekyll
-tags: jekyll github blog
+title: "test2"
+subtitle: "test2"
+date: 2018-01-15
+author: KimJunHee
+category: linux
+tags: linux github blog
 finished: true
 ---
 
@@ -15,7 +15,7 @@ I think many blog themes are over designed, so I created this one.
 
 Just for using, not showing off.
 
-## Nice Blog
+<!-- ## Nice Blog
 
 A Simple Jekyll Blog Theme.
 
@@ -72,4 +72,4 @@ A normal person just wanna see this world.
 
 ## License
 
-Use MIT License.
+Use MIT License. -->
