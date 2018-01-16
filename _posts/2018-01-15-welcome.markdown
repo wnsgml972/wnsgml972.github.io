@@ -15,6 +15,7 @@ I think many blog themes are over designed, so I created this one.
 
 Just for using, not showing off.
 
+왜 안 바껴ㅠㅠ
 <!-- ## Nice Blog
 
 A Simple Jekyll Blog Theme.
