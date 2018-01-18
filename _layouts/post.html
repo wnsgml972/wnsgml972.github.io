@@ -12,16 +12,15 @@ layout: default
         {% endif %}
 		<br>
 		<i class="fa fa-eye"></i> <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-pulse"></i></span>˚C</span>
-	</div>
-
-        {% if page.tags %}
-        <div class="post-tags">
+	  </div>
+    {% if page.tags %}
+      <div class="post-tags">
         {% for tag in page.tags %}
-		<a class="post-tags-item" href="{{ site.url }}{{ site.baseurl }}/tags/">{{ tag }}</a>
+		        <a class="post-tags-item" href="{{ site.url }}{{ site.baseurl }}/tags/">{{ tag }}</a>
         {% endfor %}
-	{% endif %}
-      {% include menubtn.html %}
-</div>
+	  {% endif %}
+      </div>
+    {% include menubtn.html %}
     </center>
 </header>
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
