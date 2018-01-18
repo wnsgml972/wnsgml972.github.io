@@ -24,13 +24,7 @@
 </body>
 
 <foot>
-  {% if page.url != "/index.html" %}
-    {% include footer.html %}
-  {% endif %}
-  {% if page.url == "/index.html" %}
-    {% include page_footer.html %}
-  {% endif %}
-
+  {% include footer.html %}
   {% include foot.html %}
 </foot>
 
