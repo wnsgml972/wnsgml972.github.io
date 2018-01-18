@@ -21,8 +21,12 @@ layout: null
 
 <header class="post-header">
 	<center><div class="contact-title">{{ page.title }}</div>
-		<div class="contact-subtitle"><p>{{ page.subtitle }}</p></div></center>
-    {% include menubtn.html %}
+		<div class="contact-subtitle">
+      <p>{{ page.subtitle }}</p>
+      {% include menubtn.html %}
+    </div>
+  </center>
+
 </header>
 
 <div class="wrapper">
@@ -34,7 +38,8 @@ layout: null
 <footer>
 
 {% include foot.html %}
-{% include footer.html %}
+<!-- {% include footer.html %} -->
+{% include page_footer.html %}
 
 </footer>
 </html>
