@@ -3,7 +3,6 @@
   <head>
 
   {% include head.html %}
-
   {% if site.google-analytics %}
   {% include google-analytics.html %}
   {% endif %}
@@ -17,7 +16,7 @@
   <body>
 
   {% include header.html %}
-
+  {% include menubtn.html %}
   <div class="wrapper">
         {{ content }}
   </div>
@@ -26,8 +25,14 @@
 
 <foot>
 
+
+  {% if page.url == "/index.html" %}
     {% include footer.html %}
-    {% include foot.html %}
+  {% else %}
+    {% include page_footer.html %}
+  {% endif %}
+
+  {% include foot.html %}
 
 </foot>
 
