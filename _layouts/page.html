@@ -4,7 +4,7 @@ layout: null
 
 <html>
   <head>
-      
+
   {% include head.html %}
 
   {% if site.google-analytics %}
@@ -16,12 +16,13 @@ layout: null
   {% endif %}
 
   </head>
-  
+
   {% include header.html %}
 
 <header class="post-header">
 	<center><div class="contact-title">{{ page.title }}</div>
 		<div class="contact-subtitle"><p>{{ page.subtitle }}</p></div></center>
+    {% include menubtn.html %}
 </header>
 
 <div class="wrapper">
