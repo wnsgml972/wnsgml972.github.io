@@ -25,10 +25,10 @@
 
 <foot>
 
-
-  {% if page.url == "/index.html" %}
+  {% if page.url != "/index.html" %}
     {% include footer.html %}
-  {% else %}
+  {% endif %}
+  {% if page.url == "/index.html" %}
     {% include page_footer.html %}
   {% endif %}
 
