@@ -1,0 +1,30 @@
+---
+layout: post
+title: "git init 취소하기"
+subtitle: "Cancle git init"
+date: 2018-01-22
+author: KimJunHee
+category: git
+tags: github git git_init git_cancle_init
+finished: true
+---
+
+### git init
+
+> 해당하는 폴더를 로컬 저장소로 지정합니다.
+
+명령어 ```git init``` 기록하고 엔터를 치면 해당하는 폴더가 Git 로컬 저장소로 설정된다.
+
+![Git](/img/git_init.png "git init")
+
+Git 로컬 저장소로 설정된 폴더는 숨김파일 형식으로 ```.git``` 폴더가 만들어지게 되며 이 폴더속에 현재 선택한 폴더의 모든 Git 정보들이 만들어지게 된다.
+
+![Git](/img/git_folder.png "git folder")
+
+</br>
+
+### git init 취소하기
+
+> ```git init``` 을 통해 만들어지게된 ```.git``` 폴더를 삭제합니다.
+
+![Git](/img/git_cancle_init.png "cancle init")
