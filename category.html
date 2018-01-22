@@ -5,6 +5,15 @@
  permalink: /category/
 ---
 
+<!-- My Font  -->
+<style>
+  .post-content li {
+    font-family: 'Jeju Gothic', serif;
+    font-weight: 500;
+    font-size : 18px;
+  }
+</style>
+
 {% for category in site.categories %}
 {% capture cat %}{{ category | first }}{% endcapture %}
 
