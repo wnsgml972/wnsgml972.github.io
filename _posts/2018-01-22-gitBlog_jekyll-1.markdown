@@ -5,7 +5,7 @@ subtitle: ""
 date: 2018-01-22
 author: KimJunHee
 category: Git Blog
-tags: Github Git Blog
+tags: github git blog
 finished: false
 ---
 
