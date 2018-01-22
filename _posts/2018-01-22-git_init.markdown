@@ -4,7 +4,7 @@ title: "git init 취소하기"
 subtitle: "Cancle git init"
 date: 2018-01-22
 author: KimJunHee
-category: git
+category: Git
 tags: github git git_init git_cancle_init
 finished: true
 ---
