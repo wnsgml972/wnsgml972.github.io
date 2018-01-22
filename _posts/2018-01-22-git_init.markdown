@@ -9,7 +9,7 @@ tags: github git coding
 finished: true
 ---
 
-## git init
+## Git Init
 
 > 해당하는 폴더를 로컬 저장소로 지정합니다.
 
@@ -21,7 +21,7 @@ Git 로컬 저장소로 설정된 폴더는 숨김파일 형식으로 ```.git```
 
 ![Git](/img/git_folder.png "git folder")
 
-## git init 취소하기
+## Cancle Git Init
 
 > ```git init``` 을 통해 만들어지게된 ```.git``` 폴더를 삭제합니다.
 

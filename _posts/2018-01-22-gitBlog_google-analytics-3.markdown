@@ -9,4 +9,4 @@ tags: github git blog
 finished: false
 ---
 
-## 글 작성 중
+## Waiting Please
