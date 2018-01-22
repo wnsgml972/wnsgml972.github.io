@@ -5,9 +5,18 @@ subtitle: Keep Calm and Carry On.
 permalink: /tags/
 ---
 
+<!-- My Font  -->
+<style>
+  .post-content li {
+    font-family: 'Jeju Gothic', serif;
+    font-weight: 500;
+    font-size : 15px;
+  }
+</style>
+
 <section class="post-tags">
     {% assign tags_list = site.tags %}
-    
+
     {% if tags_list.first[0] == null %}
     {% for tag in tags_list %}
     <a class="post-tags-item" href="#{{ tag | slugify }}">{{ tag }}</a>
@@ -17,7 +26,7 @@ permalink: /tags/
     <a class="post-tags-item" href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
     {% endfor %}
     {% endif %}
-    
+
     {% assign tags_list = nil %}
 
 </section>
@@ -26,7 +35,7 @@ permalink: /tags/
 
     {% for tag in site.tags  %}
     <h2 id="{{ tag[0] | slugify }}">{{ tag[0] | capitalize }}</h2>
-    
+
     <ul>
         {% assign pages_list = tag[1] %}
         {% for post in pages_list reversed %}
