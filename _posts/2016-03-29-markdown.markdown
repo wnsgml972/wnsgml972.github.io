@@ -11,7 +11,7 @@ finished: true
 
 ## Heading
 
-Heading is really simple in Markdown, you can use `#` or `=` or `-`. 
+Heading is really simple in Markdown, you can use `#` or `=` or `-`.
 
 Like this:
 
@@ -39,7 +39,7 @@ Like this:
 
 ###### H6. Heading
 
-And like this: 
+And like this:
 
 {% highlight md %}
 Heading
@@ -57,7 +57,7 @@ Heading
 Heading
 ----------
 
-See? Really easy. 
+See? Really easy.
 
 ## Font
 
@@ -110,7 +110,7 @@ You can also do this:
 2. Second
 3. Third
 
-### Unordered list: 
+### Unordered list:
 
 There are three ways to make an unordered list:
 
@@ -173,13 +173,13 @@ You can also do this when you insert an email address.
 
 ### Link
 
-You can add your link just behind your words: 
+You can add your link just behind your words:
 
 `[Ben](www.itisbenjamin.github.io)`
 
 [Ben](www.itisbenjamin.github.io)
 
-And you can also do it like this: 
+And you can also do it like this:
 
 `[about this link][1]`
 
@@ -189,7 +189,7 @@ Then put this line at anywhere you want in your post:
 
 ### Link description
 
-Add the link description behind the link address like this: 
+Add the link description behind the link address like this:
 
 `[Ben](www.itisbenjamin.github.io "Ben")`
 
@@ -201,7 +201,7 @@ Add the link description behind the link address like this:
 
 ![Codes](/img/code.png)
 
-How to write the images' descriptions are the same way as how you do it in links: 
+How to write the images' descriptions are the same way as how you do it in links:
 
 `![Codes](/img/code.png "Codes")`
 
@@ -275,21 +275,19 @@ Then this footnote will show at the end of this post.
 `a     | b     | c     | d`
 
 
-A     | B     | C     | D 
+A     | B     | C     | D
 ----- | ----- | ----- | -----
 a     | b     | c     | d
 
 ### Make words at left, center or right
 
 `left      | center       | center       | right`
- 
+
 `:-------- | :----------: | :----------: | -----:`
 
 `a         | b            | c            | d`
 
 
-left      | center       | center       | right 
+left      | center       | center       | right
 :-------- | :----------: | :----------: | -----:
 a         | b            | c            | d
-
-
