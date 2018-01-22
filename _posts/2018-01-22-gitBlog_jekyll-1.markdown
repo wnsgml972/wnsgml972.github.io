@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""
+title: "Jekyll 테마 적용하기"
 subtitle: ""
 date: 2018-01-22
 author: KimJunHee

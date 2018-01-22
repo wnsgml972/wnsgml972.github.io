@@ -1,10 +1,10 @@
 ---
 layout: post
-title: ""
+title: "Google Analytics 설정하기"
 subtitle: ""
 date: 2018-01-22
 author: KimJunHee
 category: git blog
 tags: github git git_blog
-finished: true
+finished: false
 ---
