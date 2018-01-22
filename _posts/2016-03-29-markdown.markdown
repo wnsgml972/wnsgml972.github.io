@@ -228,6 +228,21 @@ If you wanna show a piece of codes, use 4 spaces or 1 tab.
 </div>
 {% endhighlight %}
 
+{% highlight html %}
+function helloWorld(param1, param2) {
+  var something = 0;
+
+  // Do something
+  if (2.0 % 2 == something) {
+    console.log('Hello, world!');
+  } else {
+    return null;
+  }
+
+  // @TODO comment
+}
+{% endhighlight %}
+
 ## Others
 
 ### Breaker
