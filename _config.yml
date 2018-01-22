@@ -7,7 +7,7 @@ baseurl: "/wnsgml972.github.io" # the subpath of your site, e.g. /blog
 url: "https://wnsgml972.github.io" # the base hostname & protocol for your site
 twitter_username: KimJunHee # your Twitter username
 github_username: wnsgml972 # your Github username
-disqus_username: KimJunHee # your disqus username
+disqus_username: wnsgml972 # your disqus username
 
 google-analytics: UA-75034651-1 # add it if you have one
 
