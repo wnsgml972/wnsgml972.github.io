@@ -228,7 +228,7 @@ If you wanna show a piece of codes, use 4 spaces or 1 tab.
 </div>
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight %}
 function helloWorld(param1, param2) {
   var something = 0;
 
