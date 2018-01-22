@@ -21,7 +21,10 @@ Git 로컬 저장소로 설정된 폴더는 숨김파일 형식으로 ```.git```
 
 ![Git](/img/git_folder.png "git folder")
 
-## Cancle Git Init
+
+<br/><br/><br/>
+
+## Git Init 취소하기
 
 > ```git init``` 을 통해 만들어지게된 ```.git``` 폴더를 삭제합니다.
 

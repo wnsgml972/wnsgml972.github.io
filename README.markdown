@@ -3,3 +3,4 @@
 ## contacts
 email : wnsgml972@gmail.com </br>
 facebook : https://www.facebook.com/profile.php?id=100002784525012
+blog : https://wnsgml972.github.io/
