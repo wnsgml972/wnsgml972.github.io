@@ -6,7 +6,7 @@ date: 2018-01-22
 author: KimJunHee
 category: Git Blog
 tags: github git blog jekyll thema
-finished: false
+finished: true
 ---
 
 ## Github에 Repository 생성
@@ -20,9 +20,8 @@ finished: false
 <code>$ git init</code><br/>
 <code>$ git add .</code><br/>
 <code>$ git commit -m "Initial commit"</code><br/>
-<code>$ git remote add origin "https://github.com/github_ID/github_ID.github.io.git"</code><br/>
+<code>$ git remote add origin" https://github.com/ID/ID.github.io.git"</code><br/>
 <code>$ git push origin master</code>
-</code>
 
 3. remote 해주는 부분의 url은 자신의 해당 Github Repository에서 가져오면 된다.
 ![Git](/img/gitBlog_copy.png "copy url")
