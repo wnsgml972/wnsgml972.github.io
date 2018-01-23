@@ -35,7 +35,7 @@ $ git push origin master
 
 > 원하는 테마를 다운 받은 뒤 다시 github에 push하여 적용시킵니다.
 
-1. http://jekyllthemes.org/ 에 접속해 원하는 테마를 선택한 뒤 다운받는다.
+1. <http://jekyllthemes.org/> 에 접속해 원하는 테마를 선택한 뒤 다운받는다.
 ![Git](/img/gitBlog_thema.png "jekyll Thema")
 
 2. 위에서 만든 Directory에 압축을 해제한다.
@@ -45,3 +45,11 @@ $ git push origin master
 ![Git](/img/gitBlog_push.png "update base url")
 
 4. 다시 한번 자신의 주소인 https://github_ID.github.io 에 접속해서 확인한다.
+
+5. 해당하는 Jekyll 테마의 ```config.yml``` 파일을 수정한다.
+
+
+<br/><br/>
+## 참고
+
+* <https://nesoy.github.io/articles/2016-12/github-Jekyll>
