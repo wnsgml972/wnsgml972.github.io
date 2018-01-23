@@ -22,7 +22,7 @@ finished: true
 ![Git](/img/git_folder.png "git folder")
 
 <br/><br/>
-## Git Init 취소하기
+## Git Init 취소
 
 > ```git init``` 을 통해 만들어지게된 ```.git``` 폴더를 삭제합니다.
 
