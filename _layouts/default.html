@@ -2,6 +2,8 @@
 <html>
   <head>
 
+  <span id="top"></span>
+
   {% include head.html %}
   {% if site.google-analytics %}
   {% include google-analytics.html %}
@@ -13,20 +15,20 @@
 
   </head>
 
-  <body id="top">
+  <body>
 
   {% include header.html %}
 
   <div class="wrapper">
         {{ content }}
   </div>
-  
+
   <!-- my floating button -->
   <a style="display:scroll; position:fixed; bottom:70px; right:15px;" href="#top">
-  <img src="./images/arrow_top.png" ></a>
+  <img src="../img/code.png" ></a>
 
   <a style="display:scroll; position:fixed; bottom:5px; right:15px;" href="#footer">
-  <img src="./images/arrow_bottom.png" ></a>
+  <img src="../img/code.png" ></a>
 
 </body>
 
@@ -34,5 +36,7 @@
   {% include footer.html %}
   {% include foot.html %}
 </foot>
+
 <span id="footer"></span>
+
 </html>
