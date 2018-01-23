@@ -2,7 +2,7 @@
 layout: post
 title: "Git Blog 시작하기"
 subtitle: "Getting Started with Git Blog - 1"
-date: 2018-01-22
+date: 2018-01-23
 author: KimJunHee
 category: Git Blog
 tags: github git blog jekyll thema
