@@ -17,12 +17,13 @@ finished: false
 ![Git](/img/gitBlog_repository.png "make repository")
 
 2. 원하는 위치에 ```github_ID.github.io```라는 Directory를 생성한 후 그 위치에서 ```Git Bash```의 명령어를 입력한다. <br/>
-<pre>$ git init
+{% highlight html %}
+$ git init
 $ git add .
 $ git commit -m "Initial commit"
 $ git remote add origin "https://github.com/github_ID/github_ID.github.io.git"
 $ git push origin master
-</pre>
+{% endhighlight %}
 
 3. remote 해주는 부분의 url은 자신의 해당 Github Repository에서 가져오면 된다.
 ![Git](/img/gitBlog_copy.png "copy url")
