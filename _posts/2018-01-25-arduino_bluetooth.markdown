@@ -17,6 +17,18 @@ finished: true
 
 * 스케치의 다운이 완료되면 더블 클릭해 실행시키면 된다.
 
+
+<br/><br/>
+## 스케치 설치 환경 설정
+
+* Installer에서 USB 드라이버를 다운 받는다.
+
+* 포트 설정을 변경한다.
+
+![Git](/img/arduino_port.png "Change Port")
+
+
+
 <br/><br/>
 ## 아두이노 LED 제어
 
@@ -26,7 +38,11 @@ UNO Board                                    | Bread Board | Bluetooth Module |
 -----                                        | -----       | -----            |
 ![Git](/img/arduino_uno.jpg "arduino uno board") | ![Git](/img/arduino_bread.jpg "arduino bread board") | ![Git](/img/arduino_bluetooth.jpg "arduino bluetooth module")
 
-* 보드 연결
+* 구성도
+
+![Git](/img/arduino_structure.png "Structure")
+
+* 아두이노 보드의 회로 연결
 
 ![Git](/img/arduino_complete1.jpg "arduino complete")
 
@@ -35,26 +51,32 @@ UNO Board                                    | Bread Board | Bluetooth Module |
 {% highlight c %}
 #include <SoftwareSerial.h>
 
-SoftwareSerial BTSerial(2, 3);   //bluetooth module Tx:Digital 2 Rx:Digital 3
+// 2, 3번 핀을 이용
+SoftwareSerial bluetooth(2, 3);
+int ledPin = 8;
 
-void setup() {
-  pinMode(8, OUTPUT);    //HC-05
-  digitalWrite(8,HIGH);
-
-  Serial.begin(9600);
-  BTSerial.begin(9600);
-  Serial.println("ATcommand");  //ATcommand Start
-}
+void setup( ) {
+  bluetooth.begin(9600); // 반드시 필요함
+  pinMode(ledPin, OUTPUT);
+};
 
 void loop() {
-  if (BTSerial.available())
-    Serial.write(BTSerial.read());
-  if (Serial.available())
-    BTSerial.write(Serial.read());
-
+   if (bluetooth.available()){
+    byte read = bluetooth.read();
+    if (read == 1)
+      digitalWrite(ledPin, HIGH);
+    else if (read == 2)
+      digitalWrite(ledPin, LOW);
+  }
 }
 {% endhighlight %}
+
+
 
 * 핸드폰에 적절한 어플리케이션을 다운받거나 이용하고 아두이노 보드에 스케치 코드를 업로드해 확인한다.
 
 ![Git](/img/arduino_complete2.jpg "arduino complete")
+
+* 앱 인벤터로 간단히 어플리케이션을 직접 만들 수 있다. </br>
+[앱 인벤터 배우기](https://wnsgml972.github.io/wnsgml972.github.io/app%20inventor/app-inventor_start.html "app-inventor")  </br>
+[블루투스를 이용한 아두이노 LED 제어](www.itisbenjamin.github.io "app-inventor")
