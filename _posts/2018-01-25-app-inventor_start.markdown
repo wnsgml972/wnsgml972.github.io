@@ -5,7 +5,7 @@ subtitle: "We can easily create Android applications using App Inventor."
 date: 2018-01-25
 author: KimJunHee
 category: App Inventor
-tags: app-inventor android
+tags: app-inventor android application
 finished: true
 ---
 
