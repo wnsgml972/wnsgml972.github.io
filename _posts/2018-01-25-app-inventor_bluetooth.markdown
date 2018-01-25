@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "앱 인벤터로 블루투스를 이용한 아두이노 LED 제어 어플리케이션 만들기"
+title: "앱 인벤터로 아두이노와 블루투스를 이용한 LED 제어 어플리케이션 만들기"
 subtitle: "We can easily create Android applications using App Inventor."
 date: 2018-01-25
 author: KimJunHee
 category: App Inventor
-tags: app-inventor android application bluetooth
+tags: app-inventor android application bluetooth arduino
 finished: true
 ---
 

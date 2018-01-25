@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "아두이노 블루투스 모듈을 이용해 LED 제어하기"
+title: "아두이노와 블루투스 모듈을 이용해 LED 제어하기"
 subtitle: ""
 date: 2018-01-25
 author: KimJunHee
 category: Arduino
-tags: arduino bluetooth
+tags: arduino bluetooth app-inventor
 finished: true
 ---
 
@@ -73,10 +73,11 @@ void loop() {
 
 
 
-* 핸드폰에 적절한 어플리케이션을 다운받거나 이용하고 아두이노 보드에 스케치 코드를 업로드해 확인한다.
+* 핸드폰에 적절한 어플리케이션을 다운받거나 직접 만들어 이용하고 아두이노 보드에 스케치 코드를 업로드해 확인한다.
 
 ![Git](/img/arduino_complete2.jpg "arduino complete")
 
-* 앱 인벤터로 간단히 어플리케이션을 직접 만들 수 있다. </br>
-[앱 인벤터 배우기](https://wnsgml972.github.io/wnsgml972.github.io/app%20inventor/app-inventor_start.html "app-inventor")  </br>
+* 앱 인벤터로 간단히 어플리케이션을 만들 수 있다.
+
+[앱 인벤터 배우기](https://wnsgml972.github.io/wnsgml972.github.io/app%20inventor/app-inventor_start.html "app-inventor")  <br/>
 [블루투스를 이용한 아두이노 LED 제어](https://wnsgml972.github.io/wnsgml972.github.io/app%20inventor/app-inventor_bluetooth.html "app-inventor")
