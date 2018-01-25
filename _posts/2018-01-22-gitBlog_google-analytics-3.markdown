@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Google Analytics 설정하기"
-subtitle: "Getting Started with Git Blog - 4"
+subtitle: "Getting Started with Git Blog - 3"
 date: 2018-01-22
 author: KimJunHee
 category: Git Blog

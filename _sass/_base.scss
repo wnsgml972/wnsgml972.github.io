@@ -92,19 +92,18 @@ h6 {
 /**
  * Links
  */
-
 a {
     color: #25b3bc;
     text-decoration: none;
     transition: border .5s;
 }
 
-a:hover {
+a:hover {  // 수정 필요
     border-bottom: 2px dotted #000;
 }
 
 
-.post-content h2:before {
+.post-content h2:before {  // 수정 필요
     content: "¶ ";
     margin-right: 20px;
     color: #25bcba;
@@ -180,6 +179,8 @@ hr {
  */
 pre,
 code {
+    font-family: 'Jeju Gothic', serif;
+    font-weight: 500;
     font-size: 15px;
     border: 1px solid #f8f8f8;
     border-radius: 3px;
