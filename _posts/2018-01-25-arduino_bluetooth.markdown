@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "아두이노 블루투스를 이용해 LED 제어하기"
+title: "아두이노 블루투스 모듈을 이용해 LED 제어하기"
 subtitle: ""
 date: 2018-01-25
 author: KimJunHee
 category: Arduino
-tags: arduino app-inventor
+tags: arduino bluetooth
 finished: true
 ---
 
@@ -25,9 +25,11 @@ UNO Board                                    | Bread Board | Bluetooth Module |
 ![Git](/img/arduino_uno.jpg "arduino uno board") | ![Git](/img/arduino_bread.jpg "arduino bread board") | ![Git](/img/arduino_bluetooth.jpg "arduino bluetooth module")
 
 * 보드 연결
+
 ![Git](/img/arduino_complete1.jpg "arduino complete")
 
 * 스케치 코드
+
 <pre>
 #include <SoftwareSerial.h>
 
@@ -50,5 +52,6 @@ void loop() {
 }
 </pre>
 
-* 보드에 스케치 코드를 업로드해 확인한다.
+* 어플리케이션은 적절한 어플리케이션을 다운받거나 이용하고 아두이노 보드에 스케치 코드를 업로드해 확인한다.
+
 ![Git](/img/arduino_complete2.jpg "arduino complete")
