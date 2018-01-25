@@ -9,7 +9,7 @@ tags: arduino bluetooth
 finished: true
 ---
 
-## 아두이노 스케치 설치하기
+## 아두이노 스케치 설치
 
 * <http://appinventor.mit.edu/explore/>에 접속해 SOFTWARE를 클릭 후 다운받는다.
 
@@ -18,7 +18,7 @@ finished: true
 * 스케치의 다운이 완료되면 더블 클릭해 실행시키면 된다.
 
 <br/><br/>
-## 아두이노 LED 제어하기
+## 아두이노 LED 제어
 
 * 필요한 하드웨어는 총 3가지이다.
 
