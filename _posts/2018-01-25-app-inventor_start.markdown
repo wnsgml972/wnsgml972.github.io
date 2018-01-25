@@ -25,7 +25,7 @@ finished: true
 
 > 앱 인벤터는 앱의 모양을 만드는 Designer와 직접 코딩을 작업하는 부분인 Blocks로 나누어져 있습니다.
 
-* Designer는 눈에 보이는 부분 user interface와 같은 보이는 컴포넌트(visible component)와 소리나 센서처럼 눈에 보이지 않는 보이지 않는 컴포넌트(non-visible component)로 나뉘어져 있다.
+* Designer는 user interface와 같은 보이는 컴포넌트(visible component)와 소리나 센서처럼보이지 않는 컴포넌트(non-visible component)로 나뉘어져 있다.
 
 * Block은 여러가지 이벤트 처리나 논리 연산 변수 값 조절 등등 여러가지 코딩을 할 수 있다.
 
@@ -33,11 +33,11 @@ finished: true
 <br/><br/>
 ## 버튼을 클릭하면 핸드폰을 진동시키는 앱
 
-* 먼저 palette에서 User Interface 부분에서 Button 하나를 드래그해 화면에 놓는다.
+* 먼저 palette에서 User Interface 부분의 Button 하나를 드래그해 화면에 놓는다.
 
 ![Git](/img/appInventor_make_btn.png "Make Button")
 
-* 그 뒤 palette에서 Media 부분에서 Sound 하나를 드래그해 화면에 놓는다.
+* 그 뒤 palette에서 Media 부분의 Sound 하나를 드래그해 화면에 놓는다.
 
 ![Git](/img/appInventor_make_vibrate.png "Make Vibrate")
 
