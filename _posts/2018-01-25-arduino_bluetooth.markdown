@@ -13,7 +13,7 @@ finished: true
 
 * <http://appinventor.mit.edu/explore/>에 접속해 SOFTWARE를 클릭 후 다운받는다.
 
-![Git](/img/arduino_down.png "arduino down")
+![Arduino](/img/arduino_down.png "arduino down")
 
 * 스케치의 다운이 완료되면 더블 클릭해 실행시키면 된다.
 
@@ -25,7 +25,7 @@ finished: true
 
 * 포트 설정을 변경한다.
 
-![Git](/img/arduino_port.png "Change Port")
+![Arduino](/img/arduino_port.png "Change Port")
 
 
 
@@ -36,15 +36,15 @@ finished: true
 
 UNO Board                                    | Bread Board | Bluetooth Module |
 -----                                        | -----       | -----            |
-![Git](/img/arduino_uno.jpg "arduino uno board") | ![Git](/img/arduino_bread.jpg "arduino bread board") | ![Git](/img/arduino_bluetooth.jpg "arduino bluetooth module")
+![Arduino](/img/arduino_uno.jpg "arduino uno board") | ![Arduino](/img/arduino_bread.jpg "arduino bread board") | ![Arduino](/img/arduino_bluetooth.jpg "arduino bluetooth module")
 
 * 구성도
 
-![Git](/img/arduino_structure.png "Structure")
+![Arduino](/img/arduino_structure.png "Structure")
 
 * 아두이노 보드의 회로 연결
 
-![Git](/img/arduino_complete1.jpg "arduino complete")
+![Arduino](/img/arduino_complete1.jpg "arduino complete")
 
 * 스케치 코드
 
@@ -75,7 +75,7 @@ void loop() {
 
 * 핸드폰에 적절한 어플리케이션을 다운받거나 직접 만들어 이용하고 아두이노 보드에 스케치 코드를 업로드해 확인한다.
 
-![Git](/img/arduino_complete2.jpg "arduino complete")
+![Arduino](/img/arduino_complete2.jpg "arduino complete")
 
 * 앱 인벤터로 간단히 어플리케이션을 만들 수 있다.
 
