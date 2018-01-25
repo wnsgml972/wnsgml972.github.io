@@ -35,4 +35,4 @@ finished: true
 
 <br/><br/>
 ## 아두이노를 이용해 LED 제어하기
-* [아두이노](https://wnsgml972.github.io/wnsgml972.github.io/app%20inventor/app-inventor_start.html "app-inventor")
+* [아두이노](https://wnsgml972.github.io/wnsgml972.github.io/arduino/arduino_bluetooth.html "app-inventor")
