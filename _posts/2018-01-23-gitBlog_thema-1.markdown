@@ -23,7 +23,7 @@ finished: true
 $ git init
 $ git add .
 $ git commit -m "Initial commit"
-$ git remote add origin" https://github.com/ID/ID.github.io.git"
+$ git remote add origin "https://github.com/ID/ID.github.io.git"
 $ git push origin master
 {% endhighlight %}
 
