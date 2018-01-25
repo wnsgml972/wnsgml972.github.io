@@ -9,7 +9,7 @@ tags: app-inventor android application bluetooth arduino
 finished: true
 ---
 
-> 먼저 버튼으로 아두이노 LED를 제어하는 방법과 음성 인식을 이용하여 제어하는 방법 총 2가지로 구현해 보았습니다. 만약 앱 인벤터에 대해 아무것도 모르신다면 [여기](https://wnsgml972.github.io/wnsgml972.github.io/app%20inventor/app-inventor_start.html "app-inventor")를 먼저 보고 오시기 바랍니다.
+> 먼저 버튼으로 LED를 제어하는 방법과 음성 인식을 이용하여 제어하는 방법 총 2가지로 구현해 보았습니다. 만약 앱 인벤터에 대해 아무것도 모르신다면 [여기](https://wnsgml972.github.io/wnsgml972.github.io/app%20inventor/app-inventor_start.html "app-inventor")를 먼저 보고 오시기 바랍니다.
 
 ## 버튼을 이용한 어플리케이션
 
