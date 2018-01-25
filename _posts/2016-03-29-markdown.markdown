@@ -215,7 +215,7 @@ You can use <code>``</code> to show your codes:
 
 `.default`
 
-If you wanna show a piece of codes, use 4 spaces or 1 tab.
+<code>If you wanna show a piece of codes, use 4 spaces or 1 tab.</code>
 
 {% highlight html %}
 <div class="post-header-container>
