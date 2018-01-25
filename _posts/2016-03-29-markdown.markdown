@@ -296,6 +296,7 @@ a         | b            | c            | d
 ## highlight compare
 
 {% highlight c %}
+c
 #include <SoftwareSerial.h>
 
 SoftwareSerial BTSerial(2, 3);   //bluetooth module Tx:Digital 2 Rx:Digital 3
@@ -313,6 +314,7 @@ void setup() {
 
 
 {% highlight cpp %}
+cpp
 #include <SoftwareSerial.h>
 
 SoftwareSerial BTSerial(2, 3);   //bluetooth module Tx:Digital 2 Rx:Digital 3
@@ -330,6 +332,7 @@ void setup() {
 
 
 {% highlight bash %}
+bash
 #include <SoftwareSerial.h>
 
 SoftwareSerial BTSerial(2, 3);   //bluetooth module Tx:Digital 2 Rx:Digital 3
@@ -347,6 +350,7 @@ void setup() {
 
 
 {% highlight java %}
+java
 #include <SoftwareSerial.h>
 
 SoftwareSerial BTSerial(2, 3);   //bluetooth module Tx:Digital 2 Rx:Digital 3
@@ -364,6 +368,7 @@ void setup() {
 
 
 {% highlight sql %}
+sql
 #include <SoftwareSerial.h>
 
 SoftwareSerial BTSerial(2, 3);   //bluetooth module Tx:Digital 2 Rx:Digital 3
@@ -381,6 +386,7 @@ void setup() {
 
 
 {% highlight ruby %}
+ruby
 #include <SoftwareSerial.h>
 
 SoftwareSerial BTSerial(2, 3);   //bluetooth module Tx:Digital 2 Rx:Digital 3
@@ -398,6 +404,7 @@ void setup() {
 
 
 {% highlight python %}
+python
 #include <SoftwareSerial.h>
 
 SoftwareSerial BTSerial(2, 3);   //bluetooth module Tx:Digital 2 Rx:Digital 3
@@ -415,6 +422,7 @@ void setup() {
 
 
 {% highlight md %}
+md
 #include <SoftwareSerial.h>
 
 SoftwareSerial BTSerial(2, 3);   //bluetooth module Tx:Digital 2 Rx:Digital 3
