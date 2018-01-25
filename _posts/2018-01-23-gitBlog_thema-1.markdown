@@ -19,7 +19,7 @@ finished: true
 
 * 원하는 위치에 ```github_ID.github.io```라는 Directory를 생성한 후 그 위치에서 ```Git Bash```의 명령어를 입력한다.
 
-{% highlight md %}
+{% highlight bash %}
 $ git init
 $ git add .
 $ git commit -m "Initial commit"
