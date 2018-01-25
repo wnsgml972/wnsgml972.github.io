@@ -32,7 +32,7 @@ UNO Board                                    | Bread Board | Bluetooth Module |
 
 * 스케치 코드
 
-{% highlight html %}
+{% highlight md %}
 #include <SoftwareSerial.h>
 
 SoftwareSerial BTSerial(2, 3);   //bluetooth module Tx:Digital 2 Rx:Digital 3
