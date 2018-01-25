@@ -79,4 +79,4 @@ void loop() {
 
 * 앱 인벤터로 간단히 어플리케이션을 직접 만들 수 있다. </br>
 [앱 인벤터 배우기](https://wnsgml972.github.io/wnsgml972.github.io/app%20inventor/app-inventor_start.html "app-inventor")  </br>
-[블루투스를 이용한 아두이노 LED 제어](www.itisbenjamin.github.io "app-inventor")
+[블루투스를 이용한 아두이노 LED 제어](https://wnsgml972.github.io/wnsgml972.github.io/app%20inventor/app-inventor_bluetooth.html "app-inventor")

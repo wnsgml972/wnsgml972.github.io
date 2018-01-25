@@ -22,7 +22,7 @@ finished: true
 ![Git](/img/appInventor_bluetooth2.png "Block")
 
 
-</br></br>
+<br/><br/>
 ## 음성을 이용한 어플리케이션
 
 * Designer를 사용하여 음성으로 LED 켜는 앱 모양 만들기
@@ -33,6 +33,6 @@ finished: true
 
 ![Git](/img/appInventor_bluetooth4.png "Block")
 
-</br></br>
+<br/><br/>
 ## 아두이노를 이용해 LED 제어하기
 * [아두이노](https://wnsgml972.github.io/wnsgml972.github.io/app%20inventor/app-inventor_start.html "app-inventor")
