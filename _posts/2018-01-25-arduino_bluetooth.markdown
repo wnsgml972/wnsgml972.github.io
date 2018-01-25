@@ -12,6 +12,7 @@ finished: true
 ## 아두이노 스케치 설치하기
 
 * <http://appinventor.mit.edu/explore/>에 접속해 SOFTWARE를 클릭 후 다운받는다.
+
 ![Git](/img/arduino_down.png "arduino down")
 
 * 스케치의 다운이 완료되면 더블 클릭해 실행시키면 된다.
@@ -30,7 +31,7 @@ UNO Board                                    | Bread Board | Bluetooth Module |
 
 * 스케치 코드
 
-<pre>
+{% highlight html %}
 #include <SoftwareSerial.h>
 
 SoftwareSerial BTSerial(2, 3);   //bluetooth module Tx:Digital 2 Rx:Digital 3
@@ -49,8 +50,9 @@ void loop() {
     Serial.write(BTSerial.read());
   if (Serial.available())
     BTSerial.write(Serial.read());
+
 }
-</pre>
+{% endhighlight %}
 
 * 어플리케이션은 적절한 어플리케이션을 다운받거나 이용하고 아두이노 보드에 스케치 코드를 업로드해 확인한다.
 
