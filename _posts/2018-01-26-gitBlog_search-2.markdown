@@ -2,7 +2,7 @@
 layout: post
 title: "네이버, 구글 검색 엔진에 게시물 등록하기"
 subtitle: "Getting Started with Git Blog - 2"
-date: 2018-01-22
+date: 2018-01-26
 author: KimJunHee
 category: Git Blog
 tags: github git blog jekyll search naver google
@@ -38,7 +38,7 @@ Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
 
 * Search Console 클릭한다.
 
-<!-- ![GitBlog](/img/gitBlog_search-console.png "Search") -->
+![GitBlog](/img/gitBlog_search-console.png "Search")
 
 * 속성 추가를 클릭해 화면이 나온다면 html 파일 다운 후 자신의 폴더에 옮긴다.
 
