@@ -9,63 +9,13 @@ tags: github git blog jekyll search naver google
 finished: false
 ---
 
-> 글을 쓰는 것만으로도 충분히 좋지만 아무래도 여러 사람이 들어와 같이 소통할 수 있다면 더욱 더 좋겠죠? <br/>총 2가지로 나누어 네이버와 구글에 검색이 되도록 하는 방법입니다.
+> 글을 쓰는 것만으로도 충분히 가치있는 일이지만 여러 사람이 들어와 같이 소통할 수 있다면 더욱 더 좋겠죠? <br/>총 2가지로 나누어 네이버와 구글에 검색이 되도록 하는 방법입니다.
 
 ## 구글에 글 등록
 
-* ```/sitemap.xml``` 작성한다.
+* [sitemap.xml](https://github.com/wnsgml972/wnsgml972.github.io/blob/master/sitemap.xml "sitemap.xml")를 작성한다.
 
-{% highlight xml %}
----
-layout: null
----
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <url>
-      <loc>https://wnsgml972.github.io/wnsgml972.github.io/git/git_init</loc>
-      <lastmod>2018-01-22T00:00:00+00:00</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-    </url>
-
-    <url>
-      <loc>https://wnsgml972.github.io/wnsgml972.github.io/git%20blog/gitBlog_thema-1</loc>
-      <lastmod>2018-01-23T00:00:00+00:00</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-    </url>
-
-    <url>
-      <loc>https://wnsgml972.github.io/wnsgml972.github.io/app%20inventor/app-inventor_bluetooth</loc>
-      <lastmod>2018-01-25T00:00:00+00:00</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-    </url>
-
-    <url>
-      <loc>https://wnsgml972.github.io/wnsgml972.github.io/app%20inventor/app-inventor_start</loc>
-        <lastmod>2018-01-25T00:00:00+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-
-    <url>
-      <loc>https://wnsgml972.github.io/wnsgml972.github.io/arduino/arduino_bluetooth</loc>
-      <lastmod>2018-01-25T00:00:00+00:00</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-    </url>
-
-    <url>
-      <loc>https://wnsgml972.github.io/wnsgml972.github.io/git%20blog/gitBlog_search-2</loc>
-      <lastmod>2018-01-26T00:00:00+00:00</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-    </url>
-
-</urlset>
-{% endhighlight %}
 
 * Github에 sitemap.xml을 push 한 뒤 직접 url 주소를 쳐서 확인한다.
 
@@ -123,40 +73,9 @@ Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
 
 ![GitBlog](/img/gitBlog_naverEnroll.png "Add Naver")
 
-* 만약 feed.xml이 만들어져 있지 않다면 feed.xml을 작성한다.
+* 만약 feed.xml이 만들어져 있지 않다면 [feed.xml](https://github.com/wnsgml972/wnsgml972.github.io/blob/master/feed.xml "feed.xml") 등록 하기을 작성한다.
 
-{% highlight xml %}
----
-layout: null
----
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
-      <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
-      </item>
-    {% endfor %}
-  </channel>
-</rss>
-{% endhighlight %}
+
 
 * feed.xml, sitemap.xml, robots.txt를 모두 github에 push하여 확인한다.
 
