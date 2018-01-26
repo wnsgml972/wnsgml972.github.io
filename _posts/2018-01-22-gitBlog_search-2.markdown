@@ -73,7 +73,7 @@ Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
 
 ![GitBlog](/img/gitBlog_naverEnroll.png "Add Naver")
 
-* 만약 feed.xml이 만들어져 있지 않다면 [feed.xml](https://github.com/wnsgml972/wnsgml972.github.io/blob/master/feed.xml "feed.xml") 등록 하기을 작성한다.
+* 만약 feed.xml이 만들어져 있지 않다면 [feed.xml](https://github.com/wnsgml972/wnsgml972.github.io/blob/master/feed.xml "feed.xml")을 작성한다.
 
 
 
