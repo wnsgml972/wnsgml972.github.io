@@ -114,3 +114,19 @@ Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
 > Google Search Console에 올린 것과 비슷한 방식으로 진행합니다.
 
 * [Naver Search Console](https://www.google.com/webmasters/#?modal_active=none "Google Search") 등록 하기
+
+* 로그인 하게되면 나오게 되는 사이트 추가 버튼을 클릭한다.
+
+![GitBlog](/img/gitBlog_addNaver.png "Add Naver")
+
+* 구글에서 했던 방식과 동일하게 자신의 사이트를 인증한다.
+
+
+
+
+<br/><br/>
+## 참고
+
+* <https://gmlwjd9405.github.io/2017/10/20/include-blog-in-a-GoogleSearchEngine.html>
+
+* <https://nesoy.github.io/articles/2017-01/blog-search>
