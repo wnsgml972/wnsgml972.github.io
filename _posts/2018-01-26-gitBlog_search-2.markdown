@@ -11,9 +11,9 @@ finished: false
 
 > 글을 쓰는 것만으로도 충분히 가치있는 일이지만 여러 사람이 들어와 같이 소통할 수 있다면 더욱 더 좋겠죠? <br/>총 2가지로 나누어 네이버와 구글에 검색이 되도록 하는 방법입니다.
 
-## 구글에 글 등록
+## Google
 
-* [sitemap.xml](https://github.com/wnsgml972/wnsgml972.github.io/blob/master/sitemap.xml "sitemap.xml")를 작성한다.
+* [/sitemap.xml](https://github.com/wnsgml972/wnsgml972.github.io/blob/master/sitemap.xml "sitemap.xml")를 작성한다.
 
 
 
@@ -59,7 +59,7 @@ Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
 
 
 <br/><br/>
-## 네이버에 글 등록
+## Naver
 
 > Google Search Console에 올린 것과 비슷한 방식으로 진행합니다.
 
