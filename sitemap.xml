@@ -46,4 +46,11 @@ layout: null
       <priority>0.5</priority>
     </url>
 
+    <url>
+      <loc>https://wnsgml972.github.io/wnsgml972.github.io/</loc>
+      <lastmod>2018-01-21T00:00:00+00:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.5</priority>
+    </url>
+
 </urlset>
