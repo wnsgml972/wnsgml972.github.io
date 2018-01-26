@@ -5,7 +5,7 @@ subtitle: "A brief introduction about Markdown Grammar. "
 date: 2016-03-29
 author: Benjamin
 category: test
-tags: code markdown github
+tags: test
 finished: true
 ---
 
