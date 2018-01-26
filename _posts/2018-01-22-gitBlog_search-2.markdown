@@ -121,8 +121,54 @@ Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
 
 * 구글에서 했던 방식과 동일하게 자신의 사이트를 인증한다.
 
+![GitBlog](/img/gitBlog_naverEnroll.png "Add Naver")
 
+* 만약 feed.xml이 만들어져 있지 않다면 feed.xml을 작성한다.
 
+{% highlight xml %}
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% for post in site.posts limit:10 %}
+      <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{{ post.content | xml_escape }}</description>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        {% for tag in post.tags %}
+        <category>{{ tag | xml_escape }}</category>
+        {% endfor %}
+        {% for cat in post.categories %}
+        <category>{{ cat | xml_escape }}</category>
+        {% endfor %}
+      </item>
+    {% endfor %}
+  </channel>
+</rss>
+{% endhighlight %}
+
+* feed.xml, sitemap.xml, robots.txt를 모두 github에 push하여 확인한다.
+
+* feed.xml을 제출한다.
+
+![GitBlog](/img/gitBlog_addFeed.png "Add Feed")
+
+* sitemap.xml을 제출한다.
+
+![GitBlog](/img/gitBlog_addSitemap.png "Add Site")
+
+> 모두 수고하셨습니다!!
 
 <br/><br/>
 ## 참고
