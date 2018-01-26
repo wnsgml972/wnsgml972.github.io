@@ -6,7 +6,7 @@ date: 2018-01-26
 author: KimJunHee
 category: Git Blog
 tags: github git blog jekyll search naver google
-finished: false
+finished: true
 ---
 
 > 글을 쓰는 것만으로도 충분히 가치있는 일이지만 여러 사람이 들어와 같이 소통할 수 있다면 더욱 더 좋겠죠? <br/>총 2가지로 나누어 네이버와 구글에 검색이 되도록 하는 방법입니다.
