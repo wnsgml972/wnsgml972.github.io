@@ -52,13 +52,13 @@ UNO Board                                    | Bread Board | Bluetooth Module |
 #include <SoftwareSerial.h>
 
 // 2, 3번 핀을 이용
-SoftwareSerial bluetooth(2, 3);
+SoftwareSerial bluetooth(2, 3);  //Tx,  Rx (블루투스의 수신 송신)
 int ledPin = 8;
 
 void setup( ) {
   bluetooth.begin(9600); // 반드시 필요함
   pinMode(ledPin, OUTPUT);
-};
+}
 
 void loop() {
    if (bluetooth.available()){
