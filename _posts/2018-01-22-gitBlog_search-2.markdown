@@ -38,7 +38,7 @@ Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
 
 * Search Console 클릭한다.
 
-![GitBlog](/img/gitBlog_search-console.png "Search")
+<!-- ![GitBlog](/img/gitBlog_search-console.png "Search") -->
 
 * 속성 추가를 클릭해 화면이 나온다면 html 파일 다운 후 자신의 폴더에 옮긴다.
 
@@ -86,8 +86,6 @@ Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
 * sitemap.xml을 제출한다.
 
 ![GitBlog](/img/gitBlog_addSitemap.png "Add Site")
-
-> 모두 수고하셨습니다!!
 
 <br/><br/>
 ## 참고
