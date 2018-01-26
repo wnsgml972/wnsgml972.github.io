@@ -13,7 +13,7 @@ finished: false
 
 ## 구글에 글 등록
 
-* ```/sitemap.xml``` 작성
+* ```/sitemap.xml``` 작성한다.
 
 {% highlight xml %}
 ---
@@ -67,11 +67,11 @@ layout: null
 </urlset>
 {% endhighlight %}
 
-* Github에 sitemap.xml을 push 한 뒤 직접 url 주소를 쳐서 확인
+* Github에 sitemap.xml을 push 한 뒤 직접 url 주소를 쳐서 확인한다.
 
 ![GitBlog](/img/gitBlog_sitexml.png "site.xml")
 
-* Robot.txt를 만들어 sitemap url을 등록
+* /robots.txt를 만들어 sitemap url을 등록한다.
 
 {% highlight xml %}
 User-agent: *
@@ -86,15 +86,31 @@ Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
 
 * [Google Search Console](https://www.google.com/webmasters/#?modal_active=none "Google Search") 등록 하기
 
-* Search Console 클릭
+* Search Console 클릭한다.
 
 ![GitBlog](/img/gitBlog_search-console.png "Search")
 
-* 속성 추가를 클릭해
+* 속성 추가를 클릭해 화면이 나온다면 html 파일 다운 후 자신의 폴더에 옮긴다.
 
+![GitBlog](/img/gitBlog_complete.png "Complete")
 
+* html 파일을 github에 push한다.
+
+![GitBlog](/img/gitBlog_googlehtml.png "Google HTML")
+
+* 다시 Search Console에 들어가 인증이 완료됐다고 나온다면 위에서 만든 sitemap.xml을 추가한다.
+
+![GitBlog](/img/gitBlog_addSitexml.png "Add Site XML")
+
+* 완료 모습
+
+![GitBlog](/img/gitBlog_complete2.png "Complete")
 
 
 
 <br/><br/>
 ## 네이버에 글 등록
+
+> Google Search Console에 올린 것과 비슷한 방식으로 진행합니다.
+
+* [Naver Search Console](https://www.google.com/webmasters/#?modal_active=none "Google Search") 등록 하기
