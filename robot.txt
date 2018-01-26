@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
