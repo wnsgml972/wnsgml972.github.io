@@ -2,7 +2,7 @@
 layout: post
 title: ".gitignore 설정하기"
 subtitle: ""
-date: 2018-01-22
+date: 2018-01-29
 author: KimJunHee
 category: Git
 tags: github git gitignore
@@ -63,6 +63,6 @@ $ git commit -m "fixed untracked files"
 <br/><br/>
 ## 참고
 
-* <https://gmlwjd9405.github.io/2017/10/20/include-blog-in-a-GoogleSearchEngine.html>
+* <https://nesoy.github.io/articles/2017-01/Git-Ignore>
 
-* <https://nesoy.github.io/articles/2017-01/blog-search>
+* <https://gmlwjd9405.github.io/2017/10/06/make-gitignore-file.html>
