@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "앱 인벤터로 어플리케이션 만들기"
-subtitle: "We can easily create Android applications using App Inventor."
+title: "앱 인벤터 기초"
+subtitle: "앱 인벤터로 어플리케이션 만들기"
 date: 2018-01-25
 author: KimJunHee
 category: App Inventor

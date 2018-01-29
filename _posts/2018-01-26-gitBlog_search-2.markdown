@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "네이버, 구글 검색 엔진에 게시물 등록하기"
+title: "검색 엔진에 게시물 등록하기"
 subtitle: "Getting Started with Git Blog - 2"
 date: 2018-01-26
 author: KimJunHee

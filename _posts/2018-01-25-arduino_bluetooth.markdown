@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "아두이노와 블루투스 모듈을 이용해 LED 제어하기"
-subtitle: ""
+title: "아두이노 블루투스 통신"
+subtitle: "아두이노 블루투스 모듈을 이용해 LED 제어하기"
 date: 2018-01-25
 author: KimJunHee
 category: Arduino
