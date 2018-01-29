@@ -49,4 +49,20 @@ package.json
 <br/><br/>
 ## .gitignore 적용하기
 
-* 
+* 이제 만들어진 ```.gitignore```파일을 Push 하기만 하면 된다.
+
+* 하지만 하기전에 이미 기존 Project에 버전 관리에 포함되어 있는 파일들은 수동으로 삭제 해줘야 한다. 이경우에는 아래의 명령어를 사용한다.
+
+{% highlight bash %}
+$ git rm -r --cached .
+$ git add .
+$ git commit -m "fixed untracked files"
+{% endhighlight %}
+
+
+<br/><br/>
+## 참고
+
+* <https://gmlwjd9405.github.io/2017/10/20/include-blog-in-a-GoogleSearchEngine.html>
+
+* <https://nesoy.github.io/articles/2017-01/blog-search>
