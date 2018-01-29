@@ -19,7 +19,7 @@ finished: true
 
 
 <br/><br/>
-## 스케치 설치 환경 설정
+## 스케치 환경 설정
 
 * Installer에서 USB 드라이버를 다운 받는다.
 
