@@ -108,6 +108,8 @@ $ make install
 $ make clean
 {% endhighlight %}
 
+
+<br/><br/>
 ## ffmpeg 설치
 
 {% highlight bash %}
