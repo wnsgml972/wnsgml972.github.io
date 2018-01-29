@@ -17,6 +17,8 @@ finished: true
 
 * 예를들어 ```Backup File```이나 ```Log File``` 등등이 여기에 해당될 수 있다.
 
+
+<br/><br/>
 ## .gitignore 설정하기
 
 * ```.gitignore```파일은 항상 최상위 Directory에 존재해야 한다.
@@ -41,6 +43,6 @@ package.json
 # .jekyll-metadata
 {% endhighlight %}
 
-* <https://github.com/github/gitignore>에 들어가면 거의 모든 언어에 대한 .gitignore 파일이 만들어져 있다.
+* <https://github.com/github/gitignore>에 들어가면 거의 모든 언어에 대한 .gitignore 템플릿이 만들어져 있다.
 
 * 만약 이미 github에 제외하고 싶은 파일들이 들어가 있다면 [git 삭제하기](https://wnsgml972.github.io/wnsgml972.github.io/arduino/arduino_bluetooth.html)를 참고하면 된다.

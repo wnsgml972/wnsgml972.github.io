@@ -15,11 +15,11 @@ finished: true
 
 * Designer를 사용하여 버튼으로 LED 켜는 앱 모양 만들기
 
-![App-Inventor](/img/appInventor_bluetooth1.png "Designer")
+![App-Inventor](/img/appInventor/2/appInventor_bluetooth1.png "Designer")
 
 * Block을 이용하여 버튼으로 LED 켜는 코드 작성
 
-![App-Inventor](/img/appInventor_bluetooth2.png "Block")
+![App-Inventor](/img/appInventor/2/appInventor_bluetooth2.png "Block")
 
 
 <br/><br/>
@@ -27,11 +27,11 @@ finished: true
 
 * Designer를 사용하여 음성으로 LED 켜는 앱 모양 만들기
 
-![App-Inventor](/img/appInventor_bluetooth3.png "Designer")
+![App-Inventor](/img/appInventor/2/appInventor_bluetooth3.png "Designer")
 
 * Block을 이용하여 음성으로 LED 켜는 코드 작성
 
-![App-Inventor](/img/appInventor_bluetooth4.png "Block")
+![App-Inventor](/img/appInventor/2/appInventor_bluetooth4.png "Block")
 
 <br/><br/>
 ## 아두이노를 이용해 LED 제어하기

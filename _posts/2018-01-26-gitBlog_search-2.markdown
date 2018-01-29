@@ -19,7 +19,7 @@ finished: true
 
 * Github에 sitemap.xml을 push 한 뒤 직접 url 주소를 쳐서 확인한다.
 
-![GitBlog](/img/gitBlog_sitexml.png "site.xml")
+![GitBlog](/img/gitBlog/2/gitBlog_sitexml.png "site.xml")
 
 * /robots.txt를 만들어 sitemap url을 등록한다.
 
@@ -32,29 +32,29 @@ Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
 
 * 확인해보기
 
-![GitBlog](/img/gitBlog_sitemapRobot.png "Confirm")
+![GitBlog](/img/gitBlog/2/gitBlog_sitemapRobot.png "Confirm")
 
 * [Google Search Console](https://www.google.com/webmasters/#?modal_active=none "Google Search") 등록 하기
 
 * Search Console 클릭한다.
 
-![GitBlog](/img/gitBlog_search-console.png "Search")
+![GitBlog](/img/gitBlog/2/gitBlog_search-console.png "Search")
 
 * 속성 추가를 클릭해 화면이 나온다면 html 파일 다운 후 자신의 폴더에 옮긴다.
 
-![GitBlog](/img/gitBlog_complete.png "Complete")
+![GitBlog](/img/gitBlog/2/gitBlog_complete.png "Complete")
 
 * html 파일을 github에 push한다.
 
-![GitBlog](/img/gitBlog_googlehtml.png "Google HTML")
+![GitBlog](/img/gitBlog/2/gitBlog_googlehtml.png "Google HTML")
 
 * 다시 Search Console에 들어가 인증이 완료됐다고 나온다면 위에서 만든 sitemap.xml을 추가한다.
 
-![GitBlog](/img/gitBlog_addSitexml.png "Add Site XML")
+![GitBlog](/img/gitBlog/2/gitBlog_addSitexml.png "Add Site XML")
 
 * 완료 모습
 
-![GitBlog](/img/gitBlog_complete2.png "Complete")
+![GitBlog](/img/gitBlog/2/gitBlog_complete2.png "Complete")
 
 
 
@@ -67,11 +67,11 @@ Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
 
 * 로그인 하게되면 나오게 되는 사이트 추가 버튼을 클릭한다.
 
-![GitBlog](/img/gitBlog_addNaver.png "Add Naver")
+![GitBlog](/img/gitBlog/2/gitBlog_addNaver.png "Add Naver")
 
 * 구글에서 했던 방식과 동일하게 자신의 사이트를 인증한다.
 
-![GitBlog](/img/gitBlog_naverEnroll.png "Add Naver")
+![GitBlog](/img/gitBlog/2/gitBlog_naverEnroll.png "Add Naver")
 
 * 만약 feed.xml이 만들어져 있지 않다면 [feed.xml](https://github.com/wnsgml972/wnsgml972.github.io/blob/master/feed.xml "feed.xml")을 작성한다.
 
@@ -81,11 +81,11 @@ Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
 
 * feed.xml을 제출한다.
 
-![GitBlog](/img/gitBlog_addFeed.png "Add Feed")
+![GitBlog](/img/gitBlog/2/gitBlog_addFeed.png "Add Feed")
 
 * sitemap.xml을 제출한다.
 
-![GitBlog](/img/gitBlog_addSitemap.png "Add Site")
+![GitBlog](/img/gitBlog/2/gitBlog_addSitemap.png "Add Site")
 
 <br/><br/>
 ## 참고
