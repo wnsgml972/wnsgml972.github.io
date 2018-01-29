@@ -15,7 +15,7 @@ finished: true
 
 * ```github_ID.github.io```의 이름을 가진 Repository를 생성한다. **(나중에 충돌이 일어나기 때문에 README.markdown을 초기화 하지 말아야한다.)**
 
-![Git](/img/gitblog/1/gitBlog_repository.png "make repository")
+![Git](/img/gitBlog/1/gitBlog_repository.png "make repository")
 
 * 원하는 위치에 ```github_ID.github.io```라는 Directory를 생성한 후 그 위치에서 ```Git Bash```의 명령어를 입력한다.
 
@@ -29,7 +29,7 @@ $ git push origin master
 
 * remote 해주는 부분의 url은 자신의 해당 Github Repository에서 가져오면 된다.
 
-![Git](/img/gitblog/1/gitBlog_copy.png "copy url")
+![Git](/img/gitBlog/1/gitBlog_copy.png "copy url")
 
 * 자신의 주소인 <https://github_ID.github.io> 에 접속해서 확인한다.
 
@@ -41,15 +41,15 @@ $ git push origin master
 
 * <http://jekyllthemes.org/> 에 접속해 원하는 테마를 선택한 뒤 다운받는다.
 
-![Git](/img/gitblog/1/gitBlog_thema.png "jekyll Thema")
+![Git](/img/gitBlog/1/gitBlog_thema.png "jekyll Thema")
 
 * 위에서 만든 Directory에 압축을 해제한다.
 
-![Git](/img/gitblog/1/gitBlog_directory.png "directory")
+![Git](/img/gitBlog/1/gitBlog_directory.png "directory")
 
 * 위에서 이용한 2번 명령어를 이용하여 Github Repository에 변경 내용을 push 한다.
 
-![Git](/img/gitblog/1/gitBlog_push.png "update base url")
+![Git](/img/gitBlog/1/gitBlog_push.png "update base url")
 
 * 다시 한번 자신의 주소인 https://github_ID.github.io 에 접속해서 확인한다.
 
