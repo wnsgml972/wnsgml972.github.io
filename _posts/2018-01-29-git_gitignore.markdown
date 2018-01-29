@@ -37,10 +37,10 @@ node_modules
 package.json
 
 # Jekyll stuff
-# /_site/
-# _site/
-# .sass-cache/
-# .jekyll-metadata
+/_site/
+_site/
+.sass-cache/
+.jekyll-metadata
 {% endhighlight %}
 
 * <https://github.com/github/gitignore>에 들어가면 거의 모든 언어에 대한 .gitignore 템플릿이 만들어져 있다.
