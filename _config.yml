@@ -1,5 +1,5 @@
 # Site settings
-title: JunHee Blog
+title: JunHee's Blog
 name: KimJunHee # your name
 email: wnsgml972@gmail.com # your email address
 description: Software Programmer
@@ -9,7 +9,7 @@ twitter_username: KimJunHee # your Twitter username
 github_username: wnsgml972 # your Github username
 disqus_username: wnsgml972 # your disqus username
 
-google-analytics: UA-75034651-1 # add it if you have one
+google-analytics: UA-113140483-1 # add it if you have one
 
 skillstree: true # turn on or off the skills tree in about page
 
