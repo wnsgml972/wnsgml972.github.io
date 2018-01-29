@@ -45,4 +45,8 @@ package.json
 
 * <https://github.com/github/gitignore>에 들어가면 거의 모든 언어에 대한 .gitignore 템플릿이 만들어져 있다.
 
-* 만약 이미 github에 제외하고 싶은 파일들이 들어가 있다면 [git 삭제하기](https://wnsgml972.github.io/wnsgml972.github.io/arduino/arduino_bluetooth.html)를 참고하면 된다.
+
+<br/><br/>
+## .gitignore 적용하기
+
+* 
