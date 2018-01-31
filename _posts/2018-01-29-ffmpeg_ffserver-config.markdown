@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ubuntu에서 ffmpeg, ffserver 설치하기"
+title: "ubuntu에서 FFmpeg, FFserver 설치하기"
 subtitle: ""
 date: 2018-01-29
 author: KimJunHee
