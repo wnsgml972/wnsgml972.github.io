@@ -11,4 +11,9 @@ finished: false
 
 > 만약 아직 FFserver와 FFmpeg를 설치하지 않았다면 [ubuntu에서 FFmpeg, FFserver 설치하기](https://wnsgml972.github.io/wnsgml972.github.io/ffmpeg/ffmpeg_ffserver-config.html)를 참고하시기 바랍니다.
 
-## Wating Please
+## FFmpeg 사용
+
+{% highlight bash %}
+$ ~/bin
+$ ffmpeg -i (원하는 설정 명령어)
+{% endhighlight %}
