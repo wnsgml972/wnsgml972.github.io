@@ -167,11 +167,12 @@ $ hash -r
 
 {% highlight bash %}
 $ sudo apt install ffmpeg
+
 {% endhighlight %}
 
 
 <br/><br/>
-## ffmpeg 사용 법
+## ffmpeg, ffserver 사용 법
 
 * <https://wnsgml972.github.io/wnsgml972.github.io/ffmpeg/ffmpeg_ffserver-streamming.html>
 
