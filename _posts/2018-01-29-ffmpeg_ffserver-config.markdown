@@ -11,7 +11,7 @@ finished: true
 
 > 실시간 스트리밍 프로젝트 진행하며 가장 어려웠던 점이 FFserver와 FFmpeg의 설치 및 환경 설정이였는데
 그것에 대해 간단히 정리하여 Posting 한 내용입니다. <br/>
-단지 sudo apt install ffmpeg만 하게되면 필요한 코덱이 다 설치되지 않아 컴파일이 잘 되지 않습니다.
+단지 sudo apt install ffmpeg만 하게되면 필요한 코덱이 다 설치되지 않아 컴파일이 되지 않습니다.
 
 ## 의존 관계가 있는 library 다운로드 및 업데이트
 
@@ -166,8 +166,9 @@ $ hash -r
 ## ffserver 다운
 
 {% highlight bash %}
-
+$ sudo apt install ffmpeg
 {% endhighlight %}
+
 
 <br/><br/>
 ## ffmpeg 사용 법
