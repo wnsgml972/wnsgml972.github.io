@@ -35,4 +35,4 @@ $ ffserver -f (config_file)
 
 ![FFSERVER](/img/ffmpeg/2/ffserver1.png)
 
-![FFSERVER](/img/ffmpeg/2/ffserver1.png)
+![FFSERVER](/img/ffmpeg/2/ffserver2.png)
