@@ -30,7 +30,7 @@ finished: false
 )
 
 libwebsocket, mosquitto 프로젝트의 CmakeLists.txt 에 따라 프로젝트를 빌드하여 생성하기 위해 필요
-![MQTT](/img/mqtt/1/cmake.PNG)
+![MQTT](/img/mqtt/1/cmake.png)
 
 <br/>
 * [pthread-win32 download & install
@@ -39,16 +39,16 @@ libwebsocket, mosquitto 프로젝트의 CmakeLists.txt 에 따라 프로젝트�
 
 Mosquitto에서 저 경로에 pthreads라는 폴더를 찾기 때문에 꼭 이름, 경로가 일치해야 함 __pthreads위에 또 폴더가 존재해선 안됨__<br/>
 __```c:\pthreads\``` 경로에 unzip__
-![MQTT](/img/mqtt/1/pthread.PNG)
+![MQTT](/img/mqtt/1/pthread.png)
 
 <br/>
 * [OpenSSL library download & install
 ](https://slproweb.com/products/Win32OpenSSL.html
 )
 
-컴파일을 위해서는 Light 버전이 아닌 FULL 버전 설치 , 프로그램 실행만을 위해서는 Light 버전 실행 가능<br/>
+컴파일을 위해서는 Light 버전이 아닌 FULL 버전 설치, (프로그램 실행만을 위해서는 Light 버전) <br/>
 __pthreads와 마찬가지로 ```c:\OpenSSL-Win32\``` 경로에 unzip__
-![MQTT](/img/mqtt/1/openssl.PNG)
+![MQTT](/img/mqtt/1/openssl.png)
 
 
 <br/>
@@ -70,7 +70,7 @@ __마찬가지로 ```c:\mostemp\``` 경로에 unzip__
 ![MQTT](/img/mqtt/1/mosquitto.png)
 
 <br/>
-완료 됐을 시 총 4개의 폴더가 ```c:\```에 있어야 한다.
+완료 됐을 시 총 4개의 폴더가 ```c:\```에 있어야 함
 ![MQTT](/img/mqtt/1/directory.png)
 
 
@@ -108,7 +108,7 @@ __마찬가지로 ```c:\mostemp\``` 경로에 unzip__
 
 ![MQTT](/img/mqtt/1/cmake_build6.png)
 
-* ```LWS_WITHSSL``` 체크 해제 후 __Configure 클릭__
+* ```LWS_WITH_SSL``` 체크 해제 후 __Configure 클릭__
 
 ![MQTT](/img/mqtt/1/cmake_build7.png)
 
@@ -124,7 +124,7 @@ __마찬가지로 ```c:\mostemp\``` 경로에 unzip__
 
 ![MQTT](/img/mqtt/1/cmake_build10.png)
 
-* websocket.dll 이 생성되었는지 확인
+* ```websocket.dll``` 이 생성되었는지 확인
 
 ![MQTT](/img/mqtt/1/cmake_build11.png)
 
