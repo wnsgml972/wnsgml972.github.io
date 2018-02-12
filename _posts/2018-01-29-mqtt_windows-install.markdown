@@ -1,12 +1,244 @@
 ---
 layout: post
-title: "Windows 에서 Mosquitto(MQTT Broker) 설치하기"
-subtitle: ""
+title: "Windows 에서 Mosquitto 컴파일하기"
+subtitle: "Windows Mosquitto Source build, debug"
 date: 2018-01-29
 author: KimJunHee
 category: MQTT
-tags: mqtt broker
+tags: mqtt mosquitto compile c debug
 finished: false
 ---
 
-## Wating Please
+> 직접 Mosquitto 코드를 Debuging하며 이해하기 위해 작성하였습니다.
+
+## 개발 환경
+
+* Visual studio 2015  (2017도 가능)
+
+* Window 10 pro 64bit
+
+
+<br/><br/>
+## 소프트웨어 설치
+
+모든 설치 환경을 32bit로 맞춰야 함
+
+* [Window Visual studio Express 2015 다운](https://www.visualstudio.com/ko/downloads/?rr=https%3A%2F%2Fmsdn.microsoft.com%2Fko-kr%2Flibrary%2Fe2h7fzkw.aspx)
+
+<br/>
+* [Download and unzip cmake]( https://cmake.org/download/
+)
+
+libwebsocket, mosquitto 프로젝트의 CmakeLists.txt 에 따라 프로젝트를 빌드하여 생성하기 위해 필요
+![MQTT](/img/mqtt/1/cmake.PNG)
+
+<br/>
+* [pthread-win32 download & install
+](ftp://sourceware.org/pub/pthreads-win32/pthreads-w32-2-9-1-release.zip)
+
+
+Mosquitto에서 저 경로에 pthreads라는 폴더를 찾기 때문에 꼭 이름, 경로가 일치해야 함 __pthreads위에 또 폴더가 존재해선 안됨__<br/>
+__```c:\pthreads\``` 경로에 unzip__
+![MQTT](/img/mqtt/1/pthread.PNG)
+
+<br/>
+* [OpenSSL library download & install
+](https://slproweb.com/products/Win32OpenSSL.html
+)
+
+컴파일을 위해서는 Light 버전이 아닌 FULL 버전 설치 , 프로그램 실행만을 위해서는 Light 버전 실행 가능<br/>
+__pthreads와 마찬가지로 ```c:\OpenSSL-Win32\``` 경로에 unzip__
+![MQTT](/img/mqtt/1/openssl.PNG)
+
+
+<br/>
+* [libwebsocket source download](https://github.com/warmcat/libwebsockets/releases
+)
+
+최신버전 다운<br/>
+__마찬가지로 ```c:\libtemp\``` 경로에 unzip__
+![MQTT](/img/mqtt/1/libwebsocket.png)
+
+
+<br/>
+* [mosquitto source download
+](https://github.com/eclipse/mosquitto/releases
+)
+
+mosquitto1.4.14  다운<br/>
+__마찬가지로 ```c:\mostemp\``` 경로에 unzip__
+![MQTT](/img/mqtt/1/mosquitto.png)
+
+<br/>
+완료 됐을 시 총 4개의 폴더가 ```c:\```에 있어야 한다.
+![MQTT](/img/mqtt/1/directory.png)
+
+
+
+<br/><br/>
+> Cmake를 이용하여 websocket.dll을 얻기 위함입니다. 쉽지 않으니 천천히 경로에 유의하며 따라오세요.
+
+## libwebsocket
+
+* Cmake-gui 를 열어 libwebsocket 빌드 준비
+
+![MQTT](/img/mqtt/1/cmake_build.png)
+
+* ```C\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\```의 위치에 __build Directory 생성__
+
+![MQTT](/img/mqtt/1/cmake_build0.png)
+
+* Cmake-gui 설정
+
+![MQTT](/img/mqtt/1/cmake_build2.png)
+
+* Configure를 클릭하여 Visual Studio 14 2015 선택
+
+![MQTT](/img/mqtt/1/cmake_build3.png)
+
+* 에러 창이 나온다면 ok 클릭
+
+![MQTT](/img/mqtt/1/cmake_build4.png)
+
+* ```CMAKE_INSTALL_PREFIX``` 를 ```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1``` 로 변경
+
+![MQTT](/img/mqtt/1/cmake_build5.png)
+
+* openSSL 경로 추가
+
+![MQTT](/img/mqtt/1/cmake_build6.png)
+
+* ```LWS_WITHSSL``` 체크 해제 후 __Configure 클릭__
+
+![MQTT](/img/mqtt/1/cmake_build7.png)
+
+* Configure done 이 확인된 후 Generate 버튼을 클릭하여 프로젝트 생성
+
+![MQTT](/img/mqtt/1/cmake_build8.png)
+
+* Generate done 확인 후 Open Project클릭하여 프로젝트 Open
+
+![MQTT](/img/mqtt/1/cmake_build9.png)
+
+* Release 와 Win32 상태 확인 후 ALL_BUILD 를 이용하여 빌드
+
+![MQTT](/img/mqtt/1/cmake_build10.png)
+
+* websocket.dll 이 생성되었는지 확인
+
+![MQTT](/img/mqtt/1/cmake_build11.png)
+
+
+<br/><br/>
+
+> 비쥬얼 스튜디오 2015에서 디버깅 하기 위함입니다. 진행하며 부족하다고 나온 dll 파일은 해당 프로젝트의 debug directory에 넣으면 해결할 수 있습니다.
+
+## mosquitto
+
+* ```C:\mostemp\mosquitto-1.4.14\```의 위치에 __build Directory 생성__
+
+![MQTT](/img/mqtt/1/mos1.png)
+
+* Source 코드 경로와 build 경로를 맞춰준 뒤 configure 버튼 클릭
+
+![MQTT](/img/mqtt/1/mos2.png)
+
+* visual studio 환경을 맞추고 finish 버튼 클릭
+
+![MQTT](/img/mqtt/1/mos3.png)
+
+* 에러가 나면 ok 클릭 (에러가 나도 다음 절차 후에 해결 가능)
+
+![MQTT](/img/mqtt/1/mos4.png)
+
+* Add Entry를 눌러 OPNSSL 경로 추가해 주고 configure 를 다시 클릭해 준다
+
+![MQTT](/img/mqtt/1/mos5.png)
+
+* ```WITH_WEBSOCKETS``` 체크함
+
+![MQTT](/img/mqtt/1/mos6.png)
+
+* ```CMAKE_INSTALL_PREFIX``` 를 ```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14``` 로 변경
+
+![MQTT](/img/mqtt/1/mos7.png)
+
+* Configure, Generate를 눌러 확인후 Open Project 를 클릭하여 프로젝트를 연다
+
+> 여기서부터 사진과 같이 6개의 프로젝트를 모두 선택한 후 속성으로 들어가서 사진과 같이 구성을 모든 구성으로 맞춰주세요. 6개 프로젝트의 Debug 모드와 Release 모드 설정을 한꺼번에 하기 위함입니다.
+
+![MQTT](/img/mqtt/1/mos8.png)
+
+* vc++ 디렉터리->포함 디렉터리<br/>
+```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\build``` <br/>
+```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\lib``` <br/>
+두개의 경로를 추가<br/>
+__헤더 파일을 읽을 수 있게 해줌__
+
+![MQTT](/img/mqtt/1/mos9.png)
+
+* vc++ 디렉터리->라이브러리 디렉터리<br/>
+```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\build\lib\Release```<br/>
+하나의 경로를 추가
+
+![MQTT](/img/mqtt/1/mos10.png)
+
+* c/c++ -> 일반 -> 추가 포함 디렉터리<br/>
+```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\build```<br/>
+```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\lib```<br/>
+두개의 경로를 추가<br/>
+
+![MQTT](/img/mqtt/1/mos14.png)
+
+
+* mosquitto 프로젝트->c/c++ -> 전처리기 ```WITH_TLS``` , ```WITH_TLS_PSK``` 제거 (컴파일 오류를 막기위해)
+
+![MQTT](/img/mqtt/1/mos11.png)
+
+* ```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14```의 ```config.h``` 의 15행 을 주석처리
+
+
+![MQTT](/img/mqtt/1/mos12.png)
+
+* ```C:\pthreads\Pre-built.2\include``` 경로의 ```pthread.h``` 의 320~323라인 주석처리
+
+
+![MQTT](/img/mqtt/1/mos13.png)
+
+* 먼저 __Release 모드로__ ALL_BUILD를 빌드
+
+* 사진과 같은 오류가 난다면
+
+![MQTT](/img/mqtt/1/mos15.png)
+mosquitto_passwd 프로젝트 -> 링커 -> 입력 ```optimized.lib``` 제거 및 ```debug.lib``` 제거
+
+![MQTT](/img/mqtt/1/mos16.png)
+
+* 만약 ```libeay32.dll``` 이나 ```ssleay32.dll``` 파일이 없다고 오류가 난다면 해당 프로젝트의 ```build\src\Release```에 해당 dll 파일을 넣어준다.
+
+![MQTT](/img/mqtt/1/mos0.png)
+
+* Release 된 mosquitto broker 와 client 를 확인 (.exe 파일)<br/>
+```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14\build\src\Release``` <br/>
+```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14\build\client\Release```
+
+* ```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\build\bin\Release``` 경로의 ```websocket.dll``` 을 ```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14\build\src\Release``` 경로에 에 복사
+
+![MQTT](/img/mqtt/1/mos17.png)
+
+* ```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14\build\lib\Release``` 경로의 ```mosquitto.dll```<br/>
+```C:\pthreads\Pre-built.2\dll\x86``` 경로의 ```pthreadVC2.dll```<br/>
+두가지의 dll 파일을<br/>
+```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14\build\client\Release```
+에 복사한다
+
+![MQTT](/img/mqtt/1/mos18.png)
+
+* 이제 Debug 모드로 visual studio에서 debug를 진행한다. 그밖에 dll 파일이 없다고 나온다면 각각 ```\build\src\Debug``` 나 ```\build\client\Debug``` 폴더에 넣어주면 된다.
+
+![MQTT](/img/mqtt/1/mos19.png)
+
+<br/><br/>
+## 참고
+
+* https://github.com/bapowell/bapowell.github.io/wiki/Mosquitto-Build-Notes-(Windows---Visual-Studio)

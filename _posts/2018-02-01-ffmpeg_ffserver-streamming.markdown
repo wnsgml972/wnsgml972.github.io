@@ -33,6 +33,6 @@ $ ffmpeg -i (원하는 설정 명령어)
 $ ffserver -f (config_file)
 {% endhighlight %}
 
-![ffserver](/img/2/ffserver/ffserver1.PNG)
+![FFSERVER](/img/ffserver/2/ffserver1.PNG)
 
-![ffserver](/img/2/ffserver/ffserver1.PNG)
+![FFSERVER](/img/ffserver/2/ffserver1.PNG)
