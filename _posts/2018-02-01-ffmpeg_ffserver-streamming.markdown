@@ -20,11 +20,19 @@ $ cd ~/bin
 $ ffmpeg -i (원하는 설정 명령어)
 {% endhighlight %}
 
+
+
 <br/><br/>
 ## FFserver 사용 법
 
 * -f 옵션을 이용하여 .conf 파일에 맞게 ffserver를 동작
 
+
+
 {% highlight bash %}
 $ ffserver -f (config_file)
 {% endhighlight %}
+
+![ffserver](/img/2/ffserver/ffserver1.PNG)
+
+![ffserver](/img/2/ffserver/ffserver1.PNG)
