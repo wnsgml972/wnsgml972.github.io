@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Windows 에서 Mosquitto 컴파일하기"
+title: "Windows 에서 Mosquitto 설치하기"
 subtitle: "Windows Mosquitto Source build, debug"
-date: 2018-01-29
+date: 2018-02-12
 author: KimJunHee
 category: MQTT
 tags: mqtt mosquitto compile c debug
-finished: false
+finished: true
 ---
 
 > 직접 Mosquitto 코드를 Debuging하며 이해하기 위해 작성하였습니다.
@@ -104,7 +104,7 @@ __마찬가지로 ```c:\mostemp\``` 경로에 unzip__
 
 ![MQTT](/img/mqtt/1/cmake_build5.png)
 
-* openSSL 경로 추가
+* OpenSSL 경로 추가
 
 ![MQTT](/img/mqtt/1/cmake_build6.png)
 
@@ -151,11 +151,11 @@ __마찬가지로 ```c:\mostemp\``` 경로에 unzip__
 
 ![MQTT](/img/mqtt/1/mos4.png)
 
-* Add Entry를 눌러 OPNSSL 경로 추가해 주고 configure 를 다시 클릭해 준다
+* Add Entry를 눌러 OpenSSL 경로 추가해 주고 configure 를 다시 클릭
 
 ![MQTT](/img/mqtt/1/mos5.png)
 
-* ```WITH_WEBSOCKETS``` 체크함
+* ```WITH_WEBSOCKETS``` 체크
 
 ![MQTT](/img/mqtt/1/mos6.png)
 
@@ -165,9 +165,10 @@ __마찬가지로 ```c:\mostemp\``` 경로에 unzip__
 
 * Configure, Generate를 눌러 확인후 Open Project 를 클릭하여 프로젝트를 연다
 
-> 여기서부터 사진과 같이 6개의 프로젝트를 모두 선택한 후 속성으로 들어가서 사진과 같이 구성을 모든 구성으로 맞춰주세요. 6개 프로젝트의 Debug 모드와 Release 모드 설정을 한꺼번에 하기 위함입니다.
-
 ![MQTT](/img/mqtt/1/mos8.png)
+
+<br/>
+> 여기서부터 사진과 같이 6개의 프로젝트를 모두 선택한 후 속성으로 들어가서 사진과 같이 구성을 모든 구성으로 맞춰주세요. 6개 프로젝트의 Debug 모드와 Release 모드 설정을 한꺼번에 하기 위함입니다.
 
 * vc++ 디렉터리->포함 디렉터리<br/>
 ```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\build``` <br/>
@@ -189,7 +190,6 @@ __헤더 파일을 읽을 수 있게 해줌__
 두개의 경로를 추가<br/>
 
 ![MQTT](/img/mqtt/1/mos14.png)
-
 
 * mosquitto 프로젝트->c/c++ -> 전처리기 ```WITH_TLS``` , ```WITH_TLS_PSK``` 제거 (컴파일 오류를 막기위해)
 
