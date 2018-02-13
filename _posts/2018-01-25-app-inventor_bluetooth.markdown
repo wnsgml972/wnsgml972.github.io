@@ -17,6 +17,7 @@ finished: true
 
 ![App-Inventor](/img/appInventor/2/appInventor_bluetooth1.png "Designer")
 
+<br/>
 * Block을 이용하여 버튼으로 LED 켜는 코드 작성
 
 ![App-Inventor](/img/appInventor/2/appInventor_bluetooth2.png "Block")
@@ -29,6 +30,7 @@ finished: true
 
 ![App-Inventor](/img/appInventor/2/appInventor_bluetooth3.png "Designer")
 
+<br/>
 * Block을 이용하여 음성으로 LED 켜는 코드 작성
 
 ![App-Inventor](/img/appInventor/2/appInventor_bluetooth4.png "Block")

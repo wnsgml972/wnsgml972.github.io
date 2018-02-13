@@ -2,11 +2,11 @@
 layout: post
 title: "Ubuntu 에서 Mosquitto 설치하기"
 subtitle: "Ubuntu Mosquitto Source build"
-date: 2018-01-29
+date: 2018-02-13
 author: KimJunHee
 category: MQTT
 tags: mqtt mosquitto compile c ubuntu linux build
-finished: false
+finished: true
 ---
 
 > Mosquitto를 리눅스 환경에서 컴파일 하기 위해 작성하였습니다.
@@ -32,9 +32,10 @@ $ sudo apt-get install build-essential libc-ares-dev uuid-dev libssl-dev libcurl
 > 만약 /var/lib/dpkg/lock 잠금 파일을 얻을 수 없다고 나온다면 다음과 같은 명령어를 통해 lock 파일 삭제를 진행한 후 다시 진행합니다.
 
 {% highlight bash %}
-rm /var/lib/dpkg/lock
+$ rm /var/lib/dpkg/lock
 {% endhighlight %}
 
+<br/>
 * Install Mosquitto Source
 
 {% highlight bash %}
@@ -45,6 +46,7 @@ $ wget http://mosquitto.org/files/source/mosquitto-1.4.8.tar.gz
 $ tar xvf mosquitto-1.4.8.tar.gz
 {% endhighlight %}
 
+<br/>
 * Build Mosquitto source
 
 {% highlight bash %}
@@ -64,6 +66,7 @@ $ sudo make install
 $ sudo apt-get install mosquitto-clients
 {% endhighlight %}
 
+<br/>
 * Start Broker
 
 {% highlight bash %}
@@ -72,6 +75,7 @@ $ mosquitto
 
 ![MQTT](/img/mqtt/2/broker.png)
 
+<br/>
 * Client (Subscribe, Publish)
 
 {% highlight bash %}

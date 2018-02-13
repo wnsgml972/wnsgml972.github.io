@@ -17,6 +17,7 @@ finished: true
 
 ![Git](/img/gitBlog/1/gitBlog_repository.png "make repository")
 
+<br/>
 * 원하는 위치에 ```github_ID.github.io```라는 Directory를 생성한 후 그 위치에서 ```Git Bash```의 명령어를 입력한다.
 
 {% highlight bash %}
@@ -27,10 +28,12 @@ $ git remote add origin "https://github.com/ID/ID.github.io.git"
 $ git push origin master
 {% endhighlight %}
 
+<br/>
 * remote 해주는 부분의 url은 자신의 해당 Github Repository에서 가져오면 된다.
 
 ![Git](/img/gitBlog/1/gitBlog_copy.png "copy url")
 
+<br/>
 * 자신의 주소인 <https://github_ID.github.io> 에 접속해서 확인한다.
 
 
@@ -43,16 +46,20 @@ $ git push origin master
 
 ![Git](/img/gitBlog/1/gitBlog_thema.png "jekyll Thema")
 
+<br/>
 * 위에서 만든 Directory에 압축을 해제한다.
 
 ![Git](/img/gitBlog/1/gitBlog_directory.png "directory")
 
+<br/>
 * 위에서 이용한 2번 명령어를 이용하여 Github Repository에 변경 내용을 push 한다.
 
 ![Git](/img/gitBlog/1/gitBlog_push.png "update base url")
 
+<br/>
 * 다시 한번 자신의 주소인 https://github_ID.github.io 에 접속해서 확인한다.
 
+<br/>
 * 해당하는 Jekyll 테마의 ```config.yml``` 파일을 수정한다.
 
 
