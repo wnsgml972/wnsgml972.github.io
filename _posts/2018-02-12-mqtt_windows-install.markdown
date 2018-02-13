@@ -1,21 +1,23 @@
 ---
 layout: post
-title: "Windows 에서 Mosquitto 설치하기"
-subtitle: "Windows Mosquitto Source build, debug"
+title: "Window 에서 Mosquitto 설치하기"
+subtitle: "Window Mosquitto Source build, debug"
 date: 2018-02-12
 author: KimJunHee
 category: MQTT
-tags: mqtt mosquitto compile c debug
+tags: mqtt mosquitto compile c debug build
 finished: true
 ---
 
-> 직접 Mosquitto 코드를 Debuging하며 이해하기 위해 작성하였습니다.
+> Mosquitto 코드를 Debuging하며 이해하기 위해 작성하였습니다.
 
 ## 개발 환경
 
+* Mosquitto-1.4.14  (구버전도 가능)
+
 * Visual studio 2015  (2017도 가능)
 
-* Window 10 pro 64bit
+* Window 10 pro 64bit  (Window 7도 가능)
 
 
 <br/><br/>
