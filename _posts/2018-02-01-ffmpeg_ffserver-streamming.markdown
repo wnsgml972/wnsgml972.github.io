@@ -5,8 +5,8 @@ subtitle: ""
 date: 2018-02-01
 author: KimJunHee
 category: ffmpeg
-tags: ffserver ffmpeg linux Streamming Realtime
-finished: true
+tags: ffserver ffmpeg linux streamming realtime
+finished: false
 ---
 
 > 만약 아직 FFserver와 FFmpeg를 설치하지 않았다면 [ubuntu에서 FFmpeg, FFserver 설치하기](https://wnsgml972.github.io/wnsgml972.github.io/ffmpeg/ffmpeg_ffserver-config.html)를 참고하시기 바랍니다.
@@ -34,3 +34,9 @@ $ ffserver -f config_file
 ![FFSERVER](/img/ffmpeg/2/ffserver1.png)
 
 ![FFSERVER](/img/ffmpeg/2/ffserver2.png)
+
+
+<br/><br/>
+## 관련 Project
+
+* <https://github.com/HIFLY-CSM/HIFLY-Final>
