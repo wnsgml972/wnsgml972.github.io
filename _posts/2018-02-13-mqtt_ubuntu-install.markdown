@@ -47,7 +47,7 @@ $ tar xvf mosquitto-1.4.8.tar.gz
 {% endhighlight %}
 
 <br/>
-* Build Mosquitto source
+* Make Mosquitto source
 
 {% highlight bash %}
 $ cd ~/mosquitto_sources/mosquitto-1.4.8/
