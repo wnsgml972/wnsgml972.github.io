@@ -9,7 +9,8 @@ tags: mqtt mosquitto compile c ubuntu linux build
 finished: true
 ---
 
-> Mosquitto를 리눅스 환경에서 컴파일 하기 위해 작성하였습니다.
+> Mosquitto를 리눅스 환경에서 컴파일 하기 위해 작성하였습니다.<br/>
+MQTT 프로토콜에 대해 잘 모르신다면 [MQTT 프로토콜 이란?](https://wnsgml972.github.io/wnsgml972.github.io/mqtt/mqtt.html)을 보고 오시기 바랍니다.
 
 ## 개발 환경
 
@@ -98,3 +99,9 @@ $ mosquitto_pub -t 'topic' -h 127.0.0.1 -l
 {% highlight bash %}
 $ sudo /etc/init.d/mosquitto stop
 {% endhighlight %}
+
+
+<br/><br/>
+## My_Sub, My_Pub 작성 및 실행
+
+* <https://wnsgml972.github.io/wnsgml972.github.io/mqtt/mqtt_ubuntu-my_client.html>
