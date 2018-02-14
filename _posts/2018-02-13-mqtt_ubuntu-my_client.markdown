@@ -5,8 +5,8 @@ subtitle: ""
 date: 2018-02-13
 author: KimJunHee
 category: MQTT
-tags: mqtt mosquitto ubuntu linux
-finished: false
+tags: mqtt mosquitto ubuntu linux c
+finished: true
 ---
 
 ## ```my_pub.c```, ```my_sub.c``` 생성
@@ -156,6 +156,10 @@ int main(int argc, char *argv[])
 }
 {% endhighlight %}
 
+* 완성 모습
+
+![MQTT](/img/mqtt/3/create.png)
+
 <br/><br/>
 ## gcc를 이용하여 컴파일
 
@@ -172,10 +176,6 @@ $ gcc -o my_sub my_sub.c -lmosquitto
 {% highlight bash %}
 $ gcc -o my_pub my_pub.c -lmosquitto
 {% endhighlight %}
-
-* 완성 모습
-
-![MQTT](/img/mqtt/3/create.png)
 
 <br/><br/>
 ## 테스트
