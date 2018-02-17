@@ -4,7 +4,7 @@ title: "FFmpeg, FFserver를 이용한 실시간 스트리밍"
 subtitle: ""
 date: 2018-02-01
 author: KimJunHee
-category: ffmpeg
+category: FFmpeg
 tags: ffserver ffmpeg linux streamming realtime
 finished: false
 ---

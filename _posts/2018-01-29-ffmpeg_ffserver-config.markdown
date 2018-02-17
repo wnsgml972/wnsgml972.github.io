@@ -4,7 +4,7 @@ title: "ubuntu에서 FFmpeg, FFserver 설치하기"
 subtitle: "Compile FFmpeg on Ubuntu (ubuntu-16.04.3)"
 date: 2018-02-09
 author: KimJunHee
-category: ffmpeg
+category: FFmpeg
 tags: ffserver ffmpeg linux
 finished: true
 ---
