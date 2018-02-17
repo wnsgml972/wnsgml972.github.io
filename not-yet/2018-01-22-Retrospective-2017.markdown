@@ -4,7 +4,7 @@ title: "2017 회고"
 subtitle: ""
 date: 2018-01-22
 author: KimJunHee
-category: Retrospective
-tags: retrospective
+category: Log
+tags: retrospective log
 finished: false
 ---
