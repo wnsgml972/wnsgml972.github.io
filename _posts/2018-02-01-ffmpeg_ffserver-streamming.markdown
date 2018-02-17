@@ -37,9 +37,6 @@ $ ffserver -f config_file
 
 ![FFMPEG](/img/ffmpeg/1/ffserver2.png)
 
-![MQTT](/img/mqtt/1/mosquitto.png)
-
-
 
 <br/><br/>
 ## 관련 Project
