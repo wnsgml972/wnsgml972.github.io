@@ -33,9 +33,9 @@ $ ffmpeg -i 원하는_설정_명령어
 $ ffserver -f config_file
 {% endhighlight %}
 
-![FFSERVER](/img/ffmpeg/2/ffserver1.png)
+![FFMPEG](/img/ffmpeg/2/ffserver1.png)
 
-![FFSERVER](/img/ffmpeg/2/ffserver2.png)
+![FFMPEG](/img/ffmpeg/2/ffserver2.png)
 
 ![MQTT](/img/mqtt/1/mosquitto.png)
 
