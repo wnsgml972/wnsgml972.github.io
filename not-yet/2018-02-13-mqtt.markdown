@@ -8,6 +8,3 @@ category: MQTT
 tags: mqtt mosquitto
 finished: false
 ---
-
-
-## 조금만 기다려주세요.

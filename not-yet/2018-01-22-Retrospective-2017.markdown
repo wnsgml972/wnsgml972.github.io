@@ -8,5 +8,3 @@ category: Retrospective
 tags: retrospective
 finished: false
 ---
-
-## Waiting Please
