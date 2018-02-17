@@ -9,6 +9,8 @@ tags: mqtt paho java swing
 finished: false
 ---
 
+## 조금만 기다려주세요.
+
 > MQTT 프로토콜을 공부하기 위해 자바 스윙을 이용하여 채팅을 만들어 보았습니다.<br/>
 Mosquitto Broker는 바이너리로 실행하고 PAHO Publish, Subscribe 클라이언트를 이용해 작성하였습니다.
 
