@@ -250,7 +250,7 @@ mosquitto_passwd 프로젝트 -> 링커 -> 입력 ```optimized.lib``` 제거 및
 ```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14\build\client\Release```
 
 <br/>
-* ```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\build\bin\Release``` 경로의 ```websocket.dll``` 을 ```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14\build\src\Release``` 경로에 에 복사
+* ```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\build\bin\Release``` 경로의 ```websocket.dll``` 을 ```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14\build\src\Release``` 경로에 복사
 
 ![MQTT](/img/mqtt/1/mos17.png)
 
