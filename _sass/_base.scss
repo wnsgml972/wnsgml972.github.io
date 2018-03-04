@@ -82,13 +82,10 @@ h1 {
 
 h2,
 h3,
+h4,
 h5,
 h6 {
     font-size: 16px;
-}
-
-h4 {
-    font-size: 15px;
 }
 
 h3, h4 {
@@ -118,13 +115,14 @@ a:hover {  // 수정 필요
 
 .post-content h3:before {  // 수정 필요
     content: "¶ ";
-    margin-right: 25px;
+    margin-right: 20px;
     color: #466FC4;
 }
 
 .post-content h4:before {  // 수정 필요
     content: "¶ ";
-    margin-right: 30px;
+    margin-right: 20px;
+    margin-left: 10px;
     color: skyblue;
 }
 
