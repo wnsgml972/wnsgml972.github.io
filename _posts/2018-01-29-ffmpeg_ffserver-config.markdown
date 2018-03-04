@@ -66,7 +66,7 @@ $ sudo make install
 <br/><br/>
 ## 각종 코덱 설치
 
-* libx264 설치
+### libx264 설치
 
 {% highlight bash %}
 $ cd ~/ffmpeg_sources
@@ -79,7 +79,8 @@ $ make install
 $ make distclean
 {% endhighlight %}
 
-* libfdk-aac 설치
+<br/>
+### libfdk-aac 설치
 
 {% highlight bash %}
 $ cd ~/ffmpeg_sources
@@ -93,14 +94,15 @@ $ make install
 $ make distclean
 {% endhighlight %}
 
-* libmp3lame 설치
+<br/>
+### libmp3lame 설치
 
 {% highlight bash %}
 $ sudo apt-get install libmp3lame-dev
 {% endhighlight %}
 
-
-* libopus 설치
+<br/>
+### libopus 설치
 
 {% highlight bash %}
 $ cd ~/ffmpeg_sources
@@ -113,7 +115,8 @@ $ make install
 $ make distclean
 {% endhighlight %}
 
-* libvpx 설치
+<br/>
+### libvpx 설치
 
 {% highlight bash %}
 $ cd ~/ffmpeg_sources

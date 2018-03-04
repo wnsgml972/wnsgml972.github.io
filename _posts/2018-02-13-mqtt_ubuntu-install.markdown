@@ -22,9 +22,9 @@ MQTT 프로토콜에 대해 잘 모르신다면 [MQTT 프로토콜 이란?](http
 <br/><br/>
 ## 소프트웨어 설치
 
-* Install Library
+### Install Library
 
-Linux 상에서 Mosquitto 소스코드를 Build 하기 위한 라이브러리를 설치한다.
+* Linux 상에서 Mosquitto 소스코드를 Build 하기 위한 라이브러리를 설치한다.
 
 {% highlight bash %}
 $ sudo apt-get install build-essential libc-ares-dev uuid-dev libssl-dev libcurl4-openssl-dev libmysqlclient-dev
@@ -37,7 +37,7 @@ $ rm /var/lib/dpkg/lock
 {% endhighlight %}
 
 <br/>
-* Install Mosquitto Source
+### Install Mosquitto Source
 
 {% highlight bash %}
 $ cd ~/
