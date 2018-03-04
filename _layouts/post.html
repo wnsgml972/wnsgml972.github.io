@@ -49,11 +49,20 @@ layout: default
 	<p>{{ page.subtitle }}</p>
 	{% endif %}
     </center>
-	<h2 class="hangle">Directory</h2>
+	<h2 class="hangle">목차 </h2><i id="dir_control" class="fa fa-plus"></i>
 </div>
 
-<div id="category" class="hangle"></div><i class="fa fa-plus"></i>
-<i class="fa fa-minus"></i>
+<div id="category" class="hangle"></div>
+<script>
+$("#category").hide()
+$("#dir_control").click(function() {
+	$("#dir_control").toggle(function() {
+		$("#dir_control").toggleClass("fa fa-plus fa fa-minus")
+	})
+});
+</script>
+
+
 <div class="post-content" itemprop="articleBody">
     {{ content }}
 </div>
