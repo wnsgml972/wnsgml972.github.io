@@ -5,7 +5,8 @@ $(document).ready(function(){
     $("h2,h3,h4,h5,h6").each(function(i,item){
        var tag = $(item).get(0).localName;
        $(item).attr("id","dir"+i);
-       $("#category").append('<a style="color:black;" class="new'+tag+'" href="#dir'+i+'">'+$(this).text()+'</a></br>');
+       if($(this).text() != "Home" && $(this).text() != "목차")
+          $("#category").append('<a style="color:black;" class="new'+tag+'" href="#dir'+i+'">'+$(this).text()+'</a></br>');
        $(".newh2").css("margin-left",25);
        $(".newh3").css("margin-left",45);
        $(".newh4").css("margin-left",65);
