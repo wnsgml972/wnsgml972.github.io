@@ -6,7 +6,7 @@ date: 2018-02-13
 author: KimJunHee
 category: MQTT
 tags: mqtt mosquitto
-finished: false
+finished: true
 ---
 
 ##

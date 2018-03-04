@@ -6,5 +6,5 @@ date: 2018-01-22
 author: KimJunHee
 category: Log
 tags: retrospective log
-finished: false
+finished: true
 ---
