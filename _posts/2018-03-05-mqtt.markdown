@@ -1,0 +1,208 @@
+---
+layout: post
+title: "MQTT 프로토콜 이란?"
+subtitle: ""
+date: 2018-03-05
+author: KimJunHee
+category: MQTT
+tags: mqtt mosquitto
+finished: true
+---
+
+## MQTT란?
+
+MQTT(Message Queue TELEMETRY TRANSPORT) 란 Broker Pattern을 이용한 메시징 프로토콜이다. <br/>
+말 그대로 TELEMETRY 장치, M2M(Machine to Machine, 사물지능통신), IoT(Internet of Things, 사물인터넷)에서 사용하기 위해 만들어졌으며 낮은 전력, 낮은 대역폭 환경에서도 사용할 수 있도록 설계됐다.
+
+
+<br/><br/>
+## MQTT 특징
+
+# Broker Pattern
+
+> Broker Pattern은 분리된 컴포넌트들로 이루어진 분산 시스템에서 사용됩니다. Broker 컴포넌트는 나머지 컴포넌트 간의 통신을 조정하는 역할을 합니다.
+
+- Publish, Subscribe
+
+![MQTT](/img/mqtt/4/pubsub.png)
+
+MQTT 프로토콜은 메시지를 해당 Topic에 발행(Publish) 하고 해당 Topic에 구독(Subscribe)하는 모양으로 이루어진다.<br/>
+위에 그림으로 볼 수 있다시피 Broker는 해당하는 클라이언트(Publisher, Subscribe)의 중개인이 되는것이다. <br/>
+예를들어 Publisher가 해당 Topic에 메시지를 발행하면 해당 Topic을 구독하고 있는 하나 이상의 Subscribe에게 Broker를 거쳐 메시지가 전달된다.
+
+- Topic
+
+위에 그림으로 알 수 있다시피 Publisher와 Subscribe는 Topic을 기준으로 메시지를 발행하거나 구독한다. 토픽은 문자열로 구성되어 있기 때문에 __(/)__ 를 이용하여 쉽게 구분지을 수 있다. <br/>
+예를 들어 채팅을 구성할 때 방 개념을 구현할 시 "chat/room/1/Message", "chat/room/2/Message" 등등의 방법을 사용할 수 있고 이러한 방식으로 구성되어 있기 때문에 대량의 센서 기기들을 관리하기 매우 효과적이다.
+
+- Message Bus
+
+![MQTT](/img/mqtt/4/bus.png)
+
+위 그림과 같이 MQTT Broker가 메시지 버스를 만들고 어플리케이션들은 Message Bus에 연결한다. <br/>
+즉 어플리케이션은 관심있는 Topic을 등록하여 메시지를 Subscribe나 Publish 하여 Message Bus를 통해 해당하는 일을 하게된다.
+
+# QoS
+
+> QoS(Quality of Service)란 서비스의 질을 보장해주는 레벨을 말합니다. 서비스의 종류에 따라서 적당한 QoS 레벨을 선택해야 합니다. <br/>
+통신을 할 때에 항상 완벽하게 보내야 할 필요는 없기 때문입니다. 때로는 속도를 빠르게 하기위해 오버헤드를 줄이기 위해 보내져도 좋고 안보내져도 상관 없는 경우도 존재합니다.
+
+![MQTT](/img/mqtt/4/qos.png)
+
+- Level 0 (At most once)
+
+__메시지는 한번만 전달한다.__ Fire and Forget이라고도 한다. 즉 보내고 잊는다. 한번만 전달하지만 전달여부는 확인하지 않는 타입이다.
+
+- Level 1 (At least once)
+
+__메시지는 최소 한번은 전달된다.__ 유일하게 핸드셰이킹 같은 연결 여부를 확인하지 않고 메시지를 전달하는 레벨이다.<br/>
+위에 그림으로 보다시피 메시지를 성공적으로 전달하면 Broker가 Publisher에게 PUBACK을 보내어 전달 성공을 알리지만 만약 정상적 통신이 이루어지지 않을 경우 Loss가 발생하여 PUBACK을 받지 못못하여 Publisher는 적정 시간이 지나 실패로 알고 다시 메시지를 보내어 Subscribe에게 중복메시지를 보내는 경우가 생기게 된다.
+
+- Level 2 (Exactly once)
+
+__메시지는 반드시 한번 전달된다.__ 위에 있는 PUBACK 과정을 PUBREC으로 핸드 셰이킹을 함으로서 메시지가 정확히 한번만 가는 레벨이다.<br/>
+만약 위의 과정처럼 Broker가 PUBREC을 전달 받지 못해 Loss가 일어나게 되어도 Broker는 이미 보냈다는 사실을 알고 있기 때문에 새로 보내지 않는다.
+
+
+<br/><br/>
+## 응용 분야
+
+# IoT (Sensor)
+
+> 최근 USN, M2M, IoT 등등 비슷한 맥락이지만 조금씩 다른 여러 기술들이 나오고 있습니다. 그 중 가장 이슈가 되고있는 IoT는 기존 M2M의 발전된 형태로 통신 장비와 사람과의 통신이 주 목적이었던 M2M에 더해서 통신의 범위를 사물까지 넓혀 우리가 쉽게 볼 수 있는 전화기, 온도계, 습도계 등등 사물과 사람의 통신이 가능하게 해주는 기술을 말합니다.
+
+- 센싱(Sensing) 기술
+
+대학교, 도시, 개인, 가전기기 등 다양한 영역에서 주위 환경으로부터 정보를 얻을 수 있다.
+
+- 유무선 통신 및 네트워크 인프라 기술
+
+LAN(근거리 네트워크), PAN(개인 네트워크), WPAN(무선 PAN), BAN(인체 네트워크), MAN(도시 네트워크) 등등 인간과 사물, 서비스를 연결 시킬 수 있는 모든 유무선 네트워크에서 사용할 수 있다.
+
+- IoT 서비스 인터페이스 기술
+
+IoT의 주요 3대 요소인 인간, 사물, 서비스를 특정 기능(센서에서 정보를 얻어와 행하는 행위)과 연동하는 인터페이스 역할을 수행한다.
+
+# Message Push Server
+
+> 많은 수의 다양한 앱과 서비스의 등장으로 HTTP 같은 기존의 프로토콜만으로는 다양한 요구사항을 수용하기 힘들게 되었고 제한된 통신 환경, 낮은 전력에서 작동하는 MQTT 프로토콜을 이용한 Message Push Server가 대두되고 있습니다.<br/>
+Facebook의 경우 MQTT Broker 중 하나 인 Mosquitto를 이용하여 메시지를 Push하고 있습니다.
+
+- Facebook Messenger
+
+Facebook에서는 수억 명의 회원의 메시지를 전송할 때 짧은 시간 내에 메시지가 전송될 수 있는 구조를 개발하는 데 주력했으며 이를 위해 MQTT 프로토콜 방식을 Facebook Messenger에 도입했으며 그로 인해 수 초 걸리던 전송 속도를 수백밀리 초로 단축할 수 있었다고 한다.<br/>
+
+기존의 채팅 서비스에서는 각 채팅방의 세션을 관리하는 것만으로도 서버 부하가 발생할 수 있었다. 이러한 이유로 Facebook Messenger에서는 MQTT Broker가 메시지 전달을 책임지게 하는 구조로 세션 관리에 대한 부하를 분산시켰다.
+
+
+<br/><br/>
+## MQTT Packet format
+
+# MQTT Control Packet 구조
+
+![MQTT](/img/mqtt/4/packet_structure.png)
+
+> Packet 전체 구조는 위에 그림과 같이 2 Bytes의 Fixed header, 옵션에 따른 Variable Header, Packet의 마지막 부분인 Payload로 이루어져 있습니다.
+
+# Fixed header
+
+- Message Type
+
+0 ~ 3 bit에 위치한 부분으로 메시지 제어 타입을 정의하며 4 비트의 공간인 2^4 개의 데이터 타입을 정의할 수 있다.
+
+Name     | Value     | Direction of flow     | Description
+----- | ----- | ----- | -----
+Reserved  | 0     | Forbidden     | 예약
+CONNECT   | 1     | 	Client to Server     | Client request to connect to Server
+CONNACK   | 2     | Server to Client     | Connect acknowledgment
+PUBLISH   | 3     | Client to Server or Server to Client     | Publish message
+PUBACK    | 4     | Client to Server or Server to Client     | Publish acknowledgment
+PUBREC    | 5     | Client to Server or Server to Client     | Publish received (assured delivery part 1)
+PUBREL    | 6     | Client to Server or Server to Client     | Publish release (assured delivery part 2)
+PUBCOMP   | 7     | Client to Server or Server to Client     | Publish complete (assured delivery part 3)
+SUBSCRIBE | 8     | Client to Server     | Client subscribe request
+SUBACK    | 9     | Server to Client     | Subscribe acknowledgment
+UNSUBSCRIBE | 10     | Client to Server     | Unsubscribe request
+UNSUBACK  | 11     | Server to Client     | Unsubscribe acknowledgment
+PINGREQ   | 12     | Client to Server     | PING request
+PINGRESP  | 13     | Server to Client     | PING response
+DISCONNECT| 14     | Client to Server     | Client is disconnecting
+Reserved  | 15     | Forbidden     | Reserved
+
+- Flags
+
+Bit position     | Name     | Description
+----- | ----- | -----
+3     | DUP     | Duplicate delivery of a PUBLISH Control Packet    
+2, 1     | QoS     | PUBLISH Quality of Service    
+0     | RETAIN     | PUBLISH Retain flag    
+
+__DUP는__ PUBLISH 제어 패킷의 중복 전달<br/>
+__QoS는__ PUBLISH 서비스 품질<br/>
+__RETAIN__ PUBLISH 플래그 유지<br/>
+
+- Remaining Length
+
+2 바이트에서 시작하며 variable header 및 payload의 데이터를 포함하여 현재 패킷 내에 남아있는 바이트 수 __즉 전체 메시지의 크기를 계산하기 위해서 사용한다.__ <br/>
+
+1 byte는 255까지 저장할 수 있다. 8개의 비트중 첫 번째를 다음 Remaining Byte를 사용할 건지 결정하기 위해서 사용한다. __따라서 각 Byte는 128개의 값과 "연속 비트"를 인코딩한다.__<br/>
+
+Remaining Length의 최대 바이트 수는 4이며 __따라서 MQTT에서 다룰 수 있는 최대 메시지의 크기는 (2^7)^4 인 256M이다.__
+
+
+# Variable header
+
+ __CONNECT__ Packet의 변수 헤더로 프로토콜 이름, 프로토콜 레벨, 연결 플래그 및 연결 유지 순으로 네 개의 필드로 구성
+
+ - 프로토콜 이름
+
+프로토콜 이름은 대문자로 된 프로토콜 이름 "MQTT"를 나타내는 UTF-8로 인코딩 된 문자열이다.
+
+ - 프로토콜 레벨
+
+클라이언트가 사용하는 프로토콜의 개정 레벨을 나타내는 부호없는 8 비트 값이다.
+
+ - 연결 플래그
+
+Connect Flags 바이트는 MQTT 연결의 동작을 지정하는 많은 매개 변수를 포함하며 페이로드의 필드가 있는지 여부를 나타낸다. 총 8개의 비트중 각 비트는 User Name Flag, Password Flag, Retain, QoS, Clean Session, Reserved를 나타낸다.
+
+ - 연결 유지
+
+Keep Alive는 초 단위로 측정 한 시간 간격이다. 서버가 Keep Alive 시간 기간의 1.5 배 이내에 클라이언트로부터 Control Packet을받지 못하면 네트웍 연결이 끊어진 것처럼 Client 와의 연결을 끊는다.<br/>
+이 Keep Alive 값을 0으로 설정하면 연결 유지 매커니즘이 해제된다
+
+
+<br/><br/>
+## Mosquitto MQTT Broker
+
+- [윈도우 Mosquitto 설치, 컴파일](https://wnsgml972.github.io/wnsgml972.github.io/mqtt/mqtt_windows-install.html)
+
+- [Mosquitto 자바 라이브러리 PAHO를 이용한 Chatting 프로그램](https://github.com/wnsgml972/MQTT-Chating)
+
+- Mosquitto는 MQTT 프로토콜 버전 3.1 및 3.1.1을 사용하는 메시지 브로커 중 하나이다.
+
+- C 기반이며 리눅스, 윈도우에서도 사용할 수 있으며 현재 모스키토 최신 버전에서는 WebSocket도 사용할 수 있다.
+
+- 단일 스레드 방식으로 poll() 을 이용해 루프를 돌며 이벤트를 체크한다.
+
+- 세션 관리는 일정 시간 패킷이 오지 않는다면 Keep Alive 메시지를 보내기 시작하고 메시지가 오지 않는다면 끊어버린다.
+
+- QoS는 0, 1, 2 Level을 지원하며 Default QoS는 0이다.
+
+- 멀티 Broker를 사용할 수 있는 Bridging을 지원한다. Mosquitto Bridge는 한 Broker가 작동하지 않을 시 그 작업을 대체하는 기능을 수행한다. 작동 방식은 한 클라이언트가 Publish를 하게 되면 한 Broker를 거쳐 다른 Broker에게 가고 마지막으로 구독자에게 가는 방식으로 동작한다.
+
+- User Authentication을 지원한다.
+
+- MySQL과 연동할 수 있다.
+
+
+<br/><br/>
+## 참고
+
+- <http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html>
+
+- <https://www.joinc.co.kr/w/man/12/MQTT/Tutorial>
+
+- <http://www.codejs.co.kr/mqtt-mq-telemetry-transport-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/>
+
+- <http://d2.naver.com/helloworld/1846>
