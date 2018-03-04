@@ -219,13 +219,13 @@ pre {
  * Table
  */
 
-table, th {
+table, th, td {
     width: 100%;
     table-layout: fixed;
     margin: 24px;
     text-align: center;
-    border-bottom: 1px solid #eee;
-    table-collapse : collapse;
+    border-bottom: 1px solid #000;
+    border-collapse : collapse;
     line-height: 25px;
     letter-spacing: 1px;
 }
