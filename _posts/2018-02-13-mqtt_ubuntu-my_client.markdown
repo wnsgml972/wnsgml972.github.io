@@ -11,7 +11,7 @@ finished: true
 
 ## ```my_pub.c```, ```my_sub.c``` 생성
 
-* ```my_pub.c```
+### ```my_pub.c```
 
 {% highlight c %}
 #include <errno.h>
@@ -74,7 +74,7 @@ int main(int argc, char **argv) {
 {% endhighlight %}
 
 <br/>
-* ```my_sub.c```
+### ```my_sub.c```
 
 {% highlight c %}
 #include <signal.h>
@@ -156,7 +156,8 @@ int main(int argc, char *argv[])
 }
 {% endhighlight %}
 
-* 완성 모습
+<br/>
+### 완성 모습
 
 ![MQTT](/img/mqtt/3/create.png)
 
@@ -165,28 +166,28 @@ int main(int argc, char *argv[])
 
 > 컴파일 시에 -lmosquitto를 붙여 컴파일을 해야 mosquitto library를 사용할 수 있습니다.
 
-* my_sub
+###  my_sub
 
 {% highlight bash %}
 $ gcc -o my_sub my_sub.c -lmosquitto
 {% endhighlight %}
 
-* my_pub
+###  my_pub
 
 {% highlight bash %}
 $ gcc -o my_pub my_pub.c -lmosquitto
 {% endhighlight %}
 
 <br/><br/>
-## 테스트
+## 확인
 
 > 마찬가지로 각각 다른 터미널을 이용하여 바이너리 파일로 Broker를 실행시켜 놓은 뒤 Publish와 Subscribe를 테스트 합니다.
 
-* my_sub
+###  my_sub
 
 ![MQTT](/img/mqtt/3/sub.png)
 
 <br/>
-* my_pub
+###  my_pub
 
 ![MQTT](/img/mqtt/3/pub.png)
