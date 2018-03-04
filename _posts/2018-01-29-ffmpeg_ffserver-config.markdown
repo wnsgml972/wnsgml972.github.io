@@ -174,10 +174,10 @@ $ hash -r
 {% endhighlight %}
 
 
-<br/><br/>
+<!-- <br/><br/>
 ## ffmpeg, ffserver 사용 법
 
-* <https://wnsgml972.github.io/wnsgml972.github.io/ffmpeg/ffmpeg_ffserver-streamming.html>
+* <https://wnsgml972.github.io/wnsgml972.github.io/ffmpeg/ffmpeg_ffserver-streamming.html> -->
 
 
 <br/><br/>

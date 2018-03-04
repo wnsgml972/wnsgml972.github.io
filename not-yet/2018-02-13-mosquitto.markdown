@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mosquitto MQTT Broker"
+title: "MQTT Broker Mosquitto 분석"
 subtitle: ""
 date: 2018-02-13
 author: KimJunHee
