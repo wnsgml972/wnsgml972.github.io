@@ -49,13 +49,14 @@ layout: default
 	<p>{{ page.subtitle }}</p>
 	{% endif %}
     </center>
-	<h2 class="hangle">목차 </h2><i id="dir_control" class="fa fa-plus"></i>
+	<h2 class="hangle">목차 <i id="dir_control" class="fa fa-plus"></i></h2>
 </div>
 
 <div id="category" class="hangle"></div>
 <script>
 $("#category").hide()
 $("#dir_control").click(function() {
+  alert("확인");
 	$("#dir_control").toggle(function() {
 		$("#dir_control").toggleClass("fa fa-plus fa fa-minus")
 	})
