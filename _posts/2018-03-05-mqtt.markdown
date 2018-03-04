@@ -41,8 +41,9 @@ finished: true
 
 ![MQTT](/img/mqtt/4/bus.png)
 
-* 위 그림과 같이 MQTT Broker가 메시지 버스를 만들고 어플리케이션들은 Message Bus에 연결한다. <br/>
-즉 어플리케이션은 관심있는 Topic을 등록하여 메시지를 Subscribe나 Publish 하여 Message Bus를 통해 해당하는 일을 하게된다.
+* 위 그림과 같이 MQTT Broker가 메시지 버스를 만들고 어플리케이션들은 Message Bus에 연결한다.
+
+* 즉 어플리케이션은 관심있는 Topic을 등록하여 메시지를 Subscribe나 Publish 하여 Message Bus를 통해 해당하는 일을 하게된다.
 
 <br/>
 ### QoS
@@ -58,13 +59,15 @@ finished: true
 
 #### Level 1 (At least once)
 
-* __메시지는 최소 한번은 전달된다.__ 유일하게 핸드셰이킹 같은 연결 여부를 확인하지 않고 메시지를 전달하는 레벨이다.<br/>
-위에 그림으로 보다시피 메시지를 성공적으로 전달하면 Broker가 Publisher에게 PUBACK을 보내어 전달 성공을 알리지만 만약 정상적 통신이 이루어지지 않을 경우 Loss가 발생하여 PUBACK을 받지 못못하여 Publisher는 적정 시간이 지나 실패로 알고 다시 메시지를 보내어 Subscribe에게 중복메시지를 보내는 경우가 생기게 된다.
+* __메시지는 최소 한번은 전달된다.__ 유일하게 핸드셰이킹 같은 연결 여부를 확인하지 않고 메시지를 전달하는 레벨이다.
+
+* 위에 그림을 보면 메시지를 성공적으로 전달하면 Broker가 Publisher에게 PUBACK을 보내어 전달 성공을 알리지만 만약 정상적 통신이 이루어지지 않을 경우 Loss가 발생하여 PUBACK을 받지 못못하여 Publisher는 적정 시간이 지나 실패로 알고 다시 메시지를 보내어 Subscribe에게 중복메시지를 보내는 경우가 생기게 된다.
 
 #### Level 2 (Exactly once)
 
-* __메시지는 반드시 한번 전달된다.__ 위에 있는 PUBACK 과정을 PUBREC으로 핸드 셰이킹을 함으로서 메시지가 정확히 한번만 가는 레벨이다.<br/>
-만약 위의 과정처럼 Broker가 PUBREC을 전달 받지 못해 Loss가 일어나게 되어도 Broker는 이미 보냈다는 사실을 알고 있기 때문에 새로 보내지 않는다.
+* __메시지는 반드시 한번 전달된다.__ 위에 있는 PUBACK 과정을 PUBREC으로 핸드 셰이킹을 함으로서 메시지가 정확히 한번만 가는 레벨이다.
+
+* 만약 위의 과정처럼 Broker가 PUBREC을 전달 받지 못해 Loss가 일어나게 되어도 Broker는 이미 보냈다는 사실을 알고 있기 때문에 새로 보내지 않는다.
 
 
 <br/><br/>
