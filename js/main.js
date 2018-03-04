@@ -12,7 +12,8 @@ $(document).ready(function(){
        $(".newh4").css("margin-left",65);
        $(".newh5").css("margin-left",85);
        $(".newh6").css("margin-left",105);
-      });
+       $("#category_count").html("총").append(i).append("개의 Categories");
+    });
 
     $("#category").hide();
 });
