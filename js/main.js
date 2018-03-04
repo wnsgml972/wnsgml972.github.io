@@ -7,8 +7,6 @@ $(document).ready(function(){
        $(item).attr("id","dir"+i);
        if($(item).attr("id") != "dir0" && $(item).text() != "목차 ")
           $("#category").append('<a style="color:black;" class="new'+tag+'" href="#dir'+i+'">'+$(this).text()+'</a></br>');
-       if($(item).attr("id") != "dir1")
-          alert($(item).text());
        $(".newh2").css("margin-left",25);
        $(".newh3").css("margin-left",45);
        $(".newh4").css("margin-left",65);
