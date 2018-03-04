@@ -57,18 +57,18 @@ $ sudo make install
 {% endhighlight %}
 
 <br/><br/>
-## 테스트
+## 확인
 
 > Broker, Subscribe, Publish 셋 다 다른 터미널에서 작동합니다.
 
-* Install Mosquitto-Clients
+### Install Mosquitto-Clients
 
 {% highlight bash %}
 $ sudo apt-get install mosquitto-clients
 {% endhighlight %}
 
 <br/>
-* Start Broker
+### Start Broker
 
 {% highlight bash %}
 $ mosquitto
@@ -77,7 +77,7 @@ $ mosquitto
 ![MQTT](/img/mqtt/2/broker.png)
 
 <br/>
-* Client (Subscribe, Publish)
+### Client (Subscribe, Publish)
 
 {% highlight bash %}
 $ mosquitto_sub -t 'topic' -h 127.0.0.1
