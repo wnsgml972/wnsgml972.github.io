@@ -102,27 +102,27 @@ a {
     transition: border .5s;
 }
 
-a:hover {  // 수정 필요
+a:hover {  // 수정 ?
     border-bottom: 2px dotted #000;
 }
 
 
-.post-content h2:before {  // 수정 필요
+.post-content h2:before {  // 수정 ?
     content: "¶ ";
     margin-right: 20px;
     color: #25bcba;
 }
 
-.post-content h3:before {  // 수정 필요
+.post-content h3:before {  // 수정 ?
     content: "¶ ";
     margin-right: 20px;
     color: #466FC4;
 }
 
-.post-content h4:before {  // 수정 필요
+.post-content h4:before {  // 수정 ?
     content: "¶ ";
     margin-right: 20px;
-    margin-left: 10px;
+    margin-left: 20px;
     color: skyblue;
 }
 
