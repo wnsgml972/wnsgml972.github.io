@@ -110,9 +110,9 @@ a:hover {  // 수정 필요
 }
 
 .post-content h3:before {  // 수정 필요
-    content: "¶¶ ";
+    content: "¶ ";
     margin-right: 25px;
-    color: #25bcba;
+    color: #466FC4;
 }
 
 .link {
@@ -220,8 +220,7 @@ table, th {
     table-layout: fixed;
     margin: 24px;
     text-align: center;
-    border-bottom: 1px solid #000;
-    border-collapse: collapse;
+    border-bottom: 1px solid #eee;
     line-height: 25px;
     letter-spacing: 1px;
 }
