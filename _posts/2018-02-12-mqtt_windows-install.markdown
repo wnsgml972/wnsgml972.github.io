@@ -29,16 +29,14 @@ MQTT 프로토콜에 대해 잘 모르신다면 [MQTT 프로토콜 이란?](http
 ### [Window Visual studio Express 2015 다운](https://www.visualstudio.com/ko/downloads/?rr=https%3A%2F%2Fmsdn.microsoft.com%2Fko-kr%2Flibrary%2Fe2h7fzkw.aspx)
 
 <br/>
-### [Download and unzip cmake]( https://cmake.org/download/
-)
+### [Download and unzip cmake]( https://cmake.org/download/)
 
 * libwebsocket, mosquitto 프로젝트의 CmakeLists.txt 에 따라 프로젝트를 빌드하여 생성하기 위해 필요
 
 ![MQTT](/img/mqtt/1/cmake.png)
 
 <br/>
-### [pthread-win32 download & install
-](ftp://sourceware.org/pub/pthreads-win32/pthreads-w32-2-9-1-release.zip)
+### [pthread-win32 download & install](ftp://sourceware.org/pub/pthreads-win32/pthreads-w32-2-9-1-release.zip)
 
 
 * Mosquitto에서 저 경로에 pthreads라는 폴더를 찾기 때문에 꼭 이름, 경로가 일치해야 함 __pthreads위에 또 폴더가 존재해선 안됨__<br/>
@@ -47,9 +45,7 @@ __```c:\pthreads\``` 경로에 unzip__
 ![MQTT](/img/mqtt/1/pthread.png)
 
 <br/>
-### [OpenSSL library download & install
-](https://slproweb.com/products/Win32OpenSSL.html
-)
+### [OpenSSL library download & install](https://slproweb.com/products/Win32OpenSSL.html)
 
 * 컴파일을 위해서는 Light 버전이 아닌 FULL 버전 설치, (프로그램 실행만을 위해서는 Light 버전) <br/>
 __pthreads와 마찬가지로 ```c:\OpenSSL-Win32\``` 경로에 unzip__
@@ -58,8 +54,7 @@ __pthreads와 마찬가지로 ```c:\OpenSSL-Win32\``` 경로에 unzip__
 
 
 <br/>
-### [libwebsocket source download](https://github.com/warmcat/libwebsockets/releases
-)
+### [libwebsocket source download](https://github.com/warmcat/libwebsockets/releases)
 
 * 최신버전 다운<br/>
 __마찬가지로 ```c:\libtemp\``` 경로에 unzip__
@@ -68,9 +63,7 @@ __마찬가지로 ```c:\libtemp\``` 경로에 unzip__
 
 
 <br/>
-### [mosquitto source download
-](https://github.com/eclipse/mosquitto/releases
-)
+### [mosquitto source download](https://github.com/eclipse/mosquitto/releases)
 
 * mosquitto1.4.14  다운<br/>
 __마찬가지로 ```c:\mostemp\``` 경로에 unzip__
@@ -279,7 +272,7 @@ mosquitto_passwd 프로젝트 -> 링커 -> 입력 ```optimized.lib``` 제거 및
 ![MQTT](/img/mqtt/1/mos18.png)
 
 <br/>
-## Test
+## 확인
 
 * 이제 Debug 모드로 visual studio에서 debug를 진행한다. 그밖에 dll 파일이 없다고 나온다면 각각 ```\build\src\Debug``` 나 ```\build\client\Debug``` 폴더에 넣어주면 된다.
 
