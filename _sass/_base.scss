@@ -109,6 +109,12 @@ a:hover {  // 수정 필요
     color: #25bcba;
 }
 
+.post-content h3:before {  // 수정 필요
+    content: "¶¶ ";
+    margin-right: 25px;
+    color: #25bcba;
+}
+
 .link {
     padding: 2px;
     color: #25b3bc;
@@ -214,7 +220,7 @@ table, th {
     table-layout: fixed;
     margin: 24px;
     text-align: center;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #000;
     border-collapse: collapse;
     line-height: 25px;
     letter-spacing: 1px;

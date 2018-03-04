@@ -11,20 +11,20 @@ finished: true
 
 ## MQTT란?
 
-MQTT(Message Queue TELEMETRY TRANSPORT) 란 Broker Pattern을 이용한 메시징 프로토콜이다. 말 그대로 TELEMETRY 장치, M2M(Machine to Machine, 사물지능통신), IoT(Internet of Things, 사물인터넷)에서 사용하기 위해 만들어졌으며 낮은 전력, 낮은 대역폭 환경에서도 사용할 수 있도록 설계됐다.
+MQTT(Message Queue TELEMETRY TRANSPORT)란 Broker Pattern을 이용한 메시징 프로토콜이다. 말 그대로 TELEMETRY 장치, M2M(Machine to Machine, 사물지능통신), IoT(Internet of Things, 사물인터넷)에서 사용하기 위해 만들어졌으며 낮은 전력, 낮은 대역폭 환경에서도 사용할 수 있도록 설계됐다.
 
 
 <br/><br/>
 ## MQTT 특징
 
 <br/>
-<span style="color:#466FC4; font-size:1.3em;">Broker Pattern</span>
+### Broker Pattern
 
 > Broker Pattern은 분리된 컴포넌트들로 이루어진 분산 시스템에서 사용됩니다. Broker 컴포넌트는 나머지 컴포넌트 간의 통신을 조정하는 역할을 합니다.
 
-- Publish, Subscribe
-
 ![MQTT](/img/mqtt/4/pubsub.png)
+
+- Publish, Subscribe
 
 MQTT 프로토콜은 메시지를 해당 Topic에 발행(Publish) 하고 해당 Topic에 구독(Subscribe)하는 모양으로 이루어진다.<br/>
 위에 그림을 보면 Broker는 해당하는 클라이언트(Publisher, Subscribe)의 중개인이 되는 것이다. <br/>
@@ -54,7 +54,7 @@ MQTT 프로토콜은 메시지를 해당 Topic에 발행(Publish) 하고 해당 
 
 - Level 0 (At most once)
 
-__메시지는 한번만 전달한다.__ Fire and Forget이라고도 한다. 즉 보내고 잊는다. 한번만 전달하지만 전달여부는 확인하지 않는 타입이다.
+__메시지는 한번만 전달한다.__ Fire and Forget이라고도 한다. 즉 보내고 잊는다. 한번만 전달하지만 전달여부는 확인하지 않는 레벨이다.
 
 <br/>
 - Level 1 (At least once)
@@ -123,7 +123,7 @@ Facebook에서는 수억 명의 회원의 메시지를 전송할 때 짧은 시�
 
 Name     | Value     | Direction of flow     | Description
 ----- | ----- | ----- | -----
-Reserved  | 0     | Forbidden     | 예약
+Reserved  | 0     | Forbidden     | Reserved
 CONNECT   | 1     | 	Client to Server     | Client request to connect to Server
 CONNACK   | 2     | Server to Client     | Connect acknowledgment
 PUBLISH   | 3     | Client to Server or Server to Client     | Publish message
