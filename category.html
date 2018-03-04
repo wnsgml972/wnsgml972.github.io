@@ -14,11 +14,11 @@
   }
 </style>
 
-{% for category in site.categories %}
-{% capture cat %}{{ category | first }}{% endcapture %}
-
 <h2>Category <i id="dir_control" class="fa fa-plus"></i></h2>
 <div id="category" class="hangle"></div>
+
+{% for category in site.categories %}
+{% capture cat %}{{ category | first }}{% endcapture %}
 
 <h2>{{ cat }}</h2>
 	<ul>
