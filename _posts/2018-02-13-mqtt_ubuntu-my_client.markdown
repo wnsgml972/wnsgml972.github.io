@@ -14,13 +14,13 @@ finished: true
 ### ```my_pub.c```
 
 {% highlight c %}
+
 #include <errno.h>
 #include <fcntl.h>
 #include <stdlib.h>
 #include <string.h>
 #include <mosquitto.h>
 #include <stdio.h>
-//#include <unistd.h>
 
 #define MQTT_HOSTNAME "localhost"
 #define MQTT_PORT 1883
@@ -28,9 +28,6 @@ finished: true
 #define MQTT_PASSWORD "admin"
 #define MQTT_TOPIC "myTopic"
 
-/*
- * Start here
- */
 
 int main(int argc, char **argv) {
    struct mosquitto *mosq = NULL;
@@ -71,6 +68,7 @@ int main(int argc, char **argv) {
 
    return 0;
 }
+
 {% endhighlight %}
 
 <br/>
