@@ -55,7 +55,7 @@ finished: true
 
 #### Level 0 (At most once)
 
-* __메시지는 한번만 전달한다.__ Fire and Forget이라고도 한다. 즉 보내고 잊는다. 한번만 전달하지만 전달여부는 확인하지 않는 레벨이다.
+* __메시지는 한번만 전달된다.__ Fire and Forget이라고도 한다. 즉 보내고 잊는다. 한번만 전달하지만 전달여부는 확인하지 않는 레벨이다.
 
 #### Level 1 (At least once)
 
