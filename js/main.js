@@ -7,7 +7,7 @@ $(document).ready(function(){
     $("h2,h3,h4,h5,h6").each(function(i,item){
        var tag = $(item).get(0).localName;
 
-       $(".date").each(function(i_a, item_a){
+       $("span > .date").each(function(i_a, item_a){
          var tag_a = $(item_a).get(0).localName;
          total_posts++;
        });
