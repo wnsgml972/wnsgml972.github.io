@@ -14,12 +14,21 @@
   }
 </style>
 
+<script>
+  var total_posts = 0;
+
+</script>
+
 <h2>Categories <i id="dir_control" class="fa fa-plus"></i></h2>
-<div id="category_count" class="hangle"></div>
+<div id="category_count" class="hangle"><span id="posts_count" class="hangle"></span></div>
 <div id="category" class="hangle"></div>
 
 {% for category in site.categories %}
 {% capture cat %}{{ category | first }}{% endcapture %}
+
+<script>
+  total_posts++;
+</script>
 
 <h2>{{ cat }}</h2>
 	<ul>
@@ -32,3 +41,7 @@
 	</ul>
 
 {% endfor %}
+
+<script>
+       $("#posts_count").html("총").append(i).append("개의 Posts");
+</script>
