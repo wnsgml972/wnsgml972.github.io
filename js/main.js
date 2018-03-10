@@ -7,7 +7,7 @@ $(document).ready(function(){
     $("h2,h3,h4,h5,h6").each(function(i,item){
        var tag = $(item).get(0).localName;
 
-       $("span > .date").each(function(i_a, item_a){
+       $(".date").each(function(i_a, item_a){
          var tag_a = $(item_a).get(0).localName;
          total_posts++;
        });
@@ -20,7 +20,7 @@ $(document).ready(function(){
        $(".newh4").css("margin-left",65);
        $(".newh5").css("margin-left",85);
        $(".newh6").css("margin-left",105);
-       $("#category_count").html("총").append(i).append("개의 Categories, ").append(total_posts).append("개의 Posts");
+       $("#category_count").html("총").append(i).append("개의 Categories, ").append(total_posts/7).append("개의 Posts");
     });
 
     $("#category").hide();
