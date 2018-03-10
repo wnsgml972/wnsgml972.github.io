@@ -4,6 +4,7 @@ $(document).ready(function(){
 
     $("h2,h3,h4,h5,h6").each(function(i,item){
        var tag = $(item).get(0).localName;
+       var total_posts = 0;
        $(item).attr("id","dir"+i);
        if($(item).attr("id") != "dir0" && $(item).text() != "목차 ")
           $("#category").append('<a style="color:black;" class="new'+tag+'" href="#dir'+i+'">'+$(this).text()+'</a></br>');
@@ -12,6 +13,9 @@ $(document).ready(function(){
        $(".newh4").css("margin-left",65);
        $(".newh5").css("margin-left",85);
        $(".newh6").css("margin-left",105);
+
+       total_posts++;
+
        $("#category_count").html("총").append(i).append("개의 Categories");
     });
 
