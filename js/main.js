@@ -16,7 +16,7 @@ $(document).ready(function(){
        $(".newh5").css("margin-left",85);
        $(".newh6").css("margin-left",105);
        total_posts++;
-       $("#category_count").html("총").append(i).append("개의 Categories");
+       $("#category_count").html("총").append(i).append("개의 Categories, ").append(total_posts).append("개의 Posts");
     });
 
     $("#category").hide();
