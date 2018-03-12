@@ -16,3 +16,6 @@ skillstree: true # turn on or off the skills tree in about page
 # Build settings
 permalink: none
 markdown: kramdown
+
+# Amount of post to show on home page
+paginate: 6

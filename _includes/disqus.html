@@ -1,4 +1,4 @@
-<div id="disqus_thread"></div>
+{% if page.comments != false and site.disqus_username %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
 
 {% if site.disqus_username %}
     <script type="text/javascript">
