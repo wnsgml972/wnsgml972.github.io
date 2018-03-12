@@ -1,3 +1,8 @@
+
+{% if site.disqus.count %}
+	<script id="dsq-count-scr" src="https://{{site.disqus.shortname}}.disqus.com/count.js" async></script>
+{% endif %}
+
 {% if page.comments != false and site.disqus_username %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
 
 {% if site.disqus_username %}
