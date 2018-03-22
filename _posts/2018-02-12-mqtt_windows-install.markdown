@@ -15,9 +15,7 @@ MQTT 프로토콜에 대해 잘 모르신다면 [MQTT 프로토콜 이란?](http
 ## 개발 환경
 
 * Mosquitto-1.4.14  (구버전도 가능)
-
 * Visual studio 2015  (2017도 가능)
-
 * Window 10 pro 64bit  (Window 7도 가능)
 
 

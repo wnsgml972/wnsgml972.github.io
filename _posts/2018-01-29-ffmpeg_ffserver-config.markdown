@@ -184,5 +184,4 @@ $ hash -r
 ## 참고
 
 * <https://gist.github.com/andersao/07645c6660321e2233bc>
-
 * <https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu>

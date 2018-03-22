@@ -16,8 +16,6 @@ finished: true
 ### xml 설정
 
 * [/sitemap.xml](https://github.com/wnsgml972/wnsgml972.github.io/blob/master/sitemap.xml "sitemap.xml")을 작성한다.
-
-
 * Github에 sitemap.xml을 push 한 뒤 직접 url 주소를 쳐서 확인한다.
 
 ![GitBlog](/img/gitBlog/2/gitBlog_sitexml.png "site.xml")
@@ -40,7 +38,6 @@ Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
 ### Search Console 등록
 
 * [Google Search Console](https://www.google.com/webmasters/#?modal_active=none "Google Search") 등록 하기
-
 * Search Console 클릭한다.
 
 ![GitBlog](/img/gitBlog/2/gitBlog_search-console.png "Search")
@@ -73,7 +70,6 @@ Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
 ### Search Console 등록
 
 * [Naver Search Console](https://www.google.com/webmasters/#?modal_active=none "Google Search") 등록 하기
-
 * 로그인 하게되면 나오게 되는 사이트 추가 버튼을 클릭한다.
 
 ![GitBlog](/img/gitBlog/2/gitBlog_addNaver.png "Add Naver")
@@ -89,7 +85,6 @@ Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
 * 만약 feed.xml이 만들어져 있지 않다면 [feed.xml](https://github.com/wnsgml972/wnsgml972.github.io/blob/master/feed.xml "feed.xml")을 작성한다.
 
 * feed.xml, sitemap.xml, robots.txt를 모두 github에 push하여 확인한다.
-
 * feed.xml을 제출한다.
 
 ![GitBlog](/img/gitBlog/2/gitBlog_addFeed.png "Add Feed")
@@ -102,5 +97,4 @@ Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
 ## 참고
 
 * <https://gmlwjd9405.github.io/2017/10/20/include-blog-in-a-GoogleSearchEngine.html>
-
 * <https://nesoy.github.io/articles/2017-01/blog-search>

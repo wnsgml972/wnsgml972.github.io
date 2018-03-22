@@ -188,9 +188,6 @@ Bit position     | Name     | Description
 ## 참고
 
 - <http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html>
-
 - <https://www.joinc.co.kr/w/man/12/MQTT/Tutorial>
-
 - <http://www.codejs.co.kr/mqtt-mq-telemetry-transport-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/>
-
 - <http://d2.naver.com/helloworld/1846>

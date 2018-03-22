@@ -23,7 +23,6 @@ finished: true
 ## 스케치 환경 설정
 
 * Installer에서 USB 드라이버를 다운 받는다.
-
 * 포트 설정을 변경한다.
 
 ![Arduino](/img/arduino/1/arduino_port.png "Change Port")

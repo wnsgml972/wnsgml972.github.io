@@ -14,7 +14,6 @@ finished: true
 ## .gitignore란?
 
 * ```.gitignore```란 하나의 파일로서 Git 버전 관리에서 제외할 파일 목록을 지정하는 파일이다.
-
 * 예를들어 ```Backup File```이나 ```Log File``` 등등이 여기에 해당될 수 있다.
 
 
@@ -22,7 +21,6 @@ finished: true
 ## .gitignore 설정하기
 
 * ```.gitignore```파일은 항상 최상위 Directory에 존재해야 한다.
-
 * 다음과 같이 직접 .gitignore 파일을 작성할 수도 있고
 
 {% highlight bash %}
@@ -50,7 +48,6 @@ _site/
 ## .gitignore 적용하기
 
 * 이제 만들어진 ```.gitignore```파일을 Push 하기만 하면 된다.
-
 * 하지만 하기전에 이미 기존 Project에 버전 관리에 포함되어 있는 파일들은 수동으로 삭제 해줘야 한다. 이경우에는 아래의 명령어를 사용한다.
 
 {% highlight bash %}
@@ -64,5 +61,4 @@ $ git commit -m "fixed untracked files"
 ## 참고
 
 * <https://nesoy.github.io/articles/2017-01/Git-Ignore>
-
 * <https://gmlwjd9405.github.io/2017/10/06/make-gitignore-file.html>

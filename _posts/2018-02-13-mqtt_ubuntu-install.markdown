@@ -15,7 +15,6 @@ MQTT 프로토콜에 대해 잘 모르신다면 [MQTT 프로토콜 이란?](http
 ## 개발 환경
 
 * Mosquitto-1.4.14
-
 * Ubuntu 16.04.3-desktop-amd64
 
 

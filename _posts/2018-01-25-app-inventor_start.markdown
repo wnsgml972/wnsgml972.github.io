@@ -27,7 +27,6 @@ finished: true
 > 앱 인벤터는 앱의 모양을 만드는 Designer와 직접 코딩을 작업하는 부분인 Blocks로 나누어져 있습니다.
 
 * Designer는 user interface와 같은 보이는 컴포넌트(visible component)와 소리나 센서처럼보이지 않는 컴포넌트(non-visible component)로 나뉘어져 있다.
-
 * Block은 여러가지 이벤트 처리나 논리 연산 변수 값 조절 등등 여러가지 코딩을 할 수 있다.
 
 
