@@ -11,7 +11,7 @@ finished: true
 
 ## MQTT란?
 
-* <p>MQTT(Message Queue Telemetry Transport)란 Broker Pattern을 이용한 메시징 프로토콜이다. Telemetry 장치, M2M(Machine to Machine, 사물지능통신), IoT(Internet of Things, 사물인터넷)에서 사용하기 위해 만들어졌으며 낮은 전력, 낮은 대역폭 환경에서도 사용할 수 있도록 설계됐다.</p>
+* MQTT(Message Queue Telemetry Transport)란 Broker Pattern을 이용한 메시징 프로토콜이다. Telemetry 장치, M2M(Machine to Machine, 사물지능통신), IoT(Internet of Things, 사물인터넷)에서 사용하기 위해 만들어졌으며 낮은 전력, 낮은 대역폭 환경에서도 사용할 수 있도록 설계됐다.
 
 <br/><br/>
 ## MQTT 특징
@@ -54,7 +54,9 @@ finished: true
 
 #### Level 0 (At most once)
 
-* <p>__메시지는 한번만 전달된다.__ Fire and Forget이라고도 한다. 즉 보내고 잊는다. 한번만 전달하지만 전달여부는 확인하지 않는 레벨이다.</p>
+* __메시지는 한번만 전달된다.__ Fire and Forget이라고도 한다. 즉 보내고 잊는다. 한번만 전달하지만 전달여부는 확인하지 않는 레벨이다.
+
+* 
 
 #### Level 1 (At least once)
 
