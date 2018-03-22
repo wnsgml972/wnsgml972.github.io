@@ -83,7 +83,6 @@ Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
 ### xml 설정
 
 * 만약 feed.xml이 만들어져 있지 않다면 [feed.xml](https://github.com/wnsgml972/wnsgml972.github.io/blob/master/feed.xml "feed.xml")을 작성한다.
-
 * feed.xml, sitemap.xml, robots.txt를 모두 github에 push하여 확인한다.
 * feed.xml을 제출한다.
 
