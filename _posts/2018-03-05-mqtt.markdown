@@ -11,7 +11,7 @@ finished: true
 
 ## MQTT란?
 
-* MQTT(Message Queue Telemetry Transport)란 Broker Pattern을 이용한 메시징 프로토콜이다. 말 그대로 Telemetry 장치, M2M(Machine to Machine, 사물지능통신), IoT(Internet of Things, 사물인터넷)에서 사용하기 위해 만들어졌으며 낮은 전력, 낮은 대역폭 환경에서도 사용할 수 있도록 설계됐다.
+* MQTT(Message Queue Telemetry Transport)란 Broker Pattern을 이용한 메시징 프로토콜이다. Telemetry 장치, M2M(Machine to Machine, 사물지능통신), IoT(Internet of Things, 사물인터넷)에서 사용하기 위해 만들어졌으며 낮은 전력, 낮은 대역폭 환경에서도 사용할 수 있도록 설계됐다.
 
 
 <br/><br/>
@@ -48,8 +48,8 @@ finished: true
 <br/>
 ### QoS
 
-> QoS(Quality of Service)란 서비스의 질을 보장해주는 레벨을 말합니다. 서비스의 종류에 따라서 적당한 QoS 레벨을 선택해야 합니다. <br/>
-통신을 할 때에 항상 완벽하게 보내야 할 필요는 없기 때문입니다. 때로는 속도를 빠르게 하기위해 오버헤드를 줄이기 위해 보내져도 좋고 안보내져도 상관 없는 경우도 존재합니다.
+> QoS(Quality of Service)란 서비스의 질을 보장해주는 레벨을 말합니다. 서비스의 종류에 따라서 적당한 QoS 레벨을 선택해야 합니다. 그렇다면 고려해야 할 서비스는 어떤 것을 말하는 것일까? <br/>
+메시지의 신뢰도, 속도, 그리고 환경(TCP, No/TCP)입니다. MQTT 프로토콜의 핵심중 하나는 "최대 한번", "적어도 한 번", "정확히 한 번"이라는 세 가지 QoS를 통해 No TCP/IP 환경, 저전력, 신뢰할 수 없는 네트워크에서도 중요 메시지에 대한 전달을 보장한다는 것입니다. IoT기반의 통신에는 신뢰성 또한 고려되어야만 하는데, Handshake과정을 거치는 TCP/IP 환경에 비해 No TCP/IP환경에서는 패킷의 손실이 발생할 수 있습니다.
 
 ![MQTT](/img/mqtt/4/qos.png)
 
