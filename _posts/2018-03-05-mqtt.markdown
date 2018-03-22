@@ -25,15 +25,12 @@ finished: true
 #### Publish, Subscribe
 
 * MQTT 프로토콜은 메시지를 해당 Topic에 발행(Publish) 하고 해당 Topic에 구독(Subscribe)하는 모양으로 이루어진다.
-
 * 위에 그림을 보면 Broker는 해당하는 클라이언트(Publisher, Subscribe)의 중개인이 되는 것이다.
-
 * 예를들어 Publisher가 해당 Topic에 메시지를 발행하면 해당 Topic을 구독하고 있는 하나 이상의 Subscriber에게 Broker를 거쳐 메시지가 전달된다.
 
 #### Topic
 
 * 위에 그림을 보면 Publisher와 Subscriber는 Topic을 기준으로 메시지를 발행하거나 구독한다. Topic은 문자열로 구성되어 있기 때문에 ``` / ``` 를 이용하여 쉽게 구분지을 수 있다.
-
 * 예를 들어 채팅을 구성할 때 방 개념을 구현할 시 ```"chat/room/1/Message"```, ```"chat/room/2/Message"``` 등등의 방법을 사용할 수 있고 이러한 구조로 구성되어 있기 때문에 대량의 센서 기기들을 관리하기 매우 효과적이다.
 
 #### Message Bus
@@ -41,7 +38,6 @@ finished: true
 ![MQTT](/img/mqtt/4/bus.png)
 
 * 위 그림과 같이 MQTT Broker가 메시지 버스를 만들고 어플리케이션들은 Message Bus에 연결한다.
-
 * 즉 어플리케이션은 관심있는 Topic을 등록하여 메시지를 Subscribe나 Publish 하여 Message Bus를 통해 해당하는 일을 하게된다.
 
 <br/>
@@ -56,18 +52,14 @@ finished: true
 
 * __메시지는 한번만 전달된다.__ Fire and Forget이라고도 한다. 즉 보내고 잊는다. 한번만 전달하지만 전달여부는 확인하지 않는 레벨이다.
 
-* 
-
 #### Level 1 (At least once)
 
 * __메시지는 최소 한번은 전달된다.__ 유일하게 핸드셰이킹 같은 연결 여부를 확인하지 않고 메시지를 전달하는 레벨이다.
-
 * 위에 그림을 보면 메시지를 성공적으로 전달하면 Broker가 Publisher에게 PUBACK을 보내어 전달 성공을 알리지만 만약 정상적 통신이 이루어지지 않을 경우 Loss가 발생하여 PUBACK을 받지 못못하여 Publisher는 적정 시간이 지나 실패로 알고 다시 메시지를 보내어 Subscribe에게 중복메시지를 보내는 경우가 생기게 된다.
 
 #### Level 2 (Exactly once)
 
 * __메시지는 반드시 한번 전달된다.__ 위에 있는 PUBACK 과정을 PUBREC으로 핸드 셰이킹을 함으로서 메시지가 정확히 한번만 가는 레벨이다.
-
 * 만약 위의 과정처럼 Broker가 PUBREC을 전달 받지 못해 Loss가 일어나게 되어도 Broker는 이미 보냈다는 사실을 알고 있기 때문에 새로 보내지 않는다.
 
 
@@ -99,7 +91,6 @@ Facebook의 경우 MQTT Broker 중 하나 인 Mosquitto를 이용하여 메시�
 #### Facebook Messenger
 
 * Facebook에서는 수억 명의 회원의 메시지를 전송할 때 짧은 시간 내에 메시지가 전송될 수 있는 구조를 개발하는 데 주력했으며 이를 위해 MQTT 프로토콜 방식을 Facebook Messenger에 도입했으며 그로 인해 수 초 걸리던 전송 속도를 수백밀리 초로 단축할 수 있었다고 한다.
-
 * 기존의 채팅 서비스에서는 각 채팅방의 세션을 관리하는 것만으로도 서버 부하가 발생할 수 있었다. 이러한 이유로 Facebook Messenger에서는 MQTT Broker가 메시지 전달을 책임지게 하는 구조로 세션 관리에 대한 부하를 분산시켰다.
 
 
@@ -153,9 +144,7 @@ Bit position     | Name     | Description
 #### Remaining Length
 
 * 2 바이트에서 시작하며 variable header 및 payload의 데이터를 포함하여 현재 패킷 내에 남아있는 바이트 수 __즉 전체 메시지의 크기를 계산하기 위해서 사용한다.__
-
 * 1 byte는 255까지 저장할 수 있다. 8개의 비트중 첫 번째를 다음 Remaining Byte를 사용할 건지 결정하기 위해서 사용한다. __따라서 각 Byte는 128개의 값과 "연속 비트"를 인코딩한다.__
-
 * Remaining Length의 최대 바이트 수는 4이며 __따라서 MQTT에서 다룰 수 있는 최대 메시지의 크기는 (2^7)^4 인 256M이다.__
 
 <br/>
@@ -185,25 +174,15 @@ Bit position     | Name     | Description
 ## Mosquitto MQTT Broker
 
 - [윈도우 Mosquitto 설치, 컴파일](https://wnsgml972.github.io/wnsgml972.github.io/mqtt/mqtt_windows-install.html)
-
 - [Mosquitto 자바 라이브러리 PAHO를 이용한 Chatting 프로그램](https://github.com/wnsgml972/MQTT-Chating)
-
 - Mosquitto는 MQTT 프로토콜 버전 3.1 및 3.1.1을 사용하는 메시지 브로커 중 하나이다.
-
 - C 기반이며 리눅스, 윈도우에서도 사용할 수 있으며 현재 모스키토 최신 버전에서는 WebSocket도 사용할 수 있다.
-
 - 단일 스레드 방식으로 poll() 을 이용해 루프를 돌며 이벤트를 체크한다.
-
 - 세션 관리는 일정 시간 패킷이 오지 않는다면 Keep Alive 메시지를 보내기 시작하고 메시지가 오지 않는다면 끊어버린다.
-
 - QoS는 0, 1, 2 Level을 지원하며 Default QoS는 0이다.
-
 - 멀티 Broker를 사용할 수 있는 Bridging을 지원한다. Mosquitto Bridge는 한 Broker가 작동하지 않을 시 그 작업을 대체하는 기능을 수행한다. 작동 방식은 한 클라이언트가 Publish를 하게 되면 한 Broker를 거쳐 다른 Broker에게 가고 마지막으로 구독자에게 가는 방식으로 동작한다.
-
 - User Authentication을 지원한다.
-
 - MySQL과 연동할 수 있다.
-
 
 <br/><br/>
 ## 참고
