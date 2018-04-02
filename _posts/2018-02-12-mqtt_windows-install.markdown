@@ -145,7 +145,7 @@ __마찬가지로 ```c:\mostemp\``` 경로에 unzip__
 
 
 <br/><br/>
-> 비쥬얼 스튜디오 2015에서 디버깅 하기 위함입니다. 진행하며 부족하다고 나온 dll 파일은 해당 프로젝트의 debug directory에 넣으면 해결할 수 있습니다.
+> Visual Studio 2015에서 디버깅 하기 위함입니다. 진행하며 부족하다고 나온 dll 파일은 해당 프로젝트의 debug directory에 넣으면 해결할 수 있습니다.
 
 ## mosquitto
 
@@ -270,9 +270,19 @@ mosquitto_passwd 프로젝트 -> 링커 -> 입력 ```optimized.lib``` 제거 및
 ![MQTT](/img/mqtt/1/mos18.png)
 
 <br/>
+
+> 클라이언트의 .dll 파일 환경 변수 PATH 설정을 위한 과정입니다. 그림과 같이 Pub Client와 Sub Client를 한꺼번에 선택한 후 작업을 진행해 주세요.
+
+* 구성 속성 -> 디버깅 -> 환경 -> 편집<br/>
+```PATh=C:\mostemp\mosquitto-1.4.14\build\lib\Debug;C:\pthreads\Pre-built.2\dll\x86;```<br/>
+mosquitto lib의 dll 파일과 pthread의 dll 파일을 Mapping 시켜 준다.
+
+![MQTT](/img/mqtt/1/mos20.png)
+
+<br/>
 ## 확인
 
-* 이제 Debug 모드로 visual studio에서 debug를 진행한다. 그밖에 dll 파일이 없다고 나온다면 각각 ```\build\src\Debug``` 나 ```\build\client\Debug``` 폴더에 넣어주면 된다.
+* 이제 Debug 모드로 Visual Studio에서 Debugging를 진행한다.
 
 
 ![MQTT](/img/mqtt/1/mos19.png)
