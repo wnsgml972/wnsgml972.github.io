@@ -241,7 +241,9 @@ __헤더 파일을 읽을 수 있게 해줌__
 * 사진과 같은 오류가 난다면
 
 ![MQTT](/img/mqtt/1/mos15.png)
-mosquitto_passwd 프로젝트 -> 링커 -> 입력 ```optimized.lib``` 제거 및 ```debug.lib``` 제거
+
+<br/>
+* mosquitto_passwd 프로젝트 -> 링커 -> 입력 ```optimized.lib``` 제거 및 ```debug.lib``` 제거
 
 ![MQTT](/img/mqtt/1/mos16.png)
 
@@ -259,15 +261,6 @@ mosquitto_passwd 프로젝트 -> 링커 -> 입력 ```optimized.lib``` 제거 및
 * ```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\build\bin\Release``` 경로의 ```websocket.dll``` 을 ```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14\build\src\Release``` 경로에 복사
 
 ![MQTT](/img/mqtt/1/mos17.png)
-
-<br/>
-* ```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14\build\lib\Release``` 경로의 ```mosquitto.dll```<br/>
-```C:\pthreads\Pre-built.2\dll\x86``` 경로의 ```pthreadVC2.dll```<br/>
-두가지의 dll 파일을<br/>
-```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14\build\client\Release```
-에 복사한다
-
-![MQTT](/img/mqtt/1/mos18.png)
 
 <br/>
 
