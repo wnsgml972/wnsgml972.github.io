@@ -40,7 +40,7 @@ finished: false
 <br/>
 ![FFMPEG](/img/mqtt/5/loop_exchange_hader.png)
 
-* 다음은 QoS 0 레벨에서 main_loop의 횟수에 따라 Publisher가 메시지를 보냈을 시 Subscriber에게 메시지가 어떻게 도착하는지 표시한 그림이다.
+* 다음은 Broker 기준으로 QoS 0 레벨에서 main_loop의 횟수에 따라 Publisher가 메시지를 보냈을 시 Subscriber에게 메시지가 어떻게 도착하는지 표시한 그림이다.
 
 <br/>
 ![FFMPEG](/img/mqtt/5/move_packet.png)
