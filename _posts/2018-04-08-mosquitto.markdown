@@ -21,6 +21,7 @@ finished: false
 
 * 간단한 알고리즘은 다음과 같이 표현할 수 있다.
 
+<br/>
 ![FFMPEG](/img/mqtt/5/mosquitto_structure_detail.png)
 
 * 위의 그림은 각 부분에서 하는 일을 조금 더 자세히 표현하였다.
@@ -36,10 +37,12 @@ finished: false
 * ```Read and Response Queue Data```에서는 pollfds 배열에서 한 Context 씩 Packet을 읽고 해당하는 Packet Hader에 따라 핸들링하여 일을 처리한다.
 * ```New Client Accept```에서는 pollfds[0]에 위치한 listen socket이 새로운 클라이언트의 연결을 받아준다. accept는 init 부분에서 non block 모드로 설정해준다.
 
+<br/>
 ![FFMPEG](/img/mqtt/5/loop_exchange_hader.png)
 
 * 다음은 QoS 0 레벨에서 main_loop의 횟수에 따라 Publisher가 메시지를 보냈을 시 Subscriber에게 메시지가 어떻게 도착하는지 표시한 그림이다.
 
+<br/>
 ![FFMPEG](/img/mqtt/5/move_packet.png)
 
 * 마찬가지로 QoS 0 레벨에서 Broker와 클라이언트간 Packet 이동 순서에 따라, Publisher가 메시지를 보냈을 시 Subscriber에게 메시지가 어떻게 도착하는지 표시한 그림이다.
@@ -85,7 +88,6 @@ finished: false
 ### 세션
 
 * 영구 클라리언트 옵션이 존재한다. 영구 클라이언트(클린 세션이 false로 설정된 클라이언트)는 연결을 끊지 않고 대기 상태로 바꾼다. 대기 상태에 있다가 클라이언트가 연결되면 그 때 다시 연결한다.
-
 * 일반적인 클라이언트는 Broker에서 Keep Alive 메시지를 보내고 살아있다는 메시지가 오지 않는다면 끊어버린다. 만기 기간은 시간, 일, 주, 월 및 연도로 정할 수 있다.
 
 <br/>
