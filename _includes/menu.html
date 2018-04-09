@@ -1,4 +1,4 @@
-<header>
+<header style="margin-bottom:120px;">
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 		<a class="navbar-brand" href="#">Daliy Development Note</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -9,19 +9,22 @@
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active"><a class="nav-link"
-					href="">Home <span class="sr-only">(current)</span></a>
+					href="{{ site.baseurl }}">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item"><a class="nav-link"
-					href="">Category</a>
+					href="{{ site.baseurl }}/archive/">Archive</a>
 				</li>
 				<li class="nav-item"><a class="nav-link"
-					href="">Tags</a>
+					href="{{ site.baseurl }}/category/">Category</a>
 				</li>
 				<li class="nav-item"><a class="nav-link"
-					href="">About</a>
+					href="{{ site.baseurl }}/tags/">Tags</a>
 				</li>
 				<li class="nav-item"><a class="nav-link"
-					href="">Resume</a>
+					href="{{ site.baseurl }}/about/">About</a>
+				</li>
+				<li class="nav-item"><a class="nav-link"
+					href="{{ site.baseurl }}/resume/">Resume</a>
 				</li>
 			</ul>
 			<form class="form-inline mt-2 mt-md-0">
