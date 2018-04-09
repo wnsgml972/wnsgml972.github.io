@@ -144,15 +144,6 @@ p {
 		text-align: center;
 	}
 
-	/* h1 {
-		font-size: 40px;
-		margin-bottom: 90px;
-	}
-
-	h2 {
-		margin-bottom: 16px;
-	} */
-
 	.my_col-md-one-half {
 		width: 50%;
 	}
@@ -162,8 +153,6 @@ p {
 		padding: 0px 7px 14px;
 	}
 }
-
-/*Desktop View*/
 
 /* Desktop Device */
 @media all and (min-width:1025px){
