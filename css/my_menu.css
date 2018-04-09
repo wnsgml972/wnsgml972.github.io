@@ -1,43 +1,84 @@
-.menu {
-    display: table-row;
-    width: 100%;
-    background-color: #fff;
-    border-bottom: 1px solid #ededed;
-    list-style: none;
-    margin: 0;
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu {
+  padding: 0 5px;
+	width: 100%;
+  font-family: 'Jeju Gothic', serif;
+  background: white;
+	border-bottom: solid 1px gray;
+}
+#cssmenu:after,
+#cssmenu ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu ul li {
+  display: inline-block;
+}
+#cssmenu.align-right ul li {
+  float: right;
+}
+#cssmenu.align-center ul {
+  text-align: center;
+}
+#cssmenu ul li a {
+  font-size: 14px;
+  padding: 15px;
+  text-decoration: none;
+  color: #25bcba;
+}
+#cssmenu ul li:hover a,
+#cssmenu ul li a:hover,
+#cssmenu ul li.active a {
+  color: #333333;
+}
+
+
+/* Tablet & Desktop Device */
+@media all and (min-width:768px) {
+	#cssmenu {
+		margin-left : 20px;
+	  background-color: #ffffff;
+	  position: fixed;
+	  top: 0px;
+	  left: 0px;
+	}
+}
+
+/* Tablet Device */
+@media all and (min-width:768px) and (max-width:1024px) {
+  #cssmenu {
+		position: static;
     padding: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    z-index: 3;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: -webkit-transform .3s ease;
-    transition: -webkit-transform .3s ease;
-    transition: transform .3s ease;
-    transition: transform .3s ease,-webkit-transform .3s ease;
+    border-radius: 0;
+    border: 0;
+  }
+  #cssmenu ul li,
+  #cssmenu.align-center,
+  #cssmenu.align-right {
+    display: block;
+  }
 }
-.menu__item:last-child {
-    margin-right: 0;
-}
-.menu__item {
-    position: relative;
-    display: inline-block;
-    float: left;
-    margin-right: 1.5rem;
-}
-.menu__item:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    background-color: transparent;
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px);
-    -webkit-transition: background-color .3s ease,-webkit-transform .3s ease;
-    transition: background-color .3s ease,-webkit-transform .3s ease;
-    transition: background-color .3s ease,transform .3s ease;
-    transition: background-color .3s ease,transform .3s ease,-webkit-transform .3s ease;
+
+/* Desktop Device */
+@media all and (min-width:1025px) {
+
+
 }
