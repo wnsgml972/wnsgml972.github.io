@@ -168,6 +168,10 @@ p {
 /* Desktop Device */
 @media all and (min-width:1025px){
 
+	.my_style-nav ul li {
+		display: inline-block;
+	}
+
 	.my_style-logo {
 		float: left;
 	}
