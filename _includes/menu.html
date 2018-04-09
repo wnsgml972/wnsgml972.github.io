@@ -6,26 +6,44 @@
 			aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		  {% if page.url == "/404.html" %}
+
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active"><a class="nav-link"
-					href="{{ site.baseurl }}">Home <span class="sr-only">(current)</span></a>
+					href="{{ site.baseurl }}">Home
+		  		{% if page.url == "/.html" %}
+						<span class="sr-only">(current)</span>
+				</a>
 				</li>
 				<li class="nav-item"><a class="nav-link"
-					href="{{ site.baseurl }}/archive/">Archive</a>
+					href="{{ site.baseurl }}/archive/">Archive
+					{% if page.url == "/archive.html" %}
+						<span class="sr-only">(current)</span>
+				</a>
 				</li>
 				<li class="nav-item"><a class="nav-link"
-					href="{{ site.baseurl }}/category/">Category</a>
+					href="{{ site.baseurl }}/category/">Category
+					{% if page.url == "/category.html" %}
+						<span class="sr-only">(current)</span>
+				</a>
 				</li>
 				<li class="nav-item"><a class="nav-link"
-					href="{{ site.baseurl }}/tags/">Tags</a>
+					href="{{ site.baseurl }}/tags/">Tags
+					{% if page.url == "/tags.html" %}
+						<span class="sr-only">(current)</span>
+				</a>
 				</li>
 				<li class="nav-item"><a class="nav-link"
-					href="{{ site.baseurl }}/about/">About</a>
+					href="{{ site.baseurl }}/about/">About
+					{% if page.url == "/about.html" %}
+						<span class="sr-only">(current)</span>
+				</a>
 				</li>
 				<li class="nav-item"><a class="nav-link"
-					href="{{ site.baseurl }}/resume/">Resume</a>
+					href="{{ site.baseurl }}/resume/">Resume
+					{% if page.url == "/resume.html" %}
+						<span class="sr-only">(current)</span>
+				</a>
 				</li>
 			</ul>
 			<!-- <form class="form-inline mt-2 mt-md-0">
