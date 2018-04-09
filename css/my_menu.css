@@ -14,11 +14,10 @@
   box-sizing: border-box;
 }
 #cssmenu {
-  border-bottom: 3px solid #333333;
   padding: 0 5px;
   width: auto;
   font-family: Helvetica, Arial, sans-serif;
-  background: #dddddd;
+  background: white;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -44,7 +43,7 @@
   font-size: 14px;
   padding: 15px;
   text-decoration: none;
-  color: #0e83cd;
+  color: #25bcba;
 }
 #cssmenu ul li:hover a,
 #cssmenu ul li a:hover,
@@ -62,4 +61,12 @@
   #cssmenu.align-right {
     display: block;
   }
+}
+
+#cssmenu {
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
