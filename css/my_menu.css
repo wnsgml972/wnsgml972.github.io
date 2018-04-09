@@ -51,26 +51,65 @@
 }
 
 
-/* Tablet & Desktop Device */
-@media all and (min-width:768px) {
+
+/* iPads (portrait and landscape)  */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+	#cssmenu {
+		display: none;
+		visibility: hidden;
+	}
+
+	#my_remote{
+		display: none;
+		visibility: hidden;
+	}
+}
+
+/* iPads (landscape)  */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
 	#cssmenu {
 	  position: fixed;
 	  top: 0px;
 	  left: 0px;
 	}
+	#my_remote{
+		display : scroll;
+		position : fixed;
+	}
 }
 
-/* Tablet Device */
-@media all and (min-width:768px) and (max-width:1024px) {
+/* iPads (portrait)  */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+	#cssmenu {
+		display: none;
+		visibility: hidden;
+	}
 
+	#my_remote{
+		display: none;
+		visibility: hidden;
+	}
 }
 
-/* Desktop Device */
-@media all and (min-width:1025px) {
 
-}
-
-#cssmenu {
-	display: none;
-	visibility: hidden;
+/* Desktops and laptops */
+@media only screen
+and (min-width : 1025px) {
+	#cssmenu {
+	  position: fixed;
+	  top: 0px;
+	  left: 0px;
+	}
+	#my_remote{
+		display : scroll;
+		position : fixed;
+	}
 }
