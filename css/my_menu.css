@@ -52,14 +52,14 @@
 }
 
 
-/* Tablet Device */
-@media all and (min-width:768px) and (max-width:1024px) {
+/* Tablet & Desktop Device */
+@media all and (min-width:768px) {
 
 }
 
 
-/* Tablet & Desktop Device */
-@media all and (min-width:768px) {
+/* Tablet Device */
+@media all and (min-width:768px) and (max-width:1024px) {
   #cssmenu {
     padding: 0;
     border-radius: 0;
