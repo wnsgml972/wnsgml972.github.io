@@ -54,8 +54,9 @@
 /* Tablet & Desktop Device */
 @media all and (min-width:768px) {
 	#cssmenu {
-		display: none;
-    visibility: hidden;
+	  position: fixed;
+	  top: 0px;
+	  left: 0px;
 	}
 }
 
@@ -66,9 +67,10 @@
 
 /* Desktop Device */
 @media all and (min-width:1025px) {
-	#cssmenu {
-	  position: fixed;
-	  top: 0px;
-	  left: 0px;
-	}
+
+}
+
+#cssmenu {
+	display: none;
+	visibility: hidden;
 }
