@@ -53,15 +53,15 @@
 
 /* Tablet & Desktop Device */
 @media all and (min-width:768px) {
-
+	#cssmenu {
+		display: none;
+    visibility: hidden;
+	}
 }
 
 /* Tablet Device */
 @media all and (min-width:768px) and (max-width:1024px) {
-  #cssmenu {
-		display: none;
-    visibility: hidden;
-	}
+
 }
 
 /* Desktop Device */
