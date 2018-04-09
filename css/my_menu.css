@@ -15,11 +15,10 @@
 }
 #cssmenu {
   padding: 0 5px;
-  width: auto;
+	width: 100%;
   font-family: 'Jeju Gothic', serif;
   background: white;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+	border-bottom: solid 1px gray;
 }
 #cssmenu:after,
 #cssmenu ul:after {
@@ -54,13 +53,18 @@
 
 /* Tablet & Desktop Device */
 @media all and (min-width:768px) {
-
+	#cssmenu {
+	  background-color: #ffffff;
+	  position: fixed;
+	  top: 0px;
+	  right: 30px;
+	}
 }
-
 
 /* Tablet Device */
 @media all and (min-width:768px) and (max-width:1024px) {
   #cssmenu {
+		position: static;
     padding: 0;
     border-radius: 0;
     border: 0;
@@ -72,15 +76,6 @@
   }
 }
 
-
-
-#cssmenu {
-  width: 100%;
-  background-color: #ffffff;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-}
 /* Desktop Device */
 @media all and (min-width:1025px) {
 
