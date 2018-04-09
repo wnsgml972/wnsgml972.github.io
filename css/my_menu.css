@@ -53,31 +53,22 @@
 
 /* Tablet & Desktop Device */
 @media all and (min-width:768px) {
-	#cssmenu {
-	  background-color: #ffffff;
-	  position: fixed;
-	  top: 0px;
-	  left: 0px;
-	}
+
 }
 
 /* Tablet Device */
 @media all and (min-width:768px) and (max-width:1024px) {
   #cssmenu {
-		position: static;
-    padding: 0;
-    border-radius: 0;
-    border: 0;
-  }
-  #cssmenu ul li,
-  #cssmenu.align-center,
-  #cssmenu.align-right {
-    display: block;
-  }
+		display: none;
+    visibility: hidden;
+	}
 }
 
 /* Desktop Device */
 @media all and (min-width:1025px) {
-
-
+	#cssmenu {
+	  position: fixed;
+	  top: 0px;
+	  left: 0px;
+	}
 }
