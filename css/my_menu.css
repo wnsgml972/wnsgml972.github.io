@@ -18,7 +18,7 @@
 	width: 100%;
   font-family: 'Jeju Gothic', serif;
   background: white;
-	border-bottom: solid 1px gray;
+	border-bottom: solid 1px lightgrey;
 }
 #cssmenu:after,
 #cssmenu ul:after {
@@ -54,7 +54,6 @@
 /* Tablet & Desktop Device */
 @media all and (min-width:768px) {
 	#cssmenu {
-		margin-left : 20px;
 	  background-color: #ffffff;
 	  position: fixed;
 	  top: 0px;
