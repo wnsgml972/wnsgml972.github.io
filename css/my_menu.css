@@ -16,7 +16,7 @@
 #cssmenu {
   padding: 0 5px;
   width: auto;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Jeju Gothic', serif;
   background: white;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -50,7 +50,16 @@
 #cssmenu ul li.active a {
   color: #333333;
 }
-@media all and (max-width: 640px) {
+
+
+/* Tablet Device */
+@media all and (min-width:768px) and (max-width:1024px) {
+
+}
+
+
+/* Tablet & Desktop Device */
+@media all and (min-width:768px) {
   #cssmenu {
     padding: 0;
     border-radius: 0;
@@ -63,10 +72,17 @@
   }
 }
 
+
+
 #cssmenu {
   width: 100%;
   background-color: #ffffff;
   position: fixed;
   top: 0px;
   left: 0px;
+}
+/* Desktop Device */
+@media all and (min-width:1025px) {
+
+
 }
