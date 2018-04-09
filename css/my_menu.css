@@ -51,14 +51,14 @@ body {
 	text-transform: uppercase;
 	padding: 8px;
 }
-
+/*
 .hero {
 	background-image: url(images/hero.jpg);
 	background-size: cover;
 	padding: 20px 20px 50px 20px;
 	color: #FFFFFF;
 	text-align: center;
-}
+} */
 
 /* h1 {
 	font-size: 57px;
@@ -171,10 +171,6 @@ p {
 /*Desktop View*/
 
 @media (min-width: 1024px){
-
-	body {
-		max-width: 1200px;
-	}
 
 	.style-logo {
 		float: left;
