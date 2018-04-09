@@ -133,9 +133,8 @@ p {
 	clear: both;
 }
 
-/*Tablet View*/
-
-@media (min-width: 768px){
+/* Tablet Device */
+@media all and (min-width:768px) and (max-width:1024px){
 
 	body {
 		max-width: 778px;
@@ -170,7 +169,8 @@ p {
 
 /*Desktop View*/
 
-@media (min-width: 1024px){
+/* Desktop Device */
+@media all and (min-width:1025px){
 
 	.style-logo {
 		float: left;
