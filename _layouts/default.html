@@ -16,7 +16,10 @@
   <body>
 
   {% include header.html %}
-  {% include navigation.html %}
+
+  <nav role="navigation" class="menu top-menu">
+      {% include navigation.html %}
+  </nav>
 
   <div class="wrapper">
         {{ content }}
