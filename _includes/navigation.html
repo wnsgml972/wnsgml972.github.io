@@ -99,6 +99,19 @@
 	}
 }
 
+/* Mobile Device */
+@media all and (max-height:700px){
+	#my_remote{
+		display: none !important;
+		visibility: hidden !important;
+	}
+}
+
+
+@media (min-width: 700px)  all and (max-width:1024px) and (orientation: landscape){
+
+}
+
 /* Desktop Device */
 @media all and (min-width:1025px) {
 
@@ -109,7 +122,6 @@
 <!-- Belongs at: /_includes/navigation.html -->
 
 <!-- This finds the current page so it can be highlighted. -->
-
 {% for entry in site.data.navigation %}
 {% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}
     {% if fullurl == page.url %}
@@ -126,7 +138,7 @@
         {% assign links = site.data.navigation %}
         {% for link in links %}
             {% assign class = nil %}
-            {% if page.url contains link.url %}
+            {% if page.url == link.url %}
                 {% assign class = 'active' %}
             {% endif %}
             {% if link.sublinks %}
