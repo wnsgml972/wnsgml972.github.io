@@ -1,18 +1,18 @@
-
-# Amount of post to show on home page
-paginate: 6
-
-# Belongs at: /_data/navigation.yml
-
-- title: Home
-  url: /
-
-- title: Group of Things
-  url: /group/
+- title: About
+  url: /about.html
+- title: Team
+  url: /team.html
+- title: Contact
+  url: /contact.html
+- title: Store
+  url: /store.html
+- title: Support
+  url: /support.html
   sublinks:
-    - title: Sub-item 1
-      url: /group/si1
-    - title: Sub-item 2
-      url: /group/si2
-    - title: Sub-item 3
-      url: /group/si3
+    - title: FAQ
+      url: /faq.html
+    - title: Documentation
+      url: /documentation.html
+    - title: separator
+    - title: Customer Support
+      url: /customer-support.html
