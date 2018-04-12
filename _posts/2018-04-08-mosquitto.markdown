@@ -38,7 +38,7 @@ finished: false
 * ```New Client Accept```에서는 pollfds[0]에 위치한 listen socket이 새로운 클라이언트의 연결을 받아준다. accept는 init 부분에서 non block 모드로 설정해준다.
 
 <br/>
-![MQTT](/img/mqtt/5/move_packet1.png)
+![MQTT](/img/mqtt/5/move_packet.png)
 
 * 마찬가지로 QoS 0 레벨에서 Broker와 클라이언트간 Packet 이동 순서에 따라, Publisher가 메시지를 보냈을 시 Subscriber에게 메시지가 어떻게 도착하는지 표시한 그림이다.
 
