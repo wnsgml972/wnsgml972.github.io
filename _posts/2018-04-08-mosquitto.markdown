@@ -17,19 +17,19 @@ finished: false
 
 #### Mosquitto Structure
 
-![FFMPEG](/img/mqtt/5/mosquitto_structure.png)
+![MQTT](/img/mqtt/5/mosquitto_structure.png)
 
 * 간단한 알고리즘은 다음과 같이 표현할 수 있다.
 
 <br/>
-![FFMPEG](/img/mqtt/5/mosquitto_structure_detail.png)
+![MQTT](/img/mqtt/5/mosquitto_structure_detail.png)
 
 * 위의 그림은 각 부분에서 하는 일을 조금 더 자세히 표현하였다.
 * 결국 Mosquitto Broker는 위의 loop를 계속해서 반복하며 데이터를 받고 처리한다.
 
 #### loop example
 
-![FFMPEG](/img/mqtt/5/loop_example.png)
+![MQTT](/img/mqtt/5/loop_example.png)
 
 * 다음은 각 루프에서 pollfds 배열에 있는 Context의 Packet이 어떠한 형태로 바꿔가며 루프를 진행하는지에 대한 예시이다.
 * ```Write Queue Data```에서는 해당 구독자에게 메시지를 보내는 일을 주로 하며 QoS 1레벨이나 QoS 2레벨을 사용할 시에는 Pub에 대한 ack도 같이 처리한다.
@@ -38,12 +38,7 @@ finished: false
 * ```New Client Accept```에서는 pollfds[0]에 위치한 listen socket이 새로운 클라이언트의 연결을 받아준다. accept는 init 부분에서 non block 모드로 설정해준다.
 
 <br/>
-![FFMPEG](/img/mqtt/5/loop_exchange_hader.png)
-
-* 다음은 Broker 기준으로 QoS 0 레벨에서 main_loop의 횟수에 따라 Publisher가 메시지를 보냈을 시 Subscriber에게 메시지가 어떻게 도착하는지 표시한 그림이다.
-
-<br/>
-![FFMPEG](/img/mqtt/5/move_packet.png)
+![MQTT](/img/mqtt/5/move_packet1.png)
 
 * 마찬가지로 QoS 0 레벨에서 Broker와 클라이언트간 Packet 이동 순서에 따라, Publisher가 메시지를 보냈을 시 Subscriber에게 메시지가 어떻게 도착하는지 표시한 그림이다.
 
