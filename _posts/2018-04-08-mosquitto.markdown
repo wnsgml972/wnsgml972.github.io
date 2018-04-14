@@ -22,7 +22,7 @@ finished: false
 * 간단한 알고리즘은 다음과 같이 표현할 수 있다.
 
 <br/>
-![MQTT](/img/mqtt/5/mosquitto_structure_detail.png)
+![MQTT](/img/mqtt/5/mosquitto_structure_detail1.png)
 
 * 위의 그림은 각 부분에서 하는 일을 조금 더 자세히 표현하였다.
 * 결국 Mosquitto Broker는 위의 loop를 계속해서 반복하며 데이터를 받고 처리한다.
@@ -35,7 +35,7 @@ finished: false
 * ```Write Queue Data```에서는 해당 구독자에게 메시지를 보내는 일을 주로 하며 QoS 1레벨이나 QoS 2레벨을 사용할 시에는 Pub에 대한 ack도 같이 처리한다.
 * ```poll```에서는 pollfds 배열의 연결된 클라이언트가 데이터를 보내길 원하는지 알아차린다.
 * ```Read and Response Queue Data```에서는 pollfds 배열에서 한 Context 씩 Packet을 읽고 해당하는 Packet Hader에 따라 핸들링하여 일을 처리한다.
-* ```New Client Accept```에서는 pollfds[0]에 위치한 listen socket이 새로운 클라이언트의 연결을 받아준다. accept는 init 부분에서 non block 모드로 설정해준다.
+* ```New Client Accept```에서는 pollfds에 위치한 listen socket이 새로운 클라이언트의 연결을 받아준다. accept는 init 부분에서 non block 모드로 설정해준다.
 
 <br/>
 ![MQTT](/img/mqtt/5/move_packet.png)
