@@ -149,13 +149,13 @@ function scrollUp()
 	   {
 		     return;
 	   }
-     document.documentElement.scrollTop = scrollTop-scrollUpSpeed;
+     document.documentElement.scrollTop = document.documentElement.scrollTop-scrollUpSpeed;
   }else {
     if(document.body.scrollTop<1)
     {
         return;
     }
-    document.body.scrollTop = scrollTop-scrollUpSpeed;
+    document.body.scrollTop = document.body.scrollTop-scrollUpSpeed;
   }
 
 	setTimeout('scrollUp()',scrollUpDelay);
