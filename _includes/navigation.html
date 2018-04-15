@@ -93,7 +93,7 @@
 	}
 }
 
-@media all and (max-height:700px){
+@media all and (max-height:500px){
 	#my_remote{
 		display: none !important;
 		visibility: hidden !important;
@@ -117,10 +117,15 @@
 }
 
 #my_remote {
-  display: none; position: fixed; right: 5%; bottom: 5%;
-  background-color: mistyrose;
+    display: none; position: fixed; right: 5%; bottom: 5%;
+    color: #25b3bc;
+    text-decoration: none;
+    transition: border .5s;
 }
-#my_remote:hover { background-color: #555; }
+
+#my_remote:hover {
+    border-bottom: 2px dotted #000;
+}
 
 </style>
 
@@ -196,7 +201,7 @@ jQuery(document).ready(function() {
 </nav>
 </div>
 
-  <span id ="my_remote" class="fa-stack fa-lg" onclick="javascript:scrollUp();">
-    <i class="fa fa-square fa-stack-2x"></i>
-    <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
-  </span>
+<span id ="my_remote" class="fa-stack fa-lg" onclick="javascript:scrollUp();">
+  <i class="fa fa-square fa-stack-2x"></i>
+  <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+</span>
