@@ -130,13 +130,17 @@
 <script>
 var scrollUpDelay = 1;
 var scrollUpSpeed = 30;
+
+
+
 function scrollUp()
 {
-	if(document.body.scrollTop<1)
+  var scrollTop = (document.documentElement || document.body.parentNode || document.body).scrollTop;
+	if(scrollTop<1)
 	{
 		return;
 	}
-	document.body.scrollTop=document.body.scrollTop-scrollUpSpeed;
+  scrollTop=document.body.scrollTop-scrollUpSpeed;
 	setTimeout('scrollUp()',scrollUpDelay);
 }
 
