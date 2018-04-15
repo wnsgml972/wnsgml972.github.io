@@ -135,12 +135,29 @@ var scrollUpSpeed = 30;
 
 function scrollUp()
 {
+  //var scrollTop = (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  var control;
 
-	if((document.documentElement || document.body.parentNode || document.body).scrollTop<1)
-	{
-		return;
-	}
-  (document.documentElement || document.body.parentNode || document.body).scrollTop=(document.documentElement || document.body.parentNode || document.body).scrollTop-scrollUpSpeed;
+  if(document.documentElement.scrollTop == 0){
+    control = 0;
+  }else{
+    control = 1;
+  }
+
+  if(control == 1){
+	   if(document.documentElement.scrollTop<1)
+	   {
+		     return;
+	   }
+     document.documentElement.scrollTop = scrollTop-scrollUpSpeed;
+  }else {
+    if(document.body.scrollTop<1)
+    {
+        return;
+    }
+    document.body.scrollTop = scrollTop-scrollUpSpeed;
+  }
+
 	setTimeout('scrollUp()',scrollUpDelay);
 }
 
