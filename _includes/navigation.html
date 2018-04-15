@@ -120,30 +120,6 @@
 
 </style>
 
-<script>
-var scrollUpDelay = 1;
-var scrollUpSpeed = 30;
-function scrollUp()
-{
-	if(document.body.scrollTop<1)
-	{
-		return;
-	}
-	document.body.scrollTop=document.body.scrollTop-scrollUpSpeed;
-	setTimeout('scrollUp()',scrollUpDelay);
-}
-
-jQuery(document).ready(function() {
-	jQuery(window).scroll(function() {
-		if(jQuery(document).scrollTop() > 300) {
-			jQuery('.scrollUp').fadeIn();
-		} else {
-			jQuery('.scrollUp').fadeOut();
-		};
-	});
-});
-</script>
-
 <!-- Belongs at: /_includes/navigation.html -->
 
 <!-- This finds the current page so it can be highlighted. -->
@@ -205,3 +181,28 @@ jQuery(document).ready(function() {
     <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
   </span>
 </div>
+
+
+<script>
+var scrollUpDelay = 1;
+var scrollUpSpeed = 30;
+function scrollUp()
+{
+	if(document.body.scrollTop<1)
+	{
+		return;
+	}
+	document.body.scrollTop=document.body.scrollTop-scrollUpSpeed;
+	setTimeout('scrollUp()',scrollUpDelay);
+}
+
+jQuery(document).ready(function() {
+	jQuery(window).scroll(function() {
+		if(jQuery(document).scrollTop() > 300) {
+			jQuery('.scrollUp').fadeIn();
+		} else {
+			jQuery('.scrollUp').fadeOut();
+		};
+	});
+});
+</script>
