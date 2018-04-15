@@ -135,12 +135,12 @@ var scrollUpSpeed = 30;
 
 function scrollUp()
 {
-  var scrollTop = (document.documentElement || document.body.parentNode || document.body).scrollTop;
-	if(scrollTop<1)
+
+	if((document.documentElement || document.body.parentNode || document.body).scrollTop<1)
 	{
 		return;
 	}
-  scrollTop=document.body.scrollTop-scrollUpSpeed;
+  (document.documentElement || document.body.parentNode || document.body).scrollTop=(document.documentElement || document.body.parentNode || document.body).scrollTop-scrollUpSpeed;
 	setTimeout('scrollUp()',scrollUpDelay);
 }
 
