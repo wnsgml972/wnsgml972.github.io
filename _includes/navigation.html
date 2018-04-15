@@ -81,26 +81,31 @@
 	padding: 10px !important;
 }
 
-
-
-
 /* Mobile Device */
 @media all and (max-width:1024px){
 	#navigation {
 		display: none !important;
 		visibility: hidden !important;
 	}
+	#my_remote{
+		display: none !important;
+		visibility: hidden !important;
+	}
 }
-@media all and (max-height:700px){
 
+@media all and (max-height:700px){
+	#my_remote{
+		display: none !important;
+		visibility: hidden !important;
+	}
 }
+
 @media all and (max-height:300px){
 	#navigation {
 		display: none !important;
 		visibility: hidden !important;
 	}
 }
-
 
 @media (min-width: 700px)  all and (max-width:1024px) and (orientation: landscape){
 
@@ -111,12 +116,11 @@
 
 }
 
-.scrollUp { display: none; position: fixed; right: 5%; bottom: 5%; background: mistyrose;
-	-webkit-transition: background-color 0.2s;
-	     -o-transition: background-color 0.2s;
-	        transition: background-color 0.2s;
+#my_remote {
+  display: none; position: fixed; right: 5%; bottom: 5%;
+  background-color: mistyrose;
 }
-.scrollUp:hover { background-color: #555; }
+#my_remote:hover { background-color: #555; }
 
 </style>
 
@@ -136,9 +140,9 @@ function scrollUp()
 jQuery(document).ready(function() {
 	jQuery(window).scroll(function() {
 		if(jQuery(document).scrollTop() > 300) {
-			jQuery('.scrollUp').fadeIn();
+			jQuery('#my_remote').fadeIn();
 		} else {
-			jQuery('.scrollUp').fadeOut();
+			jQuery('#my_remote').fadeOut();
 		};
 	});
 });
@@ -192,17 +196,7 @@ jQuery(document).ready(function() {
 </nav>
 </div>
 
-<!--
-<a id="my_remote" style="display:scroll; position:fixed; bottom:8px; right:8px;" href="#top" style="background : mistyrose">
-  <span class="fa-stack fa-lg">
+  <span id ="my_remote" class="fa-stack fa-lg" onclick="javascript:scrollUp();">
     <i class="fa fa-square fa-stack-2x"></i>
     <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
   </span>
-</a> -->
-
-<div class="scrollUp" onclick="javascript:scrollUp();">
-  <span class="fa-stack fa-lg">
-    <i class="fa fa-square fa-stack-2x"></i>
-    <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
-  </span>
-</div>
