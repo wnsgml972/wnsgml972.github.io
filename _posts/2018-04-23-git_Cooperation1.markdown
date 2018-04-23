@@ -71,3 +71,8 @@ finished: true
 
 * 공식 저장소를 fork해서 받은 다음 ```git clone```을 통해 로컬 저장소를 만든다. 자신이 개발한 내용은 자신의 복제본에 push한다. 그 다음 자신의 기여분을 반영해 달라는 pull request를 던진다.
 * pull request를 받은 프로젝트 관리자는 충돌을 확인한 후 로컬 ```master branch```에 병합한 후 프로젝트 공식 저장소의 ```master branch```에 반영한다.
+
+## 참고
+
+* <https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow>
+* <http://blog.appkr.kr/learn-n-think/comparing-workflows/#2-feature-branch-workflow>
