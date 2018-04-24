@@ -39,7 +39,6 @@ finished: true
 * Gitflow Workflow는 코드 릴리즈 중심으로 엄격한 branching 모델을 제시한다.
 * Feature Branch Workflow 보다 복잡하지만 __대형 프로젝트에서__ 적용할 수 있는 강건한 작업 절차가 된다.
 * 이 Workflow의 모든 작업 절차들은 ```master branch```와 ```develop branch```두 개의 branch를 대상으로 한다.
-
 * 작동 원리에 따른 브랜치이다.
 
 #### commit 기록에 따른 브랜치
