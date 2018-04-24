@@ -40,7 +40,7 @@ finished: true
 * Feature Branch Workflow 보다 복잡하지만 __대형 프로젝트에서__ 적용할 수 있는 강건한 작업 절차가 된다.
 * 이 Workflow의 모든 작업 절차들은 ```master branch```와 ```develop branch```두 개의 branch를 대상으로 한다.
 
-> 작동 원리에 따른 branch 구조입니다.
+* 작동 원리에 따른 브랜치이다.
 
 #### commit 기록에 따른 브랜치
 
@@ -67,7 +67,7 @@ finished: true
 * 아주 큰 규모의 분산된 팀에서 안전하게 협업하기에 좋은 방법이다.
 * __오픈 소스 프로젝트에서__ 많이 사용하는 방식이다.
 
-> Forking Workflow의 작동 원리입니다.
+#### 작동 원리
 
 * 공식 저장소를 fork해서 받은 다음 ```git clone```을 통해 로컬 저장소를 만든다. 자신이 개발한 내용은 자신의 복제본에 push한다. 그 다음 자신의 기여분을 반영해 달라는 pull request를 던진다.
 * pull request를 받은 프로젝트 관리자는 충돌을 확인한 후 로컬 ```master branch```에 병합한 후 프로젝트 공식 저장소의 ```master branch```에 반영한다.
