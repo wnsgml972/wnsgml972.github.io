@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Winsdows에서 pthread 사용하기"
-subtitle: "visual studio 2015"
-date: 2018-04-23
+title: "Windows에서 pthread 사용하기"
+subtitle: "Visual Studio 2015"
+date: 2018-05-07
 author: KimJunHee
 category: C
 tags: c pthread
