@@ -53,8 +53,12 @@ finished: true
 * 간단하게 각각 ```malloc```, ```calloc```, ```realloc```, 등등을 할 때 사용하는 ```heap``` 공간의 byte 크기를 계산하여, 현재 사용하고 있는 공간을 나타내는 변수인 ```static unsigned long  memcount```에 설정한다.
 * 각 할당 공간을 알아 낼 때는 ```sizeof```를 이용해 사용하려 하는 byte의 크기를 알아낸다.
 * ```static unsigned long max_memcount = 0```변수를 이용해 총 사용 가능한 ```heap``` 공간을 설정할 수 있다.
-* 이제 모든 메모리 할당을 새로 만든 함수에서 적용하면 된다.
 * 조건 처리를 이용하였기 때문에 ```REAL_WITH_MEMORY_TRACKING```를 선언해주지 않는다면 내부의 ```heap```공간을 계산하는 코드는 컴파일러가 읽지 않기 때문에 전체적인 퍼포먼스의 영향을 끼치지 않는다.
+
+<br/>
+![C](/img/c/2/capture0.png)
+
+* 이제 위의 그림처럼 모든 메모리 할당과 해제를 새로 만든 함수에서 적용하면 된다.
 
 <br/><br/>
 ## 전체 코드 ```my_memory.c```
