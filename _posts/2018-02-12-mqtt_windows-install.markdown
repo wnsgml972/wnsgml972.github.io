@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Window 에서 Mosquitto 설치하기"
+title: "Windows 에서 Mosquitto 설치하기"
 subtitle: "Window Mosquitto Source build, debug"
 date: 2018-02-12
 author: KimJunHee

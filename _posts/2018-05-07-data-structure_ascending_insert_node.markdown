@@ -4,7 +4,7 @@ title: "자료구조 리스트 삽입 시 오름차순 정렬"
 subtitle: ""
 date: 2018-05-07
 author: KimJunHee
-category: Data-Structure
+category: Data Structure
 tags: c data-structure list
 finished: true
 ---

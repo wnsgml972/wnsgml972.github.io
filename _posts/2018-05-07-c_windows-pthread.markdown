@@ -20,9 +20,9 @@ __dll 파일과, lib 파일의 환경 변수를 추가__
 ![C](/img/c/1/1-env.png)
 
 <br/>
-* 구성 속성 -> VC++ 디렉토리<br/>
-```C:\pthreads\Pre-built.2\include```<br/>
-```C:\pthreads\Pre-built.2\lib\x86```를 추가<br/>
+* 구성 속성 -> VC++ 디렉토리에 각각<br/>
+포함 디렉터리 -> ```C:\pthreads\Pre-built.2\include```<br/>
+라이브러리 디렉터리 -> ```C:\pthreads\Pre-built.2\lib\x86```를 추가<br/>
 __pthread의 include 디렉토리와 lib 디렉토리 추가__
 
 ![C](/img/c/1/1-dir.png)
@@ -39,7 +39,7 @@ __pthread의 include 디렉토리 추가__
 <br/><br/>
 ## 링커
 
-* 링커 -> 추가 종속성<br/>
+* 링커 -> 입력 -> 추가 종속성<br/>
 ```pthreadVC2.lib```를 추가
 __pthread의 사용하고자 하는 lib 파일 추가__
 
