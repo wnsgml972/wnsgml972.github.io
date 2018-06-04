@@ -344,13 +344,13 @@ if __name__ == "__main__":
 * 온도, 습도, 진동, 가스, 화재 감지 센서까지 작동하는 라즈베리 파이 코드입니다.
 * GPIO 센서 통신을 이용했습니다.
 * SHT21는 온, 습도 관련 라이브러리이므로 스트리밍과 관련 없으니 코드를 이해하려 하지 않으셔도 괜찮습니다.
-* 주목해야 할 스트리밍 코드는 _def run_camera():_ 함수입니다.
+* 주목해야 할 스트리밍 코드는 ```def run_camera():``` 함수입니다.
 * ffserver에 feed를 주는 ffmpeg를 라즈베리 파이를 통해 실행합니다. <br/>```ffmpeg -i /dev/video0 -t 10 http://localhost:8090/feed.ffm```
 
 <br/>
 ### 실행 화면
 
-* mjpg를 이용한 스트리밍 방식이기 때문에 ffserver conf 파일에 있는 feed의 주소 그대로 img tag의 src에 넣어주면 됩니다.<br/>
+* mjpg를 이용한 스트리밍 방식이기 때문에 ffserver conf 파일의 해당 feed에 해당하는 Stream의 주소 그대로 img tag의 src에 넣어주면 됩니다.<br/>
 ```<img src="http://localhost:8090/TruthCenter/102/fire.mjpg">```
 
 ![FFMPEG](/img/ffmpeg/1/ffserver3.png)
