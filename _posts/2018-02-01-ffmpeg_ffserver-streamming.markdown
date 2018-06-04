@@ -13,7 +13,7 @@ finished: true
 
 ## FFmpeg 사용 법
 
-* bin Directory에 있는 ffmpeg 파일을 실행
+* bin Directory에 있는 ffmpeg 파일을 실행합니다.
 
 {% highlight bash %}
 $ cd ~/bin
@@ -24,7 +24,7 @@ $ ffmpeg -i 원하는_설정_명령어
 <br/><br/>
 ## FFserver 사용 법
 
-* -f 옵션을 이용하여 .conf 파일에 맞게 ffserver를 동작
+* -f 옵션을 이용하여 .conf 파일에 맞게 ffserver를 동작합니다.
 
 {% highlight bash %}
 $ ffserver -f config_file
@@ -341,31 +341,24 @@ if __name__ == "__main__":
 
 {% endhighlight %}
 
-* 온도, 습도, 진동, 가스, 화재 감지 센서까지 작동하는 라즈베리 파이 코드이다.
-
-* GPIO 센서 통신을 이용
-
-* SHT21는 온, 습도 관련 라이브러리이다.
-
-* 주목해야 할 스트리밍 코드는 _def run_camera():_ 함수이다.
-
-* 함수 내에서 ffmpeg를 실행 ```ffmpeg -i /dev/video0 -t 10 http://localhost:8090/feed.ffm```
-
-* 즉 ffserver에 feed를 주는 ffmpeg를 라즈베리 파이를 통해 실행
+* 온도, 습도, 진동, 가스, 화재 감지 센서까지 작동하는 라즈베리 파이 코드입니다.
+* GPIO 센서 통신을 이용했습니다.
+* SHT21는 온, 습도 관련 라이브러리이므로 스트리밍과 관련 없으니 코드를 이해하려 하지 않으셔도 괜찮습니다.
+* 주목해야 할 스트리밍 코드는 _def run_camera():_ 함수입니다.
+* ffserver에 feed를 주는 ffmpeg를 라즈베리 파이를 통해 실행합니다. <br/>```ffmpeg -i /dev/video0 -t 10 http://localhost:8090/feed.ffm```
 
 <br/>
 ### 실행 화면
 
-* mjpg를 이용한 스트리밍 방식이기 때문에 ffserver conf 파일에 있는 feed의 주소 그대로 img tag의 src에 넣어주면 된다.
-
-* ```<img src="http://localhost:8090/TruthCenter/102/fire.mjpg">```
+* mjpg를 이용한 스트리밍 방식이기 때문에 ffserver conf 파일에 있는 feed의 주소 그대로 img tag의 src에 넣어주면 됩니다.<br/>
+```<img src="http://localhost:8090/TruthCenter/102/fire.mjpg">```
 
 ![FFMPEG](/img/ffmpeg/1/ffserver3.png)
 
 <br/>
 ### 사용 하드웨어
 
-* Sersor Kit Box 구성 : 사진은 뒷면, 앞면의 모습이다.
+* Sersor Kit Box 구성 : 사진은 뒷면, 앞면의 모습입니다.
 
 ![FFMPEG](/img/ffmpeg/1/ffserver4.jpg)
 
