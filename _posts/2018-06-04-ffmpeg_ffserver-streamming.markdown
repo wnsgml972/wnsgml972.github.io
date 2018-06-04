@@ -365,6 +365,6 @@ if __name__ == "__main__":
 ![FFMPEG](/img/ffmpeg/1/ffserver5.jpg)
 
 <br/><br/>
-## 관련 Project
+## WebM Codec을 이용한 실시간 스트리밍 프로젝트
 
 * <https://github.com/HIFLY-CSM/HIFLY-Final>
