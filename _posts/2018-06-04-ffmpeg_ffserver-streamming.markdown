@@ -128,7 +128,7 @@ NoDaemon
 {% endhighlight %}
 
 <br/>
-### 사용 된 라즈베리 파이 전체 코드
+### 사용 된 라즈베리 파이 전체 코드 (파이선으로 구현)
 
 {% highlight python %}
 
