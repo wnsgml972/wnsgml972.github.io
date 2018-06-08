@@ -11,6 +11,13 @@ finished: true
 
 > pthread를 사용하고자 하는 프로젝트의 속성에서 사용하시면 됩니다.
 
+## pthread 다운
+
+### [pthread-win32 download & install](ftp://sourceware.org/pub/pthreads-win32/pthreads-w32-2-9-1-release.zip)
+
+* 프로젝트 설정에서 __경로를 조절하여__ pthread를 사용하기 때문에 간단히 해결하실 분은 ```c:\pthreads\``` 경로에 파일 전체를 unzip 합니다.
+
+<br/><br/>
 ## 구성 속성
 
 * 구성 속성 -> 디버깅 -> 환경<br/>
@@ -44,6 +51,31 @@ __pthread의 include 디렉토리 추가__
 __pthread의 사용하고자 하는 lib 파일 추가__
 
 ![C](/img/c/1/3-add.png)
+
+<br/><br/>
+## pthread 예제 코드
+
+{% highlight c %}
+
+#include <stdio.h>
+#include <pthread.h>
+
+void *my_thread(void *thread_id) {
+
+	printf("my_thread srart! %s\n", (char *)thread_id);
+
+	return NULL;
+}
+
+int main() {
+	pthread_t a; //thread_id
+	printf("thread create\n");
+	pthread_create(&a, NULL, my_thread, "thread1");	 //스레드를 생성한다.
+	pthread_join(a, NULL); //my_thread가 끝날 때 까지 기다린다.
+}
+{% endhighlight %}
+
+* 이 예제 코드에서는 pthread_join을 통해 pthread가 실행되기 전 main thread가 끝나는 것을 방지합니다.
 
 <br/><br/>
 ## mosquitto
