@@ -9,8 +9,6 @@ tags: c pthread
 finished: true
 ---
 
-> pthread를 사용하고자 하는 프로젝트의 속성에서 사용하시면 됩니다.
-
 ## pthread 다운
 
 ### [pthread-win32 download & install](ftp://sourceware.org/pub/pthreads-win32/pthreads-w32-2-9-1-release.zip)
