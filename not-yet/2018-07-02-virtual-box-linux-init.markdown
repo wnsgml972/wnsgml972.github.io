@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Vitual Box Ubuntu 설치 및 기본 설정"
-subtitle: ""
-date: 2018-07-01
+title: "Vitual Box Ubuntu 설치 및 개발 기본 설정"
+subtitle: "개발하기 좋은 환경에 대한 설정과 여러 패키지를 한번에 다운 받는 방법입니다."
+date: 2018-07-02
 author: KimJunHee
 category: Linux
-tags: linux virtualbox init
+tags: linux virtualbox
 finished: true
 ---
 
