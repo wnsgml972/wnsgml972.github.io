@@ -24,7 +24,7 @@ finished: true
 
 예선은 6문제인데 그동안 따로 알고리즘 공부를 해본 적이 없어, 걱정되는 마음으로 시험을 치렀습니다. 4시간 동안 시험이 진행되는데 총 4문제를 풀어 시험에 제출하였고 제가 느끼는 난이도는 적당하였습니다. <br/>
 그때 풀었던 문제와 풀이입니다. 풀이라기보다는 제가 적어서 낸 답인데 처음 준비해본 알고리즘 대회여서 코드가 난잡하다는 것을 많이 느꼈습니다. 이번 계기로 알고리즘 공부를 해 볼 생각입니다. <br/>
-[MIDAS 예선 문제](https://github.com/wnsgml972/Coding-Test/tree/master/MIDAS-CHALLENGE)
+[MIDAS 예선 문제](https://github.com/wnsgml972/algorithm-study)
 
 <br/><br/>
 ## 본선
