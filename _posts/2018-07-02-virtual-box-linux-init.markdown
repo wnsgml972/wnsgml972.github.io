@@ -85,7 +85,7 @@ finished: true
 ![install](/img/linux/1/init-11.png)
 
 <br/>
-* wireshark는 root 권한으로만 패킷을 캡쳐할 수 있는데 일반 사용자는 가능하게 할 것이냐고 물어봅니다. 우리는 Yes를 눌러줍니다
+* wireshark는 root 권한으로만 패킷을 캡쳐할 수 있는데 일반 사용자도 가능하게 할 것이냐고 물어봅니다. 우리는 Yes를 눌러줍니다
 
 ![install](/img/linux/1/init-7.png)
 
