@@ -181,7 +181,7 @@ __마찬가지로 ```c:\mostemp\``` 경로에 unzip__
 ![MQTT](/img/mqtt/1/mos6.png)
 
 <br/>
-* ```CMAKE_INSTALL_PREFIX``` 를 ```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14``` 로 변경
+* ```CMAKE_INSTALL_PREFIX``` 를 ```C:\mostemp\mosquitto-1.4.14``` 로 변경
 
 ![MQTT](/img/mqtt/1/mos7.png)
 
@@ -225,7 +225,7 @@ __헤더 파일을 읽을 수 있게 해줌__
 ![MQTT](/img/mqtt/1/mos11.png)
 
 <br/>
-* ```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14```의 ```config.h``` 의 15행 을 주석처리
+* ```C:\mostemp\mosquitto-1.4.14```의 ```config.h``` 의 15행 을 주석처리
 
 ![MQTT](/img/mqtt/1/mos12.png)
 
@@ -254,8 +254,8 @@ __헤더 파일을 읽을 수 있게 해줌__
 
 <br/>
 * Release 된 mosquitto broker 와 client 를 확인 (.exe 파일)<br/>
-```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14\build\src\Release``` <br/>
-```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14\build\client\Release```
+```C:\mostemp\mosquitto-1.4.14\build\src\Release``` <br/>
+```C:\mostemp\mosquitto-1.4.14\build\client\Release```
 
 
 <br/>
