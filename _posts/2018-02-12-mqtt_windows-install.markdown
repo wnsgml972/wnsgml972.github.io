@@ -87,7 +87,7 @@ __마찬가지로 ```c:\mostemp\``` 경로에 unzip__
 ![MQTT](/img/mqtt/1/cmake_build.png)
 
 <br/>
-* ```C\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\```의 위치에 __build Directory 생성__
+* ```C\libtemp\libwebsockets-2.4.1\```의 위치에 __build Directory 생성__
 
 ![MQTT](/img/mqtt/1/cmake_build0.png)
 
@@ -97,7 +97,7 @@ __마찬가지로 ```c:\mostemp\``` 경로에 unzip__
 ![MQTT](/img/mqtt/1/cmake_build2.png)
 
 <br/>
-* Configure를 클릭하여 Visual Studio 14 2015 선택
+* Configure를 클릭하여 Visual Studio 14 2015 선택, 사용하는 Visual Studio 버젼이 2017이면  Visual Studio 15 2017 선택
 
 ![MQTT](/img/mqtt/1/cmake_build3.png)
 
@@ -107,7 +107,7 @@ __마찬가지로 ```c:\mostemp\``` 경로에 unzip__
 ![MQTT](/img/mqtt/1/cmake_build4.png)
 
 <br/>
-* ```CMAKE_INSTALL_PREFIX``` 를 ```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1``` 로 변경
+* ```CMAKE_INSTALL_PREFIX``` 를 ```C:\libtemp\libwebsockets-2.4.1``` 로 변경
 
 ![MQTT](/img/mqtt/1/cmake_build5.png)
 
@@ -197,8 +197,8 @@ __마찬가지로 ```c:\mostemp\``` 경로에 unzip__
 ### Visual Studio Configuration
 
 * vc++ 디렉터리->포함 디렉터리<br/>
-```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\build``` <br/>
-```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\lib``` <br/>
+```C:\libtemp\libwebsockets-2.4.1\build``` <br/>
+```C:\libtemp\libwebsockets-2.4.1\lib``` <br/>
 두개의 경로를 추가<br/>
 __헤더 파일을 읽을 수 있게 해줌__
 
@@ -206,15 +206,15 @@ __헤더 파일을 읽을 수 있게 해줌__
 
 <br/>
 * vc++ 디렉터리->라이브러리 디렉터리<br/>
-```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\build\lib\Release```<br/>
+```C:\libtemp\libwebsockets-2.4.1\build\lib\Release```<br/>
 하나의 경로를 추가
 
 ![MQTT](/img/mqtt/1/mos10.png)
 
 <br/>
 * c/c++ -> 일반 -> 추가 포함 디렉터리<br/>
-```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\build```<br/>
-```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\lib```<br/>
+```C:\libtemp\libwebsockets-2.4.1\build```<br/>
+```C:\libtemp\libwebsockets-2.4.1\lib```<br/>
 두개의 경로를 추가<br/>
 
 ![MQTT](/img/mqtt/1/mos14.png)
@@ -257,18 +257,13 @@ __헤더 파일을 읽을 수 있게 해줌__
 ```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14\build\src\Release``` <br/>
 ```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14\build\client\Release```
 
-<br/>
-* ```C:\libtemp\libwebsockets-2.4.1\libwebsockets-2.4.1\build\bin\Release``` 경로의 ```websocket.dll``` 을 ```C:\mostemp\mosquitto-1.4.14\mosquitto-1.4.14\build\src\Release``` 경로에 복사
-
-![MQTT](/img/mqtt/1/mos17.png)
 
 <br/>
-
 > 클라이언트의 .dll 파일 환경 변수 PATH 설정을 위한 과정입니다. 그림과 같이 Pub Client와 Sub Client를 한꺼번에 선택한 후 작업을 진행해 주세요.
 
 * 구성 속성 -> 디버깅 -> 환경 -> 편집<br/>
-```PATh=C:\mostemp\mosquitto-1.4.14\build\lib\Debug;C:\pthreads\Pre-built.2\dll\x86;```<br/>
-mosquitto lib의 dll 파일과 pthread의 dll 파일을 Mapping 시켜 준다.
+```PATH=C:\pthreads\Pre-built.2\dll\x86;C:\pthreads\Pre-built.2\lib\x86;C:\mostemp\mosquitto-1.4.14\build\lib\Debug;C:\libtemp\libwebsockets-2.4.1\build\bin\Release```<br/>
+mosquitto의 dll 파일과 libwebsocket의 dll 파일 그리고 혹시 사용할 pthread의 dll 파일의 환경 변수 PATH 설정을 해준다.
 
 ![MQTT](/img/mqtt/1/mos20.png)
 
