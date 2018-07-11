@@ -4,7 +4,13 @@
 {% endif %}
 
 {% if page.comments != false and site.disqus_username %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
-
+<style>
+#disqus_thread .post-message  div > p {
+	font-family: 'Jeju Gothic', serif;
+	font-weight: 500;
+	font-size : 15px;
+}
+</style>
 {% if site.disqus_username %}
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
