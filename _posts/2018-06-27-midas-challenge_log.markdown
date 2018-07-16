@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2018 MIDAS CHALLENGE 후기"
+title: "2018 마이다스 챌린지 후기"
 subtitle: "인테리어 프로그램 개발"
 date: 2018-06-27
 author: KimJunHee
