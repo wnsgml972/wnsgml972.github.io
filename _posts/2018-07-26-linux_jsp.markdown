@@ -1,0 +1,55 @@
+---
+layout: post
+title: "리눅스에서 JSP 사용하기"
+subtitle: "ubuntu 16.04"
+date: 2018-07-26
+author: KimJunHee
+category: Linux
+tags: linux shell-script
+finished: true
+---
+
+> 본 게시글에서는 java 8 버젼과  tomcat 8버젼을 이용합니다.
+
+## 자바 설치
+
+### 자바 해석기 설치
+
+* ```# apt-get install openjdk-8-jre-headless```
+
+### 자바 컴파일러 설치
+
+* ```# apt-get install openjdk-8-jdk```
+
+### 버젼 확인
+
+* ```# java -version```
+
+* ```# javac -version```
+
+![tomcat](/img/linux/3/1.png)
+
+## 웹 서버, 톰켓 설치
+
+* [Ubuntu 서버에 Tomcat 설치하기](https://wnsgml972.github.io/linux/ubuntu-tomcat.html)
+
+## 확인
+
+* 테스트 코드 입니다. ```/tomcat8/webapps/ROOT```에 jsp 파일을 만들어 확인하시면 됩니다.
+
+{% highlight html %}
+<html>
+<%@ page contentType="text/html;charset=EUC-KR" %>
+<span>test code ! </span>
+<%
+	String test = "success!";
+%>
+<script>
+	alert('<%=test%>');
+</script>
+</html>
+{% endhighlight %}
+
+* 다음 화면이 나오면 성공입니다.
+
+![tomcat](/img/linux/3/1.png)

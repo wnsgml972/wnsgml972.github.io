@@ -26,7 +26,7 @@ finished: true
 User-agent: *
 Allow: /
 
-Sitemap: https://wnsgml972.github.io/wnsgml972.github.io/sitemap.xml
+Sitemap: https://wnsgml972.github.io/sitemap.xml
 {% endhighlight %}
 
 * 확인해보기
