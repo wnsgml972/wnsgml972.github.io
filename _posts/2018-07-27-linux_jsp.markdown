@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "리눅스에서 JSP 사용하기"
+title: "Ubuntu 서버에서 JSP 사용하기"
 subtitle: "ubuntu 16.04"
 date: 2018-07-27
 author: KimJunHee
