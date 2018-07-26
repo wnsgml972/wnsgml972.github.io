@@ -43,6 +43,7 @@ finished: true
 ![tomcat](/img/linux/2/3.png)
 
 * 실행되는 첫 화면은 ```index.html```입니다.
-* ```/tomcat8/webapps/ROOT``` 의 위치에 보면 위 그림의 페이지를 볼 수 있습니다. 따라서 ROOT 폴더부터 원하는 파일을 올려 웹 서버를 구성할 수 있습니다. 저 같은 경우에는 ```/tomcat8/webapps/ROOT/dashboard/WebContent``` 에 dashboard를 만들어 올려놓았습니다. 따라서 url을 ```localhost:8080/dashboard/WebContent```에 간다면 제가 올려 놓은 dashboard를 확인할 수 있습니다.
+* ```/tomcat8/webapps/ROOT``` 의 위치에 보면 위 그림의 파일을 볼 수 있습니다. 따라서 ROOT 폴더부터 원하는 파일을 올려 웹 서버를 구성할 수 있습니다.
+* 저 같은 경우에는 ```/tomcat8/webapps/ROOT/dashboard/WebContent``` 에 dashboard를 만들어 올려놓았습니다. 따라서 url ```localhost:8080/dashboard/WebContent```에 간다면 제가 올려 놓은 dashboard를 접속할 수 있습니다.
 
 ![tomcat](/img/linux/2/4.png)
