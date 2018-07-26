@@ -22,6 +22,7 @@ finished: true
 * ```ps -ef | grep tomcat``` 명령어를 통해 현재 톰캣이 구동중인지 확인할 수 있습니다.
 * 서비스로 구동중이라면 ```service tomcat8 stop``` 명령어를 통해 중지할 수 있습니다.
 
+<br/>
 ## 설치
 
 * <https://tomcat.apache.org/download-80.cgi> 아래의 링크로 들어가 tomcat 8 버젼, tar.gz 파일을 다운 받습니다.
@@ -36,6 +37,7 @@ finished: true
 
 ![tomcat](/img/linux/2/2.png)
 
+<br/>
 ## 확인
 
 * 웹 브라우져를 열어 ```localhost:8080```에 접속하여 밑의 그림이 나오면 성공입니다.

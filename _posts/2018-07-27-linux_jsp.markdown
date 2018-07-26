@@ -2,7 +2,7 @@
 layout: post
 title: "리눅스에서 JSP 사용하기"
 subtitle: "ubuntu 16.04"
-date: 2018-07-26
+date: 2018-07-27
 author: KimJunHee
 category: Linux
 tags: linux shell-script
@@ -29,15 +29,17 @@ finished: true
 
 ![tomcat](/img/linux/3/1.png)
 
+<br/>
 ## 웹 서버, 톰켓 설치
 
 * [Ubuntu 서버에 Tomcat 설치하기](https://wnsgml972.github.io/linux/ubuntu-tomcat.html)
 
+<br/>
 ## 확인
 
 * 테스트 코드 입니다. ```/tomcat8/webapps/ROOT```에 jsp 파일을 만들어 확인하시면 됩니다.
 
-{% highlight html %}
+{% highlight java %}
 <html>
 <%@ page contentType="text/html;charset=EUC-KR" %>
 <span>test code ! </span>
@@ -52,4 +54,4 @@ finished: true
 
 * 다음 화면이 나오면 성공입니다.
 
-![tomcat](/img/linux/3/1.png)
+![tomcat](/img/linux/3/2.png)
