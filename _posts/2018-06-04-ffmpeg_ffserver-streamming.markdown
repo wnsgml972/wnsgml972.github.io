@@ -13,12 +13,25 @@ finished: true
 
 ## FFmpeg 사용 법
 
+### 실행
+
 * bin Directory에 있는 ffmpeg 파일을 실행합니다.
+* 꼭 root 권한으로 실행해야 합니다.
 
 {% highlight bash %}
-$ cd ~/bin
-$ ffmpeg -i 원하는_설정_명령어
+# cd ~/bin
+# ffmpeg -i 원하는_설정_명령어
 {% endhighlight %}
+
+### 주의
+
+![FFMPEG](/img/ffmpeg/1/ffserver0.png)
+
+* root 권한으로 실행하지 않을 경우 다음과 같은 오류가 날 수 있습니다.
+
+![FFMPEG](/img/ffmpeg/1/ffserver01.png)
+
+* root 권한으로 실행했을 때는 정상적으로 실행되는 모습을 확인 할 수 있습니다.
 
 
 <br/><br/>
