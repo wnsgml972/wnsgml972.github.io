@@ -100,6 +100,6 @@ function myCallBack(response){
 
 ## 관련
 
-* [1. Ubuntu 서버에서 JSP 사용하기 ](https://wnsgml972.github.io/linux/linux_jsp.html)
-* [2. Ubuntu 서버에 Tomcat 설치하기  ](https://wnsgml972.github.io/linux/ubuntu-tomcat.html)
+* [1. Ubuntu 서버에 Tomcat 설치하기  ](https://wnsgml972.github.io/linux/ubuntu-tomcat.html)
+* [2. Ubuntu 서버에서 JSP 사용하기 ](https://wnsgml972.github.io/linux/linux_jsp.html)
 * [3. JSP를 이용한 쉘 스크립트 실행 ](https://wnsgml972.github.io/linux/linux_shell-script.html)
