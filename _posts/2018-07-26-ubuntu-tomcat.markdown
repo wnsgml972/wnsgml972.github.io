@@ -49,3 +49,9 @@ finished: true
 * 저 같은 경우에는 ```/tomcat8/webapps/ROOT/dashboard/WebContent``` 에 dashboard를 만들어 올려놓았습니다. 따라서 url ```localhost:8080/dashboard/WebContent```에 간다면 제가 올려 놓은 dashboard를 접속할 수 있습니다.
 
 ![tomcat](/img/linux/2/4.png)
+
+## 관련
+
+* [1. Ubuntu 서버에서 JSP 사용하기 ](https://wnsgml972.github.io/linux/linux_jsp.html)
+* [2. Ubuntu 서버에 Tomcat 설치하기  ](https://wnsgml972.github.io/linux/ubuntu-tomcat.html)
+* [3. JSP를 이용한 쉘 스크립트 실행 ](https://wnsgml972.github.io/linux/linux_shell-script.html)

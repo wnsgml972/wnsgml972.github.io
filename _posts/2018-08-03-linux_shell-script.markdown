@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "HTML 버튼 클릭 시 JSP를 통해 자바 코드를 실행하여 쉘 명령어 실행시키기"
-subtitle: ""
+title: "JSP를 이용한 쉘 스크립트 실행"
+subtitle: "HTML 버튼 클릭 시 JSP를 통해 자바 코드를 실행하여 쉘 명령어 실행시키기"
 date: 2018-08-03
 author: KimJunHee
 category: Linux
@@ -97,3 +97,9 @@ function myCallBack(response){
 ## 확인
 
 ![Linux](/img/linux/4/linux.png)
+
+## 관련
+
+* [1. Ubuntu 서버에서 JSP 사용하기 ](https://wnsgml972.github.io/linux/linux_jsp.html)
+* [2. Ubuntu 서버에 Tomcat 설치하기  ](https://wnsgml972.github.io/linux/ubuntu-tomcat.html)
+* [3. JSP를 이용한 쉘 스크립트 실행 ](https://wnsgml972.github.io/linux/linux_shell-script.html)
