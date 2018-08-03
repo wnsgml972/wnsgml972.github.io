@@ -13,9 +13,9 @@ finished: true
 
 ### HTML, Javascript
 
-#### flow
+#### overview
 
-* html 페이지 버튼 클릭시 ```onclick``` 이벤트에 자바 스크립트 함수를 넣습니다.
+* html 페이지 버튼 클릭 시 ```onclick``` 이벤트에 자바 스크립트 함수를 넣습니다.
 * 자바 스크립트 함수는 비동기식으로 ```jsp```를 호출하여 결과 값을 ```myCallBack``` 함수를 통해 받습니다.
 
 #### html code
@@ -45,15 +45,15 @@ function myCallBack(response){
 
 ### JSP
 
-#### flow
+#### overview
 
 * JSP 페이지에서는 자바의 Processbuilder를 이용하여 프로세스를 생성시키고 쉘 명령어를 실행시켰습니다.
-* 쉘 명령어를 실행시키는 변수는 ```bashCommand```, 쉘 스크립트를 실행시키는 변수는 ```scriptCommand```로 구분지었습니다.
-* 프로세스를 새로 만들어 실행하므로 결과를 확인할 수 없습니다. 때문에 본 예제에서는 프로세스의 inputStream과 errorStream을 받아 버퍼에 넣어 페이지에 출력하도록 하였습니다. 저렇게 하면 출력되는 값을 html 페이지에 가져올 수 있습니다.
-* 본 예제에서는 shell을 이용해 ```ls -al```을 호출하여 나온 출력 값을 myCallBack을 통해 받아, ```alert()``` 를 이용하여 확인하였습니다.
+* 쉘 명령어를 실행시키는 변수는 ```bashCommand```, 쉘 스크립트를 실행시키는 변수는 ```scriptCommand```로 구분 지었습니다.
+* 프로세스를 새로 만들어 실행하므로 결과를 확인할 수 없습니다. 때문에 프로세스의 inputStream과 errorStream을 받아 버퍼에 넣어 페이지에 출력하도록 하였습니다.
+* 본 예제에서는 shell을 이용해 ```ls -al```을 호출하여 나온 출력값을 myCallBack을 통해 받아, ```alert()```를 이용하여 확인하였습니다.
 
 
-### jsp code
+#### jsp code
 
 {% highlight java %}
 <%@ page language="java" import= "java.io.*, java.util.*, java.net.* "
