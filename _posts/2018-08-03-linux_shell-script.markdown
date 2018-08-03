@@ -43,6 +43,7 @@ function myCallBack(response){
 }
 {% endhighlight %}
 
+<br/>
 ### JSP
 
 #### overview
@@ -93,11 +94,13 @@ function myCallBack(response){
 %>
 {% endhighlight %}
 
-
+<br/>
+<br/>
 ## 확인
 
 ![Linux](/img/linux/4/linux.png)
 
+<br/>
 ## 관련
 
 * [1. Ubuntu 서버에 Tomcat 설치하기  ](https://wnsgml972.github.io/linux/ubuntu-tomcat.html)
