@@ -50,6 +50,7 @@ finished: true
 
 ![tomcat](/img/linux/2/4.png)
 
+<br/>
 ## 관련
 
 * [1. Ubuntu 서버에 Tomcat 설치하기  ](https://wnsgml972.github.io/linux/ubuntu-tomcat.html)
