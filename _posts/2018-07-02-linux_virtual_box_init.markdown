@@ -68,7 +68,7 @@ finished: true
 ![install](/img/linux/1/init-6.png)
 
 <br/>
-* ```apt-get install build-essential libncurses5 libncurses5-dev kernel-package bin86 libssl-dev ftpd ssh wireshark iperf speedometer mpv git strongswan vim```
+* ```apt-get install build-essential libncurses5 libncurses5-dev kernel-package bin86 libssl-dev ftpd ssh wireshark iperf speedometer mpv git strongswan vim net-tools```
 
 > 각종 패키지를 다운 받습니다.<br/>
 1. ```build-essential libncurses5 libncurses5-dev kernel-package bin86 libssl-dev``` 는 커널 컴파일을 위한 패키지입니다.
@@ -81,6 +81,7 @@ finished: true
 8. ```git``` git 사용을 위한 패키지입니다.
 9. ```strongswan``` IPSec 사용을 위한 패키지입니다.
 10. ```vim``` vi의 업그레이드 버젼인 편집 툴 패키지입니다.
+11. ```net-tools``` 네트워크 관리자가 흔히 사용하는 여러 가지 기능들(명령어, 유틸리티등)을 사용하기 쉽게 모아놓은 패키지입니다.
 
 ![install](/img/linux/1/init-11.png)
 

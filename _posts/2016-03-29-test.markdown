@@ -395,3 +395,12 @@ void setup() {
   Serial.println("ATcommand");  //ATcommand Start
 }
 {% endhighlight %}
+
+## 유투브
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/K64mb5KUhhs"
+ frameborder="0" allowfullscreen></iframe>
+
+## SlideShare
+
+<img id="img_slide_image" class="slide_image" src="https://image.slidesharecdn.com/tcpipbasics-1207412073456513-8/95/tcpip-basics-1-728.jpg?cb=1207387038" data-normal="https://image.slidesharecdn.com/tcpipbasics-1207412073456513-8/95/tcpip-basics-1-728.jpg?cb=1207387038" data-full="https://image.slidesharecdn.com/tcpipbasics-1207412073456513-8/95/tcpip-basics-1-1024.jpg?cb=1207387038" data-small="https://image.slidesharecdn.com/tcpipbasics-1207412073456513-8/85/tcpip-basics-1-320.jpg?cb=1207387038">
