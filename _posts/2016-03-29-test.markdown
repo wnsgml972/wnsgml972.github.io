@@ -398,9 +398,9 @@ void setup() {
 
 ## 유투브
 
-<iframe width="595" height="485" style="border:1px solid #CCC; margin-left:20px; src="//www.youtube.com/embed/K64mb5KUhhs"
+<iframe width="595" height="485" style="border:1px solid #CCC; margin-left:40px;" src="//www.youtube.com/embed/K64mb5KUhhs"
  frameborder="0" allowfullscreen></iframe>
 
 ## SlideShare
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/LfC5wzZtsL775T" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; margin-left:20px; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/LfC5wzZtsL775T" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; margin-left:40px; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
