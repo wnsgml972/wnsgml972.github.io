@@ -403,4 +403,4 @@ void setup() {
 
 ## SlideShare
 
-<img id="img_slide_image" class="slide_image" src="https://image.slidesharecdn.com/tcpipbasics-1207412073456513-8/95/tcpip-basics-1-728.jpg?cb=1207387038" data-normal="https://image.slidesharecdn.com/tcpipbasics-1207412073456513-8/95/tcpip-basics-1-728.jpg?cb=1207387038" data-full="https://image.slidesharecdn.com/tcpipbasics-1207412073456513-8/95/tcpip-basics-1-1024.jpg?cb=1207387038" data-small="https://image.slidesharecdn.com/tcpipbasics-1207412073456513-8/85/tcpip-basics-1-320.jpg?cb=1207387038">
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/LfC5wzZtsL775T" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/sanjoysanyal/tcpip-basics" title="TCP/IP Basics" target="_blank">TCP/IP Basics</a> </strong> from <strong><a href="https://www.slideshare.net/sanjoysanyal" target="_blank">sanjoysanyal</a></strong> </div>
