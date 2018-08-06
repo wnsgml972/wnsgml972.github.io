@@ -178,7 +178,7 @@ Bit position     | Name     | Description
 <br/><br/>
 ## Mosquitto MQTT Broker
 
-- <https://wnsgml972.github.io/wnsgml972.github.io/mqtt/mosquitto.html>
+- <https://wnsgml972.github.io/mqtt/mqtt_mosquitto.html>
 
 
 <br/><br/>
