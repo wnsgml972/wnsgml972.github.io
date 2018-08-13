@@ -30,12 +30,15 @@
 	{% if this_year == next_year %}
 	{% assign is_first = false %}
 	{% else %}
-	{% assign is_first = true %}
+
   <div id="category" class="hangle">
+	{% assign is_first = true %}
 	{% endif %}
+
   	<ul>
   		<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="date"> - {{ post.date | date_to_long_string }}</span>
   		</li>
   	</ul>
+
 	{% endfor %}
-  </div>
+</div>
