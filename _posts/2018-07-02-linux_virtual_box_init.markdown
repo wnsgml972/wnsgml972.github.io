@@ -68,6 +68,12 @@ finished: true
 ![install](/img/linux/1/init-6.png)
 
 <br/>
+* ```sudo add-apt-repository ppa:webupd8team/atom```
+* ```sudo apt update; sudo apt install atom```
+
+> 먼저 text 편집기인 atom을 다운 받습니다.
+
+<br/>
 * ```apt-get install build-essential libncurses5 libncurses5-dev kernel-package bin86 libssl-dev ftpd ssh wireshark iperf speedometer mpv git strongswan vim net-tools```
 
 > 각종 패키지를 다운 받습니다.<br/>
