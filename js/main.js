@@ -37,16 +37,16 @@ if(!window.location.href.includes("resume")){
 if(window.location.href.includes("resume")){
     $(document).ready(function(){
         for(var i=0; i<$(".category_resume").length; i++){
-          $(".category_resume")[i].hide();
+          $(".category_resume").hide();
         }
     });
 }
 
 
 for(var i=0; i<$(".category_resume").length; i++){
-  $(".dir_control_resume")[i].click(function() {
-    $(".category_resume")[i].toggle(function() {
-      $(".dir_control_resume")[i].toggleClass("fa fa-plus fa fa-minus")
+  $(".dir_control_resume").click(function() {
+    $(".category_resume").toggle(function() {
+      $(".dir_control_resume").toggleClass("fa fa-plus fa fa-minus")
     })
   });
 }
