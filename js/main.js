@@ -43,11 +43,13 @@ if(window.location.href.includes("resume")){
 }
 
 
-$(".dir_control_resume")[i].click(function() {
-  $(".category_resume")[i].toggle(function() {
-    $(".dir_control_resume")[i].toggleClass("fa fa-plus fa fa-minus")
-  })
-});
+for(var i=0; i<$(".category_resume").length; i++){
+  $(".dir_control_resume")[i].click(function() {
+    $(".category_resume")[i].toggle(function() {
+      $(".dir_control_resume")[i].toggleClass("fa fa-plus fa fa-minus")
+    })
+  });
+}
 
 $("#dir_control").click(function() {
 	$("#category").toggle(function() {
