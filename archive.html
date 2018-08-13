@@ -24,14 +24,13 @@
 	<h2>{{ this_year }} <i id="dir_control" class="fa fa-plus"></i></h2>
 	{% endif %}
 
+<div id="category" class="hangle">
 	{% capture next_year %}
 	{{ post.previous.date | date: "%Y" }}
 	{% endcapture %}
 	{% if this_year == next_year %}
 	{% assign is_first = false %}
 	{% else %}
-
-  <div id="category" class="hangle">
 	{% assign is_first = true %}
 	{% endif %}
 
