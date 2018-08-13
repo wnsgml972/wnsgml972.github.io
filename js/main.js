@@ -36,7 +36,9 @@ if(!window.location.href.includes("resume")){
 
 if(window.location.href.includes("resume")){
     $(document).ready(function(){
-      $(".category_resume").hide();
+      for(var i=1; i<=4; i++){
+        $("#category_resume" + i).hide();
+      }
     });
 }
 
@@ -46,8 +48,10 @@ $("#dir_control").click(function() {
 	})
 });
 
-$(".dir_control_resume").click(function() {
-  $(".category_resume").toggle(function() {
-    $(".dir_control_resume").toggleClass("fa fa-plus fa fa-minus")
-  })
-});
+for(var i=1; i<=4; i++){
+  $("#dir_control_resume" + i).click(function() {
+    $("#category_resume" + i).toggle(function() {
+      $("#dir_control_resume" + i).toggleClass("fa fa-plus fa fa-minus")
+    })
+  });
+}
