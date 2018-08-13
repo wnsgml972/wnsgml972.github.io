@@ -48,10 +48,10 @@ $("#dir_control").click(function() {
 	})
 });
 
-for(var i=1; i<=4; i++){
-  $("#dir_control_resume" + i).click(function() {
-    $("#category_resume" + i).toggle(function() {
-      $("#dir_control_resume" + i).toggleClass("fa fa-plus fa fa-minus")
+// for(var i=1; i<=4; i++){
+  $("#dir_control_resume1").click(function() {
+    $("#category_resume1").toggle(function() {
+      $("#dir_control_resume1").toggleClass("fa fa-plus fa fa-minus")
     })
   });
-}
+// }
