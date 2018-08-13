@@ -1,6 +1,6 @@
 hljs.initHighlightingOnLoad();
 
-if(!window.location.href.includes("resume") || !window.location.href.includes("archive")){
+if(!window.location.href.includes("resume") && !window.location.href.includes("archive")){
     $(document).ready(function(){
 
         var total_posts = 0;
