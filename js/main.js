@@ -36,7 +36,7 @@ if(!window.location.href.includes("resume")){
 
 if(window.location.href.includes("resume")){
     $(document).ready(function(){
-      for(var i=1; i<=4; i++){
+      for(var i=1; i<=5; i++){
         $("#category_resume" + i).hide();
       }
     });
@@ -66,5 +66,10 @@ $("#dir_control_resume3").click(function() {
 $("#dir_control_resume4").click(function() {
   $("#category_resume4").toggle(function() {
     $("#dir_control_resume4").toggleClass("fa fa-plus fa fa-minus")
+  })
+});
+$("#dir_control_resume5").click(function() {
+  $("#category_resume5").toggle(function() {
+    $("#dir_control_resume5").toggleClass("fa fa-plus fa fa-minus")
   })
 });
