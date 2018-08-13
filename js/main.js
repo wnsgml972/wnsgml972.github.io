@@ -1,6 +1,6 @@
 hljs.initHighlightingOnLoad();
 
-if(!window.location.href.includes("resume")){
+if(!window.location.href.includes("resume") || !window.location.href.includes("archive")){
     $(document).ready(function(){
 
         var total_posts = 0;
@@ -48,28 +48,30 @@ $("#dir_control").click(function() {
 	})
 });
 
-$("#dir_control_resume1").click(function() {
-  $("#category_resume1").toggle(function() {
-    $("#dir_control_resume1").toggleClass("fa fa-plus fa fa-minus")
-  })
-});
-$("#dir_control_resume2").click(function() {
-  $("#category_resume2").toggle(function() {
-    $("#dir_control_resume2").toggleClass("fa fa-plus fa fa-minus")
-  })
-});
-$("#dir_control_resume3").click(function() {
-  $("#category_resume3").toggle(function() {
-    $("#dir_control_resume3").toggleClass("fa fa-plus fa fa-minus")
-  })
-});
-$("#dir_control_resume4").click(function() {
-  $("#category_resume4").toggle(function() {
-    $("#dir_control_resume4").toggleClass("fa fa-plus fa fa-minus")
-  })
-});
-$("#dir_control_resume5").click(function() {
-  $("#category_resume5").toggle(function() {
-    $("#dir_control_resume5").toggleClass("fa fa-plus fa fa-minus")
-  })
-});
+if(window.location.href.includes("resume")){
+  $("#dir_control_resume1").click(function() {
+    $("#category_resume1").toggle(function() {
+      $("#dir_control_resume1").toggleClass("fa fa-plus fa fa-minus")
+    })
+  });
+  $("#dir_control_resume2").click(function() {
+    $("#category_resume2").toggle(function() {
+      $("#dir_control_resume2").toggleClass("fa fa-plus fa fa-minus")
+    })
+  });
+  $("#dir_control_resume3").click(function() {
+    $("#category_resume3").toggle(function() {
+      $("#dir_control_resume3").toggleClass("fa fa-plus fa fa-minus")
+    })
+  });
+  $("#dir_control_resume4").click(function() {
+    $("#category_resume4").toggle(function() {
+      $("#dir_control_resume4").toggleClass("fa fa-plus fa fa-minus")
+    })
+  });
+  $("#dir_control_resume5").click(function() {
+    $("#category_resume5").toggle(function() {
+      $("#dir_control_resume5").toggleClass("fa fa-plus fa fa-minus")
+    })
+  });
+}
