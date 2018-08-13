@@ -14,10 +14,6 @@
   }
 </style>
 
-<h2>Categories <i id="dir_control" class="fa fa-plus"></i></h2>
-<div id="category_count" class="hangle"></div>
-<div id="category" class="hangle"></div>
-
 	{% assign is_first = true %}
 	{% for post in site.posts %}
 
@@ -25,7 +21,7 @@
 	{{ post.date | date: "%Y" }}
 	{% endcapture %}
 	{% if is_first %}
-	<h2>{{ this_year }}</h2>
+	<h2>{{ this_year }} <i id="dir_control" class="fa fa-plus"></i></h2>
 	{% endif %}
 
 	{% capture next_year %}
@@ -36,10 +32,11 @@
 	{% else %}
 	{% assign is_first = true %}
 	{% endif %}
-
-	<ul>
-		<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="date"> - {{ post.date | date_to_long_string }}</span>
-		</li>
-	</ul>
+  <div id="category" class="hangle">
+  	<ul>
+  		<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="date"> - {{ post.date | date_to_long_string }}</span>
+  		</li>
+  	</ul>
+  </div>
 
 	{% endfor %}
