@@ -36,30 +36,30 @@ if(!window.location.href.includes("resume")){
 
 if(window.location.href.includes("resume")){
     $(document).ready(function(){
-
-        var total_posts = 0;
-        var control_num = 0;
-
-        $("h2,h3,h4,h5,h6").each(function(i,item){
-           var tag = $(item).get(0).localName;
-
-           if(control_num == 0){
-             $(".date").each(function(i_a, item_a){
-              total_posts++;
-             });
-           }
-
-           $(item).attr("id","dir"+i);
-
-           $(".newh2").css("margin-left",25);
-           $(".newh3").css("margin-left",45);
-           $(".newh4").css("margin-left",65);
-           $(".newh5").css("margin-left",85);
-           $(".newh6").css("margin-left",105);
-
-           control_num++;
-
-        });
+        //
+        // var total_posts = 0;
+        // var control_num = 0;
+        //
+        // $("h2,h3,h4,h5,h6").each(function(i,item){
+        //    var tag = $(item).get(0).localName;
+        //
+        //    if(control_num == 0){
+        //      $(".date").each(function(i_a, item_a){
+        //       total_posts++;
+        //      });
+        //    }
+        //
+        //    $(item).attr("id","dir"+i);
+        //
+        //    $(".newh2").css("margin-left",25);
+        //    $(".newh3").css("margin-left",45);
+        //    $(".newh4").css("margin-left",65);
+        //    $(".newh5").css("margin-left",85);
+        //    $(".newh6").css("margin-left",105);
+        //
+        //    control_num++;
+        //
+        // });
 
         $("#category").hide();
     });
