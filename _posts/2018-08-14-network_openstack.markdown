@@ -1,0 +1,98 @@
+---
+layout: post
+title: "IaaS, PaaS, SaaS 분석"
+subtitle: "클라우드 컴퓨팅의 여러 모델"
+date: 2018-08-14
+author: KimJunHee
+category: Network
+tags: network openstack cloud
+finished: true
+---
+
+## IaaS, PaaS, SaaS란 무엇인가?
+
+![GitBlog](/img/network/1/1.png)
+
+### 정리
+
+* 클라우드 컴퓨팅이 도입되면서 최근에 자주 들을 수 있는 용어입니다.
+* IT 인프라의 여러 필요한 구성 요소 중 예전에는 모두 사용자가 관리해야만 했지만, 이제는 일정 부분을 클라우드에서 내려받는 형태가 많이 도입되었습니다.
+* __얼마만큼 사용자가 관리하고 얼마만큼 클라우드에서 제공받는 가에 따라__ 다음과 같이 네가지로 나누어져 있습니다.
+* 위의 그림에서 보이는데로 노랑색의 You manage는 사용자가 관리해야할 부분이고, 흰색의 Managed by vendor는 기업(클라우드)에서 관리해주는 부분입니다.
+
+### 들어가기 전에 (AWS의 EC2)
+
+* AWS의 EC2를 이용하면 우리는 물리적인 서버와 Network, Storage 등등을 직접 구매하거나 준비하지 않아도 원하는 OS를 깔아 서버로 사용할 수 있습니다.
+* AWS의 EC2는 사용자가 원하는 OS를 고르고 그에 해당하는 스펙을 선택하기만 하면, 모든 관리를 아마존에서 해주는 것 입니다. OS를 제공한다는 느낌이긴 하지만, 선택권을 주고 OS의 종류나 다양한 자원들을 사용자가 선택하므로 대표적인 IasS라고 불리고 있습니다.
+
+<br/>
+## Packaged Software
+
+![GitBlog](/img/network/1/2.png)
+
+<span class="evidence">그림에서 보이는 것과 같이 직접 인프라와 플랫폼, 어플리케이션까지 모두 구성하여 관리하는 모델을 의미합니다.</span>
+
+* 물리적인 장치, 하드웨어(CPU, RAM, Storage, Network device 등등)을 모두 직접 구매해야합니다.
+* 직접 OS를 설치해야합니다.
+* 네트워크 환경을 직접적으로 구성해야합니다.
+* 서버를 관리를 직접적으로 해야합니다. (트래픽, 프로지버닝 등등)
+* 이런 모든 것을 직접 사용자가 다 준비해야하기 때문에 매우 큰 시간과 돈을 소비하게 됩니다.
+
+<br/>
+## IaaS(Infrastructure as a service)
+
+![GitBlog](/img/network/1/3.png)
+
+<span class="evidence">Infrastructure 레벨을 제공하는 서비스를 의미합니다. 위에 보이는 것과 같이 사용자는 OS를 직접 올리고 그 상위 계층만 구성하면 되는 모델입니다.</span>
+
+* 우리가 자주 사용하는 가상 호스팅(VM Hosting)과 비슷하나 가상 호스팅은 우리가 직접 장비를 사서 그 장비의 한에서 자원을 할당하고 구성해야하지만, IaaS는 기업이 준비해놓은 환경에서 우리가 선택할 수 있다는 점에서 차이가 있습니다.
+* 일반적으로 적은 OS가 지원됩니다. (아마존은 일부 Linux와 Windows Server 제공)
+* 고객은 OS와 어플리케이션을 직접 관리해야합니다.
+* 관리 측면에서 개발자와 인프라 관리자의 역할을 분담시킬 수 있습니다.
+* AWS의 EC2 모델이 바로 이와 같은 형태입니다.
+
+제가 이번에 만든 오픈소스 Mosquitto를 이용한 MQTT Broker를 아마존의 EC2에 올려서 사용하고 있는데 매우 편리합니다.<br/>
+1년간은 프리티어로 사용할 수 있으니 관심있으신 분은 한번 해보시는 게 좋은 것 같습니다.
+
+<br/>
+## PaaS(Platform as a service)
+
+![GitBlog](/img/network/1/4.png)
+
+<span class="evidence">개발자가 응용 프로그램을 작성할 수 있도록 플랫폼 및 환경을 제공하는 모델입니다.</span>
+
+* 운영 팀이 인프라를 모니터링 할 필요가 없습니다.
+* 사용자는 어필리케이션 자체에만 집중할 수 있습니다. __즉 개발자는 빠르게 어플리케이션을 개발하고 서비스 가능하게 할 수 있습니다.__
+* 가장 이상적인 어플리케이션 플랫폼 관점의 클라우드 모델로 업계에 받아들여지고 있습니다.
+* ```IaaS```와 헷갈릴 수 있는데 아마존과 같은 서비스가 VM을 제공하는 ```IaaS```라면, ```PaaS```는 ```node.js, Java```와 같은 런타임을 미리 깔아놓고, 거기에 소스코드를 넣어서 돌리는 구조입니다. __다시한번 얘기하면 우리는 소스코드만 적어서 빌드하는 것이고, 컴파일은 클라우드에서 하여 결과만 가져오는 거라고 생각하시면 됩니다.__
+* ```PaaS```의 경우 이미 설치된 미들웨어 위에 코드만 돌리면되기 때문에, 아무래도 관리가 매우 편리합니다.
+* PaaS의 제공 업체로는 ```Heroku, Google App Engine, IBM Bluemix, OpenShift, SalesForce```가 있습니다.
+
+<br/>
+## SaaS(Software as a service)
+
+![GitBlog](/img/network/1/5.png)
+
+<span class="evidence">설치할 필요도 없이 클라우드를 통해 제공되는 SW입니다.</span>
+
+* 위의 그림에서 보이는 것처럼 모든 것을 기업(클라우드)에서 제공함으로 사용자는 별도의 설치나 부담이 필요없이 SW를 사용할 수 있습니다.
+* Public Cloud에 있는 SW를 웹 브라우저로 불러와 언제 어디서나 사용할 수 있습니다.
+* 사용자는 웹만 접속하면 되기 때문에 사용하기 매우 쉽고, 최신 SW 업데이트를 빠르게 제공 받을 수 있습니다. 사실상 기업 입장에서도 클라우드에 SW가 있기 때문에 따로 업데이트를 하지 않아도 접속한 사용자는 최신 SW를 사용하게 될 수 있습니다.
+* SaaS는 이러한 기반으로 소비 관점에서 제공되는 IT 방식의 서비스로 정리할 수 있습니다. 구독의 방식으로 돈을 벌거나 트래픽 기반으로 돈을 벌 수 있습니다.
+* 단점으로는 SaaS의 특성상 반드시 인터넷에 접속할 수 있어야만 사용할 수 있고, 외부의 데이터 노출에 대한 위험이 있습니다.
+* 예로는 웹 메일, 구글 클라우드, 네이버 클라우드, MS오피스365, 드롭박스 등이 있습니다.
+
+<br/>
+## 결과
+
+![GitBlog](/img/network/1/0.png)
+
+* 정리하자면 위의 그림과 같이 한 단어로 host, build, consume으로 표현이 가능합니다.
+
+<br/><br/>
+## 참고
+
+* <https://assist-software.net/blog/cloud-offering-comparison-between-iaas-paas-saas-baas>
+* <https://blogs.msdn.microsoft.com/eva/?p=1383>
+* <http://it.donga.com/25782/>
+* <https://wodonggun.github.io/wodonggun.github.io/study/IaaS,-PaaS,-SaaS.html>
