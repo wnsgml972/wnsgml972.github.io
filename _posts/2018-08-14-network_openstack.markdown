@@ -164,6 +164,7 @@ finished: true
 <br/><br/>
 ## 참고
 
+* <https://www.cisp.or.kr/archives/12017>
 * <https://assist-software.net/blog/cloud-offering-comparison-between-iaas-paas-saas-baas>
 * <https://blogs.msdn.microsoft.com/eva/?p=1383>
 * <http://it.donga.com/25782/>
