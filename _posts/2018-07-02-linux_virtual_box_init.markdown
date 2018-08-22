@@ -21,8 +21,8 @@ finished: true
 > 자동 완성에 편하게 하기 위해 영어로 설치하였으며 필요한 드라이버를 다 설치하였습니다.
 
 ![install](/img/linux/1/install-1.png)
-![install](/img/linux/1/install-2.png)
 ![install](/img/linux/1/install-3.png)
+![install](/img/linux/1/install-2.png)
 
 
 <br/><br/>
@@ -41,7 +41,7 @@ finished: true
 <br/>
 ### apt를 빠르게 이용하기 위해 다운 받는 주소를 변경 (해외주소 -> 국내주소)
 
-* ```sudo vi /etc/apt/source.list```
+* ```sudo vi /etc/apt/sources.list```
 
 ![install](/img/linux/1/init-2.png)
 
