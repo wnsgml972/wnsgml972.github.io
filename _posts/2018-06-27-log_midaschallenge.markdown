@@ -64,6 +64,9 @@ finished: true
 이건 대회에 사용했던 프로그램입니다. 수정할 부분이 있으니 참고하여 봐주시기 바랍니다.
 [MIDAS 본선 문제](https://github.com/wnsgml972/MIDAS_C)
 
+__입사 후 다시 만든 인테리어 프로그램입니다.__
+[MFC Interior Program](https://github.com/wnsgml972/MFC-InteriorProgram)
+
 <br/><br/>
 ## 내가 얻은 것
 
