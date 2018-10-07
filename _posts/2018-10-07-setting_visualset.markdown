@@ -4,7 +4,7 @@ title: "Visual Studio 기본 Setting"
 subtitle: "Visual Studio 2017 Basic Setting"
 date: 2018-10-07
 author: KimJunHee
-category: IDE
+category: Setting
 tags: ide visual-studio setting
 finished: true
 ---
