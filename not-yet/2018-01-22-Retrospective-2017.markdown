@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2017 회고"
+title: "2018 회고"
 subtitle: ""
 date: 2018-01-22
 author: KimJunHee
