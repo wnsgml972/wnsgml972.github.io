@@ -16,37 +16,37 @@ finished: true
 * 프로젝트 설정에서 __경로를 조절하여__ pthread를 사용하기 때문에 간단히 해결하실 분은 ```c:\pthreads\``` 경로에 파일 전체를 unzip 합니다.
 
 <br/><br/>
-## 구성 속성
+
+## dll
 
 * 구성 속성 -> 디버깅 -> 환경<br/>
-```PATH=C:\pthreads\Pre-built.2\dll\x86;C:\pthreads\Pre-built.2\lib\x86;``` 를 추가<br/>
-__dll 파일과, lib 파일의 환경 변수를 추가__
+```PATH=C:\pthreads\Pre-built.2\dll\x86;``` 를 추가<br/>
+__dll 파일 디렉토리 경로 추가__
 
 ![C](/img/c/1/1-env.png)
 
-<br/>
-* 구성 속성 -> VC++ 디렉토리에 각각<br/>
-포함 디렉터리 -> ```C:\pthreads\Pre-built.2\include```<br/>
-라이브러리 디렉터리 -> ```C:\pthreads\Pre-built.2\lib\x86```를 추가<br/>
-__pthread의 include 디렉토리와 lib 디렉토리 추가__
 
-![C](/img/c/1/1-dir.png)
-
-<br/><br/>
-## C/C++
+## include
 
 * C/C++ -> 일반 -> 추가 포함 디렉토리<br/>
 ```C:\pthreads\Pre-built.2\include```를 추가
-__pthread의 include 디렉토리 추가__
+__pthread의 include 디렉토리 경로 추가__
 
 ![C](/img/c/1/2-dir.png)
 
 <br/><br/>
-## 링커
+
+## lib
+
+* 링커 -> 입력 -> 추가 라이브러리 디렉토리<br/>
+```C:\pthreads\Pre-built.2\lib```를 추가
+__pthread의 사용하고자 하는 lib 파일 경로 추가__
+
+![C](/img/c/1/5.png)
 
 * 링커 -> 입력 -> 추가 종속성<br/>
 ```pthreadVC2.lib```를 추가
-__pthread의 사용하고자 하는 lib 파일 추가__
+__pthread의 사용하고자 하는 lib 파일 명 추가__
 
 ![C](/img/c/1/3-add.png)
 
@@ -68,7 +68,7 @@ void *my_thread(void *thread_id) {
 int main() {
 	pthread_t a; //thread_id
 	printf("thread create\n");
-	pthread_create(&a, NULL, my_thread, "thread1");	 //스레드를 생성한다.
+	pthread_create(&a, NULL, my_thread, (char *)"thread1");	 //스레드를 생성한다.
 	pthread_join(a, NULL); //my_thread가 끝날 때 까지 기다린다.
 }
 {% endhighlight %}
