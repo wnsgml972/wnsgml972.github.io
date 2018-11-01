@@ -125,13 +125,15 @@ Compile 하기 위해선 ```lib```파일과 ```include(header)``` 파일이 필�
 
 ![setting](/img/setting/1/1.png)
 
+<br/>
+
 * __링커 > 입력 > 추가 종속성__
 
 해당 lib 파일의 파일명을 입력해줍니다.
 
 ![setting](/img/setting/1/2.png)
 
-
+<br/>
 
 #### include
 
@@ -186,4 +188,4 @@ Compile 하기 위해선 ```lib```파일과 ```include(header)``` 파일이 필�
 
 * <https://docs.microsoft.com/ko-kr/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=vs-2017>
 * <http://egloos.zum.com/sweeper/v/2991664>
-* <http://blog.naver.com/PostView.nhn?blogId=ruvendix&logNo=220908681017&parentCategoryNo=66&categoryNo=&viewDate=&isShowPopularPosts=false&from=postList>
+* [RuvendiX](http://blog.naver.com/PostView.nhn?blogId=ruvendix&logNo=220908681017&parentCategoryNo=66&categoryNo=&viewDate=&isShowPopularPosts=false&from=postList)
