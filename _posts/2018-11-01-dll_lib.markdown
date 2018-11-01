@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "C, C++ 외부 라이브러리(dll, lib) 사용하기"
-subtitle: "Import Dynamic or Static Library"
+subtitle: "Import Dynamic or Static Library By Visual Studio"
 date: 2018-11-01
 author: KimJunHee
 category: Setting
@@ -108,7 +108,7 @@ Compile 할 때는 ```lib```과 마찬가지로 링커에게 해당 ```lib```의
 
 2. Compile 과는 별개로 실행만을 목적으로 하고 있다면 따로 lib과 include 파일을 연결하지 않아도 exe 파일 안에 dll 파일만 넣을 경우 실행에 성공하게 됩니다.
 
-따라서 직접 오픈 소스를 적용하여 테스트하고 싶다면 Compile 하기 위한 lib, include 파일 그리고 실행하기 선 dll 파일이 모두 필요합니다. <br/><br/>
+따라서 직접 오픈 소스를 적용하여 테스트하고 싶다면 Compile 하기 위한 lib, include 파일 그리고 실행하기 위해선 dll 파일이 모두 필요합니다. <br/><br/>
 Visual Studio 기준으로 각 파일을 링크하는 방법입니다. 예제는 ptrhead입니다.
 
 
