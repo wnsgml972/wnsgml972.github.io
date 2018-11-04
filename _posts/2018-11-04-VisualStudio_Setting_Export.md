@@ -9,7 +9,7 @@ tags: ide visual-studio setting
 finished: true
 ---
 
-> Visual Studio 에서 사용하는 환경을 다른 구성원과 공유할 때 유용한 팁입니다. (VS2017 기준, 제가 이전 게시글에서 Setting 했던 모든 부분을 다른 구성원들과 바로 공유할 수 있습니다!)
+> Visual Studio 에서 사용하는 환경을 다른 구성원과 공유할 때 유용한 팁입니다. (VS2017 기준, 제가 이전 게시글에서 Setting 했던 모든 부분을 다른 구성원들과 바로 공유할 수 있습니다.)
 
 
 ## Import & Export 는 어디서?
@@ -86,6 +86,6 @@ __무모한 설정 날림을 하지 않기 위해서는 잊지말고 자기 것�
 
 <br/><br/>
 
-## Warning
+## 관련 게시글
 
-* 세팅값들을 신중하게 Import Export 하는 것이 중요합니다!
+* [Visual Studio 기본 Setting](https://wnsgml972.github.io/setting/setting_visualset.html)

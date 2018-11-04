@@ -129,3 +129,10 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 ## 캡쳐 화면
 
 ![visual setting](/img/ide/1/1.png)
+
+
+<br/>
+
+## 관련 게시글
+
+* [Visual Studio Setting Import & Export](https://wnsgml972.github.io/setting/VisualStudio_Setting_Export.html)
