@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Visual Studio Code 기본 Setting"
-subtitle: "VS Code Basic Setting"
+title: "VSCode 기본 Setting"
+subtitle: "Visual Studio Code Basic Setting"
 date: 2018-11-09
 author: KimJunHee
 category: Setting
