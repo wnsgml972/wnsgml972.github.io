@@ -25,20 +25,15 @@ finished: true
 #### 방법 1
 
 1. <https://code.visualstudio.com>에서 ```Linux.deb```를 설치합니다.
-
 2. ```$ sudo dpkg -i code_1.23.1-1525968403_amd64.deb```를 입력합니다.
-
 3. ```$ code``` 명령어로 VS Code를 실행합니다.
 
 #### 방법 2
 
 1. <https://code.visualstudio.com>에서 ```Linux.deb```를 설치합니다.
-
 2. 만약 방법 1에서 ```Package libconf-24 is not installed.``` 에러가 발생한다면  
 ```$ sudo apt-get install gconf-service-backend gconf-service gconf2-common libgconf-2-4```를 입력합니다.
-
 3. ```$ sudo dpkg -i code_1.23.1-1525968403_amd64.deb```를 입력합니다.
-
 4. ```$ code``` 명령어로 VS Code를 실행합니다.
 
 <br/><br/>
