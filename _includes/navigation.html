@@ -96,36 +96,18 @@
 
 /* My Github Card
  -------------------------------------------------- */
- #my-github-card,
- #my-github-card ul,
- #my-github-card ul li,
- #my-github-card ul li a {
-   margin: 0;
-   padding: 3px;
-   border: 0;
-   list-style: none;
-   line-height: 1;
-   display: block;
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;
- }
-
 #my-github-card {
-    /* min-height: 70px !important;
-    padding-top: 10px; */
   	position: fixed;
 	display: inline-block !important;
-	top: 10%;
+	top: 1%;
 	right: 30px;
 }
 </style>
 
 
 <style>
-/* 
-    React Style 
-*/
+/* React Style
+ -------------------------------------------------- */
 /* Mobile Device */
 @media all and (max-width:1024px){
 	#navigation {
@@ -229,11 +211,6 @@ jQuery(document).ready(function() {
     {% endif %}
 {% endfor %}
 
-<div id="my-github-card">
-    <div class="github-card" data-github="wnsgml972" data-width="400" data-height="" data-theme="default"></div>
-    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-</div>
-
 <div id="navigation">
 <nav id="navbar" class="collapse navbar-collapse">
     <ul class="nav navbar-nav">
@@ -266,6 +243,11 @@ jQuery(document).ready(function() {
         {% endfor %}
     </ul>
 </nav>
+</div>
+
+<div id="my-github-card">
+    <div class="github-card" data-github="wnsgml972" data-width="270" data-height="" data-theme="default"></div>
+    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 </div>
 
 <span id ="my_remote" class="fa-stack fa-lg" onclick="javascript:scrollUp();">
