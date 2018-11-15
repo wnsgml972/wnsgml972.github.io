@@ -34,7 +34,14 @@
 }
 </style>
 
+{% if page.url == "/index.html" %}
+<div id="my-github-card">
+    <div class="github-card" data-github="wnsgml972" data-width="400" data-height="" data-theme="medium"></div>
+    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+</div>
+{% else %}
 <div id="my-github-card">
     <div class="github-card" data-github="wnsgml972" data-width="270" data-height="" data-theme="default"></div>
     <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 </div>
+{% endif %}
