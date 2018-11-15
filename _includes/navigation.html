@@ -79,6 +79,53 @@
 	padding: 10px !important;
 }
 
+#my_remote {
+    display: none; position: fixed; right: 5%; bottom: 5%;
+    color: #25b3bc;
+    text-decoration: none;
+    transition: border .5s;
+}
+
+#my_remote:hover {
+    	color: #1F99A1;
+}
+
+</style>
+
+<style>
+
+/* My Github Card
+ -------------------------------------------------- */
+ #my-github-card,
+ #my-github-card ul,
+ #my-github-card ul li,
+ #my-github-card ul li a {
+   margin: 0;
+   padding: 3px;
+   border: 0;
+   list-style: none;
+   line-height: 1;
+   display: block;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+
+#my-github-card {
+    /* min-height: 70px !important;
+    padding-top: 10px; */
+  	position: fixed;
+	display: inline-block !important;
+	top: 10%;
+	right: 30px;
+}
+</style>
+
+
+<style>
+/* 
+    React Style 
+*/
 /* Mobile Device */
 @media all and (max-width:1024px){
 	#navigation {
@@ -86,6 +133,10 @@
 		visibility: hidden !important;
 	}
 	#my_remote{
+		display: none !important;
+		visibility: hidden !important;
+	}
+    #my-github-card {
 		display: none !important;
 		visibility: hidden !important;
 	}
@@ -103,6 +154,10 @@
 		display: none !important;
 		visibility: hidden !important;
 	}
+    #my-github-card {
+		display: none !important;
+		visibility: hidden !important;
+	}
 }
 
 @media (min-width: 700px)  all and (max-width:1024px) and (orientation: landscape){
@@ -113,18 +168,6 @@
 @media all and (min-width:1025px) {
 
 }
-
-#my_remote {
-    display: none; position: fixed; right: 5%; bottom: 5%;
-    color: #25b3bc;
-    text-decoration: none;
-    transition: border .5s;
-}
-
-#my_remote:hover {
-    	color: #1F99A1;
-}
-
 </style>
 
 <script>
@@ -186,9 +229,12 @@ jQuery(document).ready(function() {
     {% endif %}
 {% endfor %}
 
-<div id="navigation">
+<div id="my-github-card">
     <div class="github-card" data-github="wnsgml972" data-width="400" data-height="" data-theme="default"></div>
     <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+</div>
+
+<div id="navigation">
 <nav id="navbar" class="collapse navbar-collapse">
     <ul class="nav navbar-nav">
         {% assign links = site.data.navigation %}
