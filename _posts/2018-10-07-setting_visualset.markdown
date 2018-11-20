@@ -29,8 +29,6 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 
   * BuildVision
     * 빌드중 항목을 프로젝트 별로 정리하여 출력합니다.
-  * CustomDocWell
-    * Tap 문서 관련 UI와 기능을 추가합니다.
   * MatchMargin
     * 텍스트의 인덴트를 일치하게 만들어줍니다.
   * StructureVisualizer (c++ only)
@@ -130,7 +128,7 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 
 ## 캡쳐 화면
 
-![visual setting](/img/ide/1/1.png)
+![visual setting](/img/ide/1/2.png)
 
 
 <br/>
