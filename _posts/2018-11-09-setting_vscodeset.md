@@ -82,6 +82,14 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 
 <br/>
 
+### [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+* **파일 저장 시** 자동으로 코드를 정렬하여 저장합니다.
+
+![prettier](/img/setting/3/prettier.gif)
+
+<br/>
+
 ### [Table Formatter](https://marketplace.visualstudio.com/items?itemName=shuworks.vscode-table-formatter#review-details)
 
 * 테이블을 정렬해줍니다.
