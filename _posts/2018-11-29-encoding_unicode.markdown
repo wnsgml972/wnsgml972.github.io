@@ -68,7 +68,6 @@ UCS는 유니코드를 위한 **고정 길이 문자 인코딩 방식**입니다
 * 1개의 문자를 4 byte인 32-bit에 저장한다고 하여 `UCS-4`라고 명명하였습니다.
 * `UCS-4`는 4개의 byte를 사용하여 **현재 세상의 모든 문자를 표기할 수 있는 코드**(Code Point)입니다.
 
-![unicode](/img/charset/2.png)
 
 <br/>
 
@@ -102,7 +101,7 @@ UCS는 유니코드를 위한 **고정 길이 문자 인코딩 방식**입니다
 
 
 
-<br/>
+<br/><br/>
 
 ## Unicode vs. UCS vs. UTF
 
@@ -128,7 +127,7 @@ UCS는 유니코드를 위한 **고정 길이 문자 인코딩 방식**입니다
 
 
 
-<br/>
+<br/><br/>
 
 ## Unicodes in Software
 
@@ -153,13 +152,15 @@ const wchar_t str3[] = L"여기는 UTF-16"; // std::wstring과 대응, 계당 2b
 const char32_t str4[] = U"여기는 UTF-32"; // std::u32string과 대응, 계당 4byte
 ~~~
 
+<br/>
+
 ### Unicode in Java
 
 * Java(JVM) : Java의 `String`은 `UTF-16`를 기본으로 사용합니다.
 * Java에서 문자열 전송/수신을 위해서 직렬화가 필요할 때 : `UTF-8`을 기본으로 사용합니다.
 
 
-<br/>
+<br/><br/>
 
 ## Unicode in Windows
 
@@ -185,7 +186,7 @@ const char32_t str4[] = U"여기는 UTF-32"; // std::u32string과 대응, 계당
 
 
 
-<br/>
+<br/><br/>
 
 ## 한글 코드의 표현 방식
 
