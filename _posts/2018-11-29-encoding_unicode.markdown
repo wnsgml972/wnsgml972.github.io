@@ -212,9 +212,9 @@ const char32_t str4[] = U"여기는 UTF-32"; // std::u32string과 대응, 계당
 
 ## 참고 
 
+* [IBM](https://www.ibm.com/support/knowledgecenter/ko/SSEPGG_9.1.0/com.ibm.db2.udb.admin.doc/doc/c0004816.htm)
 * <https://d2.naver.com/helloworld/19187>
 * <https://d2.naver.com/helloworld/76650>
-* <https://www.ibm.com/support/knowledgecenter/ko/SSEPGG_9.1.0/com.ibm.db2.udb.admin.doc/doc/c0004816.htm>
 * <http://studyforus.tistory.com/167>
 
 
