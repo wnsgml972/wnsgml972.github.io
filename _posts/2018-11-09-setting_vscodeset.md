@@ -63,6 +63,15 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 
 ![ftp-sync](https://i.imgur.com/W9h4pwW.gif)
 
+
+<br/>
+
+### [Git History](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons#review-details)
+
+* git log 보기, 파일 히스토리, 브랜치와 커밋을 비교 할 수 있는 확장입니다.
+
+![git-history](https://raw.githubusercontent.com/DonJayamanne/gitHistoryVSCode/master/images/gitLogv2.gif)
+
 <br/>
 
 ### [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons#review-details)

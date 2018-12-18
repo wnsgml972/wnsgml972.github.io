@@ -185,7 +185,7 @@ Plant 및 Foundation 은 기획 담당자가 지정해준 폴더에 원본이 �
 
 ## 기타 사항
 
-* Windows 응용 프로그램 완벽한 배포까지 <http://blog.dramancompany.com/2015/12/%EC%B2%98%EC%9D%8C-windows-%EC%84%A4%EC%B9%98-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%98%EC%97%AC/>
+* [Windows 응용 프로그램 완벽한 배포까지 ](http://blog.dramancompany.com/2015/12/%EC%B2%98%EC%9D%8C-windows-%EC%84%A4%EC%B9%98-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%98%EC%97%AC/)
 
 <br/><br/>
 
@@ -224,7 +224,7 @@ Plant 및 Foundation 은 기획 담당자가 지정해준 폴더에 원본이 �
     * 직접 주소 확인해보기 (윈도우 레지스트리 확인)
     * CIM 파일 더블 클릭 시 잘 되는가?
     * 윈도우 레즈스트리 편집기에서 밑에 경로로 가보면 모든 소프트웨어의 GUID를 확인할 수 있다.
-~~~
+~~~c
 HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\
 HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\
 ~~~
