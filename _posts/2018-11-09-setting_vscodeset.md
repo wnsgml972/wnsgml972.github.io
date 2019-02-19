@@ -105,6 +105,15 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 
 ![formatter](https://raw.githubusercontent.com/shuGH/vscode-table-formatter/master/res/complex_demo.gif)
 
+
+### [Live Share](https://visualstudio.microsoft.com/ko/services/live-share/)
+* 실시간으로 공동 작업을 할 수 있습니다.
+* 팀 구성원과의 `Pair Programming`, 해커톤, 대화형 강의, 어려운 디버깅 작업, 브레인 스토킹 등등의 작업을 하기에 유리합니다.
+
+![Live Share](https://visualstudio.microsoft.com/wp-content/uploads/2018/11/v2-Edit-Comp_FINAL-optimized840.gif)
+
+
+
 <br/><br/>
 
 ## 설정 동기화
