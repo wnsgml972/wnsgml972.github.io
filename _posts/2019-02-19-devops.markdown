@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "DevOps의 이해와 적용 - 1편"
-subtitle: "Part 1: Understanding DevOps"
+title: "DevOps란?"
+subtitle: "Understanding DevOps"
 date: 2019-02-19
 author: KimJunHee
 category: DevOps
@@ -90,6 +90,4 @@ DevOps는 `CALMS`라고 해서, 크게 5개지 핵심 요소로 나누어 볼 �
 * <https://www.redhat.com/ko/topics/devops#?>
 * <https://blog.lgcns.com/1755>
 * <https://www.slideshare.net/chingu94/devops-62712241>
-
-
 

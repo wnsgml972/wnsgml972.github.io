@@ -1,0 +1,74 @@
+---
+layout: post
+title: "우리 회사 DevOps 적용기"
+subtitle: "Apply DevOps"
+date: 2019-02-19
+author: KimJunHee
+category: DevOps
+tags: devops
+finished: true
+---
+
+> 아직 전편을 안 보신 분은 [Understanding DevOps](https://wnsgml972.github.io/devops/devops.html)을 참고해주세요. :)
+
+
+## 현재 상태
+
+### 우리 회사에 있는 것
+
+
+### 우리 회사에 없는 것
+
+
+### 앞으로 개선할 것
+
+
+
+
+
+<br/>
+
+## 다른 회사는?
+
+### Facebook
+
+
+### Flicker
+
+
+### Netflix
+
+
+### Google
+
+
+
+
+
+<br/>
+
+### Culture
+
+### Cooperation Tool
+Work | Name 
+---------|----------
+ Version Control | [Git](/contents/BasicEducation/Git.md)
+ CI/CD | GitLab
+ Issue Tracking, Planning | [Jira](/contents/BasicEducation/Jira.md)
+ Docs Cooperation | [Confluence](/contents/BasicEducation/Confluence.md)
+ Static Analysis | Sonar Qube, Cpp Check, [Log](/contents/BasicEducation/CodeQuality.md)
+ Unit Test | [Google Test](https://github.com/google/googletest)
+ Code Review | Gerrit, [Log](/contents/BasicEducation/CodeReview.md)
+
+
+
+
+
+<br/>
+
+## Reference
+
+* [DevOps Topologies](https://web.devopstopologies.com/)
+* <https://www.slideshare.net/chingu94/devops-62712241>
+* <https://blog.lgcns.com/1761>
+
