@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Vitual Box Ubuntu 설치 및 개발 기본 설정"
+title: "Virtual Box Ubuntu 설치 및 개발 기본 설정"
 subtitle: "개발하기 좋은 환경에 대한 설정과 여러 패키지를 한번에 다운 받는 방법입니다."
 date: 2018-07-02
 author: KimJunHee
 category: Linux
-tags: linux virtualbox
+tags: linux virtual-box
 finished: true
 ---
 
 ## Virtualbox ubuntu 설치
 
-### Vitualbox 디스크 설정
+### Virtualbox 디스크 설정
 
 1. LAM 4GB, Disk 100GB로 설정 (각자 취향에 맞게 설정합니다.)
 2. 저장소 -> 컨트롤러: IDE에서 iso 파일 설정
