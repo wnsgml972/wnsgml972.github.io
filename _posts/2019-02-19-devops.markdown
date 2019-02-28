@@ -5,7 +5,7 @@ subtitle: "Understanding DevOps"
 date: 2019-02-19
 author: KimJunHee
 category: DevOps
-tags: devops
+tags: devops agile
 finished: true
 ---
 

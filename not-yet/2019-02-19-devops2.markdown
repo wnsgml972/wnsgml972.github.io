@@ -5,7 +5,7 @@ subtitle: "Apply DevOps"
 date: 2019-02-19
 author: KimJunHee
 category: DevOps
-tags: devops
+tags: devops agile jira confluence git branch code-review
 finished: true
 ---
 
