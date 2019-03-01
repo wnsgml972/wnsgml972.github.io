@@ -42,9 +42,9 @@ if(window.location.href.includes("resume")){
     });
 }
 
-$("#dir_control").click(function() {
+$(".dir_control").click(function() {
 	$("#category").toggle(function() {
-		$("#dir_control").toggleClass("fa fa-plus fa fa-minus")
+		$(".dir_control").toggleClass("fa fa-plus fa fa-minus")
 	})
 });
 
