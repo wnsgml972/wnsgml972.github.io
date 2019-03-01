@@ -21,8 +21,7 @@
 	{{ post.date | date: "%Y" }}
 	{% endcapture %}
 	{% if is_first %}
-	<!-- <h2>{{ this_year }} <i id="dir_control{{ this_year }}" class="fa fa-minus"></i></h2> -->
-	<h2>{{ this_year }} <i class="fa fa-minus dir_control"></i></h2>
+	<h2>{{ this_year }} <i id="dir_control{{ this_year }}" class="fa fa-minus"></i></h2>
 	{% endif %}
 
 	{% capture next_year %}
@@ -34,7 +33,7 @@
 	{% assign is_first = true %}
 	{% endif %}
 	
-<div id="category" class="hangle">
+<div id="category{{ this_year }}" class="hangle">
   	<ul>
   		<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="date"> - {{ post.date | date_to_long_string }}</span>
   		</li>
