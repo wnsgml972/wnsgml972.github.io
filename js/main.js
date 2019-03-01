@@ -42,15 +42,15 @@ if(window.location.href.includes("resume")){
     });
 }
 
-$("#dir_control 2019 ").click(function() {
-	$("#category 2019 ").toggle(function() {
-		$("#dir_control 2019 ").toggleClass("fa fa-plus fa fa-minus")
+$("#dir_control2019").click(function() {
+	$("#category2019").toggle(function() {
+		$("#dir_control2019").toggleClass("fa fa-plus fa fa-minus")
 	})
 });
 
-$("#dir_control 2018 ").click(function() {
-	$("#category 2018 ").toggle(function() {
-		$("#dir_control 2018 ").toggleClass("fa fa-plus fa fa-minus")
+$("#dir_control2018").click(function() {
+	$("#category2018").toggle(function() {
+		$("#dir_control2018").toggleClass("fa fa-plus fa fa-minus")
 	})
 });
 
