@@ -13,7 +13,6 @@
     font-size : 15px;
   }
 </style>
-<div id="category" class="hangle">
 
 	{% assign is_first = true %}
 	{% for post in site.posts %}
@@ -33,11 +32,11 @@
 	{% else %}
 	{% assign is_first = true %}
 	{% endif %}
-
+	
+<div id="category" class="hangle">
   	<ul>
   		<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="date"> - {{ post.date | date_to_long_string }}</span>
   		</li>
   	</ul>
-
-	{% endfor %}
 </div>
+	{% endfor %}
