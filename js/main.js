@@ -42,17 +42,27 @@ if(window.location.href.includes("resume")){
     });
 }
 
-$("#dir_control2019").click(function() {
-	$("#category2019").toggle(function() {
-		$("#dir_control2019").toggleClass("fa fa-plus fa fa-minus")
-	})
-});
+if(window.location.href.includes("archive")){
+  $("#dir_control2019").click(function() {
+    $("#category2019").toggle(function() {
+      $("#dir_control2019").toggleClass("fa fa-plus fa fa-minus")
+    })
+  });
+  $("#dir_control2018").click(function() {
+    $("#category2018").toggle(function() {
+      $("#dir_control2018").toggleClass("fa fa-plus fa fa-minus")
+    })
+  });
+}
 
-$("#dir_control2018").click(function() {
-	$("#category2018").toggle(function() {
-		$("#dir_control2018").toggleClass("fa fa-plus fa fa-minus")
-	})
-});
+
+if(window.location.href.includes("category")){
+  $("#dir_control").click(function() {
+    $("#category").toggle(function() {
+      $("#dir_control").toggleClass("fa fa-plus fa fa-minus")
+    })
+  });
+}
 
 if(window.location.href.includes("resume")){
   $("#dir_control_resume1").click(function() {
