@@ -21,7 +21,8 @@
 	{{ post.date | date: "%Y" }}
 	{% endcapture %}
 	{% if is_first %}
-	<h2>{{ this_year }} <i class="dir_control" class="fa fa-minus"></i></h2>
+	<!-- <h2>{{ this_year }} <i id="dir_control{{ this_year }}" class="fa fa-minus"></i></h2> -->
+	<h2>{{ this_year }} <i class="fa fa-minus dir_control"></i></h2>
 	{% endif %}
 
 	{% capture next_year %}
