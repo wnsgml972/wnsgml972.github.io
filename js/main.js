@@ -42,9 +42,15 @@ if(window.location.href.includes("resume")){
     });
 }
 
-$("#dir_control{{ this_year }}").click(function() {
-	$("#category{{ this_year }}").toggle(function() {
-		$("#dir_control{{ this_year }}").toggleClass("fa fa-plus fa fa-minus")
+$("#dir_control 2019").click(function() {
+	$("#category 2019").toggle(function() {
+		$("#dir_control 2019").toggleClass("fa fa-plus fa fa-minus")
+	})
+});
+
+$("#dir_control 2018").click(function() {
+	$("#category 2018").toggle(function() {
+		$("#dir_control 2018").toggleClass("fa fa-plus fa fa-minus")
 	})
 });
 
