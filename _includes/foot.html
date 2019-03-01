@@ -29,7 +29,7 @@
         scope: SCOPES,
         immediate: useImmdiate
       };
-      gapi.auth.authorize(authData, function(response) {
+      api.auth.authorize(authData, function(response) {
         if (response.error) {
     $(".getViews").text("인증필요");
         }
@@ -42,10 +42,10 @@
   
     function queryReports() {
       // Load the API from the client discovery URL.
-      gapi.client.load(DISCOVERY
+      api.client.load(DISCOVERY
       ).then(function() {
           // Call the Analytics Reporting API V4 batchGet method.
-          gapi.client.analyticsreporting.reports.batchGet( {
+          api.client.analyticsreporting.reports.batchGet( {
             "reportRequests":[
             {
               "viewId":VIEW_ID,
