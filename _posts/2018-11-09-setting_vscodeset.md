@@ -48,13 +48,41 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 * 현재 설정을 Github에 저장하기 __( ```shift + alt + U``` )__
 * Github에 있는 설정 내려받아 적용하기 __( ```shift + alt + D``` )__
 
+
 ### [View In Browser](https://marketplace.visualstudio.com/items?itemName=qinjia.view-in-browser#review-details)
 
 * 단축기 ```F1```을 통해 HTML 파일을 브라우저에서 볼 수 있게 해줍니다.
 
+
 ### [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint#review-details)
 
 * Javascript 개발 시 코드를 분석해 주는 확장기능입니다.
+
+
+### [TODO-Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
+
+* TODO 주석을 하이라이팅 해줍니다.
+
+![Todo](https://github.com/wayou/vscode-todo-highlight/raw/master/assets/material-night-eighties.png)
+
+
+
+### [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+
+* 들여 쓰기를 효과적으로 볼 수 있게 해줍니다.
+
+![indent-rainbow](https://raw.githubusercontent.com/oderwat/vscode-indent-rainbow/master/assets/example.png)
+
+
+
+
+### [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
+
+* Import 시 드는 메모리 비용을 알려줍니다.
+
+![Import Cost](https://file-wkbcnlcvbn.now.sh/import-cost.gif)
+
+
 
 ### [ftp-sync](https://marketplace.visualstudio.com/items?itemName=lukasz-wronski.ftp-sync#review-details)
 
