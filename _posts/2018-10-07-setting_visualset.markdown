@@ -95,9 +95,9 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 * 원하는 줄로 이동  __( ```Ctrl + G``` )__
 * 심볼 찾기 __( ```alt + shift + S``` )__
 * 파일 찾기 __( ``` alt + shift + O``` )__
+* Find References __( ```alt + shift + F``` )__
 * Goto Related __( ```shift + alt + G``` )__
 * List Methods In Current File __( ```alt + Q``` )__
-
 
 ### Basic Visual
 #### Etc
