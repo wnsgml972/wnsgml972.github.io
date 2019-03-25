@@ -119,11 +119,12 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 
 <br/>
 
-### [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+### [Prettier Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 * **파일 저장 시** 자동으로 코드를 정렬하여 저장합니다.
 
 ![prettier](/img/setting/3/prettier.gif)
+
 
 <br/>
 
@@ -133,6 +134,32 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 
 ![formatter](https://raw.githubusercontent.com/shuGH/vscode-table-formatter/master/res/complex_demo.gif)
 
+
+
+
+<br/>
+
+### [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+* 정적 및 동적 페이지에 대해 실시간으로 다시 로드 기능을 사용하여 개발할 수 있습니다.
+
+![Live Server](https://github.com/ritwickdey/vscode-live-server/raw/master/images/Screenshot/vscode-live-server-animated-demo.gif)
+
+
+
+
+<br/>
+
+### [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+
+* 일치하는 대괄호 색상을 구별하기 쉽게 바꿔줍니다.
+
+![Bracket Pair Colorizer](https://github.com/CoenraadS/BracketPair/raw/master/images/example.png)
+
+
+
+ 
+<br/>
 
 ### [Live Share](https://visualstudio.microsoft.com/ko/services/live-share/)
 * 실시간으로 공동 작업을 할 수 있습니다.
