@@ -66,6 +66,13 @@ layout: default
 	{% endif %}
 </div>
 
+<div>
+  <ul>
+    <li><a href="{{page.previous.url | relative_url}}">{{page.previous | escape}}</a></li>
+    <li><a href="{{page.next.url | relative_url}}">{{page.next | escape}}</a></li>
+  </ul>
+</div>
+
 {% include share.html %}
 {% include disqus.html %}
 
