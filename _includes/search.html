@@ -1,10 +1,6 @@
----
-layout: search
----
-
+<!-- Shape Style
+---------------------------------------------------->
 <style>
-/* Shape Style
- -------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
 
 .search-container {
@@ -122,9 +118,12 @@ layout: search
 }
 </style>
 
+
+
+
+<!-- React Style
+---------------------------------------------------->
 <style>
-/* React Style
- -------------------------------------------------- */
 @media all and (max-width:1300px){
   .search-container {
 		display: none !important;
@@ -146,6 +145,10 @@ layout: search
 </style>
 
 
+
+
+<!-- HTML
+---------------------------------------------------->
 <div class="search-container">
   <form action="{{ site.baseurl }}//search.html" method="get">
     <input type="search" class="searchTerm" id="search-box" name="query" placeholder="Search...">
@@ -157,6 +160,9 @@ layout: search
 <ul id="search-results"></ul>
 
 
+
+<!-- JS
+---------------------------------------------------->
 <script>
   window.store = {
     {% for post in site.posts %}
