@@ -1,0 +1,93 @@
+
+<!-- General Style
+---------------------------------------------------->
+<style>
+#my_remote {
+    display: none; position: fixed; right: 5%; bottom: 5%;
+    color: #25b3bc;
+    text-decoration: none;
+    transition: border .5s;
+}
+
+#my_remote:hover {
+    color: #1F99A1;
+}
+</style>
+
+<!-- React Style
+---------------------------------------------------->
+<style>
+/* Mobile Device */
+@media all and (max-width:1024px){
+	#my_remote{
+		display: none !important;
+		visibility: hidden !important;
+	}
+}
+
+@media all and (max-height:500px){
+	#my_remote{
+		display: none !important;
+		visibility: hidden !important;
+	}
+}
+
+/* Desktop Device */
+@media all and (min-width:1025px) {
+
+}
+</style>
+
+
+<!-- JS
+--------------------------------------------------->
+<script>
+var scrollUpDelay = 1;
+var scrollUpSpeed = 30;
+
+function scrollUp()
+{
+  //var scrollTop = (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  var control;
+
+  if(document.documentElement.scrollTop == 0){
+    control = 0;
+  }else{
+    control = 1;
+  }
+
+  if(control == 1){
+	   if(document.documentElement.scrollTop<1)
+	   {
+		     return;
+	   }
+     document.documentElement.scrollTop = document.documentElement.scrollTop-scrollUpSpeed;
+  }else {
+    if(document.body.scrollTop<1)
+    {
+        return;
+    }
+    document.body.scrollTop = document.body.scrollTop-scrollUpSpeed;
+  }
+
+	setTimeout('scrollUp()',scrollUpDelay);
+}
+
+jQuery(document).ready(function() {
+	jQuery(window).scroll(function() {
+		if(jQuery(document).scrollTop() > 300) {
+			jQuery('#my_remote').fadeIn();
+		} else {
+			jQuery('#my_remote').fadeOut();
+		};
+	});
+});
+</script>
+
+
+<!-- HTML
+---------------------------------------------------->
+<span id ="my_remote" class="fa-stack fa-lg" onclick="javascript:scrollUp();">
+  <i class="fa fa-square fa-stack-2x"></i>
+  <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+</span>

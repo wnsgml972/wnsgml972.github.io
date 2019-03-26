@@ -43,37 +43,15 @@
     gtag('config', 'UA-113140483-1');
   </script>
 
-<!-- Paginate CSS -->
-  <style>
-    .page-navigation {
-      display: block;
-      width: auto;
-      overflow: hidden;
-      text-decoration: none !important;
-    }
+<!-- Add Navigation -->
+{% include navigation.html %}
 
-    .page-navigation a {
-      font-size: 16px;
-      display: block;
-      margin: 1em 0;
-    }
 
-    .page-navigation .prev {
-      text-align: right;
-      float: left;
-    }
+<!-- Add Arrow Remote -->
+{% include arrow-remote.html %}
 
-    .page-navigation .next {
-      text-align: right;
-      float: right;
-    }
 
-    .page-navigation > a:hover{
-      text-decoration: none !important;
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .5) !important;
-      color: #ffffff !important;
-      font-weight:bold;
-    }
-  </style>
+<!-- Add paginate CSS -->
+
 
 </head>

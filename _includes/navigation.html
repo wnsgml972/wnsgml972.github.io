@@ -1,22 +1,21 @@
-<!-- Using font awesome -->
-<style>
 
-/* NAVIGATION BAR
- -------------------------------------------------- */
- #navigation,
- #navigation ul,
- #navigation ul li,
- #navigation ul li a {
-   margin: 0;
-   padding: 3px;
-   border: 0;
-   list-style: none;
-   line-height: 1;
-   display: block;
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;
- }
+<!-- General Style
+---------------------------------------------------->
+<style>
+#navigation,
+#navigation ul,
+#navigation ul li,
+#navigation ul li a {
+    margin: 0;
+    padding: 3px;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 #navigation {
 	border : 1px solid lightgray;
@@ -78,37 +77,16 @@
 	margin: 0 !important;
 	padding: 10px !important;
 }
-
-#my_remote {
-    display: none; position: fixed; right: 5%; bottom: 5%;
-    color: #25b3bc;
-    text-decoration: none;
-    transition: border .5s;
-}
-
-#my_remote:hover {
-    color: #1F99A1;
-}
-
 </style>
 
+
+
+<!-- React Style
+---------------------------------------------------->
 <style>
-/* React Style
- -------------------------------------------------- */
 /* Mobile Device */
 @media all and (max-width:1024px){
 	#navigation {
-		display: none !important;
-		visibility: hidden !important;
-	}
-	#my_remote{
-		display: none !important;
-		visibility: hidden !important;
-	}
-}
-
-@media all and (max-height:500px){
-	#my_remote{
 		display: none !important;
 		visibility: hidden !important;
 	}
@@ -127,55 +105,11 @@
 }
 </style>
 
-<script>
-var scrollUpDelay = 1;
-var scrollUpSpeed = 30;
 
 
 
-function scrollUp()
-{
-  //var scrollTop = (document.documentElement || document.body.parentNode || document.body).scrollTop;
-  var control;
-
-  if(document.documentElement.scrollTop == 0){
-    control = 0;
-  }else{
-    control = 1;
-  }
-
-  if(control == 1){
-	   if(document.documentElement.scrollTop<1)
-	   {
-		     return;
-	   }
-     document.documentElement.scrollTop = document.documentElement.scrollTop-scrollUpSpeed;
-  }else {
-    if(document.body.scrollTop<1)
-    {
-        return;
-    }
-    document.body.scrollTop = document.body.scrollTop-scrollUpSpeed;
-  }
-
-	setTimeout('scrollUp()',scrollUpDelay);
-}
-
-jQuery(document).ready(function() {
-	jQuery(window).scroll(function() {
-		if(jQuery(document).scrollTop() > 300) {
-			jQuery('#my_remote').fadeIn();
-		} else {
-			jQuery('#my_remote').fadeOut();
-		};
-	});
-});
-</script>
-
-
-<!-- Belongs at: /_includes/navigation.html -->
-
-<!-- This finds the current page so it can be highlighted. -->
+<!-- HTML
+---------------------------------------------------->
 {% for entry in site.data.navigation %}
 {% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}
     {% if fullurl == page.url %}
@@ -219,8 +153,3 @@ jQuery(document).ready(function() {
     </ul>
 </nav>
 </div>
-
-<span id ="my_remote" class="fa-stack fa-lg" onclick="javascript:scrollUp();">
-  <i class="fa fa-square fa-stack-2x"></i>
-  <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
-</span>
