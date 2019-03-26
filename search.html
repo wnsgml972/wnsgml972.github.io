@@ -1,10 +1,11 @@
 ---
 layout: search
 ---
-<form action="/search.html" method="get">
+
+<form action="/search.html" method="get" class="header-search">
   <label for="search-box">Search</label>
-  <input type="text" id="search-box" name="query">
-  <input type="submit" value="search">
+  <input type="search" id="search-box" name="query" autofocus placeholder="Search what you want!">
+  <input type="submit" value="search" style="display: none;">
 </form>
 
 <ul id="search-results"></ul>
