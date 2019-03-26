@@ -3,6 +3,8 @@ layout: search
 ---
 
 <style>
+/* Shape Style
+ -------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
 
 .search-container {
@@ -15,7 +17,7 @@ layout: search
   width: 300px;
   height: 100px;
 }
-.search-container .search {
+.search-container .search-icon {
   position: absolute;
   margin: auto;
   top: 0;
@@ -30,10 +32,10 @@ layout: search
   z-index: 4;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
 }
-.search-container .search:hover {
+.search-container .search-icon:hover {
   cursor: pointer;
 }
-.search-container .search::before {
+.search-container .search-icon::before {
   content: "";
   position: absolute;
   margin: auto;
@@ -47,7 +49,7 @@ layout: search
   transform: rotate(45deg);
   transition: all 0.5s;
 }
-.search-container .search::after {
+.search-container .search-icon::after {
   content: "";
   position: absolute;
   margin: auto;
@@ -93,17 +95,17 @@ layout: search
   opacity: 1;
   cursor: text;
 }
-.search-container input:focus ~ .search {
+.search-container input:focus ~ .search-icon {
   right: -250px;
   background: #151515;
   z-index: 6;
 }
-.search-container input:focus ~ .search::before {
+.search-container input:focus ~ .search-icon::before {
   top: 0;
   left: 0;
   width: 25px;
 }
-.search-container input:focus ~ .search::after {
+.search-container input:focus ~ .search-icon::after {
   top: 0;
   left: 0;
   width: 25px;
@@ -118,17 +120,42 @@ layout: search
   opacity: 0.5;
   font-weight: bolder;
 }
-
 </style>
+
+<style>
+/* React Style
+ -------------------------------------------------- */
+@media all and (max-width:1300px){
+  .search-container {
+		display: none !important;
+		visibility: hidden !important;
+	}
+}
+
+@media all and (max-height:500px){
+  .search-container {
+		display: none !important;
+		visibility: hidden !important;
+	}
+}
+
+/* Desktop Device */
+@media all and (min-width:1025px) {
+
+}
+</style>
+
+
 <div class="search-container">
   <form action="/search.html" method="get">
     <input type="search" class="searchTerm" id="search-box" name="query" placeholder="Search...">
     <input type="submit" class="searchButton" value="search" style="display: none;">
-    <div class="search"></div>
+    <div class="search-icon"></div>
   </form>
 </div>
 
 <ul id="search-results"></ul>
+
 
 <script>
   window.store = {
@@ -144,5 +171,6 @@ layout: search
     {% endfor %}
   };
 </script>
+
 <script src="/js/lunr.min.js"></script>
 <script src="/js/search.js"></script>
