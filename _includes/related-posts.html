@@ -1,3 +1,12 @@
+<style>
+.related_posts > a:hover {
+    text-decoration: none !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5) !important;
+    color: #ffffff !important;
+    font-weight:bold;
+}
+</style>
+
 <h3 class="hangle">관련 게시물</h3>
 <ul class="related_posts">
     {% for post in site.related_posts limit: 3 %}
