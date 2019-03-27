@@ -2,7 +2,8 @@
   function displaySearchResults(results, store) {
     var searchResults = document.getElementById('search-results');
 
-    if (results.length) { // Are there any results?
+    if (results.length) 
+    { // Are there any results?
       var appendString = '';
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
@@ -13,7 +14,9 @@
       }
 
       searchResults.innerHTML = appendString;
-    } else {
+    } 
+    else 
+    {
       searchResults.innerHTML = '<li>No results found</li>';
     }
   }
