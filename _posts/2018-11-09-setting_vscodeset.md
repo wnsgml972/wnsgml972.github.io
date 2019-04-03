@@ -148,7 +148,7 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 
 
 
- 
+
 <br/>
 
 ### [Live Share](https://visualstudio.microsoft.com/ko/services/live-share/)
