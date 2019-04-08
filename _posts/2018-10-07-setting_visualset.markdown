@@ -90,9 +90,9 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 ## 유용한 단축기
 
 ### Visual Assist
-* Header file과 Source file 전환 __( ```Ctrl + ` ``` )__
+* Header file과 Source file 전환 __( ```ctrl + ` ``` )__
 * Add Include __( ```alt + I``` )__
-* 원하는 줄로 이동  __( ```Ctrl + G``` )__
+* 원하는 줄로 이동  __( ```ctrl + G``` )__
 * Find Symbol __( ```alt + shift + S``` )__
 * Find File __( ``` alt + shift + O``` )__
 * Find References __( ```alt + shift + F``` )__
@@ -102,6 +102,7 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 ### Basic Visual
 #### Etc
 * 빠른실행  __( ```ctrl + Q``` )__ : 모든 명령어를 검색하여 실행 가능
+* 책갈피  __( ```ctrl + F2``` )__
 * 클립보드  __( ```ctrl + shift + V``` )__
 * 주석, 풀기  __( ```드래그 + /``` )__
 * 정렬 바꾼 값 __( ```ctrl + shift + F``` )__
