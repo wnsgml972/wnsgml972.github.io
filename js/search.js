@@ -10,7 +10,7 @@
         var item = store[results[i].ref];
         appendString += '<div class="search__result"><a href="' + item.url + '"><h5 class="post-title"><span class="hangle link">' + item.title + '</span></h3></a>';
         appendString += '<div class="post-description hangle"><small class="post-date">' + item.content.substring(0, 250) + '....' + '</small></div>';
-        appendString += '</div><br/>'
+        appendString += '</div><br/><hr/>'
       }
 
       searchResults.innerHTML = appendString;
