@@ -26,10 +26,12 @@ __VS실행 -> [도구] -> [옵션] -> [환경] -> [글꼴 및 색] (D2Coding), �
 ### Visual 기본 Add In
 
 __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual Studio 갤러리] 에서 검색__
+* Better Comments
+  * 코멘트 `!, ?, x, TODO`를 하이라이팅 해줍니다.
+* Type Hierachy
+  * Class나 Interface의 Hierachy를 보여줍니다.
 * BuildVision
   * 빌드중 항목을 프로젝트 별로 정리하여 출력합니다.
-* MatchMargin
-  * 텍스트의 인덴트를 일치하게 만들어줍니다.
 * StructureVisualizer (c++ only)
   * 구문, 즉 괄호에 조금 더 잘 알아볼 수 있게 하이라이팅 해줍니다.
   * 기능으로 영역 안에서 ctrl 누르고 있으면 하이라이팅 찐하게 됩니다.
@@ -42,9 +44,11 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
   * 하단의 [출력] 창에 내용에 로그 수준(경고/에러)에 따라 색상을 부여합니다.
 * CodeMaid
   * 불필요한 공백 기능 제거, 소스 파일에서 어느 필터에 있는지 나오는 기능, 등등 여러 기능을 제공합니다.  (옵션에서 Progresing 옵션을 모두 꺼줘야합니다.)
-* PowerCommands
-  * 필터에서도, 소스 파일에서도 해당 디렉토리를 바로 열 수 있습니다.
+* **Clang Power Tools**
+  * C ++ 코드를 최신 C ++ 지침에 따라 검사하고 **정적 분석 검사**를 수행하여 수동 코드 검토 프로세스로는 불가능한 미묘한 버그를 발견하는 데 사용할 수 있습니다.
+  * 고급 구성의 경우 CI / 자동화 용 PowerShell 스크립트를 수정할 수도 있습니다.
 * **Live Share**
+  * VS2019에서는 기본 기능입니다.
   * [Microsoft](https://visualstudio.microsoft.com/ko/services/live-share/) 에서 다운합니다.
   * 실시간으로 공동 작업을 할 수 있습니다.
   * 팀 구성원과의 `Pair Programming`, 해커톤, 대화형 강의, 어려운 디버깅 작업, 브레인 스토킹 등등의 작업을 하기에 유리합니다.
