@@ -149,13 +149,64 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 
 
 
+
+<br/>
+
+### [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
+
+* 특정 코멘트 별로을 하이라이팅 해줍니다.
+
+![Better Comments](https://github.com/aaron-bond/better-comments/raw/master/images/better-comments.PNG)
+
+
+
+
+
+
+
+<br/>
+
+### [CSS Peek](https://github.com/pranaygp/vscode-css-peek)
+
+* CSS 아이디로 정의 위치 이동이 가능하게 합니다.
+* Peek: load the file inline and make quick edits right there. `(Ctrl+Shift+F12)`
+* Go To: jump directly to the file or open it in a new editor `(F12)`
+* Hover: show the definition in a hover over the symbol `(Ctrl+hover)`
+
+![CSS Peek](https://github.com/pranaygp/vscode-css-peek/raw/master/symbolProvider.gif)
+
+
+
+
+
+
+<br/>
+
+### [File Peek](https://github.com/abierbaum/vscode-file-peek)
+
+* File Name으로 정의 위치 이동이 가능하게 합니다.
+* Peek: load the file inline and make quick edits right there. `(Ctrl+Shift+F12)`
+* Go To: jump directly to the file or open it in a new editor `(F12)`
+* Hover: show the definition in a hover over the symbol `(Ctrl+hover)`
+
+![File Peek](https://github.com/abierbaum/vscode-file-peek/raw/master/images/working.gif)
+
+
+
+
+
+
+
 <br/>
 
 ### [Live Share](https://visualstudio.microsoft.com/ko/services/live-share/)
 * 실시간으로 공동 작업을 할 수 있습니다.
 * 팀 구성원과의 `Pair Programming`, 해커톤, 대화형 강의, 어려운 디버깅 작업, 브레인 스토킹 등등의 작업을 하기에 유리합니다.
+* Visual Studio 2019에서는 기본 기능으로 들어가 있다고 합니다.
 
 ![Live Share](https://visualstudio.microsoft.com/wp-content/uploads/2018/11/v2-Edit-Comp_FINAL-optimized840.gif)
+
+
 
 
 
