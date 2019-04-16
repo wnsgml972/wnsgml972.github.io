@@ -27,7 +27,13 @@ __VS실행 -> [도구] -> [옵션] -> [환경] -> [글꼴 및 색] (D2Coding), �
 
 __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual Studio 갤러리] 에서 검색__
 * Better Comments
-  * 코멘트 `!, ?, x, TODO`를 하이라이팅 해줍니다.
+  * 주석 `!, ?, x, TODO`를 하이라이팅 해줍니다.
+* Add New File
+  * `.gitignore` 같은 형식이 없는 파일을 쉽게 생성할 수 있게 해줍니다.
+* File Icons
+  * 파일 아이콘 테마를 바꿔줍니다.
+* File Nesting
+  * 중첩되는 파일 별로 Filter를 정리할 수 있게 해줍니다.
 * Type Hierachy
   * Class나 Interface의 Hierachy를 보여줍니다.
 * BuildVision
