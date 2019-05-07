@@ -159,7 +159,7 @@ vim ~/.bashrc
 
 ![Windows Power Shell](/img/setting/4/ubuntu-setting4.png)
 
-#### 5. vcxsrv 서버의 실행을 확인한 뒤 `xeyes` 명령을 치면 눈 모양의 위젯 확인
+#### 5. vcxsrv 서버의 실행을 확인한 뒤 `xeyes` 명령을 친 뒤, 눈 모양의 위젯 확인
 
 ![Windows Power Shell](/img/setting/4/ubuntu-setting5.png)
 
