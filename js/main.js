@@ -42,6 +42,14 @@ if(window.location.href.includes("resume")){
     });
 }
 
+if(window.location.href.includes(".html")){
+  $("#dir_control").click(function() {
+    $("#category").toggle(function() {
+      $("#dir_control").toggleClass("fa fa-plus fa fa-minus")
+    })
+  });
+}
+
 if(window.location.href.includes("archive")){
   $("#dir_control2019").click(function() {
     $("#category2019").toggle(function() {
