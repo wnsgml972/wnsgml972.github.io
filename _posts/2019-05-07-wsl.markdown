@@ -132,7 +132,7 @@ Microsoft에서 제공하는 WSL은 GUI 프로그램을 실행할 수 없습니�
 * `vcxsrv` 서버를 다운로드하고 실행합니다. <br/> <https://sourceforge.net/projects/vcxsrv/> 
 
 ### WSL 환경 설정 및 테스트하기
-1. `/etc/machine-id` 파일 생성
+* **1** `/etc/machine-id` 파일 생성
 
 ~~~bash
 sudo systemd-machine-id-setup
@@ -142,19 +142,19 @@ cat /etc/machine-id
 
 위와 같은 명령을 실행했을 때 16진수 형태의 GUID 값이 표시되면 정상적으로 파일이 만들어진 것입니다.
 
-2. `x11-apps` 패키지와 `X Window System` 기본 서체를 설치
+* **2** `x11-apps` 패키지와 `X Window System` 기본 서체를 설치
 
 ~~~bash
 sudo apt -y install x11-apps xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyrillic
 ~~~
 
-3. vcxsrv 서버 설정을 현재 세션에서 사용하도록 구성하고 쉘을 다시 시작
+* **3** vcxsrv 서버 설정을 현재 세션에서 사용하도록 구성하고 쉘을 다시 시작
 
 ~~~bash
 export DISPLAY=:0
 ~~~
 
-4. bashrc 파일에 위의 설정을 적용한 뒤 저장
+* **4** bashrc 파일에 위의 설정을 적용한 뒤 저장
 
 ~~~bash
 vim ~/.bashrc
@@ -162,7 +162,7 @@ vim ~/.bashrc
 
 ![Windows Power Shell](/img/setting/4/ubuntu-setting4.png)
 
-5. vcxsrv 서버의 실행을 확인한 뒤 `xeyes` 명령을 치면 눈 모양의 위젯 확인
+* **5** vcxsrv 서버의 실행을 확인한 뒤 `xeyes` 명령을 치면 눈 모양의 위젯 확인
 
 ![Windows Power Shell](/img/setting/4/ubuntu-setting5.png)
 
