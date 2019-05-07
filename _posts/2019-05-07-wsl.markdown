@@ -9,6 +9,7 @@ tags: windows-10 ubuntu bash open-source
 finished: true
 ---
 
+
 ## 왜 Windows 10에서 Ubuntu를?
 
 개발을 진행하다 보면 때때로 Windows 환경을 지원하지 않는 경우가 종종 있습니다. 그로인해 우리는 가상머신 혹은 컨테이너나 Cygwin 같은 것을 이용해야 했습니다. 
@@ -16,6 +17,25 @@ finished: true
 이런 문제점을 개선하기 위해 마이크로소프트와 우분투를 창립한 캐노니컬(Canonical)이라는 회사가 합작하여 **우분투 리눅스에서 수행되는 Bash Shell 바이너리 그 자체를 윈도우에서 수행할 수 있도록 만들었습니다.**
 
 이러한 기능을 `Windows Subsystem for Linux`라 하여 줄여서 `WSL`이라 부르고 있으며, 이것을 이용하면 오픈 소스 기반의 개발 환경을 쉽게 구축할 수 있습니다.
+
+
+
+<br/><br/>
+
+## 완성 모습
+
+`WSL`에 설치된 `Ubuntu`로 실행한 `Ubuntu 파일 관리자`, `gnome-terminal`, `atom` 등을 Windows 환경에서 실행하였으며, 다음 캡쳐 화면은 웹 개발환경을 쉽게 구성한 모습을 보여드렸습니다.
+
+`Ubuntu`에서 `tomcat`을 설치하여 WebContent를 올려줍니다. 다음으로 **Ubuntu 의 Firefox가 아닌(같은 localhost임을 보여주기 위해)**, Windows Chrome으로 Webcontent가 올라간 주소인 localhost:8080/dashboard/WebContent에 접속합니다. Dashboard가 정상적으로 나온 것을 확인할 수 있습니다. 
+
+**이 모든 것을 이용하면 Windows에서 Ubuntu 개발 환경을 쉽게 구성할 수 있습니다.**
+
+
+![Windows Power Shell](/img/setting/4/ubuntu-setting6.png)
+
+
+
+
 
 
 <br/><br/>
