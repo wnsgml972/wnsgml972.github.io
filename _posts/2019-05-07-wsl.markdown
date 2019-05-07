@@ -151,7 +151,7 @@ sudo apt -y install x11-apps xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyril
 export DISPLAY=:0
 ~~~
 
-#### 4. bashrc 파일에 위의 설정을 적용한 뒤 저장
+#### 4. .bashrc 파일에 위의 설정을 적용한 뒤 저장
 
 ~~~bash
 vim ~/.bashrc
