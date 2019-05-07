@@ -211,7 +211,7 @@ sudo apt -y install fonts-unfonts-core fonts-unfonts-extra fonts-baekmuk fonts-n
 윈도우의 페인트 프로그램과 유사한 프로그램입니다.
 
 ~~~bash
-apt-get install pinta
+sudo apt-get install pinta
 pinta&
 ~~~
 
