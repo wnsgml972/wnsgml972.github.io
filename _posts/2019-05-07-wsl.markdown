@@ -110,26 +110,25 @@ sudo apt full-upgrade
 
 > Network 개발 환경 구성을 기준으로 작성되었습니다.
 
-* `sudo apt-get install build-essential libncurses5 libncurses5-dev kernel-package bin86 libssl-dev ftpd ssh wireshark iperf speedometer mpv git strongswan vim net-tools g++ cmake nvidia-375 ubuntu-restricted-extras`
+* `sudo apt-get install ftpd ssh wireshark iperf speedometer mpv git strongswan vim net-tools g++ cmake nvidia-375 ubuntu-restricted-extras`
 
 
 > 각종 프로그램 설명입니다. 
 
-1. ```build-essential libncurses5 libncurses5-dev kernel-package bin86 libssl-dev``` 는 커널 컴파일을 위한 패키지입니다.
-2. ```ftpd``` ftp 서버 사용을 위한 패키지입니다.
-3. ```ssh``` 원격 접속을 위한 패키지입니다.
-4. ```wireshark``` 패킷 캡쳐를 위한 패키지입니다.
-5. ```iperf``` 네트워크 성능 측정을 위한 패키지입니다.
-6. ```speedometer``` 네트워크의 대역폭에 대한 모니터링을 할 수 있는 패키지입니다.
-7. ```mpv``` 리눅스에서 사용 되는 플레이어 패키지입니다.
-8. ```git``` git 사용을 위한 패키지입니다.
-9. ```strongswan``` IPSec 사용을 위한 패키지입니다.
-10. ```vim``` vi의 업그레이드 버젼인 편집 툴 패키지입니다.
-11. ```net-tools``` 네트워크 관리자가 흔히 사용하는 여러 가지 기능들(명령어, 유틸리티등)을 사용하기 쉽게 모아놓은 패키지입니다.
-12. `g++` g++ 컴파일러입니다.
-13. `cmake` 멀티플랫폼 빌드 도구입니다. 
-14. `nvidia-375` 그래픽 카드 드라이버입니다.
-15. `ubuntu-restricted-extras` codec 등 미디어 라이브러리입니다.
+1. ```ftpd``` ftp 서버 사용을 위한 패키지입니다.
+2. ```ssh``` 원격 접속을 위한 패키지입니다.
+3. ```wireshark``` 패킷 캡쳐를 위한 패키지입니다.
+4. ```iperf``` 네트워크 성능 측정을 위한 패키지입니다.
+5. ```speedometer``` 네트워크의 대역폭에 대한 모니터링을 할 수 있는 패키지입니다.
+6. ```mpv``` 리눅스에서 사용 되는 플레이어 패키지입니다.
+7. ```git``` git 사용을 위한 패키지입니다.
+8. ```strongswan``` IPSec 사용을 위한 패키지입니다.
+9. ```vim``` vi의 업그레이드 버젼인 편집 툴 패키지입니다.
+10. ```net-tools``` 네트워크 관리자가 흔히 사용하는 여러 가지 기능들(명령어, 유틸리티등)을 사용하기 쉽게 모아놓은 패키지입니다.
+11. `g++` g++ 컴파일러입니다.
+12. `cmake` 멀티플랫폼 빌드 도구입니다. 
+13. `nvidia-375` 그래픽 카드 드라이버입니다.
+14. `ubuntu-restricted-extras` codec 등 미디어 라이브러리입니다.
 
 
 <br/>
