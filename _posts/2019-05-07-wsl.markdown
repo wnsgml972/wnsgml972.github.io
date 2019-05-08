@@ -246,7 +246,7 @@ atom&
 
 ## 더 발전된 MS Windows Terminal
 
-<iframe width="595" height="485" style="border:1px solid #CCC; margin-left:40px;" src="https://www.youtube.com/embed/8gw0rXPMMPE"
+<iframe width="640" height="360" style="border:1px solid #CCC; margin-left:40px;" src="https://www.youtube.com/embed/8gw0rXPMMPE"
  frameborder="0" allowfullscreen></iframe>
 
 더 강력한 버전의 터미널을 MS에서 올해 2019년도 겨울에 1.0 버전으로 정식 출시하는 것을 목표로 하고 있다고 합니다. 오픈 소스로 Github에 공개되어 있으며, 여름에 MS 스토어에 프리뷰 버전을 출시한다고 하니 한번 써보는 것도 좋을 것 같습니다. 
