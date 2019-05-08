@@ -254,6 +254,16 @@ atom&
 
 
 
+
+<br/><br/>
+
+## 관련 게시글
+
+* [Virtual Box Ubuntu 설치 및 개발 기본 설정](https://wnsgml972.github.io/linux/linux_virtual_box_init.html)
+
+
+
+
 <br/><br/>
 
 ## Reference
