@@ -12,9 +12,9 @@ finished: true
 
 ## 왜 Windows 10에서 Ubuntu를?
 
-개발을 진행하다 보면 때때로 Windows 환경을 지원하지 않는 경우가 종종 있습니다. 그로인해 우리는 가상머신 혹은 컨테이너나 Cygwin 같은 것을 이용해야 했습니다. 
+개발을 진행하다 보면 때때로 Windows 환경을 지원하지 않는 경우가 종종 있습니다. 그로 인해 우리는 가상머신 혹은 컨테이너나 Cygwin 같은 것을 이용해야 했습니다. 
 
-이런 문제점을 개선하기 위해 마이크로소프트와 우분투를 창립한 캐노니컬(Canonical)이라는 회사가 합작하여 **우분투 리눅스에서 수행되는 Bash Shell 바이너리 그 자체를 윈도우에서 수행할 수 있도록 만들었습니다.**
+이런 문제점을 개선하기 위해 마이크로소프트와 우분투를 창립한 캐노니컬(Canonical)이라는 회사가 합작하여 **우분투 리눅스에서 수행되는 Bash Shell 바이너리 그 자체를 Windows에서 수행할 수 있도록 만들었습니다.**
 
 이러한 기능을 `Windows Subsystem for Linux`라 하여 줄여서 `WSL`이라 부르고 있으며, 이것을 이용하면 오픈 소스 기반의 개발 환경을 쉽게 구축할 수 있습니다.
 
@@ -24,9 +24,9 @@ finished: true
 
 ## 완성 모습
 
-`WSL`에 설치된 `Ubuntu`로 실행한 `Ubuntu 파일 관리자`, `gnome-terminal`, `atom` 등을 Windows 환경에서 실행하였으며, 다음 캡쳐 화면은 웹 개발환경을 쉽게 구성한 모습을 보여드렸습니다.
+`WSL`에 설치된 `Ubuntu`로 실행한 `Ubuntu 파일 관리자`, `gnome-terminal`, `atom` 등을 Windows 환경에서 실행하였으며, 다음 캡처 화면은 웹 개발 환경을 쉽게 구성한 모습을 보여드렸습니다.
 
-`Ubuntu`에서 `tomcat`을 설치하여 WebContent를 올려줍니다. 다음으로 **Ubuntu 의 Firefox가 아닌(같은 localhost임을 보여주기 위해)**, Windows Chrome으로 Webcontent가 올라간 주소인 localhost:8080/dashboard/WebContent에 접속합니다. Dashboard가 정상적으로 나온 것을 확인할 수 있습니다. 
+`Ubuntu`에서 `tomcat`을 설치하여 WebContent를 올려줍니다. 다음으로 **Ubuntu의 Firefox가 아닌(같은 localhost 임을 보여주기 위해)**, Windows Chrome으로 Webcontent가 올라간 주소인 localhost:8080/dashboard/WebContent에 접속합니다. Dashboard가 정상적으로 나온 것을 확인할 수 있습니다. 
 
 **이 모든 것을 이용하면 Windows에서 Ubuntu 개발 환경을 쉽게 구성할 수 있습니다.**
 
@@ -120,11 +120,11 @@ sudo apt full-upgrade
 4. ```wireshark``` 패킷 캡쳐를 위한 패키지입니다.
 5. ```iperf``` 네트워크 성능 측정을 위한 패키지입니다.
 6. ```speedometer``` 네트워크의 대역폭에 대한 모니터링을 할 수 있는 패키지입니다.
-7. ```mpv``` 리눅스에서 사용 되는 플레이어 패키지입니다.
+7. ```mpv``` 리눅스에서 사용되는 플레이어 패키지입니다.
 8. ```git``` git 사용을 위한 패키지입니다.
 9. ```strongswan``` IPSec 사용을 위한 패키지입니다.
-10. ```vim``` vi의 업그레이드 버젼인 편집 툴 패키지입니다.
-11. ```net-tools``` 네트워크 관리자가 흔히 사용하는 여러 가지 기능들(명령어, 유틸리티등)을 사용하기 쉽게 모아놓은 패키지입니다.
+10. ```vim``` vi의 업그레이드 버전인 편집 툴 패키지입니다.
+11. ```net-tools``` 네트워크 관리자가 흔히 사용하는 여러 가지 기능들(명령어, 유틸리티 등)을 사용하기 쉽게 모아놓은 패키지입니다.
 12. `cmake` 멀티플랫폼 빌드 도구입니다. 
 13. `nvidia-375` 그래픽 카드 드라이버입니다.
 14. `ubuntu-restricted-extras` codec 등 미디어 라이브러리입니다.
@@ -134,17 +134,17 @@ sudo apt full-upgrade
 
 <hr/>
 
-> 아래의 구성은 **고급 개발환경 구성입니다.** <br/>
+> 아래의 구성은 **고급 개발 환경 구성입니다.** <br/>
 WSL 환경에서 GUI 프로그램을 구성하는 것이 의미 있는 이유는, 개발 환경의 완전한 단일화와 프로그램 테스트 등에서 유용하게 쓰일 수 있기 때문입니다. 또한 VM 기반이 아니기 때문에 테스트와 사용 시 속도와 효율성 면에 있어서 매우 유리합니다.
 
 
 <br/>
 
-## GUI 프로그램 실행을 위한 개발환경 구성
+## GUI 프로그램 실행을 위한 개발 환경 구성
 
-Microsoft에서 제공하는 WSL은 GUI 프로그램을 실행할 수 없습니다. Microsoft에서 GUI 프로그램의 실행헤 필요한 X org 서버를 제공하지 않기 때문입니다. 그렇기 때문에 위와같은 프로그램을 사용하려면 **Windows용 X org 서버를 설치하고 실행해야합니다.**
+Microsoft에서 제공하는 WSL은 GUI 프로그램을 실행할 수 없습니다. Microsoft에서 GUI 프로그램의 실행에 필요한 X org 서버를 제공하지 않기 때문입니다. 그렇기 때문에 위와 같은 프로그램을 사용하려면 **Windows 용 X org 서버를 설치하고 실행해야 합니다.**
 
-### Windows용 X org 서버 설치하고 실행하기
+### Windows 용 X org 서버 설치하고 실행하기
 * `vcxsrv` 서버를 다운로드하고 실행합니다. <br/> <https://sourceforge.net/projects/vcxsrv/> 
 
 ### WSL 환경 설정 및 테스트하기
@@ -242,7 +242,9 @@ atom&
 
 <br/><br/>
 
-## 더 발전된 MS Windows Terminal
+## MS Windows 추후 발전 방향
+
+### 더 발전된 MS Windows Terminal
 
 <iframe width="640" height="360" style="border:1px solid #CCC; margin-left:40px;" src="https://www.youtube.com/embed/8gw0rXPMMPE"
  frameborder="0" allowfullscreen></iframe>
@@ -252,7 +254,14 @@ atom&
 * <https://github.com/microsoft/terminal>
 
 
+### WSL2 
 
+기존의 WSL은 실제 `Linux`가 아닌 NT 커널 위에 Linux ABI의 불완전한 기능 구현입니다. 그렇기 때문에 기존의 리눅스와 완벽하게 호환되지 않아, 정상적으로 작동하지 않는 꽤 많은 응용프로그램이 존재합니다. 이것을 해결하고자 MS에선 실제 Linux 커널을 탑재한 WSL2를 출시한다고 합니다.
+
+아래의 게시글을 확인하면 자세한 내용을 확인하실 수 있습니다.
+
+* <https://devblogs.microsoft.com/commandline/announcing-wsl-2/>
+* <http://m.zdnet.co.kr/news_view.asp?article_id=20190508070053&re=zdk#imadnews>
 
 <br/><br/>
 
