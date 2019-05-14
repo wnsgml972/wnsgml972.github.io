@@ -3,121 +3,73 @@
 <style>
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
 
-.search-container {
-  position: fixed;
-  margin: 0;
-  top: 18%;
-  left: 83%;
-  right: 0;
-  bottom: 0;
-  width: 300px;
-  height: 100px;
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background: #07051a;
 }
-.search-container .search-icon {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 80px;
-  height: 80px;
-  background: crimson;
-  border-radius: 50%;
-  transition: all 1s;
-  z-index: 4;
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
-}
-.search-container .search-icon:hover {
-  cursor: pointer;
-}
-.search-container .search-icon::before {
-  content: "";
-  position: absolute;
-  margin: auto;
-  top: 22px;
-  right: 0;
-  bottom: 0;
-  left: 22px;
-  width: 12px;
-  height: 2px;
-  background: white;
-  transform: rotate(45deg);
-  transition: all 0.5s;
-}
-.search-container .search-icon::after {
-  content: "";
-  position: absolute;
-  margin: auto;
-  top: -5px;
-  right: 0;
-  bottom: 0;
-  left: -5px;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  border: 2px solid white;
-  transition: all 0.5s;
-}
-.search-container input {
-  font-family: "Inconsolata", monospace;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  height: 50px;
-  outline: none;
-  border: none;
-  background: crimson;
-  color: white;
-  text-shadow: 0 0 10px crimson;
-  padding: 0 80px 0 20px;
-  border-radius: 30px;
-  box-shadow: 0 0 25px 0 crimson, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
-  transition: all 1s;
-  opacity: 0;
-  z-index: 5;
-  font-weight: bolder;
-  letter-spacing: 0.1em;
-}
-.search-container input:hover {
-  cursor: pointer;
-}
-.search-container input:focus {
-  width: 300px;
-  opacity: 1;
-  cursor: text;
-}
-.search-container input:focus ~ .search-icon {
-  right: -250px;
-  background: #151515;
-  z-index: 6;
-}
-.search-container input:focus ~ .search-icon::before {
-  top: 0;
-  left: 0;
-  width: 25px;
-}
-.search-container input:focus ~ .search-icon::after {
-  top: 0;
-  left: 0;
-  width: 25px;
-  height: 2px;
-  border: none;
-  background: white;
-  border-radius: 0%;
-  transform: rotate(-45deg);
-}
-.search-container input::placeholder {
-  color: white;
-  opacity: 0.5;
-  font-weight: bolder;
-}
-</style>
 
+.search-container {
+    position: relative;
+    top: 90%;
+    left: 97%;
+    transform: translate(-100%, 0%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+.search-container input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.search-container .fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+.search-container:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+.search-container:hover input{
+    display: block;
+}
+
+.search-container:hover .fa{
+    background: #07051a;
+    color: white;
+}
+</style> 
 
 
 
@@ -145,18 +97,15 @@
 </style>
 
 
-
-
 <!-- HTML
 ---------------------------------------------------->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <div class="search-container">
   <form action="/search.html" method="get">
-    <input type="search" class="searchTerm" id="search-box" name="query" placeholder="Search...">
-    <input type="submit" class="searchButton" value="search" style="display: none;">
-    <div class="search-icon"></div>
+    <input type="search" placeholder="Search...">
+    <i class="fa fa-search"></i>
   </form>
 </div>
-
 
 <!-- Search JS
 ---------------------------------------------------->
