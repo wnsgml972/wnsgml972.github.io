@@ -1,4 +1,4 @@
-(window.onload = function() {
+window.onload = (function() {
   function displaySearchResults(results, store) {
     var searchResults = document.getElementById('search-results');
 
