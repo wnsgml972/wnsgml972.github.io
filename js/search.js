@@ -2,6 +2,9 @@
   function displaySearchResults(results, store) {
     var searchResults = document.getElementById('search-results');
 
+    if(searchResults == null)
+      return;
+
     if (results.length) 
     { // Are there any results?
       var appendString = '';
@@ -17,7 +20,7 @@
     } 
     else 
     {
-      // searchResults.innerHTML = '<li>No results found</li>';
+      searchResults.innerHTML = '<li>No results found</li>';
     }
   }
 
