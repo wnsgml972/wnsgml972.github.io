@@ -17,7 +17,7 @@
     } 
     else 
     {
-      searchResults.innerHTML = '<li>No results found</li>';
+      // searchResults.innerHTML = '<li>No results found</li>';
     }
   }
 
