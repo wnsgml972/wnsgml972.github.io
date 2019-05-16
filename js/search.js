@@ -20,7 +20,7 @@
     } 
     else 
     {
-      searchResults.innerHTML = '<li>No results found</li>';
+      searchResults.innerHTML = '<h5 class="post-title hangle">일치하는 검색 결과가 없습니다</h5>';
     }
   }
 
