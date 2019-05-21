@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "현업에서의 첫 Pair Programming 도전기"
+title: "주니어의 첫 Pair Programming 경험기"
 subtitle: ""
 date: 2019-02-19
 author: KimJunHee
 category: Log
-tags: devops pair-programming agile log
+tags: junior pair-programming agile log live-share
 finished: true
 ---
 
