@@ -84,6 +84,7 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 * 뒤로가기 (ctrl + - ) -> __( ```ctrl + 화살표 왼쪽``` )__
 * 뒤로가기 (ctrl + shift + - ) -> __( ```ctrl + 화살표 오른쪽``` )__
 * VAssistX.RefactorAddInclude __( ```alt + I``` )__
+* VAssistX.RefactorCreateImplementation __( ```ctrl + .``` )__
 * VAssistX.OpenCorrespondingFile (alt + O) ->  __( ```ctrl + ` ``` )__
 * VAssistX.List Methods In Current File (alt + M) -> __( ```alt + Q``` )__
 * 정렬 (ctrl + shift + F, 원래꺼 지우기) ->  __( ```ctrl + shift + F``` )__
