@@ -152,6 +152,17 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 * 모든 중단점 해제 __( ```디버그 탭 메뉴 확인``` )__
 * 모든 중단점 삭제 __( ```ctrl + shift + F9``` )__
 
+
+<br/>
+
+## 추가 Visual Assist 설정
+### Visual Assist Options 추가
+
+![visual setting](/img/ide/1/3.png)
+
+* 다음과 같이 Apply coloring to 부분에 모든 부분을 Check 해주게 되면, 나열되어 있는 여러 부분이 모두 하얀 글씨가 아닌 `Highlighting` 된 방식으로 보이게 됩니다.
+* ex) 모두 찾기 결과, List Box 등등등 매우 유용합니다!
+
 <br/>
 
 ## 캡쳐 화면
