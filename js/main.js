@@ -1,6 +1,6 @@
 hljs.initHighlightingOnLoad();
 
-if(!window.location.href.includes("resume") && !window.location.href.includes("archive")){
+if(!window.location.href.includes("/cv") && !window.location.href.includes("/archive")){
     $(document).ready(function(){
 
         var total_posts = 0;
@@ -34,10 +34,10 @@ if(!window.location.href.includes("resume") && !window.location.href.includes("a
     });
 }
 
-if(window.location.href.includes("resume")){
+if(window.location.href.includes("/cv")){
     $(document).ready(function(){
       for(var i=1; i<=5; i++){
-        $("#category_resume" + i).hide();
+        $("#category_cv" + i).hide();
       }
     });
 }
@@ -50,7 +50,7 @@ if(window.location.href.includes(".html")){
   });
 }
 
-if(window.location.href.includes("archive")){
+if(window.location.href.includes("/archive")){
   $("#dir_control2019").click(function() {
     $("#category2019").toggle(function() {
       $("#dir_control2019").toggleClass("fa fa-plus fa fa-minus")
@@ -72,30 +72,30 @@ if(window.location.href.includes("category")){
   });
 }
 
-if(window.location.href.includes("resume")){
-  $("#dir_control_resume1").click(function() {
-    $("#category_resume1").toggle(function() {
-      $("#dir_control_resume1").toggleClass("fa fa-plus fa fa-minus")
+if(window.location.href.includes("/cv")){
+  $("#dir_control_cv1").click(function() {
+    $("#category_cv1").toggle(function() {
+      $("#dir_control_cv1").toggleClass("fa fa-plus fa fa-minus")
     })
   });
-  $("#dir_control_resume2").click(function() {
-    $("#category_resume2").toggle(function() {
-      $("#dir_control_resume2").toggleClass("fa fa-plus fa fa-minus")
+  $("#dir_control_cv2").click(function() {
+    $("#category_cv2").toggle(function() {
+      $("#dir_control_cv2").toggleClass("fa fa-plus fa fa-minus")
     })
   });
-  $("#dir_control_resume3").click(function() {
-    $("#category_resume3").toggle(function() {
-      $("#dir_control_resume3").toggleClass("fa fa-plus fa fa-minus")
+  $("#dir_control_cv3").click(function() {
+    $("#category_cv3").toggle(function() {
+      $("#dir_control_cv3").toggleClass("fa fa-plus fa fa-minus")
     })
   });
-  $("#dir_control_resume4").click(function() {
-    $("#category_resume4").toggle(function() {
-      $("#dir_control_resume4").toggleClass("fa fa-plus fa fa-minus")
+  $("#dir_control_cv4").click(function() {
+    $("#category_cv4").toggle(function() {
+      $("#dir_control_cv4").toggleClass("fa fa-plus fa fa-minus")
     })
   });
-  $("#dir_control_resume5").click(function() {
-    $("#category_resume5").toggle(function() {
-      $("#dir_control_resume5").toggleClass("fa fa-plus fa fa-minus")
+  $("#dir_control_cv5").click(function() {
+    $("#category_cv5").toggle(function() {
+      $("#dir_control_cv5").toggleClass("fa fa-plus fa fa-minus")
     })
   });
 }
