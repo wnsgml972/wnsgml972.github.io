@@ -64,7 +64,7 @@ if(window.location.href.includes("/archive")){
 }
 
 
-if(window.location.href.includes("category")){
+if(window.location.href.includes("/category")){
   $("#dir_control").click(function() {
     $("#category").toggle(function() {
       $("#dir_control").toggleClass("fa fa-plus fa fa-minus")
