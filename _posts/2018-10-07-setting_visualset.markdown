@@ -98,20 +98,26 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 * 보기.작업목록 (ctrl + \, T ) -> __( ```alt + T``` )__
 
 
+
 <br/><br/>
 
-## 유용한 단축기 (변경한 것 기준 최종)
+## 유용한 단축기 (위에 변경한 것 기준으로 최종)
 
 ### Visual Assist
-* Add Include __( ```alt + I``` )__
-* Find Symbol __( ```alt + shift + S``` )__
-* Find File __( ``` alt + shift + O``` )__
-* Find References __( ```alt + shift + F``` )__
-* Goto Related __( ```alt + shift + G``` )__
-* List Methods In Current File __( ```alt + Q``` )__
-* 클립보드  __( ```ctrl + shift + V``` )__
-* 선택영역 주석, 풀기  __( ```선택영역 + /``` )__ : 대체 가능
-* Header file과 Source file 전환 __( ```ctrl + ` ``` )__ : 대체 가능
+#### 기본 기능으로 대체 가능한 것
+* 선택영역 주석, 풀기  __( ```선택영역 + /``` )__
+* Header file과 Source file 전환 __( ```ctrl + ` ``` )__ 
+
+#### 대체 불가능한 것
+* Add Include __( ```alt + I``` )__ : 대체 불가
+* Create Implementation __( ```ctrl + .``` )__ : 대체 불가
+* Find Symbol __( ```alt + shift + S``` )__ : 대체 불가
+* Find File __( ``` alt + shift + O``` )__ : 대체 불가
+* Find References __( ```alt + shift + F``` )__ : 대체 불가
+* Goto Related __( ```alt + shift + G``` )__ : 대체 불가
+* List Methods In Current File __( ```alt + Q``` )__ : 대체 불가
+* 클립보드  __( ```ctrl + shift + V``` )__ : 대체 불가
+
 
 ### Basic Visual
 #### Etc
