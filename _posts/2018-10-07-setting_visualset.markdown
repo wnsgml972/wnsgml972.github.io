@@ -107,16 +107,16 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 #### 기본 기능으로 대체 가능한 것
 * 선택영역 주석, 풀기  __( ```선택영역 + /``` )__
 * Header file과 Source file 전환 __( ```ctrl + ` ``` )__ 
+* Create Implementation __( ```ctrl + .``` )__
+* Find File __( ``` alt + shift + O``` )__ (대체가 가능하긴 하나 VAssist의 기능이 훨신 좋음, VS2017기준)
 
 #### 대체 불가능한 것
-* Add Include __( ```alt + I``` )__ : 대체 불가
-* Create Implementation __( ```ctrl + .``` )__ : 대체 불가
-* Find Symbol __( ```alt + shift + S``` )__ : 대체 불가
-* Find File __( ``` alt + shift + O``` )__ : 대체 불가
-* Find References __( ```alt + shift + F``` )__ : 대체 불가
-* Goto Related __( ```alt + shift + G``` )__ : 대체 불가
-* List Methods In Current File __( ```alt + Q``` )__ : 대체 불가
-* 클립보드  __( ```ctrl + shift + V``` )__ : 대체 불가
+* Add Include __( ```alt + I``` )__
+* Find Symbol __( ```alt + shift + S``` )__
+* Find References __( ```alt + shift + F``` )__
+* Goto Related __( ```alt + shift + G``` )__
+* List Methods In Current File __( ```alt + Q``` )__
+* 클립보드  __( ```ctrl + shift + V``` )__
 
 
 ### Basic Visual
