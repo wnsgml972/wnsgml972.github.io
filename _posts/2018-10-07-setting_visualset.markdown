@@ -89,6 +89,8 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 * VAssistX.List Methods In Current File (alt + M) -> __( ```alt + Q``` )__
 * 정렬 (ctrl + shift + F, 원래꺼 지우기) ->  __( ```ctrl + shift + F``` )__
 * 편집.파일에서찾기 __( ```ctrl + alt + F``` )__
+* 편집.선택영역을주석으로처리 (ctrl + K, ctrl + C) -> __( ```/``` )__ : Visual Assist 대체
+* 편집.선택영역의주석처리제거 (ctrl + K, ctrl + U) -> __( ```ctrl + /``` )__ : Visual Assist 대체
 * 창.새창 __( ```alt + 1``` )__
 * 창.새세로탭그룹 __( ```alt + 2``` )__
 * 창.이전탭그룹으로이동 __( ```alt + 3``` )__
@@ -100,12 +102,12 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 * 창.고정된 항목을 모두 제외하고 닫기 ( ) -> __( ```ctrl + K, W``` )__
 * 보기.작업목록 (ctrl + \ and T ) -> __( ```alt + T``` )__
 
-
 <br/><br/>
 
 ## 유용한 단축기
 
 ### Visual Assist
+* 선택영역 주석, 풀기  __( ```선택영역 + /``` )__
 * Header file과 Source file 전환 __( ```ctrl + ` ``` )__
 * Add Include __( ```alt + I``` )__
 * 원하는 줄로 이동  __( ```ctrl + G``` )__
@@ -114,13 +116,12 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 * Find References __( ```alt + shift + F``` )__
 * Goto Related __( ```alt + shift + G``` )__
 * List Methods In Current File __( ```alt + Q``` )__
+* 클립보드  __( ```ctrl + shift + V``` )__
 
 ### Basic Visual
 #### Etc
 * 빠른실행  __( ```ctrl + Q``` )__ : 모든 명령어를 검색하여 실행 가능
 * 책갈피  __( ```ctrl + F2``` )__
-* 클립보드  __( ```ctrl + shift + V``` )__
-* 주석, 풀기  __( ```드래그 + /``` )__
 * 정렬 바꾼 값 __( ```ctrl + shift + F``` )__
 * 편집.파일에서찾기 __( ```ctrl + alt + F``` )__
 * 솔루션 빌드 __( ```F7``` )__
@@ -130,6 +131,7 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 * 세로편집 __( ```alt + shift + 화살표 위 or 아래``` )__
 * 한줄씩편집 __( ```ctrl + c, ctrl + v, ctrl + x``` )__
 * 보기.작업목록 __( ```alt + T``` )__
+* 편집.전체로이동 __( ```ctrl + T``` )__ : Visual Assist의 Find File 대체
 
 #### 창, Tap 관련
 * 창.이전문서창으로이동 __( ```ctrl + tap``` )__
