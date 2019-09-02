@@ -85,7 +85,7 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 * 정렬 (ctrl + shift + F, 원래꺼 지우기) ->  __( ```ctrl + shift + F``` )__
 * 편집.파일에서찾기 __( ```ctrl + alt + F``` )__
 * 편집.선택영역을주석으로처리 (ctrl + K, ctrl + C) -> __( ```ctrl + /``` )__ : Visual Assist 대체
-* 편집.선택영역의주석처리제거 (ctrl + K, ctrl + U) -> __( ```shift + /``` )__ : Visual Assist 대체
+* 편집.선택영역의주석처리제거 (ctrl + K, ctrl + U) -> __( ```ctrl + shift + /``` )__ : Visual Assist 대체
 * 창.새창 __( ```alt + 1``` )__
 * 창.새세로탭그룹 __( ```alt + 2``` )__
 * 창.이전탭그룹으로이동 __( ```alt + 3``` )__
@@ -133,7 +133,7 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 * 한줄씩편집 __( ```ctrl + c, ctrl + v, ctrl + x``` )__
 * 편집.파일에서찾기 __( ```ctrl + alt + F``` )__
 * 편집.선택영역을주석으로처리 __( ```ctrl + /``` )__ : Visual Assist 대체
-* 편집.선택영역의주석처리제거 __( ```shift + /``` )__ : Visual Assist 대체
+* 편집.선택영역의주석처리제거 __( ```ctrl + shift + /``` )__ : Visual Assist 대체
 * 편집.전체로이동 __( ```ctrl + T``` )__ : Visual Assist의 Find File 대체
 * 보기.빠른작업및래팩터링  __( ```alt + enter``` )__ : Visual Assist 정의만들기 대체
 * 보기.작업목록 __( ```alt + T``` )__
