@@ -137,6 +137,7 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 * 편집.선택영역을주석으로처리 __( ```ctrl + /``` )__ : Visual Assist 대체
 * 편집.선택영역의주석처리제거 __( ```ctrl + shift + /``` )__ : Visual Assist 대체
 * 편집.전체로이동 __( ```ctrl + T``` )__ : Visual Assist의 Find File 대체
+* 솔루션 탐색기 검색 __( ```ctrl + ;``` )__ : Visual Assist의 Find File 대체
 * 보기.빠른작업및래팩터링  __( ```alt + enter``` )__ : Visual Assist 정의만들기 대체
 * 보기.작업목록 __( ```alt + T``` )__
 
