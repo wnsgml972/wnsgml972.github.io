@@ -8,33 +8,27 @@
   ============================================================
   -->
   <head>
+    {% include head.html %}
+    {% if site.google-analytics %}
+      {% include google-analytics.html %}
+    {% endif %}
 
-  {% include head.html %}
-  {% if site.google-analytics %}
-  {% include google-analytics.html %}
-  {% endif %}
-
-  {% if page.url == "/404.html" %}
-  <meta http-equiv="refresh" content="10; url={{ site.baseurl }}">
-  {% endif %}
-
+    {% if page.url == "/404.html" %}
+      <meta http-equiv="refresh" content="10; url={{ site.url }}{{ site.baseurl }}">
+    {% endif %}
   </head>
 
   <body>
+    {% include header.html %}
+    <div class="wrapper">
+          {{ content }}
+    </div>
+  </body>
 
-  {% include header.html %}
-
-  <div class="wrapper">
-        {{ content }}
-  </div>
-
-</body>
-
-<foot>
-  {% include footer.html %}
-  {% include foot.html %}
-</foot>
-
-<span id="footer"></span>
+  <foot>
+    {% include footer.html %}
+    {% include foot.html %}
+  </foot>
+  <span id="footer"></span>
 
 </html>

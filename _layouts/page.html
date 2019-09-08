@@ -4,44 +4,41 @@ layout: null
 
 <html>
   <head>
+    {% include head.html %}
 
-  {% include head.html %}
+    {% if site.google-analytics %}
+      {% include google-analytics.html %}
+    {% endif %}
 
-  {% if site.google-analytics %}
-  {% include google-analytics.html %}
-  {% endif %}
-
-  {% if page.url == "/404.html" %}
-  <meta http-equiv="refresh" content="10; url={{ site.baseurl }}">
-  {% endif %}
-
+    {% if page.url == "/404.html" %}
+      <meta http-equiv="refresh" content="10; url={{ site.url }}{{ site.baseurl }}">
+    {% endif %}
+    {% include header.html %}
   </head>
 
-  {% include header.html %}
+  <header class="post-header">
+    <center>
+      <div class="contact-title">{{ page.title }}</div>
+      <div class="contact-subtitle">
+        <p>{{ page.subtitle }}</p>
+        {% include menubtn.html %}
+      </div>
+    </center>
+  </header>
 
-<header class="post-header">
-	<center><div class="contact-title">{{ page.title }}</div>
-		<div class="contact-subtitle">
-      <p>{{ page.subtitle }}</p>
-      {% include menubtn.html %}
+  <div class="wrapper">
+    <div class="post-content">
+      {{ content }}
     </div>
-  </center>
-</header>
+  </div>
 
-<div class="wrapper">
-	<div class="post-content">
-		{{ content }}
-	</div>
-</div>
+  <footer>
+    {% include foot.html %}
+    {% include page_footer.html %}
+  </footer>
 
-<footer>
-  {% include foot.html %}
-  {% include page_footer.html %}
-</footer>
+  {% include github-card.html %}
 
-{% include github-card.html %}
-
-
-<span id="footer"></span>
+  <span id="footer"></span>
 
 </html>

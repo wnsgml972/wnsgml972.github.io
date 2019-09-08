@@ -11,8 +11,8 @@
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
-        appendString += '<div class="search__result"><a href="' + item.url + '"><h5 class="post-title"><span class="hangle link">' + item.title + '</span></h3></a>';
-        appendString += '<div class="post-description hangle"><small class="post-date">' + item.content.substring(0, 250) + '....' + '</small></div>';
+        appendString += '<div class="search__result"><a href="' + item.url + '"><h5 class="post-title"><span class="link">' + item.title + '</span></h3></a>';
+        appendString += '<div class="post-description"><small class="post-date">' + item.content.substring(0, 250) + '....' + '</small></div>';
         appendString += '</div><br/><hr/>'
       }
 
@@ -20,7 +20,7 @@
     } 
     else 
     {
-      searchResults.innerHTML = '<h5 class="post-title hangle">일치하는 검색 결과가 없습니다</h5>';
+      searchResults.innerHTML = '<h5 class="post-title">일치하는 검색 결과가 없습니다</h5>';
     }
   }
 
