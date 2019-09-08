@@ -83,9 +83,11 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 * 뒤로가기 (ctrl + - ) -> __( ```ctrl + 화살표 왼쪽``` )__
 * 앞으로가기 (ctrl + shift + - ) -> __( ```ctrl + 화살표 오른쪽``` )__
 * 정렬 (ctrl + shift + F, 원래꺼 지우기) ->  __( ```ctrl + shift + F``` )__
+* 편집기상황에맞는메뉴.코드창.헤더코드파일전환  __( ```ctrl + ` ``` )__ : Visual Assist 대체
 * 편집.파일에서찾기 __( ```ctrl + alt + F``` )__
+* 편집.모든참조찾기 __( ```shift + alt + F11``` )__ : Visual Assist 대체
 * 편집.선택영역을주석으로처리 (ctrl + K, ctrl + C) -> __( ```ctrl + /``` )__ : Visual Assist 대체
-* 편집.선택영역의주석처리제거 (ctrl + K, ctrl + U) -> __( ```shift + /``` )__ : Visual Assist 대체
+* 편집.선택영역의주석처리제거 (ctrl + K, ctrl + U) -> __( ```ctrl + shift + /``` )__ : Visual Assist 대체
 * 창.새창 __( ```alt + 1``` )__
 * 창.새세로탭그룹 __( ```alt + 2``` )__
 * 창.이전탭그룹으로이동 __( ```alt + 3``` )__
@@ -108,13 +110,13 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 * 선택영역 주석, 풀기  __( ```선택영역 + /``` )__
 * Header file과 Source file 전환 __( ```ctrl + ` ``` )__ 
 * Create Implementation __( ```ctrl + .``` )__
-* Find File __( ``` alt + shift + O``` )__ (대체가 가능하긴 하나 VAssist의 기능이 훨신 좋음, VS2017기준)
+* Find File __( ``` shift + alt + O``` )__ (대체가 가능하긴 하나 VAssist의 기능이 훨신 좋음, VS2017기준)
+* Find References __( ```shift + alt + F``` )__
+* Find Symbol __( ```shift + alt + S``` )__
 
 #### 대체 불가능한 것
 * Add Include __( ```alt + I``` )__
-* Find Symbol __( ```alt + shift + S``` )__
-* Find References __( ```alt + shift + F``` )__
-* Goto Related __( ```alt + shift + G``` )__
+* Goto Related __( ```shift + alt + G``` )__
 * List Methods In Current File __( ```alt + Q``` )__
 * 클립보드  __( ```ctrl + shift + V``` )__
 
@@ -122,6 +124,7 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 ### Basic Visual
 #### Etc
 * 원하는 줄로 이동  __( ```ctrl + G``` )__
+* 괄호 짝 찾기  __( ```ctrl + ]``` )__
 * 빠른실행  __( ```ctrl + Q``` )__ : 모든 명령어를 검색하여 실행 가능
 * 책갈피  __( ```ctrl + F2``` )__
 * 정렬 __( ```ctrl + shift + F``` )__
@@ -129,12 +132,16 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 * 뒤로가기 __( ```ctrl + 화살표 왼쪽``` )__
 * 앞으로가기 __( ```ctrl + 화살표 오른쪽``` )__
 * 줄바꿈 __( ```alt + 화살표 위 or 아래``` )__
-* 세로편집 __( ```alt + shift + 화살표 위 or 아래``` )__
+* 세로편집 __( ```shift + alt + 화살표 위 or 아래``` )__
 * 한줄씩편집 __( ```ctrl + c, ctrl + v, ctrl + x``` )__
+* 편집기상황에맞는메뉴.코드창.헤더코드파일전환  __( ```ctrl + ` ``` )__ 
 * 편집.파일에서찾기 __( ```ctrl + alt + F``` )__
+* 편집.빠른기호찾기 __( ```shift + alt + F12``` )__: Visual Assist Find Symbol 대체
+* 편집.모든참조찾기 __( ```shift + alt + F11``` )__: Visual Assist Find References 대체
 * 편집.선택영역을주석으로처리 __( ```ctrl + /``` )__ : Visual Assist 대체
-* 편집.선택영역의주석처리제거 __( ```shift + /``` )__ : Visual Assist 대체
+* 편집.선택영역의주석처리제거 __( ```ctrl + shift + /``` )__ : Visual Assist 대체
 * 편집.전체로이동 __( ```ctrl + T``` )__ : Visual Assist의 Find File 대체
+* 솔루션 탐색기 검색 __( ```ctrl + ;``` )__ : Visual Assist의 Find File 대체
 * 보기.빠른작업및래팩터링  __( ```alt + enter``` )__ : Visual Assist 정의만들기 대체
 * 보기.작업목록 __( ```alt + T``` )__
 
