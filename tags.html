@@ -5,15 +5,6 @@ subtitle: Keep Calm and Carry On.
 permalink: /tags/
 ---
 
-<!-- My Font  -->
-<style>
-  .post-content li {
-    font-family: 'Jeju Gothic', serif;
-    font-weight: 500;
-    font-size : 15px;
-  }
-</style>
-
 <section class="post-tags">
     {% assign tags_list = site.tags %}
 
@@ -41,9 +32,9 @@ permalink: /tags/
         {% for post in pages_list reversed %}
         {% if post.title != null %}
         {% if group == null or group == post.group %}
-        <li>
-		        <a href="{{ site.url }}{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            <span class="date"><time datetime="{{ post.date | date_to_long_string }}"> - {{ post.date | date_to_long_string }}</time></span>
+        <li class="hangle">
+		      <a href="{{ site.url }}{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <span class="date"><time datetime="{{ post.date | date_to_long_string }}"> - {{ post.date | date_to_long_string }}</time></span>
         </li><br/>
         {% endif %}
         {% endif %}
