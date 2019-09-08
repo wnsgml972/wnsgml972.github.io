@@ -10,14 +10,20 @@ Gemfile.lock
 node_modules
 package.json
 
-# : Jekyll stuff
+### Jekyll stuff ###
 /_site/
 _site/
 .sass-cache/
 .jekyll-metadata
 
-# Created by https://www.gitignore.io/api/visualstudiocode
-# Edit at https://www.gitignore.io/?templates=visualstudiocode
+### Jekyll Cache ###
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# End of https://www.gitignore.io/api/jekyll
+
+
 
 ### VisualStudioCode ###
 .vscode/*
@@ -31,3 +37,4 @@ _site/
 .history
 
 # End of https://www.gitignore.io/api/visualstudiocode
+
