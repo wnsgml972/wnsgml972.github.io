@@ -1,0 +1,31 @@
+/* post content */
+.post-content h2 {
+  font-family: 'Jeju Gothic', serif;
+  font-weight: 500;
+}
+.post-title {
+  font-family: 'Jeju Gothic', serif;
+  font-weight: 500;
+  font-size : 40px;
+}
+
+/* index content */
+.index-content {
+  margin-top: 30%;
+  margin-bottom: 30%;
+  font-size: 18px;
+}
+
+/* cv content */
+ul.cv-content li {
+  margin-bottom: 3px;
+}
+ul.no-list-style {
+  list-style-type: none;
+}
+.cv-content span.rose {
+  color: #E8ADAA;
+}
+.cv-content span.skyblue {
+  color: skyblue;
+}

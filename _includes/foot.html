@@ -4,24 +4,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Derictory -->
-<script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script src="https://yandex.st/highlightjs/6.2/highlight.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script src="https://yandex.st/highlightjs/6.2/highlight.min.js"></script>
 
-<!-- Add Scroll Behavior -->
-<script src="{{ site.baseurl }}/js/prism.js"></script>
-
-<!-- Directory -->
-<script src="{{ site.baseurl }}/js/main.js"></script>
+<!-- Add Prism JS (code highlighter) -->
+  <script src="{{ 'js/prism.js'| prepend: site.baseurl | prepend: site.url }}"></script>
+  
+<!-- Add Main JS -->
+  <script src="{{ 'js/main.js'| prepend: site.baseurl | prepend: site.url }}"></script>
 
 <!-- Add Navigation -->
-{% include navigation.html %}
+  {% include navigation.html %}
 
 <!-- Add Arrow Remote -->
-{% include arrow-remote.html %}
+  {% include arrow-remote.html %}
 
 <!-- Add Search -->
-{% include search-form.html %}
-
-<!-- Add Scroll Behavior -->
+  {% include search-form.html %}
 
 </foot>

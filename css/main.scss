@@ -3,12 +3,10 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
-$base-font-family: 'Noto Sans', serif;
+$base-font-family: 'Jeju Gothic', serif;
 $base-font-size:   15px;
-$base-font-weight: 400;
+$base-font-weight: 500;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
@@ -49,5 +47,4 @@ $on-laptop:        900px;
 @import
         "base",
         "layout"
-        // "syntax-highlighting" 현재 prism으로 대체
 ;

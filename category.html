@@ -6,20 +6,18 @@
 ---
 
 <h2>Categories <i id="dir_control" class="fa fa-plus"></i></h2>
-<div id="category_count" class="hangle"></div>
-<div id="category" class="hangle"></div>
+<div id="category_count"></div>
+<div id="category"></div>
 
 {% for category in site.categories %}
-{% capture cat %}{{ category | first }}{% endcapture %}
-
-<h2>{{ cat }}</h2>
-	<ul>
-	{% for post in site.categories[cat] %}
-	  <li>
-	     <a class="hangle" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	     <span class="date"> - {{ post.date | date_to_long_string }}</span>
+  {% capture cat %}{{ category | first }}{% endcapture %}
+  <h2>{{ cat }}</h2>
+  <ul>
+    {% for post in site.categories[cat] %}
+      <li>
+	    <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+		  <span class="date"> - {{ post.date | date_to_long_string }}</span>
 	  </li><br/>
 	{% endfor %}
-	</ul>
-
+  </ul>
 {% endfor %}

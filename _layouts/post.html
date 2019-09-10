@@ -2,74 +2,56 @@
 layout: default
 ---
 
-<!-- My Font  -->
-<style>
-  .post-content p, li {
-    font-family: 'Jeju Gothic', serif;
-    font-weight: 500;
-    font-size : 16px;
-  }
-  .post-content h2 {
-    font-family: 'Jeju Gothic', serif;
-    font-weight: 500;
-  }
-  .post-title {
-    font-family: 'Jeju Gothic', serif;
-    font-weight: 500;
-    font-size : 40px;
-  }
-</style>
-
 <header class="post-header">
-
-  <center><div class="post-title" itemprop="name headline">{{ page.title }}</div>
-
-  <div class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="{{ page.date | date_to_string }}" itemprop="datePublished">{{ page.date | date: "%b %-d %Y" }}</time>
-
-  {% if page.author %}&nbsp;&nbsp;•&nbsp;&nbsp;<i class="fa fa-user-secret"></i> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span>
+  <center>
+    <div class="post-title" itemprop="name headline">{{ page.title }}</div>
+    <div class="post-meta">
+      <i class="fa fa-calendar-o"></i>
+      <time datetime="{{ page.date | date_to_string }}" itemprop="datePublished">{{ page.date | date: "%b %-d %Y" }}</time>
+      {% if page.author %}
+        &nbsp;&nbsp;○&nbsp;&nbsp;<i class="fa fa-user-secret"></i>
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span itemprop="name">{{ page.author }}</span><br/>
+        </span>
       {% endif %}
-  <br/>
-  <!--<i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-pulse"></i></span> --></span>
-  &nbsp;&nbsp;•&nbsp;&nbsp;<i class="fa fa-inbox"></i> <b>In {{ page.category }}</b>
-  </div>
-  <h3><a class="link" href="{{ site.url }}{{ site.baseurl }}">Home</a></h3>
-  {% if page.tags %}
-    <div class="post-tags">
-      {% for tag in page.tags %}
-          <a class="post-tags-item" href="{{ site.url }}{{ site.baseurl }}/tags/">{{ tag }}</a>
-      {% endfor %}
-  {% endif %}
+      &nbsp;&nbsp;○&nbsp;&nbsp;<i class="fa fa-inbox"></i> <b>In {{ page.category }}</b>
     </div>
+    <h3><a class="link" href="{{ site.url }}{{ site.baseurl }}">Home</a></h3>
+    {% if page.tags %}
+      <div class="post-tags">
+        {% for tag in page.tags %}
+          <a class="post-tags-item" href="{{ '/tags'| prepend: site.baseurl | prepend: site.url }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
   </center>
 </header>
+
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-<div class="post-content">
+  <div class="post-content">
     <center>
-	{% if page.subtitle %}
-	<p>{{ page.subtitle }}</p>
-	{% endif %}
+      {% if page.subtitle %}
+        <p>{{ page.subtitle }}</p>
+      {% endif %}
     </center>
-	<h2 class="hangle">목차 <i id="dir_control" class="fa fa-plus"></i></h2>
-</div>
+    <h2>목차 <i id="dir_control" class="fa fa-plus"></i></h2>
+  </div>
 
-<div id="category" class="hangle"></div>
+  <div id="category"></div>
 
-<div class="post-content" itemprop="articleBody">
+  <div class="post-content" itemprop="articleBody">
     {{ content }}
-</div>
+  </div>
 
-<div>
-	{% if page.finished %}
-	<div class="eof"></div>
-	{% else %}
-	<div class="tbc"></div>
-	{% endif %}
-</div>
+  <div>
+    {% if page.finished %}
+      <div class="eof"></div>
+    {% else %}
+      <div class="tbc"></div>
+    {% endif %}
+  </div>
 
-<!-- {% include related-posts.html %} -->
-{% include paginate.html %}
-
-{% include share.html %}
-{% include disqus.html %}
-
+  {% include paginate.html %}
+  {% include share.html %}
+  {% include disqus.html %}
 </article>
