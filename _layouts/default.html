@@ -16,10 +16,10 @@
     {% if page.url == "/404.html" %}
       <meta http-equiv="refresh" content="10; url={{ site.url }}{{ site.baseurl }}">
     {% endif %}
+    {% include header.html %}
   </head>
 
   <body>
-    {% include header.html %}
     <div class="wrapper">
           {{ content }}
     </div>
