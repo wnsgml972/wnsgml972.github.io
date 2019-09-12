@@ -9,12 +9,12 @@ layout: default
       <i class="fa fa-calendar-o"></i>
       <time datetime="{{ page.date | date_to_string }}" itemprop="datePublished">{{ page.date | date: "%b %-d %Y" }}</time>
       {% if page.author %}
-        &nbsp;&nbsp;○&nbsp;&nbsp;<i class="fa fa-user-secret"></i>
+        &nbsp;&nbsp;-&nbsp;&nbsp;<i class="fa fa-user-secret"></i>
         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
           <span itemprop="name">{{ page.author }}</span><br/>
         </span>
       {% endif %}
-      &nbsp;&nbsp;○&nbsp;&nbsp;<i class="fa fa-inbox"></i> <b>In {{ page.category }}</b>
+      &nbsp;&nbsp;-&nbsp;&nbsp;<i class="fa fa-inbox"></i> <b>In {{ page.category }}</b>
     </div>
     <h3><a class="link" href="{{ site.url }}{{ site.baseurl }}">Home</a></h3>
     {% if page.tags %}
@@ -34,7 +34,7 @@ layout: default
         <p>{{ page.subtitle }}</p>
       {% endif %}
     </center>
-    <h2>목차 <i id="dir_control" class="fa fa-plus"></i></h2>
+    <h2>목차 <span class="dir-control-wrapper"><i id="dir_control" class="fa fa-plus"></i></span></h2>
   </div>
 
   <div id="category"></div>
