@@ -129,7 +129,5 @@ finished: true
 <br/><br/>
 
 ## Reference
-
-* <https://github.com/microsoft/PowerToys>
 * <https://jojoldu.tistory.com/427>
 * <https://github.com/microsoft/PowerToys>
