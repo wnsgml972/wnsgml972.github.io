@@ -115,7 +115,6 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 
 ![prettier](/img/setting/3/prettier.gif)
 
-
 <br/>
 
 ### [Table Formatter](https://marketplace.visualstudio.com/items?itemName=shuworks.vscode-table-formatter#review-details)
@@ -137,6 +136,16 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 
 
 
+<br/>
+
+### [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass#review-details)
+
+* 실시간 브라우저 재로드를 통해 SASS / SCSS 파일을 CSS 파일로 실시간 컴파일 / 변환할 수 있습니다.
+
+![live sass compiler](https://github.com/ritwickdey/vscode-live-sass-compiler/raw/master/images/Screenshot/AnimatedPreview.gif)
+
+
+
 
 <br/>
 
@@ -145,6 +154,26 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 * 일치하는 대괄호 색상을 구별하기 쉽게 바꿔줍니다.
 
 ![Bracket Pair Colorizer](https://github.com/CoenraadS/BracketPair/raw/master/images/example.png)
+
+
+
+
+<br/>
+
+### [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+
+* CSS에 대한 깔끔한 문법 하이라이팅과 코드 제안을 얻는데 매우 유용합니다.
+
+
+
+
+<br/>
+
+### [Auto Rename Tag]()
+
+* 하나의 HTML / XML 태그의 이름을 바꾸면 연결된 HTML / XML 태그의 이름이 자동으로 바뀝니다.
+
+![Auto Rename Tag](https://github.com/formulahendry/vscode-auto-rename-tag/raw/master/images/usage.gif)
 
 
 
