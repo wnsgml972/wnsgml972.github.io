@@ -33,3 +33,10 @@ ul.no-list-style {
 .dir-control-wrapper {
   font-size: smaller;
 }
+
+
+/* post content */
+div.post-content ul ul {
+  margin-left: 0px !important;
+  margin-bottom: auto;
+}
