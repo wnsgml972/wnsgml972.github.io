@@ -171,7 +171,7 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 
 ### [Auto Rename Tag]()
 
-* 하나의 HTML / XML 태그의 이름을 바꾸면 연결된 HTML / XML 태그의 이름이 자동으로 바뀝니다.
+* 하나의 HTML/XML 태그의 이름을 바꾸면 연결된 HTML/XML 태그의 이름이 자동으로 바뀝니다.
 
 ![Auto Rename Tag](https://github.com/formulahendry/vscode-auto-rename-tag/raw/master/images/usage.gif)
 
