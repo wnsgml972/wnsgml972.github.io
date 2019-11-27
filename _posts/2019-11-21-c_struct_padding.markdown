@@ -60,30 +60,49 @@ class Test
 ### 실험 2. 더미 데이터(테스트 베드) 구축
 
 ~~~cpp
-class Test
+#pragma pack(push, 4)
+class Test4
 {
 public:
     int _int4 = 0;
     double _double8 = 1000000000000000001.;
-    double _double800[100] = 전부 이걸로 초기화 1000000000000000001.;
+    double _double800[100]; // = 전부 이걸로 초기화 1000000000000000001.;
+private:
+    virtual void init() {  }
 }
+#pragma pack(pop)
 
-void gogo()
+#pragma pack(push, 8)
+class Test8
 {
-    Test test;
-    auto _struct = sizeof(test);
-    auto _i4 = sizeof(test._int4);
-    auto _d8 = sizeof(test._double8);
-    auto _d800 = sizeof(test._double800);
+public:
+    int _int4 = 0;
+    double _double8 = 1000000000000000001.;
+    double _double800[100]; // = 전부 이걸로 초기화 1000000000000000001.;
+private:
+    virtual void init() {  }
+}
+#pragma pack(pop)
+
+void TestPack4()
+{
+    Test4 test;
+    auto _struct = sizeof(test); // 820
+    auto _i4 = sizeof(test._int4); // 4
+    auto _d8 = sizeof(test._double8); // 8
+    auto _d800 = sizeof(test._double800); // 800
+    auto _i4_offset = offsetof(Test4, Test4::_int4); // 8 (앞의 8 바이트는 가상 함수 테이블)
+    auto _d8_offset = offsetof(Test4, Test4::_double8); // 12
+    auto _d800_offset = offsetof(Test4, Test4::_double800); // 20
 
     double aa[100];
 
+    // 4 pack
     std::chrono::system_clock::time_point startTime = std::chrono::system_clock::now();
-    for (int i = 0; i < 10000000; i++)
+    for (int i = 0; i < 1000000000; i++) // or 10000000000
     {
-        Test test;
-        for (int j = 0; j < 100; j++)
-            aa[j] = test._double800[j];
+        aa[i%100] = test._double800[i%100];
+        test._double800[i%100] = aa[i%100];
     }
     std::chrono::system_clock::time_point endTime = std::chrono::system_clock::now();
 
@@ -92,15 +111,49 @@ void gogo()
     std::chrono::microseconds micro = std::chrono::duration_cast<std::chrono::microseconds>(nano);
     std::chrono::milliseconds mill = std::chrono::duration_cast<std::chrono::milliseconds>(nano);
 }
+
+void Test1Pack8()
+{
+    Test8 test;
+    auto _struct = sizeof(test); // 824
+    auto _i4 = sizeof(test._int4); // 4
+    auto _d8 = sizeof(test._double8); // 8
+    auto _d800 = sizeof(test._double800); // 800
+    auto _i4_offset = offsetof(Test8, Test8::_int4); // 8 (앞의 8 바이트는 가상 함수 테이블)
+    auto _d8_offset = offsetof(Test8, Test8::_double8); // 16 (_i4_offset 뒤의 4바이트가 패딩 비트로 들어감)
+    auto _d800_offset = offsetof(Test8, Test8::_double800); // 24
+
+    double aa[100];
+
+    // 8 pack
+    std::chrono::system_clock::time_point startTime = std::chrono::system_clock::now();
+    for (int i = 0; i < 1000000000; i++) // or 10000000000
+    {
+        aa[i%100] = test._double800[i%100];
+        test._double800[i%100] = aa[i%100];
+    }
+    std::chrono::system_clock::time_point endTime = std::chrono::system_clock::now();
+
+    std::chrono::duration<double> defaultSec = endTime - startTime;
+    std::chrono::nanoseconds nano = endTime - startTime;
+    std::chrono::microseconds micro = std::chrono::duration_cast<std::chrono::microseconds>(nano);
+    std::chrono::milliseconds mill = std::chrono::duration_cast<std::chrono::milliseconds>(nano);
+    // mill millsec로 테스트 진행
+}
 ~~~
 
-* 64bit os에서 4byte packing 한 구조체 중 막대하게 손해 볼 수밖에 없는 구조체를 가상으로 생성(`int` 다음 필드부터 계속 한 칸씩 밀리기 때문에 cpu가 계속 2번씩 읽어야 하는 경우)
-* 여러 반복을 통한 시간 검증 (8byte packing과, 4byte packing에 대한 시간 비교)
-* 1000000000의 반복문에서 한 구조체를 메모리에 올렸다가 내렸다가 한 결과
-* 4byte packing 시 8.3 ~ 8.5초, 8byte packing 시 7.99 ~ 8.03초
-* 약 0.3초의 시간이 차이 나는 것이 의미가 있는지 모르겠다...
-* 비율로 봐도 얼마 차이가 없다.
-* 아마 os 단에서 캐싱하거나, cpu가 알아서 너무 반복적인 작업은 한 번에 처리하는 알고리즘? 이 있는 것 같다.
+* 64bit os에서 8바이트 패킹을 했을 때와 그렇지 않을 때 얼마나 더 퍼포먼스 적으로 이득일까를 실험했다.
+* 64bit os에서 4byte packing 한 구조체 중 막대하게 손해 볼 수밖에 없는 구조체를 가상으로 생성한다.(`int` 다음 필드부터 계속 한 칸씩 밀리기 때문에 cpu가 계속 2번씩 읽어야 하는 경우를 구현)
+* 여러 반복을 통한 시간 검증한다. (8byte packing과, 4byte packing에 대한 시간 비교)
+* 1,000,000,000의 반복문과, 10,000,000,000의 반복문에서 반복을 진행하고, 해당 내용은 구조체 내에서 정렬되지 않은 특정 변수의 읽고 쓰는 시간을 측정한다. (1,000,000,000의 반복문 이하의 반복은 시간이 거의 차이가 없기 때문에 실험이 불필요)
+
+![Result](/img/c/4/result.png)
+
+* 위 그림의 실험 결과대로, 1,000,000,000의 반복문에서는 올바르게 8바이트 정렬했을 때 약 0.04초 더 빠르다.
+* 1,000,000,000의 반복문에서는 오히려 약 0.2초 정도 더 느려짐
+* 여러 번의 테스트 결과 역시나 약 0.04초에서 0.2 시간이 차이 나는 것이 의미가 있는지 모르겠다...
+* 비율로 봐도 일정한 비율이 나오지 않는다.
+* 아마 os 단에서 최적화하거나, cpu가 최적화하거나, 컴파일러가 최적화하는 알고리즘이 있는 것 같다.
 
 
 <br/><br/>
@@ -108,7 +161,7 @@ void gogo()
 ## 결론
 * 오버헤드가 있다고 알고 있었고, c++ 개발자로서 변수의 순서를 생각하며 메모리 정렬을 효과적으로 하는 것이 좋다고 생각하고 있었다.
 * 하지만 직접 실험해본 결과 퍼포먼스 적으로는 의미가 있는 행위인지 잘 모르겠다.
-* 어쨌든 테스트 베드 환경을 만들던, 실무 모델로 테스트하던 차이가 없었고, 이런 환경에서 os, cpu, 컴파일러 누가 최적화해줬든 간에, 일반 개발자들은 구조체 정렬을 생각하며 개발해야 한다는 것은 잘 모르겠다...
+* 어쨌든 테스트 베드 환경을 만들던, 실무 모델로 테스트하던 큰 차이가 없었고(비율적으로도 시간적으로도), 이런 환경에서 os, cpu, 컴파일러 누가 최적화해줬든 간에, 일반 개발자들은 구조체 정렬을 생각하며 개발해야 한다는 것은 잘 모르겠다...
 * 네트워크 개발 시 서로 다른 os 별 bit 수가 다를 때 1byte로 packing 해야 하는 경우 말고는 크게 의미 없는 것 같다.
 * 아니면 혹시 실험을 잘못했을까..?
 
