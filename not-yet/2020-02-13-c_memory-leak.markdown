@@ -78,12 +78,12 @@ set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symb
 1. 동적 할당이 일어나는 콜스택 별로, 할당 횟 수, 해제 횟 수, 할당 크기 수집
     * `gflags /i Client.exe +ust`
 2. 재현 전, 콜스택 별 메모리 할당량 기록
-    * `umdh -pn:Client.exe > log1.txt`
+    * `umdh -pn:Client.exe > C:\log1.txt`
 3. 재현 (스킬 창 열기/닫기 10번 반복)
 4. 재현 후, 콜스택 별 메모리 할당량 기록, 2번과 비교
-    * `umdh -pn:Client.exe > log2.txt`
+    * `umdh -pn:Client.exe > C:\log2.txt`
 5. diff check 사용
-    * `umdh.exe E:\log1.txt E:\log2.txt > E:\diff.txt`
+    * `umdh.exe C:\log1.txt C:\log2.txt > C:\diff.txt`
 5. 성능에 매우 악 영향을 미치니, 메모리 릭 검증할 때만 사용할 것!
 6. 분석 시 참고 : <https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/interpreting-a-log-comparison>
 
@@ -113,142 +113,83 @@ set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symb
 
 ## 배치파일
 
-
 ~~~bat
-:: 0. windbg_symbol.bat
+:: 1. windbg_start_initialize.bat
 :: get admin
-@echo off
->nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
-if '%errorlevel%' NEQ '0' (
-    echo Request Super Manager ...
-    goto UACPrompt
-) else ( goto gotAdmin )
-:UACPrompt
-    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
-    set params = %*:"=""
-    echo UAC.ShellExecute "cmd.exe", "/c %~s0 %params%", "", "runas", 1 >> "%temp%\getadmin.vbs"
-    "%temp%\getadmin.vbs"
-    rem del "%temp%\getadmin.vbs"
-    exit /B
-:gotAdmin
-pushd "%CD%"
-    CD /D "%~dp0
+:: Var Set ----
 :: symbol set
 set _NT_SYMBOL_PATH=srv*DownstreamStore*SymbolStoreLocation
 set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symbols
-~~~
 
-~~~bat
-:: 1. windbg_gflag.bat
-:: get admin
-@echo off
->nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
-if '%errorlevel%' NEQ '0' (
-    echo Request Super Manager ...
-    goto UACPrompt
-) else ( goto gotAdmin )
-:UACPrompt
-    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
-    set params = %*:"=""
-    echo UAC.ShellExecute "cmd.exe", "/c %~s0 %params%", "", "runas", 1 >> "%temp%\getadmin.vbs"
-    "%temp%\getadmin.vbs"
-    rem del "%temp%\getadmin.vbs"
-    exit /B
-:gotAdmin
-pushd "%CD%"
-    CD /D "%~dp0
-:: gflags excute `TargetProgram.exe`
-cd C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\
-gflags /i TargetProgram.exe +ust
+:: ----- Input Your Info
+:: Input Your Info
+set YourProgramBitInfo=x86
+:: or x64
+
+set WinSDKProgramPath=C:\Program Files (x86)\Windows Kits\10\Debuggers\%YourProgramBitInfo%\
+set YourTargetProgram=KaKaoTalk.exe
+set YourOutPutFileBasePath=C:\Users\kjh0121\Documents
+
+:: Input Dumb Result File Path, Name
+set ResultFile1=%YourOutPutFileBasePath%\log1.txt
+set ResultFile2=%YourOutPutFileBasePath%\log2.txt
+set DiffCheckResultFile=%YourOutPutFileBasePath%\diff.txt
+
+:: GFlag Memory Tracking On ----
+:: gflags excute `YourTargetProgram`
+cd %WinSDKProgramPath%
+gflags /i %YourTargetProgram% +ust
 ~~~
 
 ~~~bat
 :: 2. windbg_start.bat
-:: get admin
-@echo off
->nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
-if '%errorlevel%' NEQ '0' (
-    echo Request Super Manager ...
-    goto UACPrompt
-) else ( goto gotAdmin )
-:UACPrompt
-    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
-    set params = %*:"=""
-    echo UAC.ShellExecute "cmd.exe", "/c %~s0 %params%", "", "runas", 1 >> "%temp%\getadmin.vbs"
-    "%temp%\getadmin.vbs"
-    rem del "%temp%\getadmin.vbs"
-    exit /B
-:gotAdmin
-pushd "%CD%"
-    CD /D "%~dp0
-:: excute umdh.exe `TargetProgram.exe`
-:: Result is `E:\log1.txt`
-cd C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\
-umdh.exe -pn:TargetProgram.exe > E:\log1.txt
+:: excute umdh.exe `YourTargetProgram`
+:: Result is `ResultFile1`
+cd %WinSDKProgramPath%
+umdh.exe -pn:%YourTargetProgram% > %ResultFile1%
 ~~~
 
 ~~~bat
 :: 3. windbg_end.bat
-:: get admin
-@echo off
->nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
-if '%errorlevel%' NEQ '0' (
-    echo Request Super Manager ...
-    goto UACPrompt
-) else ( goto gotAdmin )
-:UACPrompt
-    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
-    set params = %*:"=""
-    echo UAC.ShellExecute "cmd.exe", "/c %~s0 %params%", "", "runas", 1 >> "%temp%\getadmin.vbs"
-    "%temp%\getadmin.vbs"
-    rem del "%temp%\getadmin.vbs"
-    exit /B
-:gotAdmin
-pushd "%CD%"
-    CD /D "%~dp0
-:: excute umdh.exe `TargetProgram.exe` Same!, Perhaps a Memory Leak occurred.
-:: Result is `E:\log2.txt`
-cd C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\
-umdh.exe -pn:CIM.exe > E:\log2.txt
+:: excute umdh.exe `YourTargetProgram` Same!, Perhaps a Memory Leak occurred.
+:: Result is `ResultFile2`
+cd %WinSDKProgramPath%
+umdh.exe -pn:%YourTargetProgram% > %ResultFile2%
 ~~~
-
-
 
 ~~~bat
 :: 4. windbg_diff_check
-:: get admin
-@echo off
->nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
-if '%errorlevel%' NEQ '0' (
-    echo Request Super Manager ...
-    goto UACPrompt
-) else ( goto gotAdmin )
-:UACPrompt
-    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
-    set params = %*:"=""
-    echo UAC.ShellExecute "cmd.exe", "/c %~s0 %params%", "", "runas", 1 >> "%temp%\getadmin.vbs"
-    "%temp%\getadmin.vbs"
-    rem del "%temp%\getadmin.vbs"
-    exit /B
-:gotAdmin
-pushd "%CD%"
-    CD /D "%~dp0
-:: excute umdh.exe difference check `E:\log1.txt` and `E:\log2.txt`
-:: Result is `E:\diff.txt`
-cd C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\
-umdh.exe -v -d -l E:\log1.txt E:\log2.txt > E:\diff.txt
+:: excute umdh.exe difference check `ResultFile1` and `ResultFile2`
+:: Result is `DiffCheckResultFile`
+cd %WinSDKProgramPath%
+umdh.exe -v -d -l %ResultFile1% %ResultFile2% > %DiffCheckResultFile%
+
+:: Var Initialize ---
+:: Var Set Initialize
+set _NT_SYMBOL_PATH=
+set _NT_SYMBOL_PATH=
+
+:: Input Your Info
+set WinSDKProgramPath=
+set YourTargetProgram=
+set YourOutPutFileBasePath=
+
+:: Input Dumb Result File Path, Name
+set ResultFile1=
+set ResultFile2=
+set DiffCheckResultFile=
+
+:: GFlag Memory Trackiong OFF ---
+:: Initialize GFlag
+gflags /i %YourTargetProgram% -ust
 ~~~
 
-
-
-
 * UMDH를 쉽게 사용하기 위한 배치 파일입니다.
-* 프로그램 시작 시 0, 1, 2 배치파일 실행
+* 프로그램 시작 시 1, 2 배치파일 실행
 * 메모리 릭 재현 *10
 * 3, 4 배치 파일 실행
 * 을 이용하시면 쉽게 메모리 덤프 비교 파일을 얻을 수 있습니다.
-* 메모리 덤프 비교 파일 출력 Path를 E:\로 잡았기 때문에, E:\로 되어있는 해당 Path만 2, 3, 4에서 원하는 Path로 바꿔주시면 쉽게 사용할 수 있습니다.
-
+* Cutom Input 값 설명
 
 ## 해결 과정
 
@@ -268,3 +209,5 @@ umdh.exe -v -d -l E:\log1.txt E:\log2.txt > E:\diff.txt
 
 해당 부분의 덤프 파일 부분은 다음과 같습니다. 읽어주셔서 감사합니다.
 
+**카카오톡 테스트 값 결과 파일**
+![result](/img/c/5/kakao_dump.png)
