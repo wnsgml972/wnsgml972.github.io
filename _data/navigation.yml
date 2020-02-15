@@ -1,15 +1,15 @@
 - title: Home
   url: 
 - title: Archive
-  url: archive/
+  url: /archive/
 - title: Category
-  url: category/
+  url: /category/
 - title: Tags
-  url: tags/
+  url: /tags/
 - title: About
-  url: about/
+  url: /about/
 - title: CV
-  url: cv/
+  url: /cv/
   # sublinks:
   #   - title: FAQ
   #     url: /faq.html
