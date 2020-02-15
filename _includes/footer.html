@@ -1,14 +1,7 @@
 <footer class="site-footer">
   <div class="wrapper">
     <center>
-      <p>
-        <a class="link" href="{{ 'archive/'| prepend: site.baseurl | prepend: site.url }}">Archive</a> /
-        <a class="link" href="{{ 'category/'| prepend: site.baseurl | prepend: site.url }}">Category</a> /
-        <a class="link" href="{{ 'tags/'| prepend: site.baseurl | prepend: site.url }}">Tags</a> /
-        <a class="link" href="{{ 'about/'| prepend: site.baseurl | prepend: site.url }}">About</a> /
-        <a class="link" href="{{ 'cv/'| prepend: site.baseurl | prepend: site.url }}">CV</a></br>
-        <a class="link" href="{{ site.url }}{{ site.baseurl }}">Home</a>
-      </p>
+      {% include menubtn.html %}
 
       <span><script>document.write(new Date().getFullYear());</script></span>
       <span>&copy;</span>
