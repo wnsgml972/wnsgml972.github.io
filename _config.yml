@@ -3,8 +3,8 @@ title: Daily Development Notes # yout title
 name: KimJunHee # your name
 email: wnsgml972@gmail.com # your email address
 description: Software Programmer # your blog description
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://wnsgml972.github.io/" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://wnsgml972.github.io" # the base hostname & protocol for your site
 twitter_username: KimJunHee # your Twitter username
 github_username: wnsgml972 # your Github username
 
