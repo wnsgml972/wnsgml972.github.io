@@ -3,7 +3,9 @@ title: Daily Development Notes # yout title
 name: KimJunHee # your name
 email: wnsgml972@gmail.com # your email address
 description: Software Programmer # your blog description
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "/"  # the subpath of your site, e.g. /blog
+              # 참고로 실제 Git Pages Server에 올리면 이 부분 공백으로 Converting됨
+              # 즉, 이 뒤에 오는 url setting은 항상, `/yoururl/` 방식으로 할 것
 url: "https://wnsgml972.github.io" # the base hostname & protocol for your site
 twitter_username: KimJunHee # your Twitter username
 github_username: wnsgml972 # your Github username
@@ -13,7 +15,7 @@ google-analytics: UA-113140483-1 # add it if you have one
 skillstree: false # turn on or off the skills tree in about page
 
 # Build settings
-permalink: none
+permalink: pretty
 markdown: kramdown
 
 # Amount of post to show on home page
