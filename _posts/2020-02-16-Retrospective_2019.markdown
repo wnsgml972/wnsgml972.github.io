@@ -74,8 +74,8 @@ finished: true
 
 * 솔루션 제공 및 코드 수정 (authors 기록) : [uvw](https://github.com/skypjack/uvw)
 * 솔루션 제공 : [ifcplusplus](https://github.com/ifcquery/ifcplusplus)
-* 회고록 추가 : developers-retrospective
-* 블로그 추가 : awesome-devblog
+* 회고록 추가 : [developers-retrospective](https://github.com/oaksong/developers-retrospective)
+* 블로그 추가 : [awesome-devblog](https://github.com/sarojaba/awesome-devblog)
 
 ### Open Source 사이드 프로젝트 MPSec
 
