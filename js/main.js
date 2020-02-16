@@ -1,6 +1,6 @@
 hljs.initHighlightingOnLoad();
 
-if(!window.location.href.includes("/cv") && !window.location.href.includes("/archive")){
+if(!window.location.href.includes("/cv/") && !window.location.href.includes("/archive/")){
     $(document).ready(function(){
 
         var total_posts = 0;
@@ -34,23 +34,20 @@ if(!window.location.href.includes("/cv") && !window.location.href.includes("/arc
     });
 }
 
-if(window.location.href.includes("/cv")){
-    $(document).ready(function(){
-      for(var i=1; i<=5; i++){
-        $("#category_cv" + i).hide();
-      }
-    });
-}
-
-if(window.location.href.includes(".html")){
+$(document).ready(function(){
   $("#dir_control").click(function() {
     $("#category").toggle(function() {
       $("#dir_control").toggleClass("fa fa-plus fa fa-minus")
     })
   });
-}
+});
 
-if(window.location.href.includes("/archive")){
+if(window.location.href.includes("/archive/")){
+  $("#dir_control2020").click(function() {
+    $("#category2020").toggle(function() {
+      $("#dir_control2020").toggleClass("fa fa-plus fa fa-minus")
+    })
+  });
   $("#dir_control2019").click(function() {
     $("#category2019").toggle(function() {
       $("#dir_control2019").toggleClass("fa fa-plus fa fa-minus")
@@ -63,16 +60,7 @@ if(window.location.href.includes("/archive")){
   });
 }
 
-
-if(window.location.href.includes("/category")){
-  $("#dir_control").click(function() {
-    $("#category").toggle(function() {
-      $("#dir_control").toggleClass("fa fa-plus fa fa-minus")
-    })
-  });
-}
-
-if(window.location.href.includes("/cv")){
+if(window.location.href.includes("/cv/")){
   $("#dir_control_cv1").click(function() {
     $("#category_cv1").toggle(function() {
       $("#dir_control_cv1").toggleClass("fa fa-plus fa fa-minus")
@@ -97,5 +85,12 @@ if(window.location.href.includes("/cv")){
     $("#category_cv5").toggle(function() {
       $("#dir_control_cv5").toggleClass("fa fa-plus fa fa-minus")
     })
+  });
+
+  // -----
+  $(document).ready(function(){
+    for(var i=1; i<=5; i++){
+      $("#category_cv" + i).hide();
+    }
   });
 }
