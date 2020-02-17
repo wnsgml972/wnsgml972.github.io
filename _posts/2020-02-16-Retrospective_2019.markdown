@@ -110,9 +110,9 @@ finished: true
 
 ### StackOverflow
 
-성장에 대한 구체적인 산출물에 대해 고민하다가 `MadLife`님의 게시글을 읽고 많이 깨닫게 되었다. 2020년에는 `StackOverflow`에 기여하는 것에 대한 습관을 들이는 것을 목표로 삼아야겠다.
+성장에 대한 구체적인 산출물에 대해 고민하다가 `madplay`님의 게시글을 읽고 많이 깨닫게 되었다. 2020년에는 `StackOverflow`에 기여하는 것에 대한 습관을 들이는 것을 목표로 삼아야겠다.
 
-`MadLife`님의 해당 게시글은 다음과 같다.
+`madplay`님의 해당 게시글은 다음과 같다.
 
 * <https://madplay.github.io/post/how-i-use-stackoverflow>
 
