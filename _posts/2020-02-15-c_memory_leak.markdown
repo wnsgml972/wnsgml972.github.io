@@ -110,11 +110,11 @@ set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symb
 3. WinDBG.exe -> Heap 분석 사용
 4. WinDBG.exe 프로그램 실행 후, 덤프 파일 열기, 심볼 경로를 설정
 5. 전체적인 Heap 상황 확인
-    * !heap -s
+    * `!heap -s`
     * 특정 heap들이 다른 heap 보다 월등히 큰 것을 탐색
     * 해당 heap의 주소 기억
-    * !heap -stst -h 2150000(주소)   : 누수가 발생한 힙에서 할당 사이즈 별 개수 통계
-    * !heap -flt s 30  -> 가장 많이 할당된 크기의 메모리 블록 모두 검색
+    * `!heap -stat -h 2150000(주소)`   : 누수가 발생한 힙에서 할당 사이즈 별 개수 통계
+    * `!heap -flt s 30`  -> 가장 많이 할당된 크기의 메모리 블록 모두 검색
 6. 누수가 발생한 힙에서 메모리 크기 별 할당 횟수 집계
 7. 가장 많이 할당된 크기의 메모리 블록 모두 검색
 
