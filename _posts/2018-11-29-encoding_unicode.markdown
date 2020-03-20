@@ -23,8 +23,8 @@ finished: true
 * 문자 집합 : 표현해야 할 문자를 정하고 순서를 지정한 것
 * 코드화된 문자 집합 : 문자 집합을 코드 형태로 표현한 것
 * 인코딩 방식 : 문자 집합을 컴퓨터에 저장하기 위해서 어떠한 형태로 표현한 것
-* ASCII : 초기에 널리 쓰이던 표준 문자 인코딩 (영어와 확장 ASCII에서는 유럽어도 표현이 가능, 확장 ASCII는 ANSI라고도 불림)
-* Unicode : 모든 문자를 표현할 수 있도록 만들어진 표준 문자 인코딩
+* ASCII : 초기에 널리 쓰이던 **표준 문자 인코딩** (영어와 확장 ASCII에서는 유럽어도 표현이 가능, 확장 ASCII는 ANSI라고도 불림)
+* Unicode : 모든 문자를 표현할 수 있도록 만들어진 **표준 문자 집합**
 
 
 <br/>
@@ -135,7 +135,7 @@ UCS는 유니코드를 위한 **고정 길이 문자 인코딩 방식**입니다
 * Windows : `UTF-16`을 기본으로 사용합니다.
 * Javascript : 많은 엔진 코드가 `UCS-2` 또는 `UTF-16`을 기본으로 사용합니다.
 * Python : `UCS-2`를 기본으로 사용하지만 빌드 옵션에서 `UTF-32`로 바꿔서 사용이 가능합니다.
-* International Components for Unicode (ICU) : 내부적으로 `UTF-16`을 기본으로 사용하고 있다.
+* International Components for Unicode (ICU) : 내부적으로 `UTF-16`을 기본으로 사용하고 있습니다.
 
 
 ### Unicode in C++
