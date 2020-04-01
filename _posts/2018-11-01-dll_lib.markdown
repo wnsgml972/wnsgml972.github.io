@@ -159,7 +159,7 @@ Compile 하기 위해선 ```lib```파일과 ```include(header)``` 파일이 필�
 
 예제인 pthread를 직접 사용하기위해 Compile 하여 실행해본다면 더 이해가 빠르게 될 수 있습니다. 다음 url은 Window 환경에서 Visual Studio를 이용해 pthread를 사용하는 방법입니다.
 
-* [Windows에서 pthread 사용하기](https://wnsgml972.github.io/c/c_windows_pthread.html)
+* [Windows에서 pthread 사용하기](https://wnsgml972.github.io/c/2018/05/07/c_windows_pthread/)
 
 
 <br/>

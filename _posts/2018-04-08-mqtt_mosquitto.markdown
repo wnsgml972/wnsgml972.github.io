@@ -116,7 +116,7 @@ finished: false
 
 ## 관련
 
-* [윈도우 Mosquitto 설치, 컴파일](https://wnsgml972.github.io/mqtt/mqtt_windows-install.html)
+* [윈도우 Mosquitto 설치, 컴파일](https://wnsgml972.github.io/mqtt/2018/02/12/mqtt_windows-install/)
 * [Mosquitto 자바 라이브러리 PAHO를 이용한 Chatting 프로그램](https://github.com/wnsgml972/MQTT-Chating)
 
 <br/><br/>

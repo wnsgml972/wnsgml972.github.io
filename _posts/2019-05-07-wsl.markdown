@@ -267,7 +267,7 @@ atom&
 
 ## 관련 게시글
 
-* [Virtual Box Ubuntu 설치 및 개발 기본 설정](https://wnsgml972.github.io/linux/linux_virtual_box_init.html)
+* [Virtual Box Ubuntu 설치 및 개발 기본 설정](https://wnsgml972.github.io/linux/2018/07/02/linux_virtual_box_init/)
 
 
 
