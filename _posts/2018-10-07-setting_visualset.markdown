@@ -188,4 +188,4 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 
 ## 관련 게시글
 
-* [Visual Studio Setting Import & Export](https://wnsgml972.github.io/setting/VisualStudio_Setting_Export.html)
+* [Visual Studio Setting Import & Export](https://wnsgml972.github.io/setting/2018/11/04/VisualStudio_Setting_Export/)

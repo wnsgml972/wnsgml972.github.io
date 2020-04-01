@@ -88,4 +88,4 @@ __무모한 설정 날림을 하지 않기 위해서는 잊지말고 자기 것�
 
 ## 관련 게시글
 
-* [Visual Studio 기본 Setting](https://wnsgml972.github.io/setting/setting_visualset.html)
+* [Visual Studio 기본 Setting](https://wnsgml972.github.io/setting/2018/10/07/setting_visualset/)

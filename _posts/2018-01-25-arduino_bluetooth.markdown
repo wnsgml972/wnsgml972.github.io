@@ -93,5 +93,5 @@ void loop() {
 ## 관련 게시글
 * 앱 인벤터로 간단히 어플리케이션을 만들 수 있다.
 
-[앱 인벤터 배우기](https://wnsgml972.github.io/app%20inventor/appinventor_start.html)  <br/>
-[아두이노와 블루투스를 이용한 LED 제어 어플리케이션](https://wnsgml972.github.io/app%20inventor/appinventor_bluetooth.html)
+[앱 인벤터 배우기](https://wnsgml972.github.io/app%20inventor/2018/01/25/appinventor_start/)  <br/>
+[아두이노와 블루투스를 이용한 LED 제어 어플리케이션](https://wnsgml972.github.io/arduino/2018/01/25/arduino_bluetooth/)

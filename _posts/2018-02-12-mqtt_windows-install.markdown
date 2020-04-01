@@ -10,7 +10,7 @@ finished: true
 ---
 
 > Mosquitto 코드를 Debuging하며 이해하기 위해 작성하였습니다.<br/>
-MQTT 프로토콜에 대해 잘 모르신다면 [MQTT 프로토콜 이란?](https://wnsgml972.github.io/mqtt/mqtt.html)을 보고 오시기 바랍니다.
+MQTT 프로토콜에 대해 잘 모르신다면 [MQTT 프로토콜 이란?](https://wnsgml972.github.io/mqtt/2018/03/05/mqtt/)을 보고 오시기 바랍니다.
 
 ## 개발 환경
 

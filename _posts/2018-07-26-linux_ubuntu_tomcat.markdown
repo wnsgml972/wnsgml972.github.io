@@ -51,8 +51,9 @@ finished: true
 ![tomcat](/img/linux/2/4.png)
 
 <br/>
+
 ## 관련
 
-* [1. Ubuntu 서버에 Tomcat 설치하기  ](https://wnsgml972.github.io/linux/linux_ubuntu_tomcat.html)
-* [2. Ubuntu 서버에서 JSP 사용하기 ](https://wnsgml972.github.io/linux/linux_jsp.html)
-* [3. JSP를 이용한 쉘 스크립트 실행 ](https://wnsgml972.github.io/linux/linux_shellscript.html)
+* [1. Ubuntu 서버에 Tomcat 설치하기  ](https://wnsgml972.github.io/linux/2018/07/26/linux_ubuntu_tomcat/)
+* [2. Ubuntu 서버에서 JSP 사용하기 ](https://wnsgml972.github.io/linux/2018/07/27/linux_jsp/)
+* [3. JSP를 이용한 쉘 스크립트 실행 ](https://wnsgml972.github.io/linux/2018/08/03/linux_shellscript/)

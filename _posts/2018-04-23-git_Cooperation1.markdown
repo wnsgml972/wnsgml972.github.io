@@ -72,6 +72,7 @@ finished: true
 * pull request를 받은 프로젝트 관리자는 충돌을 확인한 후 로컬 ```master branch```에 병합한 후 프로젝트 공식 저장소의 ```master branch```에 반영한다.
 
 <br/><br/>
+
 ## 참고
 
 * <https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow>

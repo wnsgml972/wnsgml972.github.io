@@ -22,6 +22,7 @@ finished: false
 * 간단한 알고리즘은 다음과 같이 표현할 수 있다.
 
 <br/>
+
 ![MQTT](/img/mqtt/5/mosquitto_structure_detail1.png)
 
 * 위의 그림은 각 부분에서 하는 일을 조금 더 자세히 표현하였다.
@@ -38,11 +39,13 @@ finished: false
 * ```New Client Accept```에서는 pollfds에 위치한 listen socket이 새로운 클라이언트의 연결을 받아준다. accept는 init 부분에서 non block 모드로 설정해준다.
 
 <br/>
+
 ![MQTT](/img/mqtt/5/move_packet.png)
 
 * 마찬가지로 QoS 0 레벨에서 Broker와 클라이언트간 Packet 이동 순서에 따라, Publisher가 메시지를 보냈을 시 Subscriber에게 메시지가 어떻게 도착하는지 표시한 그림이다.
 
 <br/>
+
 ### Will (유언)
 
 > Subscriber는 예기치 않게 연결이 끊어지면 Broker에게 메시지를 등록할 수 있습니다.
@@ -52,6 +55,7 @@ finished: false
 * Command ```--will-payload```로 메시지의 내용을 정한다.
 
 <br/>
+
 ### Topic
 
 > 계층 구조로 Topic을 표현할 수 있습니다.
@@ -80,22 +84,26 @@ finished: false
 * +/b/c/#
 
 <br/>
+
 ### 세션
 
 * 영구 클라리언트 옵션이 존재한다. 영구 클라이언트(클린 세션이 false로 설정된 클라이언트)는 연결을 끊지 않고 대기 상태로 바꾼다. 대기 상태에 있다가 클라이언트가 연결되면 그 때 다시 연결한다.
 * 일반적인 클라이언트는 Broker에서 Keep Alive 메시지를 보내고 살아있다는 메시지가 오지 않는다면 끊어버린다. 만기 기간은 시간, 일, 주, 월 및 연도로 정할 수 있다.
 
 <br/>
+
 ### QoS
 
 - QoS는 0, 1, 2 Level을 지원하며 Default QoS는 0이다.
 
 <br/>
+
 ### Bridge
 
 * 멀티 Broker를 사용할 수 있는 Bridging을 지원한다.
 
 <br/>
+
 ### 그 밖에 특징
 
 * 기본으로 512명의 클라이언트의 연결을 지원한다. 더 많은 연결을 원할 시 코드를 수정해야 한다.
@@ -105,6 +113,7 @@ finished: false
 * C 기반이며 리눅스, 윈도우에서도 사용할 수 있으며 현재 모스키토 최신 버전에서는 WebSocket도 사용할 수 있다.
 
 <br/><br/>
+
 ## 관련
 
 * [윈도우 Mosquitto 설치, 컴파일](https://wnsgml972.github.io/mqtt/mqtt_windows-install.html)
