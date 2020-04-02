@@ -9,7 +9,8 @@ tags: ide visual-studio visual-studio-code vscode setting
 finished: true
 ---
 
-> Visual Studio Basic Setting에 이은 VS Code Basic Setting입니다. <br/>
+>  마지막 Update 2020.04.02 <br/>
+Visual Studio Basic Setting에 이은 VS Code Basic Setting입니다. <br/>
 최대한 마우스를 사용하지 않고 모든 단축기를 외워서, 개발하기 쉬운 환경을 구성하는 방법입니다.
 
 ## 설치
@@ -234,6 +235,21 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 * Visual Studio 2019에서는 기본 기능으로 들어가 있다고 합니다.
 
 ![Live Share](https://visualstudio.microsoft.com/wp-content/uploads/2018/11/v2-Edit-Comp_FINAL-optimized840.gif)
+
+
+
+
+
+
+<br/>
+
+### [CodeTour](https://github.com/vsls-contrib/codetour)
+* 코드베이스의 안내 된 연습을 기록하고 재생할 수 있습니다.
+* 쉽게 버그 보고서를 시각화하거나, 코드 검토, PR 변경 상황을 이해할 수 있습니다.
+* 팀 구성원과의 `Pair Programming`이나, 회의 전 코드 리뷰 상황을 정리하는 듯 많은 시간을 절약할 수 있는 도구로 이용될 수 있을 것 같습니다.
+
+![CodeTour](https://user-images.githubusercontent.com/116461/76165260-c6c00500-6112-11ea-9cda-0a6cb9b72e8f.gif)
+
 
 
 
