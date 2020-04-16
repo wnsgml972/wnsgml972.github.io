@@ -19,6 +19,17 @@ __VS실행 -> [도구] -> [옵션] -> [환경] -> [글꼴 및 색] (D2Coding), �
 * 폰트의 경우 Coding Font의 맞게 코딩시 영문자와 숫자, 한글간의 모호성이 있는 기호가 변별력이 있는 폰트를 선택하였습니다.
 * [Naver D2 Coding Font](https://github.com/naver/d2codingfont)
 
+## Thema (Syntax Highlighter & Font)
+
+> 제가 개인적으로 만들어서 사용하는 `Thema`입니다. `Syntax Highlighter`는 `Visual Assist`와 유사하게 구성했습니다. <br/>
+Import 하는 방법은 [Visual Studio Setting Import & Export](https://wnsgml972.github.io/setting/2018/11/04/VisualStudio_Setting_Export/)를 참조하시면 됩니다.
+
+* [vssetings file](/img/ide/1/vs_font_color_setting.vssettings)
+
+
+
+
+
 <br/>
 
 ## Visaul Add In
