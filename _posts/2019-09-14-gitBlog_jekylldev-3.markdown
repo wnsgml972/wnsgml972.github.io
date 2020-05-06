@@ -27,6 +27,7 @@ gem install jekyll
 gem install minima
 gem install bundler
 gem install jekyll-feed
+gem install jekyll-paginate
 gem install tzinfo-data
 gem install liquid
 chcp 65001
