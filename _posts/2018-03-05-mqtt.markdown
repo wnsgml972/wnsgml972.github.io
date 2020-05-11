@@ -20,7 +20,7 @@ finished: true
 
 > Broker Pattern은 분리된 컴포넌트들로 이루어진 분산 시스템에서 사용됩니다. Broker 컴포넌트는 나머지 컴포넌트 간의 통신을 조정하는 역할을 합니다.
 
-![MQTT](/assets/mqtt/4/pubsub.png)
+![MQTT](/assets/images/mqtt/4/pubsub.png)
 
 #### Publish, Subscribe
 
@@ -35,7 +35,7 @@ finished: true
 
 #### Message Bus
 
-![MQTT](/assets/mqtt/4/bus.png)
+![MQTT](/assets/images/mqtt/4/bus.png)
 
 * 위 그림과 같이 MQTT Broker가 메시지 버스를 만들고 어플리케이션들은 Message Bus에 연결한다.
 * 즉 어플리케이션은 관심있는 Topic을 등록하여 메시지를 Subscribe나 Publish 하여 Message Bus를 통해 해당하는 일을 하게된다.
@@ -51,7 +51,7 @@ finished: true
 IoT기반의 통신에는 신뢰성 또한 고려되어야만 하는데, Handshake과정을 거치는 TCP/IP 환경에 비해 No TCP/IP 환경에서는 패킷의 손실이 발생할 수 있습니다.<br/>
 _쉽게 말해서 No Tcp 환경에서 신뢰성에 대해 보장할 수 없는 메시지를, 신뢰할 수 있도록 서버단에서 구현했다고 생각하면 됩니다._
 
-![MQTT](/assets/mqtt/4/qos.png)
+![MQTT](/assets/images/mqtt/4/qos.png)
 
 #### Level 0 (At most once)
 
@@ -104,7 +104,7 @@ Facebook의 경우 MQTT Broker 중 하나 인 Mosquitto를 이용하여 메시�
 
 ### MQTT Control Packet 구조
 
-![MQTT](/assets/mqtt/4/packet_structure.png)
+![MQTT](/assets/images/mqtt/4/packet_structure.png)
 
 * Packet 전체 구조는 위에 그림과 같이 2 Bytes의 Fixed header, 옵션에 따른 Variable Header, Packet의 마지막 부분인 Payload로 이루어져 있다.
 

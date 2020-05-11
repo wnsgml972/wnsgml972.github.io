@@ -73,7 +73,7 @@ $ sudo apt-get install mosquitto-clients
 $ mosquitto
 {% endhighlight %}
 
-![MQTT](/assets/mqtt/2/broker.png)
+![MQTT](/assets/images/mqtt/2/broker.png)
 
 <br/>
 ### Client (Subscribe, Publish)
@@ -82,7 +82,7 @@ $ mosquitto
 $ mosquitto_sub -t 'topic' -h 127.0.0.1
 {% endhighlight %}
 
-![MQTT](/assets/mqtt/2/sub.png)
+![MQTT](/assets/images/mqtt/2/sub.png)
 
 {% highlight bash %}
 $ mosquitto_pub -t 'topic' -h 127.0.0.1 -m `Hello`
@@ -90,7 +90,7 @@ $ mosquitto_pub -t 'topic' -h 127.0.0.1 -m `Hi`
 $ mosquitto_pub -t 'topic' -h 127.0.0.1 -l
 {% endhighlight %}
 
-![MQTT](/assets/mqtt/2/pub.png)
+![MQTT](/assets/images/mqtt/2/pub.png)
 
 <br/><br/>
 ## 서비스로 돌아가는 Mosquitto 종료

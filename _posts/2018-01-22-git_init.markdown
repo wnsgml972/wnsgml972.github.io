@@ -15,11 +15,11 @@ finished: true
 
 * 명령어 ```git init```을 입력하면 해당하는 폴더가 Git 로컬 저장소로 설정된다.
 
-![Git](/assets/git/1/git_init.png "git init")
+![Git](/assets/images/git/1/git_init.png "git init")
 
 * Git 로컬 저장소로 설정된 폴더는 숨김파일 형식의 ```.git``` 폴더가 만들어지게 되며 이 폴더속에 현재 선택한 폴더의 모든 Git 정보들이 만들어지게 된다.
 
-![Git](/assets/git/1/git_folder.png "git folder")
+![Git](/assets/images/git/1/git_folder.png "git folder")
 
 
 <br/><br/>
@@ -29,4 +29,4 @@ finished: true
 
 * 명령어 ```rm -r .git```을 입력하면 ```.git``` 폴더가 삭제되며 Git 로컬 저장소 지정을 해제한다.
 
-![Git](/assets/git/1/git_cancle_init.png "cancle init")
+![Git](/assets/images/git/1/git_cancle_init.png "cancle init")

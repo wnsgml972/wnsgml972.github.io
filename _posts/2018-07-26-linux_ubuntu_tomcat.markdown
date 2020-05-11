@@ -27,7 +27,7 @@ finished: true
 
 * <https://tomcat.apache.org/download-80.cgi> 아래의 링크로 들어가 tomcat 8 버젼, tar.gz 파일을 다운 받습니다.
 
-![tomcat](/assets/linux/2/install.png)
+![tomcat](/assets/images/linux/2/install.png)
 
 * ```# tar -zxvf 파일명``` root directory에서 압축을 해제합니다.
 * ```# mv 파일명 tomcat8``` 디렉토리의 이름을 바꿉니다.
@@ -35,20 +35,20 @@ finished: true
 * ```# ./startup.sh``` 쉘 스크립트를 실행시켜 톰캣을 구동합니다. __루트 권한으로 실행해야 톰캣이 루트 권한을 가질 수 있습니다.__
 * 확인해보면 여러 실행 파일이 있는데 원하는 프로그램을 실행시켜 사용하면 됩니다.
 
-![tomcat](/assets/linux/2/2.png)
+![tomcat](/assets/images/linux/2/2.png)
 
 <br/>
 ## 확인
 
 * 웹 브라우져를 열어 ```localhost:8080```에 접속하여 밑의 그림이 나오면 성공입니다.
 
-![tomcat](/assets/linux/2/3.png)
+![tomcat](/assets/images/linux/2/3.png)
 
 * 실행되는 첫 화면은 ```index.html```입니다.
 * ```/tomcat8/webapps/ROOT``` 의 위치에 보면 위 그림의 파일을 볼 수 있습니다. 따라서 ROOT 폴더부터 원하는 파일을 올려 웹 서버를 구성할 수 있습니다.
 * 저 같은 경우에는 ```/tomcat8/webapps/ROOT/dashboard/WebContent``` 에 dashboard를 만들어 올려놓았습니다. 따라서 url ```localhost:8080/dashboard/WebContent```에 간다면 제가 올려 놓은 dashboard를 접속할 수 있습니다.
 
-![tomcat](/assets/linux/2/4.png)
+![tomcat](/assets/images/linux/2/4.png)
 
 <br/>
 

@@ -20,9 +20,9 @@ finished: true
 
 > 자동 완성에 편하게 하기 위해 영어로 설치하였으며 필요한 드라이버를 다 설치하였습니다.
 
-![install](/assets/linux/1/install-1.png)
-![install](/assets/linux/1/install-3.png)
-![install](/assets/linux/1/install-2.png)
+![install](/assets/images/linux/1/install-1.png)
+![install](/assets/images/linux/1/install-3.png)
+![install](/assets/images/linux/1/install-2.png)
 
 
 <br/><br/>
@@ -36,36 +36,36 @@ finished: true
 
 ### 루트의 비밀 번호를 설정
 
-![install](/assets/linux/1/init-1.png)
+![install](/assets/images/linux/1/init-1.png)
 
 <br/>
 ### apt를 빠르게 이용하기 위해 다운 받는 주소를 변경 (해외주소 -> 국내주소)
 
 * ```sudo vi /etc/apt/sources.list```
 
-![install](/assets/linux/1/init-2.png)
+![install](/assets/images/linux/1/init-2.png)
 
 <br/>
 * 글을 일괄적으로 모두 바꿔주기 위한 명령어를 사용합니다. ```%s/kr.archive.ubuntu.com/ftp.daum.net/g```
 
-![install](/assets/linux/1/init-3.png)
+![install](/assets/images/linux/1/init-3.png)
 
 <br/>
 * 마찬가지로 한가지 주소 더 바꿔줍니다. ```%s/security.ubuntu.com/ftp.daum.net/g```
 
-![install](/assets/linux/1/init-4.png)
+![install](/assets/images/linux/1/init-4.png)
 
 <br/>
 * 저장하고 나가줍니다. ```wq!```
 
-![install](/assets/linux/1/init-5.png)
+![install](/assets/images/linux/1/init-5.png)
 
 <br/>
 ### 루트 권한으로 접속한 뒤 package를 update
 
 * ```apt-get update```
 
-![install](/assets/linux/1/init-6.png)
+![install](/assets/images/linux/1/init-6.png)
 
 <br/>
 * ```sudo add-apt-repository ppa:webupd8team/atom```
@@ -89,24 +89,24 @@ finished: true
 10. ```vim``` vi의 업그레이드 버젼인 편집 툴 패키지입니다.
 11. ```net-tools``` 네트워크 관리자가 흔히 사용하는 여러 가지 기능들(명령어, 유틸리티등)을 사용하기 쉽게 모아놓은 패키지입니다.
 
-![install](/assets/linux/1/init-11.png)
+![install](/assets/images/linux/1/init-11.png)
 
 <br/>
 * wireshark는 root 권한으로만 패킷을 캡쳐할 수 있는데 일반 사용자도 가능하게 할 것이냐고 물어봅니다. 우리는 Yes를 눌러줍니다
 
-![install](/assets/linux/1/init-7.png)
+![install](/assets/images/linux/1/init-7.png)
 
 <br/>
 * 2번째 것으로 넘어갑니다.
 
-![install](/assets/linux/1/init-8.png)
+![install](/assets/images/linux/1/init-8.png)
 
 <br/>
 * update가 다 끝난 뒤 ```sudo chmod +x /usr/bin/dumpcap```을 이용해서 wireshark를 일반 사용자도 캡쳐가 가능하도록 권한을 바꿔줍니다.
 
-![install](/assets/linux/1/init-9.png)
+![install](/assets/images/linux/1/init-9.png)
 
 <br/>
 * 확인해보면 권한이 바뀌어 있는 걸 알 수 있습니다.
 
-![install](/assets/linux/1/init-10.png)
+![install](/assets/images/linux/1/init-10.png)

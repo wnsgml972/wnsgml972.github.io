@@ -23,7 +23,7 @@ finished: true
 ```PATH=C:\pthreads\Pre-built.2\dll\x86;``` 를 추가<br/>
 __dll 파일 디렉토리 경로 추가__
 
-![C](/assets/c/1/1-env.png)
+![C](/assets/images/c/1/1-env.png)
 
 
 ## include
@@ -32,7 +32,7 @@ __dll 파일 디렉토리 경로 추가__
 ```C:\pthreads\Pre-built.2\include```를 추가
 __pthread의 include 디렉토리 경로 추가__
 
-![C](/assets/c/1/2-dir.png)
+![C](/assets/images/c/1/2-dir.png)
 
 <br/><br/>
 
@@ -42,13 +42,13 @@ __pthread의 include 디렉토리 경로 추가__
 ```C:\pthreads\Pre-built.2\lib```를 추가
 __pthread의 사용하고자 하는 lib 파일 경로 추가__
 
-![C](/assets/c/1/5.png)
+![C](/assets/images/c/1/5.png)
 
 * 링커 -> 입력 -> 추가 종속성<br/>
 ```pthreadVC2.lib```를 추가
 __pthread의 사용하고자 하는 lib 파일 명 추가__
 
-![C](/assets/c/1/3-add.png)
+![C](/assets/images/c/1/3-add.png)
 
 <br/><br/>
 ## pthread 예제 코드
@@ -80,4 +80,4 @@ int main() {
 
 * 모스키토 프로젝트에서 사용하고자 한다면 libmosquitto와 mosquitto 프로젝트를 둘다 선택하신 후 설정하시면 됩니다.
 
-![C](/assets/c/1/4-config.png)
+![C](/assets/images/c/1/4-config.png)

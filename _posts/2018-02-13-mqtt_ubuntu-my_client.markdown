@@ -157,7 +157,7 @@ int main(int argc, char *argv[])
 <br/>
 ### 완성 모습
 
-![MQTT](/assets/mqtt/3/create.png)
+![MQTT](/assets/images/mqtt/3/create.png)
 
 <br/><br/>
 ## gcc를 이용하여 컴파일
@@ -183,9 +183,9 @@ $ gcc -o my_pub my_pub.c -lmosquitto
 
 ###  my_sub
 
-![MQTT](/assets/mqtt/3/sub.png)
+![MQTT](/assets/images/mqtt/3/sub.png)
 
 <br/>
 ###  my_pub
 
-![MQTT](/assets/mqtt/3/pub.png)
+![MQTT](/assets/images/mqtt/3/pub.png)

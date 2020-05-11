@@ -27,7 +27,7 @@ finished: true
 
 * ```# javac -version```
 
-![tomcat](/assets/linux/3/1.png)
+![tomcat](/assets/images/linux/3/1.png)
 
 <br/>
 ## 웹 서버, 톰켓 설치
@@ -54,7 +54,7 @@ finished: true
 
 * 다음 화면이 나오면 성공입니다.
 
-![tomcat](/assets/linux/3/2.png)
+![tomcat](/assets/images/linux/3/2.png)
 
 <br/>
 

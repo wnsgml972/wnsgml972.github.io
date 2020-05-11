@@ -12,7 +12,7 @@ finished: true
 ## 아두이노 스케치 설치
 * <http://appinventor.mit.edu/explore/>에 접속해 SOFTWARE를 클릭 후 다운받는다.
 
-![Arduino](/assets/arduino/1/arduino_down.png "arduino down")
+![Arduino](/assets/images/arduino/1/arduino_down.png "arduino down")
 
 <br/>
 
@@ -27,7 +27,7 @@ finished: true
 * Installer에서 USB 드라이버를 다운 받는다.
 * 포트 설정을 변경한다.
 
-![Arduino](/assets/arduino/1/arduino_port.png "Change Port")
+![Arduino](/assets/images/arduino/1/arduino_port.png "Change Port")
 
 
 
@@ -40,19 +40,19 @@ finished: true
 
 UNO Board                                    | Bread Board | Bluetooth Module |
 -----                                        | -----       | -----            |
-![Arduino](/assets/arduino/1/arduino_uno.jpg "arduino uno board") | ![Arduino](/assets/arduino/1/arduino_bread.jpg "arduino bread board") | ![Arduino](/assets/arduino/1/arduino_bluetooth.jpg "arduino bluetooth module")
+![Arduino](/assets/images/arduino/1/arduino_uno.jpg "arduino uno board") | ![Arduino](/assets/images/arduino/1/arduino_bread.jpg "arduino bread board") | ![Arduino](/assets/images/arduino/1/arduino_bluetooth.jpg "arduino bluetooth module")
 
 <br/>
 
 * 구성도
 
-![Arduino](/assets/arduino/1/arduino_structure.png "Structure")
+![Arduino](/assets/images/arduino/1/arduino_structure.png "Structure")
 
 <br/>
 
 * 아두이노 보드의 회로 연결
 
-![Arduino](/assets/arduino/1/arduino_complete1.jpg "arduino complete")
+![Arduino](/assets/images/arduino/1/arduino_complete1.jpg "arduino complete")
 
 <br/>
 
@@ -86,7 +86,7 @@ void loop() {
 
 * 핸드폰에 적절한 어플리케이션을 다운받거나 직접 만들어 이용하고 아두이노 보드에 스케치 코드를 업로드해 확인한다.
 
-![Arduino](/assets/arduino/1/arduino_complete2.jpg "arduino complete")
+![Arduino](/assets/images/arduino/1/arduino_complete2.jpg "arduino complete")
 
 <br/><br/>
 

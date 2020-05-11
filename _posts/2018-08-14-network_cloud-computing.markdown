@@ -41,7 +41,7 @@ finished: true
 <br/>
 ## IaaS, PaaS, SaaS란 무엇인가?
 
-![GitBlog](/assets/network/1/1.png)
+![GitBlog](/assets/images/network/1/1.png)
 
 ### 정리
 
@@ -54,7 +54,7 @@ finished: true
 <br/>
 ## Packaged Software
 
-![GitBlog](/assets/network/1/2.png)
+![GitBlog](/assets/images/network/1/2.png)
 
 <span class="evidence">그림에서 보이는 것과 같이 직접 인프라와 플랫폼, 어플리케이션까지 모두 구성하여 관리하는 모델을 의미합니다.</span>
 
@@ -69,7 +69,7 @@ finished: true
 <br/>
 ## IaaS(Infrastructure as a service)
 
-![GitBlog](/assets/network/1/3.png)
+![GitBlog](/assets/images/network/1/3.png)
 
 <span class="evidence">Infrastructure 레벨을 제공하는 서비스를 의미합니다. 위에 보이는 것과 같이 사용자는 OS를 직접 올리고 그 상위 계층만 구성하면 되는 모델입니다.</span>
 
@@ -112,7 +112,7 @@ finished: true
 <br/>
 ## PaaS(Platform as a service)
 
-![GitBlog](/assets/network/1/4.png)
+![GitBlog](/assets/images/network/1/4.png)
 
 <span class="evidence">개발자가 응용 프로그램을 작성할 수 있도록 플랫폼 및 환경을 제공하는 모델입니다.</span>
 
@@ -140,7 +140,7 @@ finished: true
 <br/>
 ## SaaS(Software as a service)
 
-![GitBlog](/assets/network/1/5.png)
+![GitBlog](/assets/images/network/1/5.png)
 
 <span class="evidence">설치할 필요도 없이 클라우드를 통해 제공되는 SW입니다.</span>
 
@@ -165,7 +165,7 @@ finished: true
 <br/>
 ## 결과
 
-![GitBlog](/assets/network/1/0.png)
+![GitBlog](/assets/images/network/1/0.png)
 
 * 정리하자면 위의 그림과 같이 한 단어로 host, build, consume으로 표현이 가능합니다.
 

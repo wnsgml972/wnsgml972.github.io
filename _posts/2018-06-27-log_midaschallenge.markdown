@@ -31,11 +31,11 @@ finished: true
 
 ### OT, 본선 전까지의 시간
 
-![midas](/assets/log/midas/1.jpg)
+![midas](/assets/images/log/midas/1.jpg)
 
 본선 정확히 일주일 전에 팀 빌딩을 위한 OT를 진행하는데 랜덤으로 팀이 3명씩 이루어지게 됩니다.
 본선 진행에 대한 OT와 회사에 대한 발표를 진행한 뒤 팀별로 회의하는 시간이 주어지게 됩니다. 다행히 팀원 중 한 분이 작년도 MIDAS CHALLENGE 참여자여서 여러 정보들을 알려주었습니다. <br/>
-![midas](/assets/log/midas/2.jpg)
+![midas](/assets/images/log/midas/2.jpg)
 
 <br/>
 저희는 그 정보들을 토대로 사용할 언어, 협업 시스템, IDE 등을 정하고 작년 주제에 대해 일주일 전에 만나서 코딩을 해보기로 정하였습니다. 따로 만나 한번 GIT을 사용하기 위해 개발 환경을 맞추기로 하였는데 Maven을 저만 사용할 줄 알아서 서로 개발 환경을 구성하는데 조금 힘들었습니다. 이때 본선 대회 진행 전에 한번 만나본 것을 정말 다행으로 생각했습니다. <br/>
@@ -44,22 +44,22 @@ finished: true
 <br/>
 ### 본선
 
-![midas](/assets/log/midas/4.jpg)
+![midas](/assets/images/log/midas/4.jpg)
 
 본선 당일에 주제를 공개합니다. 저희 __응용의__ 본선 주제는 각 필수 기능과 추가 기능을 구현한 인테리어 프로그램이었습니다. 주제를 들은 뒤 바로 팀원들과 전체적인 구조를 짜고 각자의 역할을 배분하였습니다. 먼저 저는 전에 연습해보았던 그림판을 이 인테리어 프로그램 구조에 맞게 빠르게 구성하였고 각 팀원은 전체적인 프로그램의 방향을 잡았습니다. <br/>
 각자의 할 일을 하고 전체적으로 합치고 검증하고를 반복하였습니다. 아무래도 채용 연계 전형이다 보니 직원분들이 많은 관심을 보여주는데 약간 감시하는 듯한? 느낌도 들었습니다. <br/>
 정말 힘들었지만 버틸 수 있었던 점은 밥이 정말 맛있고, 중간중간에 계속 커피, 과자, 치킨 등등 먹을 것을 끊임없이 주셨습니다! <br/>
-![midas](/assets/log/midas/5.jpg)
-![midas](/assets/log/midas/6.jpg)
+![midas](/assets/images/log/midas/5.jpg)
+![midas](/assets/images/log/midas/6.jpg)
 
 <br/>
 밤을 새워서 피피티까지 준비해 발표 준비를 맞췄습니다. 저희는 추가 기능과 필수 기능을 모두 끝내서 수상에 대한 약간의 기대를 하였지만 확신하진 못 했습니다. <br/>
 모든 팀에 발표를 보고 한, 두 팀 정도가 잘했다고 생각이 들었는데 다음 시상에서 그 두 팀과 __저희가 수상을 하게 되었습니다!!!!__
-![midas](/assets/log/midas/9.jpg)
+![midas](/assets/images/log/midas/9.jpg)
 
 <br/>
 솔직히 받을지 못 받을지 계속 긴가 민가 하고 있었는데 상을 받게 돼서 그동안 고생했던 모든 시간이 보상받는 느낌이었습니다. 마지막으로 시상이 끝난 뒤 나갈 때는 MIDAS CHALLENGE를 진행했 던 직원 분들이 박수를 쳐주시는데 정말 감사했습니다.
-![midas](/assets/log/midas/10.jpg)
+![midas](/assets/images/log/midas/10.jpg)
 
 이건 대회에 사용했던 프로그램입니다. 수정할 부분이 있으니 참고하여 봐주시기 바랍니다.
 [MIDAS 본선 문제](https://github.com/wnsgml972/MIDAS_C)
@@ -77,4 +77,4 @@ __입사 후 다시 만든 인테리어 프로그램입니다.__
 앞으로 많은 해커톤 대회나 개발 대회에 참여할 것이며 다양한 도전을 해보고 싶습니다. <br/><br/>
 
 * 며칠 뒤에 온 특별채용 제의 메일입니다.
-![midas](/assets/log/midas/12.jpg)
+![midas](/assets/images/log/midas/12.jpg)

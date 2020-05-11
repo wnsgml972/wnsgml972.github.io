@@ -18,7 +18,7 @@ finished: true
 
 _Tools > Import and Export Settings..._
 
-![visual setting](/assets/setting/2/1.png)
+![visual setting](/assets/images/setting/2/1.png)
 
 
 
@@ -28,7 +28,7 @@ _Tools > Import and Export Settings..._
 
 * Export 선택하고 넘어가기
 
-![visual setting](/assets/setting/2/2.png)
+![visual setting](/assets/images/setting/2/2.png)
 
 
 <br/>
@@ -37,14 +37,14 @@ _Tools > Import and Export Settings..._
 
 예제에서는 실제 코딩시에 자주 볼 에디터의 폰트 및 색 조합(Fonts & Colors)만 선택
 
-![visual setting](/assets/setting/2/3.png)
+![visual setting](/assets/images/setting/2/3.png)
 
 
 <br/>
 
 * 내보내기 (~.vssettings)
 
-![visual setting](/assets/setting/2/4.png)
+![visual setting](/assets/images/setting/2/4.png)
 
 
 
@@ -54,7 +54,7 @@ _Tools > Import and Export Settings..._
 
 * Import 선택하고 넘어가기
 
-![visual setting](/assets/setting/2/5.png)
+![visual setting](/assets/images/setting/2/5.png)
 
 
 <br/>
@@ -63,7 +63,7 @@ _Tools > Import and Export Settings..._
 
 __무모한 설정 날림을 하지 않기 위해서는 잊지말고 자기 것을 저장 하는 것이 좋습니다.__
 
-![visual setting](/assets/setting/2/6.png)
+![visual setting](/assets/images/setting/2/6.png)
 
 
 <br/>
@@ -72,7 +72,7 @@ __무모한 설정 날림을 하지 않기 위해서는 잊지말고 자기 것�
 
 아까 만들어 놓은 것 불러옵니다.
 
-![visual setting](/assets/setting/2/7.png)
+![visual setting](/assets/images/setting/2/7.png)
 
 
 <br/>
@@ -81,7 +81,7 @@ __무모한 설정 날림을 하지 않기 위해서는 잊지말고 자기 것�
 
 어떤 세팅값을 가지고 올 지 확인하고 완료하면 됩니다.
 
-![visual setting](/assets/setting/2/8.png)
+![visual setting](/assets/images/setting/2/8.png)
 
 
 <br/><br/>

@@ -83,11 +83,11 @@ finished: true
 #### 결과
 출력 창에 해당 부분을 클릭하면
 
-![help](/assets/setting/5/help1.png)
+![help](/assets/images/setting/5/help1.png)
 
 다음과 같은 설명이 나온다.
 
-![help](/assets/setting/5/help2.png)
+![help](/assets/images/setting/5/help2.png)
 
 #### 느낀점
 * 버퍼 오버 플로, 초기화, null or nullptr 참조 등등
@@ -113,7 +113,7 @@ finished: true
 * SonarQube 또한 `Github`에서는 `Web Hooking`을 이용하면, `GitLab`에서는 그에 따른 연동 방식으로 분석 결과를 PR로 보낼 수 있는 듯하다.
 * `GitLab` 말고도 `Jenkis` 같은 CI와 많은 개발자들이 연동해서 사용하고 있다.
 
-![help](/assets/setting/5/q_all.png)
+![help](/assets/images/setting/5/q_all.png)
 
 1. IDE에서 코드 수정을 하고 remote 저장소에 commit & push를 한다.
 2. 그다음 github에서 master(혹은 stable 한 branch)에 대해 작업 branch를 PullRequest 올린다.
@@ -162,7 +162,7 @@ finished: true
 ### Nativs 적용 예제
 #### Custom List
 
-![help](/assets/setting/5/nativs1.png)
+![help](/assets/images/setting/5/nativs1.png)
 
 일반적인 연결 리스트는 위의 그림과 같이 연결된 다음 노드의 내용을 볼 수 없다.
 
@@ -170,7 +170,7 @@ finished: true
 
 #### std::vector
 
-![help](/assets/setting/5/nativs2.png)
+![help](/assets/images/setting/5/nativs2.png)
 
 마찬가지로 `std::vector` 또한 연결 리스트 기반으로 구현되었지만, 디버깅 정보에는 각 노드들의 정보를 모두 볼 수 있다!
 
@@ -178,7 +178,7 @@ finished: true
 
 #### 스크립트 작성
 
-![help](/assets/setting/5/nativs3.png)
+![help](/assets/images/setting/5/nativs3.png)
 
 * 스크립트는 해당 프로젝트의 Root에 구현한다. (VS 2017 이상 기준)
 * 스크립트 작성 후, 디버그를 진행한다. 다시 빌드하지 않고 스크립트만 변경해도 괜찮다!

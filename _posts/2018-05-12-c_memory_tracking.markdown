@@ -31,18 +31,18 @@ finished: true
 
 ### 조건 처리를 이용한 Memory Tracking
 
-![C](/assets/c/2/no-if.png)
+![C](/assets/images/c/2/no-if.png)
 
 * 다음 그림을 보면 ```#ifdef ~ #endif``` 사이의 코드가 색깔이 희미해져 컴파일 되지 않는 모습이다.
 * 평소에는 이 코드를 이용해 메모리를 할당하되 전처리문 ```REAL_WITH_MEMORY_TRACKING```를 정의하지 않아 Memory Tracking을 하지 않는 것이다. 그렇게 한다면 원할 때만 Memory Tracking을 할 수 있다.
 
 <br/>
-![C](/assets/c/2/visual.png)
+![C](/assets/images/c/2/visual.png)
 
 * __C/C++ -> 전처리기 -> 전처리기 정의__ 에 ```REAL_WITH_MEMORY_TRACKING```을 정의한다면
 
 <br/>
-![C](/assets/c/2/yes-if.png)
+![C](/assets/images/c/2/yes-if.png)
 
 * 조건 처리 안에 있는 코드까지 같이 컴파일 된다.
 
@@ -56,7 +56,7 @@ finished: true
 * 조건 처리를 이용하였기 때문에 ```REAL_WITH_MEMORY_TRACKING```를 선언해주지 않는다면 내부의 ```heap```공간을 계산하는 코드는 컴파일러가 읽지 않기 때문에 전체적인 퍼포먼스의 영향을 끼치지 않는다.
 
 <br/>
-![C](/assets/c/2/capture0.png)
+![C](/assets/images/c/2/capture0.png)
 
 * 이제 위의 그림처럼 모든 메모리 할당과 해제를 새로 만든 함수에서 적용하면 된다.
 
@@ -181,4 +181,4 @@ char *my_strdup(const char *s)
 <br/><br/>
 ## 사용 모습
 
-![C](/assets/c/2/capture.png)
+![C](/assets/images/c/2/capture.png)

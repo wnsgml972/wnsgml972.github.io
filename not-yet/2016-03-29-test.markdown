@@ -118,15 +118,15 @@ Add the link description behind the link address like this:
 
 ## Image
 
-`![Codes](/assets/code.png)`
+`![Codes](/assets/images/code.png)`
 
-![Codes](/assets/code.png)
+![Codes](/assets/images/code.png)
 
 How to write the images' descriptions are the same way as how you do it in links:
 
-`![Codes](/assets/code.png "Codes")`
+`![Codes](/assets/images/code.png "Codes")`
 
-![Codes](/assets/code.png "Codes")
+![Codes](/assets/images/code.png "Codes")
 
 ## Footnote
 

@@ -31,7 +31,7 @@ finished: true
 **이 모든 것을 이용하면 Windows에서 Ubuntu 개발 환경을 쉽게 구성할 수 있습니다.**
 
 
-![Windows Power Shell](/assets/setting/4/ubuntu-setting6.png)
+![Windows Power Shell](/assets/images/setting/4/ubuntu-setting6.png)
 
 
 
@@ -51,7 +51,7 @@ finished: true
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ~~~
 
-![Windows Power Shell](/assets/setting/4/window-powershell.png)
+![Windows Power Shell](/assets/images/setting/4/window-powershell.png)
 
 ### 활성화된 WSL에 리눅스 설치하기
 
@@ -64,11 +64,11 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 * `Microsoft Store`에서 `Ubuntu`를 검색하여 설치합니다.
 
-![Windows Power Shell](/assets/setting/4/ubuntu-install.png)
+![Windows Power Shell](/assets/images/setting/4/ubuntu-install.png)
 
 * 설치가 완료되면 User의 아이디와 암호 설정을 합니다.
 
-![Windows Power Shell](/assets/setting/4/ubuntu-setting.png)
+![Windows Power Shell](/assets/images/setting/4/ubuntu-setting.png)
 
 
 
@@ -78,7 +78,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 ### 1. 루트의 비밀 번호를 설정
 
-![Windows Power Shell](/assets/setting/4/ubuntu-setting1.png)
+![Windows Power Shell](/assets/images/setting/4/ubuntu-setting1.png)
 
 
 ### 2. apt를 빠르게 이용하기 위해 다운 받는 주소를 변경 (해외주소 -> 국내주소)
@@ -87,12 +87,12 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 * 글을 일괄적으로 모두 바꿔주기 위한 명령어를 사용합니다. 
 <br/> `%s/archive.ubuntu.com/ftp.daum.net/g`
 
-![Windows Power Shell](/assets/setting/4/ubuntu-setting22.png)
+![Windows Power Shell](/assets/images/setting/4/ubuntu-setting22.png)
 
 * 마찬가지로 다음 명령어를 통하여 주소를 바꿔줍니다.
 <br/> `%s/security.ubuntu.com/ftp.daum.net/g`
 
-![Windows Power Shell](/assets/setting/4/ubuntu-setting3.png)
+![Windows Power Shell](/assets/images/setting/4/ubuntu-setting3.png)
 
 * 두가지를 완료한 뒤 `wq!`를 입력하여 저장하고 나가줍니다.
 
@@ -175,11 +175,11 @@ export DISPLAY=:0
 vim ~/.bashrc
 ~~~
 
-![Windows Power Shell](/assets/setting/4/ubuntu-setting4.png)
+![Windows Power Shell](/assets/images/setting/4/ubuntu-setting4.png)
 
 #### 5. vcxsrv 서버의 실행을 확인한 뒤 `xeyes` 명령을 친 뒤, 눈 모양의 위젯 확인
 
-![Windows Power Shell](/assets/setting/4/ubuntu-setting5.png)
+![Windows Power Shell](/assets/images/setting/4/ubuntu-setting5.png)
 
 
 

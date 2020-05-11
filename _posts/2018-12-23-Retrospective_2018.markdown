@@ -24,14 +24,14 @@ finished: true
 
 많은 사람이 들어오는 것은 아니다.. 그렇지만 불과 반년전까지만 해도 일주일에 약 180명 정도 들어오는 블로그에서, 약 370명 정도까지 들어오는 블로그로 성장했다.
 
-![session](/assets/log/2018/blog.png)
+![session](/assets/images/log/2018/blog.png)
 
 
 ### 인기 게시글
 
 2017.12.16 ~ 2018.12.22, 가장 최근 날짜를 기준으로 사람들이 많이 들어오는 인기 게시글 현황이다. 역시 꾸준하게 인기가 많은 글은 mqtt 프로토콜을 분석한 게시글이다.
 
-![page view](/assets/log/2018/page_view1.png)
+![page view](/assets/images/log/2018/page_view1.png)
 
 ### 정리
 
