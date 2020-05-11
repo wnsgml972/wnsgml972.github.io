@@ -114,7 +114,7 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 
 * **파일 저장 시** 자동으로 코드를 정렬하여 저장합니다.
 
-![prettier](/img/setting/3/prettier.gif)
+![prettier](/assets/setting/3/prettier.gif)
 
 <br/>
 
@@ -265,13 +265,13 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 ### github 토큰 생성
 
 1. Github에 로그인 한 뒤 `Settings -> Developer settings -> Personal access tockens`에 들어가 다음을 클릭합니다.
-![SettingSync](/img/setting/3/1.png)
+![SettingSync](/assets/setting/3/1.png)
 
 2. Token 설명을 입력하고 gist를 체크한 뒤 토큰을 생성합니다.
-![SettingSync](/img/setting/3/2.png)
+![SettingSync](/assets/setting/3/2.png)
 
 3. 생성된 토큰을 복사합니다.
-![SettingSync](/img/setting/3/3.png)
+![SettingSync](/assets/setting/3/3.png)
 
 <br/>
 
@@ -283,7 +283,7 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 4. 성공하면 다음과 같은 출력창이 출력됩니다.
 5. 다음과 같은 출력창에 **제일 위에** 있는 `Github Token`과 `Github Gist`를 복사합니다.
 
-![SettingSync](/img/setting/3/4.png)
+![SettingSync](/assets/setting/3/4.png)
 
 <br/>
 

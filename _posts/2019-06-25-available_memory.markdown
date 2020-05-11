@@ -167,11 +167,11 @@ if (IsAvailableMemory((LPVOID)wastePtr) != ERROR_SUCCESS)
 
 ### 결과
 시간 : 약 0.03초, 매우 적게 시간이 걸려 사용하기 적합한 것 으로 판단!
-![valid](/img/c/3/valid0.png)
+![valid](/assets/c/3/valid0.png)
 
 
 사용성 : 임의의 잘못된 포인터 값에 대해 AfxIsValidAddress는 잡지 못하였지만, 직접 만든 IsAvailableMemory 함수는 해당 포인터 검증을 올바르게 해냄
-![valid2](/img/c/3/valid2.png)
+![valid2](/assets/c/3/valid2.png)
 
 
 

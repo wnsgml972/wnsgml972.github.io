@@ -19,7 +19,7 @@ finished: true
 
 먼저 Memory Leak이 발생하는 이유와, 알아야 할 기본적인 지식이라고 생각되는 것에 대해 간단히 정리하였습니다.
 
-![img](/img/c/5/user_mode_virtual_address.png)
+![img](/assets/c/5/user_mode_virtual_address.png)
 
 * **기본적인 경우에** 32bit 윈도우를 지원하면 가상 메모리 한계는 2GB고, 64bit는 `x64` 기준 약 8테라 바이트입니다.
 * 메모리 이슈를 분석할 때에는 더 나은 도구로 `Commit Size`를 포함한 여러 지표를 확인해야합니다.
@@ -135,7 +135,7 @@ set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symb
 * 본 배치 파일에 임의로 적혀있는 기본 변숫값들은 `KaKaoTalk.exe`을 예시로 구현하였습니다.
 
 **카카오톡 테스트 값 결과 파일**
-![result](/img/c/5/kakao_dump.png)
+![result](/assets/c/5/kakao_dump.png)
 
 
 <br/>
@@ -253,7 +253,7 @@ gflags /i %YourTargetProgram% -ust
 
 ### 결과 파일
 
-![result](/img/c/5/memory_leak_diff_result.png)
+![result](/assets/c/5/memory_leak_diff_result.png)
 
 위의 그림을 보면, Memory Leak으로 의심되는 부분에 대한 정보가 나오게됩니다. 해당 부분에서 **프로젝트 이름, 클래스 이름, 함수 이름, 소스파일 위치, 라인 수까지** 정확한 정보가 나오므로 해당 부분을 기준으로 분석을 진행했습니다.
 

@@ -123,7 +123,7 @@ UCS는 유니코드를 위한 **고정 길이 문자 인코딩 방식**입니다
 * UTF-16은 UCS를 UCS-2 기반, 16-bit 단위로 인코딩한 것입니다.
 * UTF-32는 UCS를 UCS-4 기반, 32-bit 단위로 인코딩한 것입니다.
 
-![unicode](/img/charset/3.png)
+![unicode](/assets/charset/3.png)
 
 
 
@@ -182,7 +182,7 @@ const char32_t str4[] = U"여기는 UTF-32"; // std::u32string과 대응, 계당
 * Windows에서는 `UTF-16 + BOM`으로 파일을 저장해야 올바르게 유니코드 파일이라고 인식합니다. (예 : 메모장 프로그램 등)
 * 팁 : Visual Studio에서 's8'옵션을 사용하면 UTF-8로 인코딩된 텍스트가 디버그 창에서 올바르게 표기됩니다.
 
-![unicode](/img/charset/4.png)
+![unicode](/assets/charset/4.png)
 
 
 

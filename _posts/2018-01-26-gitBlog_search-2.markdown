@@ -18,7 +18,7 @@ finished: true
 * [/sitemap.xml](https://github.com/wnsgml972/wnsgml972.github.io/blob/master/sitemap.xml "sitemap.xml")을 작성한다.
 * Github에 sitemap.xml을 push 한 뒤 직접 url 주소를 쳐서 확인한다.
 
-![GitBlog](/img/gitBlog/2/gitBlog_sitexml.png "site.xml")
+![GitBlog](/assets/gitBlog/2/gitBlog_sitexml.png "site.xml")
 
 * /robots.txt를 만들어 sitemap url을 등록한다.
 
@@ -31,7 +31,7 @@ Sitemap: https://wnsgml972.github.io/sitemap.xml
 
 * 확인해보기
 
-![GitBlog](/img/gitBlog/2/gitBlog_sitemapRobot.png "Confirm")
+![GitBlog](/assets/gitBlog/2/gitBlog_sitemapRobot.png "Confirm")
 
 
 <br/>
@@ -40,25 +40,25 @@ Sitemap: https://wnsgml972.github.io/sitemap.xml
 * [Google Search Console](https://www.google.com/webmasters/#?modal_active=none "Google Search") 등록 하기
 * Search Console 클릭한다.
 
-![GitBlog](/img/gitBlog/2/gitBlog_search-console.png "Search")
+![GitBlog](/assets/gitBlog/2/gitBlog_search-console.png "Search")
 
 * 속성 추가를 클릭해 화면이 나온다면 html 파일 다운 후 자신의 폴더에 옮긴다.
 
-![GitBlog](/img/gitBlog/2/gitBlog_complete.png "Complete")
+![GitBlog](/assets/gitBlog/2/gitBlog_complete.png "Complete")
 
 * html 파일을 github에 push한다.
 
-![GitBlog](/img/gitBlog/2/gitBlog_googlehtml.png "Google HTML")
+![GitBlog](/assets/gitBlog/2/gitBlog_googlehtml.png "Google HTML")
 
 * 다시 Search Console에 들어가 인증이 완료됐다고 나온다면 위에서 만든 sitemap.xml을 추가한다.
 
-![GitBlog](/img/gitBlog/2/gitBlog_addSitexml.png "Add Site XML")
+![GitBlog](/assets/gitBlog/2/gitBlog_addSitexml.png "Add Site XML")
 
 
 <br/>
 ### 확인
 
-![GitBlog](/img/gitBlog/2/gitBlog_complete2.png "Complete")
+![GitBlog](/assets/gitBlog/2/gitBlog_complete2.png "Complete")
 
 
 
@@ -72,11 +72,11 @@ Sitemap: https://wnsgml972.github.io/sitemap.xml
 * [Naver Search Console](https://www.google.com/webmasters/#?modal_active=none "Google Search") 등록 하기
 * 로그인 하게되면 나오게 되는 사이트 추가 버튼을 클릭한다.
 
-![GitBlog](/img/gitBlog/2/gitBlog_addNaver.png "Add Naver")
+![GitBlog](/assets/gitBlog/2/gitBlog_addNaver.png "Add Naver")
 
 * 구글에서 했던 방식과 동일하게 자신의 사이트를 인증한다.
 
-![GitBlog](/img/gitBlog/2/gitBlog_naverEnroll.png "Add Naver")
+![GitBlog](/assets/gitBlog/2/gitBlog_naverEnroll.png "Add Naver")
 
 
 <br/>
@@ -86,11 +86,11 @@ Sitemap: https://wnsgml972.github.io/sitemap.xml
 * feed.xml, sitemap.xml, robots.txt를 모두 github에 push하여 확인한다.
 * feed.xml을 제출한다.
 
-![GitBlog](/img/gitBlog/2/gitBlog_addFeed.png "Add Feed")
+![GitBlog](/assets/gitBlog/2/gitBlog_addFeed.png "Add Feed")
 
 * sitemap.xml을 제출한다.
 
-![GitBlog](/img/gitBlog/2/gitBlog_addSitemap.png "Add Site")
+![GitBlog](/assets/gitBlog/2/gitBlog_addSitemap.png "Add Site")
 
 <br/><br/>
 ## 참고

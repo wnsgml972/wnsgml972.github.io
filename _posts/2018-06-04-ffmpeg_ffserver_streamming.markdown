@@ -25,11 +25,11 @@ finished: true
 
 ### 주의
 
-![FFMPEG](/img/ffmpeg/1/ffserver0.png)
+![FFMPEG](/assets/ffmpeg/1/ffserver0.png)
 
 * root 권한으로 실행하지 않을 경우 다음과 같은 오류가 날 수 있습니다.
 
-![FFMPEG](/img/ffmpeg/1/ffserver01.png)
+![FFMPEG](/assets/ffmpeg/1/ffserver01.png)
 
 * root 권한으로 실행했을 때는 정상적으로 실행되는 모습을 확인 할 수 있습니다.
 
@@ -43,9 +43,9 @@ finished: true
 $ ffserver -f config_file
 {% endhighlight %}
 
-![FFMPEG](/img/ffmpeg/1/ffserver1.png)
+![FFMPEG](/assets/ffmpeg/1/ffserver1.png)
 
-![FFMPEG](/img/ffmpeg/1/ffserver2.png)
+![FFMPEG](/assets/ffmpeg/1/ffserver2.png)
 
 <br/><br/>
 ## 라즈베리파이 카메라를 이용한 MJPG 실시간 스트리밍
@@ -366,16 +366,16 @@ if __name__ == "__main__":
 * mjpg를 이용한 스트리밍 방식이기 때문에 ffserver conf 파일의 해당 feed에 해당하는 Stream의 주소 그대로 img tag의 src에 넣어주면 됩니다.<br/>
 ```<img src="http://localhost:8090/TruthCenter/102/fire.mjpg">```
 
-![FFMPEG](/img/ffmpeg/1/ffserver3.png)
+![FFMPEG](/assets/ffmpeg/1/ffserver3.png)
 
 <br/>
 ### 사용 하드웨어
 
 * Sersor Kit Box 구성 : 사진은 뒷면, 앞면의 모습입니다.
 
-![FFMPEG](/img/ffmpeg/1/ffserver4.jpg)
+![FFMPEG](/assets/ffmpeg/1/ffserver4.jpg)
 
-![FFMPEG](/img/ffmpeg/1/ffserver5.jpg)
+![FFMPEG](/assets/ffmpeg/1/ffserver5.jpg)
 
 <br/><br/>
 ## WebM Codec을 이용한 실시간 스트리밍 프로젝트

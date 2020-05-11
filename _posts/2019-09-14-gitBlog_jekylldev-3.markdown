@@ -17,7 +17,7 @@ finished: true
 
 ### Jekyll
 
-![blog](/img/blog/blog3_1.png)
+![blog](/assets/blog/blog3_1.png)
 
 * 다음과 같이 설치된 루비 콘솔을 관리자 권한으로 실행
 * 콘솔창에서 다음과 같은 gem 명령어 입력
@@ -45,12 +45,12 @@ cd blog-directory
 jekyll serve
 ~~~
 
-![blog](/img/blog/blog3_2.png)
+![blog](/assets/blog/blog3_2.png)
 
 * 다음과 같이 실행된 모습을 확인할 수 있습니다.
 * <http://localhost:4000/> 접속하면 블로그가 성공적으로 실행된 것을 확인할 수 있습니다.
 
-![blog](/img/blog/blog3_3.png)
+![blog](/assets/blog/blog3_3.png)
 
 
 

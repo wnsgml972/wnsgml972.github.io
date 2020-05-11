@@ -98,7 +98,7 @@ function myCallBack(response){
 <br/>
 ## 확인
 
-![Linux](/img/linux/4/linux.png)
+![Linux](/assets/linux/4/linux.png)
 
 <br/>
 

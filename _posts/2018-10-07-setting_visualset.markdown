@@ -24,7 +24,7 @@ __VS실행 -> [도구] -> [옵션] -> [환경] -> [글꼴 및 색] (D2Coding), �
 > 제가 개인적으로 만들어서 사용하는 `Thema`입니다. `Syntax Highlighter`는 `Visual Assist`와 유사하게 구성했습니다. <br/>
 Import 하는 방법은 [Visual Studio Setting Import & Export](https://wnsgml972.github.io/setting/2018/11/04/VisualStudio_Setting_Export/)를 참조하시면 됩니다.
 
-* [vssetings file](/img/ide/1/vs_font_color_setting.vssettings)
+* [vssetings file](/assets/ide/1/vs_font_color_setting.vssettings)
 
 
 
@@ -183,7 +183,7 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 ## 추가 Visual Assist 설정
 ### Visual Assist Options 추가
 
-![visual setting](/img/ide/1/3.png)
+![visual setting](/assets/ide/1/3.png)
 
 * 다음과 같이 Apply coloring to 부분에 모든 부분을 Check 해주게 되면, 나열되어 있는 여러 부분이 모두 하얀 글씨가 아닌 `Highlighting` 된 방식으로 보이게 됩니다.
 * ex) 모두 찾기 결과, List Box 등등등 매우 유용합니다!
@@ -192,7 +192,7 @@ __VS실행 -> [도구] -> [확장 및 업데이트] -> [온라인] -> [Visual St
 
 ## 캡쳐 화면
 
-![visual setting](/img/ide/1/2.png)
+![visual setting](/assets/ide/1/2.png)
 
 
 <br/>
