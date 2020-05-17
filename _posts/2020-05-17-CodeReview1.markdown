@@ -9,7 +9,7 @@ tags: code-review devops pr reviewer
 finished: true
 ---
 
-> 이번 포스팅은  2019년 9월 5일에 구글에서 공개한 코드리뷰 가이드를 한글로 번역한 [MadPlay](https://madplay.github.io/)님의 게시글과, 개발자 [Kenneth Truyers](https://www.kenneth-truyers.net/2018/11/01/best-practices-good-pr/) 님의 게시글을 읽고, 실무에서 Code Review 문화를 도입하며 중요하다고 생각되는 개념과 느낀 점들을 요약하여 발췌한 게시글입니다.
+> 이번 포스팅은  2019년 9월 5일에 구글에서 공개한 코드리뷰 가이드를 한글로 번역한 [MadPlay](https://madplay.github.io/post/google-code-review-guide)님의 게시글과, 개발자 [Kenneth Truyers](https://www.kenneth-truyers.net/2018/11/01/best-practices-good-pr/) 님의 게시글을 읽고, 실무에서 Code Review 문화를 도입하며 중요하다고 생각되는 개념과 느낀 점들을 요약하여 발췌한 게시글입니다.
 
 
 <br/>
