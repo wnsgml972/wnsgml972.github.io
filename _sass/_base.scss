@@ -97,15 +97,16 @@ h3, h4 {
  * Links
  */
 a {
-    color: #25b3bc;
+    color: #555;
     text-decoration: none;
-    transition: border .5s;
+    border-bottom: 1px solid #999;
+    word-wrap: break-word;
+    background-color: transparent;
 }
 
-a:hover {  // 수정 ?
-    border-bottom: 2px dotted #000;
+a:hover {
+    color: rgb(22, 21, 21);
 }
-
 
 .post-content h2:before {  // 수정 ?
     content: "¶ ";
@@ -131,11 +132,15 @@ a:hover {  // 수정 ?
     color: #25b3bc;
     text-decoration: none;
     transition: background-color .7s;
+    border-bottom: none;
+    line-height: 1.2;
+    vertical-align: top;
 }
 
 .link:hover {
+    color: #25b3bc;
     background-color: #e6e6e6;
-    border: none;
+    border-bottom: none;
 }
 
 
