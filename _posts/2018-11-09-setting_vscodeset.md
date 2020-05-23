@@ -54,7 +54,7 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 
 * TODO 주석을 하이라이팅 해줍니다.
 
-![Todo](https://github.com/wayou/vscode-todo-highlight/raw/master/assets/images/material-night-eighties.png)
+![Todo](https://github.com/wayou/vscode-todo-highlight/raw/master/assets/material-night-eighties.png)
 
 
 
@@ -62,7 +62,7 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 
 * 들여 쓰기를 효과적으로 볼 수 있게 해줍니다.
 
-![indent-rainbow](https://raw.githubusercontent.com/oderwat/vscode-indent-rainbow/master/assets/images/example.png)
+![indent-rainbow](https://raw.githubusercontent.com/oderwat/vscode-indent-rainbow/master/assets/example.png)
 
 
 
@@ -89,7 +89,7 @@ __```ctrl + shift + X``` 로 Extensions에서 검색할 수 있습니다.__
 
 * git log 보기, 파일 히스토리, 브랜치와 커밋을 비교 할 수 있는 확장입니다.
 
-![git-history](https://raw.githubusercontent.com/DonJayamanne/gitHistoryVSCode/master/images/gitLogv2.gif)
+![git-history](https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/images/screenshot.gif)
 
 <br/>
 
