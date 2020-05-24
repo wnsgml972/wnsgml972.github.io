@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Test"
-subtitle: "A brief introduction about Markdown Grammar. "
+title: "Prism Example"
+subtitle: "Prism usage example."
 date: 2020-05-25
 author: KimJunHee
 category: test
