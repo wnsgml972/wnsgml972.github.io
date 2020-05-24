@@ -1,8 +1,13 @@
 ---
-layout: page
-title: Test
-subtitle: About this Blog.
-permalink: /test/
+layout: post
+title: "Test"
+subtitle: "A brief introduction about Markdown Grammar. "
+date: 2020-05-25
+author: KimJunHee
+category: test
+tags: Test
+permalink: /test/prism-example/
+finished: true
 ---
 
 <!-- prism example -->

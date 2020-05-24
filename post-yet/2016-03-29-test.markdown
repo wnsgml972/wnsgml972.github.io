@@ -3,7 +3,7 @@ layout: post
 title: "Test"
 subtitle: "A brief introduction about Markdown Grammar. "
 date: 2016-03-29
-author: Benjamin
+author: KimJunHee
 category: test
 tags: Test
 finished: true
