@@ -77,6 +77,56 @@ OS 파일 시스템 간 성능 | O | X
 
 <br/><br/>
 
+* https://github.com/JanDeDobbeleer/oh-my-posh#prerequisites
+
+## Windows Terminal까지 사용하기! (테마도 입히기)
+### microsoft store에서 Windows Terminal 다운
+### chocolatey 설치 (package 저장소인듯)
+~~~powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+~~~
+
+### choco 로 뭐 다운
+~~~shell
+choco install microsoft-windows-terminal
+~~~
+
+### Install Target
+~~~powershell
+Install-Module posh-git -Scope CurrentUser
+Install-Module oh-my-posh -Scope CurrentUser
+~~~
+
+### Enable the prompt:
+~~~powershell
+# Start the default settings
+Set-Prompt
+# Alternatively set the desired theme:
+Set-Theme Agnoster
+~~~
+
+### In case you're running this on PS Core, make sure to also install version 2.0.0-beta1 of PSReadLine
+~~~powershell
+Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
+~~~
+
+### To enable the engine edit your PowerShell profile:
+~~~powershell
+if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
+notepad $PROFILE
+~~~
+
+### Append the following lines to your PowerShell profile:
+~~~powershell
+Import-Module posh-git
+Import-Module oh-my-posh
+Set-Theme Paradox
+~~~
+
+나머지 환경 설정은 사이트 가서 보고 하면 될 듯ㅎㅎ
+
+<br/><br/>
+
 ## Reference
 * <https://www.lesstif.com/software-architect/wsl-2-windows-subsystem-for-linux-2-71401661.html>
 * <https://docs.microsoft.com/ko-kr/windows/wsl/install-win10>
