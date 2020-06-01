@@ -1,0 +1,83 @@
+---
+layout: post
+title: "Windows 10 Bash로 Ubuntu 개발환경 구성하기"
+subtitle: "Windows Subsystem for Linux 2"
+date: 2020-06-01
+author: KimJunHee
+category: Setting
+tags: windows10 ubuntu bash open-source wsl
+finished: true
+---
+
+> sdafsdf
+
+
+
+<br/>
+
+## WSL2 설치 후 WSL1에서 WSL2로 Update
+
+### Windows10 최신 Update (Windows 빌드 19041이상에서 사용 가능)
+- Windows10 최신 Update <https://www.microsoft.com/ko-kr/software-download/windows10>
+
+### WSL 설치
+~~~powershell
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart # WSL 설치
+~~~
+
+### WSL2 업데이트
+~~~powershell
+Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform  # Windows 가상 머신 활성화
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart # '가상 머신 플랫폼' 옵션 구성 요소 사용
+~~~
+
+### WSL2 커널 설치
+- WSL2 커널 수동 Update <https://docs.microsoft.com/ko-kr/windows/wsl/wsl2-kernel>
+
+### WSL2를 기본 버전으로 설정
+~~~powershell
+wsl --set-default-version 2
+~~~
+
+### Update된 리눅스 커널들 WSL2 버전으로 Update
+~~~powershell
+wsl -l -v         # 해서 나온 Update를 원하는 커널을 밑에 Ubuntu 자리에 대입
+wsl --set-version Ubuntu 2
+~~~
+
+
+
+<br/><br/>
+
+## 주요 차이점
+
+### WSL 2 아키텍처
+* 전체 Linux 커널 (docker!!!!! 미쳐따리)
+
+### 요약
+기능 | WSL1 | WSL2
+---------|----------|---------
+Windows와 Linux 통합 | O | O
+빠른 부팅 시간 | O | O
+작은 리소스 공간 | O | O
+관리 VM | X | O
+전체 Linux 커널 | X | O
+전체 시스템 호출 호환성 | X | O
+VMWare 및 VirtualBox를 사용하여 실행 | O | X
+OS 파일 시스템 간 성능 | O | X
+
+
+### 더 빠른 성능을 위해 Linux 파일 시스템 사용
+* /mnt/wsl/ 에 공간이 생김! 당연히 Windows는 모르는 공간
+
+### WSL 2가 아닌 WSL 1의 사용에 대한 예외
+
+
+
+
+<br/><br/>
+
+## Reference
+* <https://www.lesstif.com/software-architect/wsl-2-windows-subsystem-for-linux-2-71401661.html>
+* <https://docs.microsoft.com/ko-kr/windows/wsl/install-win10>
+* <https://docs.microsoft.com/ko-kr/windows/wsl/compare-versions>
