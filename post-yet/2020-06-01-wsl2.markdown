@@ -105,6 +105,13 @@ Set-Prompt
 Set-Theme Agnoster
 ~~~
 
+여기서 혹시 권한 문제 걸릴 경우
+~~~powershell
+Get-ExecutionPolicy  # 아마 restricted
+Set-ExecutionPolicy RemoteSigned
+Get-ExecutionPolicy  # 확인
+~~~
+
 ### In case you're running this on PS Core, make sure to also install version 2.0.0-beta1 of PSReadLine
 ~~~powershell
 Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
@@ -123,7 +130,10 @@ Import-Module oh-my-posh
 Set-Theme Paradox
 ~~~
 
-나머지 환경 설정은 사이트 가서 보고 하면 될 듯ㅎㅎ
+
+### 나머지 환경 설정
+* 사이트 가서 보고 하면 될 듯ㅎㅎ
+* 폰트나 이것저것 해야 됨!
 
 <br/><br/>
 
