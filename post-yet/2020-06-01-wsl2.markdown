@@ -77,27 +77,35 @@ OS 파일 시스템 간 성능 | O | X
 
 <br/><br/>
 
-* https://github.com/JanDeDobbeleer/oh-my-posh#prerequisites
+## Windows Terminal 사용 후 테마 입히기
 
-## Windows Terminal까지 사용하기! (테마도 입히기)
-### microsoft store에서 Windows Terminal 다운
-### chocolatey 설치 (package 저장소인듯)
+> [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh#prerequisites) 테마 사용!
+
+
+### Windows Terminal
+* microsoft store에서 다운 받으면 됨
+
+
+<br/>
+
+### 테마 oh-my-posh
+#### chocolatey 설치 (package 저장소인듯)
 ~~~powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ~~~
 
-### choco 로 뭐 다운
+#### choco 로 뭐 다운
 ~~~shell
 choco install microsoft-windows-terminal
 ~~~
 
-### Install Target
+#### Install Target
 ~~~powershell
 Install-Module posh-git -Scope CurrentUser
 Install-Module oh-my-posh -Scope CurrentUser
 ~~~
 
-### Enable the prompt:
+#### Enable the prompt:
 ~~~powershell
 # Start the default settings
 Set-Prompt
@@ -112,18 +120,18 @@ Set-ExecutionPolicy RemoteSigned
 Get-ExecutionPolicy  # 확인
 ~~~
 
-### In case you're running this on PS Core, make sure to also install version 2.0.0-beta1 of PSReadLine
+#### In case you're running this on PS Core, make sure to also install version 2.0.0-beta1 of PSReadLine
 ~~~powershell
 Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
 ~~~
 
-### To enable the engine edit your PowerShell profile:
+#### To enable the engine edit your PowerShell profile:
 ~~~powershell
 if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
 notepad $PROFILE
 ~~~
 
-### Append the following lines to your PowerShell profile:
+#### Append the following lines to your PowerShell profile:
 ~~~powershell
 Import-Module posh-git
 Import-Module oh-my-posh
@@ -131,9 +139,32 @@ Set-Theme Paradox
 ~~~
 
 
+<br/>
+
 ### 나머지 환경 설정
-* 사이트 가서 보고 하면 될 듯ㅎㅎ
-* 폰트나 이것저것 해야 됨!
+#### using a unicore character
+~~~powershell
+$ThemeSettings.GitSymbols.BranchSymbol = [char]::ConvertFromUtf32(0xE0A0)
+~~~
+
+#### Hide your username@domain when not in a virtual machine for the Agnoster, Fish, Honukai, Paradox and Sorin themes:
+~~~powershell
+$DefaultUser = 'yourUsernameHere'
+~~~
+
+#### Windows Terminal font 설정하기
+* 오른쪽 설정 칸 들어가면 `settings.json` 파일 열림
+* 밑에 처럼 D2로 추가!
+~~~json
+        "defaults":
+        {
+            // Put settings here that you want to apply to all profiles.
+            "fontFace": "D2Coding",
+            "fontSize":12
+        },
+~~~
+
+
 
 <br/><br/>
 
