@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Windows 10 Bash로 Ubuntu 개발환경 구성하기"
+title: "WSL2 설치하고 Windows Terminal 테마 입히기"
 subtitle: "Windows Subsystem for Linux 2"
 date: 2020-06-01
 author: KimJunHee
 category: Setting
-tags: windows10 ubuntu bash open-source wsl
+tags: windows10 ubuntu bash open-source wsl wsl2
+permalink: /test/wsl2-example/
 finished: true
 ---
 
-> sdafsdf
-
+> WSL1 환경 구성이 아직 되지 않았다면 [Windows 10 Bash로 Ubuntu 개발환경 구성하기](http://localhost:4000//setting/2019/05/07/wsl/) 게시글을 먼저 확인해주세요.
 
 
 <br/>
@@ -21,29 +21,33 @@ finished: true
 - Windows10 최신 Update <https://www.microsoft.com/ko-kr/software-download/windows10>
 
 ### WSL 설치
-~~~powershell
+<pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart # WSL 설치
-~~~
+</code></pre>
 
 ### WSL2 업데이트
-~~~powershell
-Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform  # Windows 가상 머신 활성화
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart # '가상 머신 플랫폼' 옵션 구성 요소 사용
-~~~
+<pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
+# Windows 가상 머신 활성화
+Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
+# '가상 머신 플랫폼' 옵션 구성 요소 사용
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+</code></pre>
 
 ### WSL2 커널 설치
 - WSL2 커널 수동 Update <https://docs.microsoft.com/ko-kr/windows/wsl/wsl2-kernel>
 
 ### WSL2를 기본 버전으로 설정
-~~~powershell
+<pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 wsl --set-default-version 2
-~~~
+</code></pre>
+
 
 ### Update된 리눅스 커널들 WSL2 버전으로 Update
-~~~powershell
-wsl -l -v         # 해서 나온 Update를 원하는 커널을 밑에 Ubuntu 자리에 대입
+<pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
+wsl -l -v
+# 해서 나온 Update를 원하는 커널을 밑에 Ubuntu 자리에 대입
 wsl --set-version Ubuntu 2
-~~~
+</code></pre>
 
 
 
@@ -55,6 +59,7 @@ wsl --set-version Ubuntu 2
 * 전체 Linux 커널 (docker!!!!! 미쳐따리)
 
 ### 요약
+
 기능 | WSL1 | WSL2
 ---------|----------|---------
 Windows와 Linux 통합 | O | O
@@ -78,7 +83,6 @@ OS 파일 시스템 간 성능 | O | X
 <br/><br/>
 
 ## Windows Terminal 사용 후 테마 입히기
-
 > [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh#prerequisites) 테마 사용!
 
 
@@ -90,71 +94,78 @@ OS 파일 시스템 간 성능 | O | X
 
 ### 테마 oh-my-posh
 #### chocolatey 설치 (package 저장소인듯)
-~~~powershell
+<pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-~~~
+</code></pre>
 
 #### choco 로 뭐 다운
-~~~shell
+<pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 choco install microsoft-windows-terminal
-~~~
+</code></pre>
 
 #### Install Target
-~~~powershell
+<pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 Install-Module posh-git -Scope CurrentUser
 Install-Module oh-my-posh -Scope CurrentUser
-~~~
+</code></pre>
+
 
 #### Enable the prompt:
-~~~powershell
+<pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 # Start the default settings
 Set-Prompt
 # Alternatively set the desired theme:
 Set-Theme Agnoster
-~~~
+</code></pre>
 
 여기서 혹시 권한 문제 걸릴 경우
-~~~powershell
-Get-ExecutionPolicy  # 아마 restricted
+
+<pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
+Get-ExecutionPolicy
+# 아마 restricted
 Set-ExecutionPolicy RemoteSigned
-Get-ExecutionPolicy  # 확인
-~~~
+Get-ExecutionPolicy
+# 확인 RemoteSigned
+</code></pre>
+
 
 #### In case you're running this on PS Core, make sure to also install version 2.0.0-beta1 of PSReadLine
-~~~powershell
+<pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
-~~~
+</code></pre>
 
 #### To enable the engine edit your PowerShell profile:
-~~~powershell
+<pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
 notepad $PROFILE
-~~~
+</code></pre>
 
 #### Append the following lines to your PowerShell profile:
-~~~powershell
+<pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 Import-Module posh-git
 Import-Module oh-my-posh
 Set-Theme Paradox
-~~~
+</code></pre>
 
 
 <br/>
 
 ### 나머지 환경 설정
 #### using a unicore character
-~~~powershell
+<pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 $ThemeSettings.GitSymbols.BranchSymbol = [char]::ConvertFromUtf32(0xE0A0)
-~~~
+</code></pre>
 
 #### Hide your username@domain when not in a virtual machine for the Agnoster, Fish, Honukai, Paradox and Sorin themes:
-~~~powershell
+<pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 $DefaultUser = 'yourUsernameHere'
-~~~
+</code></pre>
+
 
 #### Windows Terminal font 설정하기
 * 오른쪽 설정 칸 들어가면 `settings.json` 파일 열림
 * 밑에 처럼 D2로 추가!
+
 ~~~json
 "defaults":
 {
@@ -172,4 +183,3 @@ $DefaultUser = 'yourUsernameHere'
 * <https://www.lesstif.com/software-architect/wsl-2-windows-subsystem-for-linux-2-71401661.html>
 * <https://docs.microsoft.com/ko-kr/windows/wsl/install-win10>
 * <https://docs.microsoft.com/ko-kr/windows/wsl/compare-versions>
-ㅍ

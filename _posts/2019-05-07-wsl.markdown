@@ -47,9 +47,9 @@ finished: true
 * 관리자 권한으로 Windows Power Shell을 실행합니다.
 * 다음과 같은 명령어를 실행시켜 WSL을 활성화 시킵니다.
 
-~~~bash
+<pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-~~~
+</code></pre>
 
 ![Windows Power Shell](/assets/images/setting/4/window-powershell.png)
 
@@ -98,11 +98,10 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 ### 3. 저장소를 update합니다.
 
-~~~bash
+<pre class="language-bash command-line" data-user="root" data-host="localhost"><code>
 sudo apt-get update
 sudo apt full-upgrade
-~~~
-
+</code></pre>
 
 <br/><br/>
 
@@ -151,34 +150,33 @@ Microsoft에서 제공하는 WSL은 GUI 프로그램을 실행할 수 없습니�
 #### 1. `/etc/machine-id` 파일 생성
 * 아래와 같은 명령을 실행했을 때 16진수 형태의 GUID 값이 표시되면 정상적으로 파일이 만들어진 것입니다.
 
-~~~bash
+<pre class="language-bash command-line" data-user="root" data-host="localhost"><code>
 sudo systemd-machine-id-setup
 sudo dbus-uuidgen - ensure
 cat /etc/machine-id
-~~~
+</code></pre>
+
 
 #### 2. `x11-apps` 패키지와 `X Window System` 기본 서체를 설치
-
-~~~bash
+<pre class="language-bash command-line" data-user="root" data-host="localhost"><code>
 sudo apt -y install x11-apps xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyrillic dbus-x11
-~~~
+</code></pre>
+
 
 #### 3. vcxsrv 서버 설정을 현재 세션에서 사용하도록 구성하고 쉘을 다시 시작
-
-~~~bash
+<pre class="language-bash command-line" data-user="root" data-host="localhost"><code>
 export DISPLAY=:0
-~~~
+</code></pre>
+
 
 #### 4. .bashrc 파일에 위의 설정을 적용한 뒤 저장
-
-~~~bash
+<pre class="language-bash command-line" data-user="root" data-host="localhost"><code>
 vim ~/.bashrc
-~~~
-
+</code></pre>
 ![Windows Power Shell](/assets/images/setting/4/ubuntu-setting4.png)
 
-#### 5. vcxsrv 서버의 실행을 확인한 뒤 `xeyes` 명령을 친 뒤, 눈 모양의 위젯 확인
 
+#### 5. vcxsrv 서버의 실행을 확인한 뒤 `xeyes` 명령을 친 뒤, 눈 모양의 위젯 확인
 ![Windows Power Shell](/assets/images/setting/4/ubuntu-setting5.png)
 
 
@@ -191,61 +189,59 @@ vim ~/.bashrc
 
 인터넷 브라우저입니다.
 
-~~~bash
+<pre class="language-bash command-line" data-user="root" data-host="localhost"><code>
 sudo apt -y install firefox
 firefox&
-~~~
+</code></pre>
 
 ### Nautilus, File Roller
 
 Nautilus : 리눅스 기본 파일 관리자입니다. <br/>
 File Roller : 압축 관리 프로그램입니다.
 
-~~~bash
+<pre class="language-bash command-line" data-user="root" data-host="localhost"><code>
 sudo apt -y install nautilus file-roller
 nautilus&
-~~~
+</code></pre>
+
 
 ### Gnome Terminal
-
-~~~bash
+<pre class="language-bash command-line" data-user="root" data-host="localhost"><code>
 sudo apt -y install gnome-terminal
 gnome-terminal&
-~~~
+</code></pre>
+
 
 ### 한글 표시와 한국어 Locale 설정
-
-~~~bash
+<pre class="language-bash command-line" data-user="root" data-host="localhost"><code>
 sudo apt -y install language-pack-ko
 sudo locale-gen ko_KR.UTF-8
 sudo apt -y install fonts-unfonts-core fonts-unfonts-extra fonts-baekmuk fonts-nanum fonts-nanum-coding fonts-nanum-extra
-~~~
+</code></pre>
 
 ### Pinta
-
 윈도우의 페인트 프로그램과 유사한 프로그램입니다.
 
-~~~bash
+<pre class="language-bash command-line" data-user="root" data-host="localhost"><code>
 sudo apt -y install pinta
 pinta&
-~~~
+</code></pre>
+
 
 ### Atom
-
-~~~bash
+<pre class="language-bash command-line" data-user="root" data-host="localhost"><code>
 sudo add-apt-repository ppa:webupd8team/atom
 sudo apt update
 sudo apt install atom
 atom&
-~~~
+</code></pre>
+
 
 
 <br/><br/>
 
 ## MS Windows 추후 발전 방향
-
 ### 더 발전된 MS Windows Terminal
-
 <iframe width="640" height="360" style="border:1px solid #CCC; margin-left:40px;" src="https://www.youtube.com/embed/8gw0rXPMMPE"
  frameborder="0" allowfullscreen></iframe>
 
@@ -255,7 +251,6 @@ atom&
 
 
 ### WSL2 
-
 기존의 WSL은 실제 `Linux`가 아닌 NT 커널 위에 Linux ABI의 불완전한 기능 구현입니다. 그렇기 때문에 기존의 리눅스와 완벽하게 호환되지 않아, 정상적으로 작동하지 않는 꽤 많은 응용프로그램이 존재합니다. 이것을 해결하고자 MS에선 실제 Linux 커널을 탑재한 WSL2를 출시한다고 합니다.
 
 아래의 게시글을 확인하면 자세한 내용을 확인하실 수 있습니다.
@@ -263,10 +258,12 @@ atom&
 * <https://devblogs.microsoft.com/commandline/announcing-wsl-2/>
 * <http://m.zdnet.co.kr/news_view.asp?article_id=20190508070053&re=zdk#imadnews>
 
+
+
+
 <br/><br/>
 
 ## 관련 게시글
-
 * [Virtual Box Ubuntu 설치 및 개발 기본 설정](https://wnsgml972.github.io/linux/2018/07/02/linux_virtual_box_init/)
 
 
@@ -275,7 +272,6 @@ atom&
 <br/><br/>
 
 ## Reference
-
 * <https://medium.com/rkttu/windows-10%EC%97%90%EC%84%9C-%EB%A6%AC%EB%88%85%EC%8A%A4%EC%9A%A9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%84%A4%EC%B9%98%ED%95%98%EA%B3%A0-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0-2cb0d7892d12>
 * <https://brunch.co.kr/@calmglow/6>
 * <https://brunch.co.kr/@gnugeun/28>
