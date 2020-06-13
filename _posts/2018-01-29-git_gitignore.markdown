@@ -41,7 +41,7 @@ _site/
 .jekyll-metadata
 {% endhighlight %}
 
-* <https://www.gitignore.io/>에서 원하는 `.gitignore` 템플릿을 정말 간단히 만들 수 있다.
+* <https://www.gitignore.io/> 혹은 <https://www.toptal.com/developers/gitignore>에서 원하는 `.gitignore` 템플릿을 정말 간단히 만들 수 있다.
 * 아니면 <https://github.com/github/gitignore>에 들어가면 거의 모든 언어에 대한 `.gitignore` 템플릿이 만들어져 있다.
 
 
