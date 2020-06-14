@@ -20,13 +20,16 @@ finished: true
 
 ### Windows 10
 #### Mircrosoft App
-- Windows Subsystem for Linux
+- Windows Subsystem for Linux2
+  - Power Shell `On-My-Osh` Theme 설정
+  - Ubuntu `On-My-Zsh` Theme 설정
 - Polarr ( Photo Editor )
 - Studio Plus ( Video Editor )
 - MicroSoft, TO DO
 - Network Speed Test
 - Sticky Notes
 - [PowerToys](https://github.com/microsoft/PowerToys)
+- TranslucentTB (작업표시줄 커스터마이징)
 
 #### Windows Setting
 - 사용자 전화 (휴대폰 및 Windows)
@@ -37,6 +40,7 @@ finished: true
 - 작업 표시줄
 - 핸드폰 블루투스 연결 (자동 잠금장치 기능)
 - 시작 프로그램 정리
+- 터치 패드 설정 (세손가락 사용자 정의)
 
 #### 추가 기능
 - MRT (악성 소프트웨어 제거 기능)
