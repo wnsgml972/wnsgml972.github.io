@@ -30,6 +30,8 @@ finished: true
 - Sticky Notes
 - [PowerToys](https://github.com/microsoft/PowerToys)
 - TranslucentTB (작업표시줄 커스터마이징)
+- Drawboard PDF
+- Windows Theme
 
 #### Windows Setting
 - 사용자 전화 (휴대폰 및 Windows)
