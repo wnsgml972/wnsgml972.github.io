@@ -18,15 +18,20 @@ finished: true
 ## WSL2 설치 후 WSL1에서 WSL2로 Update
 
 ### Windows10 최신 Update (Windows 빌드 19041이상에서 사용 가능)
+
 - Windows10 최신 Update <https://www.microsoft.com/ko-kr/software-download/windows10>
 
 ### WSL 설치
+
 <pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
+
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart # WSL 설치
 </code></pre>
 
 ### WSL2 업데이트
+
 <pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
+
 # Windows 가상 머신 활성화
 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 # '가상 머신 플랫폼' 옵션 구성 요소 사용
