@@ -1,0 +1,9 @@
+{
+    "no-inline-html" : {
+        "allowed_elements": ["br"]
+    },
+    "no-multiple-blanks" : false,
+    "no-duplicate-header" : {
+        "siblings_only" : true        
+    }
+}
