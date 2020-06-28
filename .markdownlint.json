@@ -4,6 +4,7 @@
     },
     "no-multiple-blanks" : false,
     "no-duplicate-header" : {
-        "siblings_only" : true        
-    }
+        "siblings_only" : true
+    },
+    "line-length": false
 }
