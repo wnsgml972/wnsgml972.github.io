@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "WSL2 설치하고 Windows Terminal 테마 입히기"
-subtitle: "Windows Subsystem for Linux 2"
-date: 2020-06-01
+title: "React 설치하고 Build 하기"
+subtitle: ""
+date: 2020-06-20
 author: KimJunHee
 category: Setting
-tags: windows10 ubuntu bash open-source wsl wsl2
-permalink: /test/wsl2-example/
+tags: react
+permalink: /test/react_build/
 finished: true
 ---
 

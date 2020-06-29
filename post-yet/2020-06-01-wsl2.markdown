@@ -6,7 +6,7 @@ date: 2020-06-01
 author: KimJunHee
 category: Setting
 tags: windows10 ubuntu bash open-source wsl wsl2
-permalink: /test/wsl2-example/
+permalink: /test/wsl2/
 finished: true
 ---
 

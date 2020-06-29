@@ -6,7 +6,7 @@ date: 2016-03-29
 author: KimJunHee
 category: test
 tags: Test
-permalink: /test/markdown-example/
+permalink: /test/markdown_example/
 finished: true
 ---
 

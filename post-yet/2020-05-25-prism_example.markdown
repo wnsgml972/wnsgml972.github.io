@@ -6,7 +6,7 @@ date: 2020-05-25
 author: KimJunHee
 category: test
 tags: Test
-permalink: /test/prism-example/
+permalink: /test/prism_example/
 finished: true
 ---
 
