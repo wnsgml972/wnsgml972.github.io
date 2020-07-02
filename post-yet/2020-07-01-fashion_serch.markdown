@@ -4,8 +4,8 @@ title: "Fashion Search App 개발 후기"
 subtitle: ""
 date: 2020-07-02
 author: KimJunHee
-category: log
-tags: 
+category: Log
+tags: service
 permalink: /test/makeservice/
 finished: true
 ---

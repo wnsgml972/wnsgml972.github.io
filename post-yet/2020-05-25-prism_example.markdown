@@ -4,8 +4,8 @@ title: "Prism Example"
 subtitle: "Prism usage example."
 date: 2020-05-25
 author: KimJunHee
-category: test
-tags: Test
+category: Test
+tags: test
 permalink: /test/prism_example/
 finished: true
 ---

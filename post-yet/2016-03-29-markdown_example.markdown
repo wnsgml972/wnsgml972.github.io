@@ -4,8 +4,8 @@ title: "Test"
 subtitle: "A brief introduction about Markdown Grammar. "
 date: 2016-03-29
 author: KimJunHee
-category: test
-tags: Test
+category: Test
+tags: test
 permalink: /test/markdown_example/
 finished: true
 ---
