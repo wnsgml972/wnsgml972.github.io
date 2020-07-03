@@ -18,6 +18,6 @@ finished: true
 
 ## Reference
 
-* [쿠버네티스 시작하기 ](https://subicura.com/2019/05/19/kubernetes-basic-1.html)
+* [쿠버네티스 시작하기](https://subicura.com/2019/05/19/kubernetes-basic-1.html)
 
 
