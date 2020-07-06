@@ -76,6 +76,16 @@ Copy $FOLDER1 $FOLDER2 -Recurse -Force
 ~~~
 
 
+#### Delete Item
+
+~~~powershell
+# Remove file & directory
+$REMOVED_PATH="."
+
+Remove-Item -Path $REMOVED_PATH -Recurse -Force *.pdb -Verbose
+Remove-Item -Path $REMOVED_PATH -Recurse -Force Test_* -Verbose
+Remove-Item -Path $REMOVED_PATH -Recurse -Force CI_* -Verbose
+~~~
 
 
 <br/><br/>
