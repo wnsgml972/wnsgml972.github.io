@@ -1,6 +1,6 @@
 {
     "no-inline-html" : {
-        "allowed_elements": ["br", "pre", "code"]
+        "allowed_elements": ["br", "pre", "code", "p", "img"]
     },
     "no-multiple-blanks" : false,
     "no-duplicate-header" : {
