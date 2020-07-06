@@ -39,10 +39,10 @@ sudo tc qdisc change dev enp0s8 root handle 1:0 tbf rate 900Mbit burst 500k late
 
 ### Shell Script Program
 
-* [gcc, gpp compile version update](/sh/update-compiler.sh)
-* [set-mysql.sh](/sh/set-mysql.sh)
-* [set-ffserver.sh](/sh/set-ffserver.sh)
-* [set-tomcat8.sh](/sh/set-tomcat8.sh)
+* [gcc, gpp compile version update](/assets/script/update-compiler.sh)
+* [set-mysql.sh](/assets/script/set-mysql.sh)
+* [set-ffserver.sh](/assets/script/set-ffserver.sh)
+* [set-tomcat8.sh](/assets/script/set-tomcat8.sh)
 
 
 
