@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-wide-width
 title: "Command Archive"
 subtitle: ""
 date: 2020-07-06
@@ -181,7 +181,7 @@ $a = 0                                                    # Initialize a variabl
 
 Get-Command -Name *varia*                                 # Get a list of commands related to variable management
 
-Get-Variable                                              # Get an array of objects, representing the variables in the current and parent scopes 
+Get-Variable                                              # Get an array of objects, representing the variables in the current and parent scopes
 Get-Variable | ? { $PSItem.Options -contains 'constant' } # Get variables with the "Constant" option set
 Get-Variable | ? { $PSItem.Options -contains 'readonly' } # Get variables with the "ReadOnly" option set
 

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <!--
+  ============================================================
+  Blog owner  : wnsgml972
+  Github url  : https://github.com/wnsgml972
+  Description : wnsgml972's dev blog
+  ============================================================
+  -->
+  <head>
+    {% include head.html %}
+    {% if site.google-analytics %}
+      {% include google-analytics.html %}
+    {% endif %}
+
+    {% if page.url == "/404.html" %}
+      <meta http-equiv="refresh" content="10; url={{ site.url }}{{ site.baseurl }}">
+    {% endif %}
+    {% include header.html %}
+  </head>
+
+  <body>
+    <div class="wrapper" style="max-width: calc(70% - (30px * 2));"> <!-- 여기만 다름 -->
+          {{ content }}
+    </div>
+  </body>
+
+  <foot>
+    {% include footer.html %}
+    {% include foot.html %}
+  </foot>
+  <span id="footer"></span>
+
+</html>
