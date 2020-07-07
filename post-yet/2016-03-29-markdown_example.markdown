@@ -55,7 +55,7 @@ You can also do this:
 
 ### Ordered list:
 
-`1. 2. 3. `
+`1. 2. 3.`
 
 1. First
 2. Second
@@ -145,13 +145,13 @@ Then this footnote will show at the end of this post.
 
 `~~There is no tree waiting for me.~~`
 
-<del>There is no tree waiting for me.</del>
+~~There is no tree waiting for me.~~
 
 ## Table
 
 ### A simple way
 
-`A     | B     | C     | D `
+`A     | B     | C     | D`
 
 `----- | ----- | ----- | -----`
 
