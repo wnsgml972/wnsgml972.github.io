@@ -10,12 +10,7 @@ permalink: /test/app/
 finished: true
 ---
 
-> 러프하게 작성해본 초기 기획 <br/>
 > History 유지를 위해, 기획의 내용 모두 GitHub를 통해 관리하기로 한다.
-
-프로젝트 자체가 초기 단계이고, 처음부터 최종 기능까지 설계가 끝나는 waterfall방식이 아니기에, 기능이 지속적으로 추가, 신버전이 release되는 앱으로 진행될 가능성이 높음.
-따라서 이런 개발 전략에 기민하게 대응하기 위해 MSA선택하는 것이 맞다고 봄
-
 
 ## 필요 기능
 
@@ -259,43 +254,39 @@ Business Model
 
 ## 초기 앱 개발 - 개발 우선 순위
 
+### 노트
+
 Fashion-serch app을 MSA기반으로 만들기 위해 할 수 있는 초기 개발 방법.
-UI 설계와 sample? 데이터가 있기 때문에 로그인, 인증기능, 과 브랜드 데이터를 저장하는 db구축부터 하는게 좋을것 같음.
+UI 설계와 sample? 데이터가 있기 때문에 로그인, 인증기능, 과 브랜드 데이터를 저장하는 db구축부터 하는게 좋을것 같음.  sign up, login page, main screen, Directory screen은 구현하는데 필요한 다른 service가 없기 때문에(다른 기능의 dependency가 없음) 가장 먼저 구현이 가능할 것 같음.
 
-sign up, login page, main screen, Directory screen은 구현하는데 필요한 다른 service가 없기 때문에(다른 기능의 dependency가 없음) 가장 먼저 구현이 가능할 것 같음.
-
-sign in, sign up, sign out 기능은 외부 인증모듈을 사용해도 됨. 하지만 연동할 수 있는 수단이 필요
-
+sign in, sign up,sign out 기능은 외부 인증모듈을 사용해도 됨. 하지만 연동할 수 있는 수단이 필요
 Directory screen을 구현하면서 지금 있는 브랜드 데이터들을 다 넣으면 좋겠음. nosql류 db들이 좋을것 같음(firebase를 이용하면 좋을듯) 브랜드 데이터들은 데이터들의 변경이 상대적으로 자주 일어나지 않고, 데이터 양이 정해져 있기 때문에
 
+### 진행 사항
+
 - Front-end 개발환경 세팅 - 진행중
-- GitHub action, eslint, prettier, expo등 기본적인 ci/cd 구성
+  - Git action, eslint, prettier, expo등 기본적인 ci/cd 구성
 - Login page, sign up(Frame 1,2,3) 구현
 - Main screen(Frame 4) 구현
 - Directory screen(Frame 5) 구현 - 이때까지는 data를 mocking해서 db없이 화면만 구현
 - Infra 구성
-- aws, azure등 사용할 Infra를 이때까지 결정해야함
-- Infra를 정했으면 적절한 kubernetes 환경 구성
-- container들을 외부에 노출할 수 있도록 kubernetes service, ingress구성.
-kubernete 내 docker registry를 구성하여 git과 ci/cd를 연동할 수 있도록
-- git이랑 연동하진 않았는데 여기까지는 어느정도 해봄. action으로 ci를 구성하고, 나온 container image(docker)를 kubernetes에 구축한 registry에 push까지 하면 될것 같음
+  - aws, azure등 사용할 Infra를 이때까지 결정해야함
+  - Infra를 정했으면 적절한 kubernetes 환경 구성
+  - container들을 외부에 노출할 수 있도록 kubernetes service, ingress구성.
+  - kubernete 내 docker registry를 구성하여 git과 ci/cd를 연동할 수 있도록 - git이랑 연동하진 않았는데 여기까지는 어느정도 해봄. action으로 ci를 구성하고, 나온 container image(docker)를 kubernetes에 구축한 registry에 push까지 하면 될것 같음
 - service를 구현하기 앞서, 각 서비스에 접근할 수 있도록 api gateway를 만들어 줘야함
-- nginx등을 간단히 앞단에 붙이도록 하면 될것 같음 - 이부분도 어느정도 해봄
+  - nginx등을 간단히 앞단에 붙이도록 하면 될것 같음 - 이부분도 어느정도 해봄
 - service 개발 - 앞서 구현했던 Front-end ui와 연결할 service 구현
-- sign up, login page, main screen, Directory screen에 관한 backend를 개발
-- 이때 인증관리, 보안, Directory 기능을 만들어야 하는데, 각각 구현하는데 필요한 기술(db, module)등을 결정해야함
-- dockerized된 container 이미지가 최종 결과물이고, stage마다 kubernetes registry에 업데이트 되도록 구성
-
-
-지금까지 초기 환경 구성이었고, Front-end 어플에서 log in, sign up, main screen, Directory screen이 잘 보이는지 테스트를 진행. 이게 완료되면 6번 CI/CD Automation이 끝났다고 봄
-
-## 이후 할일
-
-- 필요한 service와 ui를 하나씩 개발
-- service들간 통신이 가능하도록 message queue, GRP등을 생각해 봐야함
-- 서비스들이 하나 둘씩 늘어나면 모니터링, 로깅을 위해 Telemetry기술들을 추가해야함
-- telemetry가 추가되면 이때부터는 기능이 추가될 때 마다 기획 -> 개발 ->테스트-> 배포를 반복할 수 있음
-- service mesh는 어느정도 사용자가 늘어난 상황(traffic이 늘어나 service를 단일 컨테이너에서 더이상 처리할 수 없을때) scale in-out이 필요한 시점에서 고려해 추가하는게 좋을듯 함
+  - sign up, login page, main screen, Directory screen에 관한 backend를 개발
+  - 이때 인증관리, 보안, Directory 기능을 만들어야 하는데, 각각 구현하는데 필요한 기술(db, module)등을 결정해야함
+  - dockerized된 container 이미지가 최종 결과물이고, stage마다 kubernetes registry에 업데이트 되도록 구성
+- 지금까지 초기 환경 구성이었고, Front-end 어플에서 log in, sign up, main screen, Directory screen이 잘 보이는지 테스트를 진행. 이게 완료되면 6번 CI/CD Automation이 끝났다고 봄
+- 이후 할일
+  - 필요한 service와 ui를 하나씩 개발
+  - service들간 통신이 가능하도록 message queue, GRP등을 생각해 봐야함
+  - 서비스들이 하나 둘씩 늘어나면 모니터링, 로깅을 위해 Telemetry기술들을 추가해야함
+  - telemetry가 추가되면 이때부터는 기능이 추가될 때 마다 기획 -> 개발 ->테스트-> 배포를 반복할 수 있음
+  - service mesh는 어느정도 사용자가 늘어난 상황(traffic이 늘어나 service를 단일 컨테이너에서 더이상 처리할 수 없을때) scale in-out이 필요한 시점에서 고려해 추가하는게 좋을듯 함
 
 
 
