@@ -6,7 +6,7 @@ date: 2020-07-02
 author: KimJunHee
 category: Log
 tags: service
-permalink: /test/makeservice/
+permalink: /test/app/
 finished: true
 ---
 
