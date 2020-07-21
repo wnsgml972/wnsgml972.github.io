@@ -18,6 +18,8 @@ finished: true
 * Spring Boot Backend (spring-mvc, restful, spring-security, spring-hibernate), mysql로 간단한 백엔드 구현해보기
 * 라이브러리 : logback, lombok
 
+Rest API 구성으로 인한 커먼한 인터페이스로 협업을 편하게 구현
+
 ### 된 거
 
 - 로그인 및 인증 (1 - 로그인, auth)
