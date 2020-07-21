@@ -14,8 +14,8 @@ finished: true
 
 ## 현 상황 Note
 
-* react 간단한 로그인 폼
-* Spring Boot Backend (spring-mvc, restful, spring-security, spring-hibernate), MySql로 간단한 백엔드 구현해보기
+* react 간단한 로그인 폼 프론트
+* Spring Boot Backend (spring-mvc, restful, spring-security, spring-hibernate), mysql로 간단한 백엔드 구현해보기
 * 라이브러리 : logback, lombok
 
 ### 된 거
