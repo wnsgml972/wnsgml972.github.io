@@ -12,14 +12,18 @@ finished: true
 > 개인적으로 PC 구매 시 사용하는 기본 세팅입니다. PT 발표나 개발을 진행하며 사용한 좋은 소프트웨어들도 정리하여 모아놨습니다. 혹시 더 좋은 소프트웨어가 있을 시 댓글로 알려주시면 감사하겠습니다.
 
 ## PC, OS
+
 ### Samsung Notebook
+
 * PC Auto Driver Setting (Samsung Update)
-    * Logitech Driver
-    * NVIDIA Driver
+  * Logitech Driver
+  * NVIDIA Driver
 * PC 이름 바꾸기
 
 ### Windows 10
+
 #### Mircrosoft App
+
 - Windows Subsystem for Linux2
   - Power Shell `On-My-Osh` Theme 설정
   - Ubuntu `On-My-Zsh` Theme 설정
@@ -30,10 +34,12 @@ finished: true
 - Sticky Notes
 - [PowerToys](https://github.com/microsoft/PowerToys)
 - TranslucentTB (작업표시줄 커스터마이징)
+- Remote Terminal
 - Drawboard PDF
 - Windows Theme
 
 #### Windows Setting
+
 - 사용자 전화 (휴대폰 및 Windows)
 - 클립보드 ( 검색기록 저장 켜기, 장치 간 동기화 켜기, 자동 동기화) : 클라우드
 - 링크 공유
@@ -45,6 +51,7 @@ finished: true
 - 터치 패드 설정 (세손가락 사용자 정의)
 
 #### 추가 기능
+
 - MRT (악성 소프트웨어 제거 기능)
 - PC 메모리 관리 (Treesize 같은 것)
 - 단계 레코더 (Step Recorder)
