@@ -12,6 +12,30 @@ finished: true
 
 > History 유지를 위해, 기획의 내용 모두 GitHub를 통해 관리하기로 한다.
 
+## 현 상황 Note
+
+* [Java Code Style](https://www.jetbrains.com/help/idea/code-style-java.html#wrapping_and_braces_tab_)
+* react 간단한 로그인 폼 프론트
+* Spring Boot Backend (spring-mvc, restful, spring-security, spring-hibernate), mysql로 간단한 백엔드 구현해보기
+* 라이브러리 : logback, lombok
+
+Rest API 구성으로 인한 커먼한 인터페이스로 협업을 편하게 구현
+
+### 된 거
+
+- 로그인 및 인증 (1 - 로그인, auth)
+- 사용자 관리(2- push, 5 - note 분리해야 할지도?)
+- 브랜드 관리(3 - 브랜드 데이터, 4 - 브랜드 분류)
+
+### 안된 거
+
+- 커뮤니티 관리(6 - 커뮤니티)
+- 추천 시스템(7 - 추천)
+- business model(8 - 광고)
+
+
+<br/>
+
 ## 필요 기능
 
 필요 기능들을 통해 도메인을 정의한다.
@@ -56,6 +80,7 @@ finished: true
 
 #### 필요 기술
 
+- Expo Push Notification
 - OneSignal
 - firebase In-app messaging
 
@@ -288,27 +313,5 @@ Directory screen을 구현하면서 지금 있는 브랜드 데이터들을 다 
   - telemetry가 추가되면 이때부터는 기능이 추가될 때 마다 기획 -> 개발 ->테스트-> 배포를 반복할 수 있음
   - service mesh는 어느정도 사용자가 늘어난 상황(traffic이 늘어나 service를 단일 컨테이너에서 더이상 처리할 수 없을때) scale in-out이 필요한 시점에서 고려해 추가하는게 좋을듯 함
 
-
-
-<br/><br/>
-
----
-
-> 여기 밑으로는 지속적으로 정리해야 할 내용!
-
-## 어떤걸 만들까?
-
-
-## 어떻게 개발해야 할까?
-
-기술 스택
-
-
-
-
-
-<br/><br/>
-
-## Reference
 
 * <https://subicura.com/2016/05/30/likehs-develop-log.html>

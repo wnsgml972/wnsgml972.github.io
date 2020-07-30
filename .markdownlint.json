@@ -9,5 +9,6 @@
     "line-length": false,
     "no-trailing-punctuation": false,
     "no-emphasis-as-heading":false, "no-emphasis-as-header":false,
-    "ul-style": false
+    "ul-style": false,
+    "single-title": false
 }
