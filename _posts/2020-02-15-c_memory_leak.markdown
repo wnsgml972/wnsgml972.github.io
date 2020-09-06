@@ -217,6 +217,10 @@ umdh.exe -pn:%YourTargetProgram% > %ResultFile2%
 cd %WinSDKProgramPath%
 umdh.exe -v -d -l %ResultFile1% %ResultFile2% > %DiffCheckResultFile%
 
+:: GFlag Memory Trackiong OFF ---
+:: Initialize GFlag
+gflags /i %YourTargetProgram% -ust
+
 :: Var Initialize ---
 :: Var Set Initialize
 set _NT_SYMBOL_PATH=
@@ -231,10 +235,6 @@ set YourOutPutFileBasePath=
 set ResultFile1=
 set ResultFile2=
 set DiffCheckResultFile=
-
-:: GFlag Memory Trackiong OFF ---
-:: Initialize GFlag
-gflags /i %YourTargetProgram% -ust
 ~~~
 
 
