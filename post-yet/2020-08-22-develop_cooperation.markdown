@@ -24,6 +24,10 @@ finished: true
 
 - JSon, URL
 
+## 문서 협업 툴
+
+- VS Code, Markdown
+
 ## 프레임워크 vs 라이브러리
 
 - 자바(스프링), 파이선(장고), Ruby(루비 온 레일즈) 등등 예시
