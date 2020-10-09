@@ -6,11 +6,10 @@ date: 2020-06-01
 author: KimJunHee
 category: Setting
 tags: windows10 ubuntu bash open-source wsl wsl2
-permalink: /test/wsl2/
 finished: true
 ---
 
-> WSL1 환경 구성이 아직 되지 않았다면 [Windows 10 Bash로 Ubuntu 개발환경 구성하기](http://localhost:4000//setting/2019/05/07/wsl/) 게시글을 먼저 확인해주세요.
+> WSL1 환경 구성이 아직 되지 않았다면 [Windows 10 Bash로 Ubuntu 개발환경 구성하기](https://wnsgml972.github.io/setting/2019/05/07/wsl/) 게시글을 먼저 확인해주세요.
 
 
 <br/>
@@ -18,6 +17,8 @@ finished: true
 ## WSL2 설치 후 WSL1에서 WSL2로 Update
 
 ### Windows10 최신 Update (Windows 빌드 19041이상에서 사용 가능)
+
+만약 현재 버젼이 해당 버젼이상이라면 그냥 진행하셔도 괜찮습니다.
 
 - Windows10 최신 Update <https://www.microsoft.com/ko-kr/software-download/windows10>
 
@@ -65,7 +66,7 @@ wsl --set-version Ubuntu 2
 
 ### WSL 2 아키텍처
 
-* 전체 Linux 커널 (docker!!!!! 미쳐따리)
+* 전체 Linux 커널 (docker 사용 가능!)
 
 ### 요약
 
@@ -83,9 +84,7 @@ OS 파일 시스템 간 성능 | O | X
 
 ### 더 빠른 성능을 위해 Linux 파일 시스템 사용
 
-* /mnt/wsl/ 에 공간이 생김! 당연히 Windows는 모르는 공간
-
-### WSL 2가 아닌 WSL 1의 사용에 대한 예외
+* /mnt/wsl/ 에 공간이 생기게 됩니다. (Windows는 모르는 공간)
 
 
 
@@ -94,31 +93,30 @@ OS 파일 시스템 간 성능 | O | X
 
 ## Windows Terminal 사용 후 테마 입히기
 
-> [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh#prerequisites) 테마 사용!
-
+> 여기서부터는 Windows Termianl에 대한 추가적인 커스텀 세팅을 하실 분에게만 해당됩니다. 테마는 [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh#prerequisites)를 사용합니다.
 
 ### Windows Terminal
 
-microsoft store에서 다운 받으면 됨
+* `microsoft store`에서 다운 받아주세요.
 
 
 <br/>
 
-### 테마 oh-my-posh
+### oh-my-posh theme
 
-#### chocolatey 설치 (package 저장소인듯)
+#### chocolatey install
 
 <pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 </code></pre>
 
-#### choco 로 뭐 다운
+#### install package
 
 <pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 choco install microsoft-windows-terminal
 </code></pre>
 
-#### Install Target
+#### install target
 
 <pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 Install-Module posh-git -Scope CurrentUser
@@ -126,7 +124,7 @@ Install-Module oh-my-posh -Scope CurrentUser
 </code></pre>
 
 
-#### Enable the prompt:
+#### enable the prompt:
 
 <pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 # Start the default settings
@@ -135,7 +133,9 @@ Set-Prompt
 Set-Theme Agnoster
 </code></pre>
 
-여기서 혹시 권한 문제 걸릴 경우
+#### troubleshooting
+
+> 여기서 혹시 권한 문제 걸릴 경우 아래를 참고해주세요.
 
 <pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 Get-ExecutionPolicy
@@ -146,20 +146,20 @@ Get-ExecutionPolicy
 </code></pre>
 
 
-#### In case you're running this on PS Core, make sure to also install version 2.0.0-beta1 of PSReadLine
+#### PSReadLine 설치
 
 <pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
 </code></pre>
 
-#### To enable the engine edit your PowerShell profile:
+#### 엔진 활성화를 위한 PS 프로필 편집
 
 <pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
 notepad $PROFILE
 </code></pre>
 
-#### Append the following lines to your PowerShell profile:
+#### enable the prompt
 
 <pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 Import-Module posh-git
@@ -172,20 +172,20 @@ Set-Theme Paradox
 
 ### 나머지 환경 설정
 
-#### using a unicore character
+#### 유니코드 설정
 
 <pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 $ThemeSettings.GitSymbols.BranchSymbol = [char]::ConvertFromUtf32(0xE0A0)
 </code></pre>
 
-#### Hide your username@domain when not in a virtual machine for the Agnoster, Fish, Honukai, Paradox and Sorin themes:
+#### 테마 용 가상 머신이 아닐 때 유저 도메인을 숨겨주는 옵션
 
 <pre class="language-powershell command-line" data-prompt="PS C:\Users\KimJunHee>"><code>
 $DefaultUser = 'yourUsernameHere'
 </code></pre>
 
 
-#### Windows Terminal font 설정하기
+#### Windows Terminal Application Font 설정
 
 * 오른쪽 설정 칸 들어가면 `settings.json` 파일 열림
 * 밑에 처럼 D2로 추가!

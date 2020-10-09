@@ -33,7 +33,9 @@ finished: true
 <br/><br/>
 
 ## 상황 인식
+
 ### 게임을 하다가 자꾸 메모리가 부족하다면서 튕겨요... (`Out of Memory`)
+
 * RAM은 남아도는데...?
 * 머신의 물리 메모리(RAM)이 부족한 것이 아니라 __Process의 가상 메모리가__ 부족한 것!
 * 대부분 컴퓨터 사양 문제가 아닌, 응용 프로그램의 문제다.
@@ -43,6 +45,7 @@ finished: true
 * 64bit 환경에서는 `Out of Memory`가 잘 뜨진 않지만, 메모리 증가로 **페이즈 폴트 증가, 캐시 미스 증가, 종합하여 퍼포먼스에 악영향을 미칠 수 있다.**
 
 ### `Out of Memory`의 원인들
+
 * `Commit`으로 인한 가상 메모리 고갈 -> `Memory Leak`
 * `Reserve`로 인한 가상 메모리 고갈
 * `Page File Limit`
@@ -55,20 +58,24 @@ finished: true
 
 ## 활용 도구 준비하기
 
-~~~
+~~~shell
 1. UMDH.exe
 2. WinDBG.exe
 ~~~
 
 ### WinDBG 사용하기
+
 > WinDBG를 사용하려면 Windows SDK 안에 있는 WinDBG를 다운 받아야 합니다. 참고로 `UMDH`도 `WinDBG` 포함
 
 #### Install WinDBG SDK
+
 * <https://docs.microsoft.com/ko-kr/windows-hardware/drivers/debugger/debugger-download-tools>
 
 #### Symbol Path Config
+
 * <https://docs.microsoft.com/ko-kr/windows-hardware/drivers/debugger/using-a-symbol-server>
 * 그냥 여기 가서 2개 cmd 창에 복붙!
+
 ~~~bash
 set _NT_SYMBOL_PATH=srv*DownstreamStore*SymbolStoreLocation
 set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symbols
@@ -80,12 +87,14 @@ set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symb
 ## Memory Leak 검증 시나리오
 
 ### 특정 행위를 할 때, Memory Leak이 되는 것 같은 시점을 포착했을 때 (재현이 가능할 때)
+
 1. 동적 할당이 일어나는 콜스택 별로, 할당 횟수, 해제 횟수, 할당 크기 수집
 2. 재현 전, 콜스택 별 메모리 할당량 기록
 3. 재현 (특정 행위 10번 반복)
 4. 재현 후, 콜스택 별 메모리 할당량 기록, 2번과 비교
 
 ### UMDH.exe  : 재현이 가능해요!
+
 1. 동적 할당이 일어나는 콜스택 별로, 할당 횟수, 해제 횟수, 할당 크기 수집
     * `gflags /i Client.exe +ust`
 2. 재현 전, 콜스택 별 메모리 할당량 기록
@@ -105,6 +114,7 @@ set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symb
 <br/>
 
 ### WinDBG.exe  : 재현이 불가능해요! ㅠ
+
 1. 작업관리자에서 프로세스 탐색
 2. 덤프 파일 만들기 클릭
 3. WinDBG.exe -> Heap 분석 사용
@@ -127,6 +137,7 @@ set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symb
 ## UMDH 배치 파일
 
 ### 간단한 사용법
+
 * UMDH를 쉽게 사용하기 위한 배치 파일입니다.
 * 프로그램 시작 시 1, 2 배치파일 실행
 * 메모리 릭 재현 *10
@@ -244,7 +255,9 @@ set DiffCheckResultFile=
 <br><br>
 
 ## 실제 Memory Leak 해결 사례
+
 ### 해결 과정
+
 1. 프로그램 시작 시 User 힙 메모리 덤프
 2. Document를 열었다 닫았다 * 5 하고, User 힙 메모리 덤프
 3. 해당 덤프 파일 difference file 생성
@@ -263,5 +276,6 @@ set DiffCheckResultFile=
 <br/><br/>
 
 ## Reference
+
 * [NDC 2018 신입 개발자가 알아야 할 윈도우 메모리릭 디버깅](https://www.slideshare.net/seao/ndc18-95258747)
 
