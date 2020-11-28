@@ -1,84 +1,92 @@
 ---
-title: [kotlin] coding convention
-subtitle: dddd
-categories: kotlin
+layout: post
+title: kotlin coding convention
+category: kotlin
 tags: kotlin
-date: 2020-11-28 19:13:10 +0000
-last_modified_at: 2020-11-28 19:13:10 +0000
+date: 2020-11-28
+author: KimJunHee
+last_modified_at: 2020-11-28
+finished: true
 ---
 
-## source code organization
+> 이번 포스팅은 [kotlin 공식 coding convention](https://kotlinlang.org/docs/reference/coding-conventions.html)을 한글로 번역하고, 추가적으로 필요한 개념을 함께 정리한 게시글입니다.
 
----
+## Source Code Organization
 
-- **디렉터리 구조**
-    - Java와 Kotlin이 섞인 프로젝트라면 Kotlin과 Java 파일은 동일한 소스 루트에 있어야 한다.
-    - 각 파일은 각 패키지 문과 일치하는 디렉터리에 저장되어야 한다.
-    - 순수 Kotlin 프로젝트에서 권장하는 디렉터리 구조는 공통 루트 패키지가 생략된 패키지 구조를 따르는 것이다.
-- **소스 파일 이름**
-    - Kotlin 파일에 Top-level로 단일 클래스가 선언된 경우 `.kt` 확장자와 함께 클래스의 이름과 동일해야 한다.
-    - 파일에 여러 클래스가 포함되어 있거나 Top-level 선언들만 있는 경우 파일의 내용들을 설명하는 이름으로 작성한다.
-    - 파일 이름은 파스칼 표기법(`Pascal Case`)을 따를 것 = `Upper Camel Case`
-    - 파일 이름은 파일에 있는 코드가 무엇을 하는지 설명해야 한다.
-    - 따라서 파일 이름에 `"Util"`과 같은 의미 없는 단어를 사용하는 것은 피해야 한다.
-- **소스 파일 구조**
-    - 클래스, 최상위 함수 또는 속성을 동일한 Kotlin 소스 파일에 배치하는 것은 의미적으로 서로 밀접하게 관련되어 있고 파일 사이즈가 합리적인 경우(수백 줄을 초과하지 않는 함) 권장된다.
-    - 클래스의 모든 클라이언트와 관련이 있는 `확장 함수를` 정의할 때 클래스가 정의되어 있는 동일한 파일에 넣어라.
-    - 특정 클라이언트에만 이치에 맞는 `확장 함수를` 정의할 때는 해당 클라이언트의 코드 옆에 위치시킨다.
-    - 모든 `Foo`의 확장만을 보관하기 위해 파일을 만들지 말라.
-- Package 나눔에 대한 고찰
+### 디렉터리 구조
 
-    ## Layer to Feature, Feature to Layer Packaging
+- Java와 Kotlin이 섞인 프로젝트라면 Kotlin과 Java 파일은 동일한 소스 루트에 있어야 한다.
+- 각 파일은 각 패키지 문과 일치하는 디렉터리에 저장되어야 한다.
+- 순수 Kotlin 프로젝트에서 권장하는 디렉터리 구조는 공통 루트 패키지가 생략된 패키지 구조를 따르는 것이다.
 
-    ![%5Bkotlin%5D%20coding%20convention%20b6c6dbd3063e40c8ba2e3795824a2c22/Untitled.png](%5Bkotlin%5D%20coding%20convention%20b6c6dbd3063e40c8ba2e3795824a2c22/Untitled.png)
+### 소스 파일 이름
 
-    ![%5Bkotlin%5D%20coding%20convention%20b6c6dbd3063e40c8ba2e3795824a2c22/Untitled%201.png](%5Bkotlin%5D%20coding%20convention%20b6c6dbd3063e40c8ba2e3795824a2c22/Untitled%201.png)
+- Kotlin 파일에 Top-level로 단일 클래스가 선언된 경우 `.kt` 확장자와함께 클래스의 이름과 동일해야 한다.
+- 파일에 여러 클래스가 포함되어 있거나 Top-level 선언들만 있는 경우파일의 내용들을 설명하는 이름으로 작성한다.
+- 파일 이름은 파스칼 표기법(`Pascal Case`)을 따를 것 = `Upper Camel Case`
+- 파일 이름은 파일에 있는 코드가 무엇을 하는지 설명해야 한다.
+- 따라서 파일 이름에 `"Util"`과 같은 의미 없는 단어를 사용하는 것은 피해야 한다.
 
-    ![%5Bkotlin%5D%20coding%20convention%20b6c6dbd3063e40c8ba2e3795824a2c22/Untitled%202.png](%5Bkotlin%5D%20coding%20convention%20b6c6dbd3063e40c8ba2e3795824a2c22/Untitled%202.png)
+### 소스 파일 구조
 
-    ### 요약
+- 클래스, 최상위 함수 또는 속성을 동일한 Kotlin 소스 파일에 배치하는것은 의미적으로 서로 밀접하게 관련되어 있고 파일 사이즈가 합리적인 경(수백 줄을 초과하지 않는 함) 권장된다.
+- 클래스의 모든 클라이언트와 관련이 있는 `확장 함수를` 정의할 때클래스가 정의되어 있는 동일한 파일에 넣어라.
+- 특정 클라이언트에만 이치에 맞는 `확장 함수를` 정의할 때는 해당클라이언트의 코드 옆에 위치시킨다.
+- 모든 `Foo`의 확장만을 보관하기 위해 파일을 만들지 말라.
 
-    - 코틀린에서는 `자바의 default` 접근 지정자를 허용하지 않는다. `internal` 이라는 같은 모듈 내의 접근 지정자만 허용한다.
-    - 그러므로 의도적으로 모듈을 분리해서 개발 하는 것 또한 도메인 분리의 선택이 될 수 있다.
-    - 그런데 그러한 이유로 위에서 멀티 모듈을 사용해 layer를 먼저 분리 하였을 경우, 패키지 역시 다음의 규칙을 따라 가는 것이 자연스럽다.
 
-    **Keyword** : `프로젝트, 모듈, 패키지`, `Kotlin internal, Java default`
 
-    **따라가면서 느낀 점? :** 
+<br/>
+<br/>
 
-    1. 디테일을 포기하지 않는 것이 역시 시니어가 아닐까 생각했다.
-    2. Kotlin 에서는 멀티 모듈이 불가피 하다면 역시 Maven 보단 Gradle 쓰는 게 좋을 듯!
+## Class Layout
 
-## 클래스 레이아웃
-
----
-
-**가시성이란**
+### 가시성이란
 
 가시성이란 클래스와 클래스 멤버 필드와 메소드의 사용 범위를 결정하는 것이다.
 
 즉, 한 클래스의 멤버 필드와 메소드에 대한 다른 클래스의 접근 여부를 접근제어자로 제어하는 것이다.
 
-**정렬 순서**
 
-- 일반적으로 클래스의 내용은 다음의 순서로 정렬된다.
-    - Property declarations and initializer blocks
-    - Secondary constructors
-    - Method declarations
-    - Companion object
+<br/>
+
+### 정렬 순서
+
+#### 일반적으로 클래스의 내용은 다음의 순서로 정렬된다.
+
+- Property declarations and initializer blocks
+- Secondary constructors
+- Method declarations
+- Companion object
+
+#### 메소드 선언
+
 - 메소드 선언을 알파벳순 또는 가시성으로 정렬하지 말고 일반 메소드와 확장 메소드의 구분을 하지 마라.
 - 대신, 관련된 것들을 한데 모아 클래스를 읽는 사람이 위에서 아래로 무슨 일이 일어나고 있는지 로직을 따라갈 수 있도록 해라.
-    - 여기에서 **큰 개념을 위주로 관련된 메소드를 아래로 나열할 수 있고**, 작은 개념을 위주로 연관된 큰 개념을 나열할 수 있는데, 나는 전자를 선호한다.
+- 여기에서 **큰 개념을 위주로 관련된 메소드를 아래로 나열할 수 있고**, 작은 개념을 위주로 연관된 큰 개념을 나열할 수 있는데, 나는 전자를 선호한다.
+
+#### 중첩 클래스
+
 - 중첩 클래스들은 해당 클래스를 사용하는 코드 다음에 위치시킨다.
 - 중첩 클래스들이 외부에서 사용되도록 의도 되었고 클래스 내부에서 참조되지 않는다면 `companion object` 다음의 마지막에 위치 시켜라.
-- **인터페이스 구현 레이아웃**
-    - 인터페이스를 구현할 때 멤버들의 순서는 인터페이스의 선언 순서와 동일하게 유지해라.
+
+
+
+<br/>
+
+### 인터페이스 구현 레이아웃
+
+- 인터페이스를 구현할 때 멤버들의 순서는 인터페이스의 선언 순서와 동일하게 유지해라.
+
+
+
+
+<br/>
+<br/>
 
 ## Naming Rule
 
----
-
-**Kotlin은 기본적으로 Java의 네이밍 룰을 따른다.**
+### Kotlin은 기본적으로 Java의 네이밍 룰을 따른다.
 
 - 패키지명은 항상 소문자로 작성하고 언더스코어는 사용하지 않는다.
 - 여러 단어로 된 이름을 사용하는 것은 일반적으로 금지되지만, 필요하다면 단순히 그것들을 연결하거나 카멜 표기법을 사용할 수 있다. (`org.example.myProject`)
@@ -90,7 +98,10 @@ open class DeclarationProcessor { ... }
 object EmptyDeclarationProcessor : DeclarationProcessor() { ... }
 ```
 
-**함수 이름**
+
+<br/>
+
+### 함수 이름
 
 - 함수, 프로퍼티, 로컬 변수의 이름은 소문자로 시작하며 카멜 표기법을 따르고 언더스코어는 사용하지 않는다.
 
@@ -107,7 +118,10 @@ class FooImpl : Foo { ... }
 fun Foo(): Foo { return FooImpl(...) }
 ```
 
-**테스트 메소드 이름**
+
+<br/>
+
+### 테스트 메소드 이름
 
 - `backtick`으로 감싸서 공백을 포함한 이름을 작성할 수 있다.
 - 유의할 점은 아직 Android 런타임에서는 지원되지 않는다.
@@ -115,19 +129,22 @@ fun Foo(): Foo { return FooImpl(...) }
 
 ```kotlin
 class MyTestCase {
-		@Test fun `ensure everything works`() { ... }
-		@Test fun ensureEverythingWorks_onAndroid() { ... }
+	@Test fun `ensure everything works`() { ... }
+	@Test fun ensureEverythingWorks_onAndroid() { ... }
 }
 ```
 
-**프로퍼티 이름**
+
+<br/>
+
+### 프로퍼티 이름
 
 - `const`로 선언된 프로퍼티나 Top-level 또는 `object`에 선언된 `val`은 언더스코어로 구분하여 대문자로 표기해야 한다.
 
 ```kotlin
 const val MAX_COUNT = 8
 object {
-		val USER_NAME_FIELD = "UserName"
+	val USER_NAME_FIELD = "UserName"
 }
 ```
 
@@ -151,29 +168,35 @@ val PersonComparator: Comparator<Person> = ...
 
 ```kotlin
 class C {
-		// mutable
-		private val _elementList = mutableListOf<Element>()
+	// mutable
+	private val _elementList = mutableListOf<Element>()
 
-		// immutable
-		val elementList: List<Element>
-				get() = _elementList
+	// immutable
+	val elementList: List<Element>
+	get() = _elementList
 
-		// 아래에서 나오지만 Kotlin에서는 List, Set 등 기본 컬렉션은 Immutable입니다.
+	// 아래에서 나오지만 Kotlin에서는 List, Set 등 기본 컬렉션은 Immutable입니다.
 }
 ```
 
-**좋은 이름 선택**
+
+<br/>
+
+### 좋은 이름 선택
 
 - 클래스의 이름은 명사 또는 명사구로 작성한다. ex) `List`, `PersonReader`
 - 메소드의 이름은 동사 또는 동사구로 작성한다. ex) `close`, `readPersons`
 - 메소드의 이름은 오브젝트를 변경하거나 새로운 오브젝트를 리턴하는 경우 이를 암시해야 한다.
-    - 예를 들어, `sort`는 해당 컬렉션 자체를 정렬하고 `sorted`는 정렬된 컬렉션의 복사본을 반환하는 것이다.
+- 예를 들어, `sort`는 해당 컬렉션 자체를 정렬하고 `sorted`는 정렬된 컬렉션의 복사본을 반환하는 것이다.
 - 이름에 의미 없는 단어(`Manager`, `Wrapper` 등)를 사용하는 것은 피하자.
 - 이름에 약어를 사용하는 경우 두 개의 문자(`IOStream`)일 때는 둘 다 대문자로 표기하고 그보다 더 긴 경우(`XmlFormatter`, `HttpInputStream`) 파스칼 표기법으로 작성하자.
 
-## Formatting
 
----
+
+<br/>
+<br/>
+
+## Formatting
 
 **여기 있는 대부분은 ktlint 와 같은 것을 이용하여, 공식 컨벤션을 지키게 하는 것이 바람직하다.**
 
@@ -185,13 +208,16 @@ class C {
 
 ```kotlin
 if (elements != null) {
-	  for (element in elements) {
-				// ...
-		}
+	for (element in elements) {
+		// ...
+	}
 }
 ```
 
-**가로 공백**
+
+<br/>
+
+### 가로 공백
 
 - (`a + b`)처럼 이진 연산자 사이에 한 칸의 공백을 둔다.
 - 예외적으로 range to 연산자의 경우 공백을 두지 않는다. (`0..i`)
@@ -212,7 +238,7 @@ class A(val x: Int)
 fun foo(x: Int) { ... }
 
 fun bar() {
-		foo(1)
+	foo(1)
 }
 ```
 
@@ -223,7 +249,10 @@ fun bar() {
 - 메소드 레퍼런스 호출 시 사용하는 `::`사이에 공백을 두지 않는다. `Foo::class, String::length`
 - `Nullable` 타입을 선언할 때 `?` 앞에 공백을 두지 않는다. `String?`
 
-**콜론**
+
+<br/>
+
+### 콜론
 
 - 아래 경우에 콜론 `:` 앞에 공백을 넣어라.
     - 타입과 슈퍼 타입을 분리할 때
@@ -234,17 +263,21 @@ fun bar() {
 
 ```kotlin
 abstract class Foo<out T : Any> : IFoo {
-		abstract fun foo(a: Int): T
+	abstract fun foo(a: Int): T
 }
 
 class FooImpl : Foo() {
-		constructor(x: String) : this(x) { ... }
-		
-		val x = object : IFoo { ... }
+	constructor(x: String) : this(x) { ... }
+	
+	val x = object : IFoo { ... }
 }
 ```
 
-**클래스 헤더 형식**
+
+
+<br/>
+
+### 클래스 헤더 형식
 
 - 파라미터가 몇 개 없는 기본 생성자의 경우 한 줄로 작성할 수 있다.
 
@@ -256,9 +289,9 @@ class Person(id: Int, name: String)
 
 ```kotlin
 class Person(
-		id: Int,
-		name: String,
-		surname: String
+	id: Int,
+	name: String,
+	surname: String
 ) : Human(id, name) { ... }
 ```
 
@@ -266,22 +299,22 @@ class Person(
 
 ```kotlin
 class Person(
-		id: Int,
-		name: String,
-		surname: String
+	id: Int,
+	name: String,
+	surname: String
 ) : Human(id, name),
-		KotlinMaker { ... }
+	KotlinMaker { ... }
 ```
 
 - 긴 슈퍼 타입 목록을 가지는 클래스의 경우 콜론 : 다음에 각 타입별로 줄 바꿈 처리하고 가로 정렬을 맞춘다.
 
 ```kotlin
 class MyFavouriteVeryLongClassHolder :
-		MyLongHolder<MyFavouriteVeryLongClass>(),
-		SomeOtherInterface,
-		AndAnotherOne {
-		
-		fun foo() { ... }
+	MyLongHolder<MyFavouriteVeryLongClass>(),
+	SomeOtherInterface,
+	AndAnotherOne {
+	
+	fun foo() { ... }
 }
 ```
 
@@ -289,15 +322,18 @@ class MyFavouriteVeryLongClassHolder :
 
 ```kotlin
 class MyFavouriteVeryLongClassHolder :
-		MyLongHolder<MyFavouriteVeryLongClass>(),
-		SomeOtherInterface, 
-		AndAnotherOne
+	MyLongHolder<MyFavouriteVeryLongClass>(),
+	SomeOtherInterface,
+	AndAnotherOne
 {
-		fun foo() { ... }
+	fun foo() { ... }
 }
 ```
 
-**제어자**
+
+<br/>
+
+### 제어자
 
 - 여러 개의 제어자를 가질 경우 아래의 순서를 따른다.
 - 가시성에 따라 조절 하라는 뜻이 아니라, 한 줄의 한 묶음이 순서!
@@ -328,7 +364,10 @@ data
 private val foo: Foo
 ```
 
-**어노테이션 형식**
+
+<br/>
+
+### 어노테이션 형식
 
 - 어노테이션은 일반적으로 어노테이션이 부착되는 곳 이전 위치에 동일한 들여 쓰기로 라인을 구분하여 둔다.
 
@@ -350,7 +389,10 @@ var x: String
 @Test fun foo() { ... }
 ```
 
-**파일 어노테이션**
+
+<br/>
+
+### 파일 어노테이션
 
 - 파일 어노테이션은 파일의 주석과, 패키지 선언 사이에 둔다.
 - 패키지가 아니라 파일을 대상으로 한다는 것을 강조하기 위해 패키지 선언과 공백 라인으로 분리한다.
@@ -362,16 +404,19 @@ var x: String
 package foo.bar
 ```
 
-**함수 형식**
+
+<br/>
+
+### 함수 형식
 
 - 함수의 시그니처를 한 줄로 표현하기 알맞지 않다면 아래와 같은 구문을 따른다.
 
 ```kotlin
 fun longMethodName(
-		argument: ArgumentType = defaultValue,
-		argument2: AnotherArgumentType
+	argument: ArgumentType = defaultValue,
+	argument2: AnotherArgumentType
 ): ReturnType {
-		// body
+	// body
 }
 ```
 
@@ -380,22 +425,28 @@ fun longMethodName(
 
 ```kotlin
 fun foo(): Int { // bad
-		return 1
+	return 1
 }
 
 fun foo() = 1 // good
 ```
 
-**표현식 본체 형식**
+
+<br/>
+
+### 표현식 본체 형식
 
 - 만약 표현식 본체가 한 줄로 표현하기 알맞지 않다면 첫 줄에 `=` 와 다음 줄에 표현식 본체를 4칸 공백 들여 쓰기로 작성한다.
 
 ```kotlin
 fun f(x: String) =
-		x.length
+	x.length
 ```
 
-**프로퍼티 형식**
+
+<br/>
+
+### 프로퍼티 형식
 
 - 매우 간단한 `Read-only` 프로퍼티의 경우 한 줄로 작성하는 것을 고려하자.
 
@@ -407,17 +458,20 @@ val isEmpty: Boolean get() = size == 0
 
 ```kotlin
 val foo: String
-		get() { ... }
+	get() { ... }
 ```
 
 - 초기화 코드가 있는 프로퍼티의 경우, 초기화 코드가 길다면 줄바꿈 처리하여 4칸 공백 들여 쓰기 한다.
 
 ```kotlin
-private val defaultCharset: Charset? = 
-		EncodingRegistry.getInstance().getDefaultCharsetForPropertiesFiles(file)
+private val defaultCharset: Charset? =
+	EncodingRegistry.getInstance().getDefaultCharsetForPropertiesFiles(file)
 ```
 
-**제어문 형식**
+
+<br/>
+
+### 제어문 형식
 
 - `if`나 `when`과 같은 조건문이 멀티라인일 경우 항상 opening curly brace `{`를 실행 구문에 가깝게 둔다.
 - 각 조건문 라인은 4칸 공백으로 들여쓰기 한다.
@@ -425,9 +479,9 @@ private val defaultCharset: Charset? =
 
 ```kotlin
 if (!component.isSyncing &&
-		!hasAnyKotlinRuntimeInScope(module)
+	!hasAnyKotlinRuntimeInScope(module)
 ) {
-		return createKotlinNotConfiguredPanel(module)
+	return createKotlinNotConfiguredPanel(module)
 }
 ```
 
@@ -435,15 +489,15 @@ if (!component.isSyncing &&
 
 ```kotlin
 if (condition) {
-		// body
+	// body
 } else {
-		// else part
+	// else part
 }
 
 try {
-		// body
+	// body
 } finally {
-		// cleanup
+	// cleanup
 }
 ```
 
@@ -451,13 +505,13 @@ try {
 
 ```kotlin
 private fun parsePropertyValue(propName: String, token: Token) {
-		when (token) {
-				is Token.ValueToken ->
-						callback.visitValue(propName, token.value)
+	when (token) {
+		is Token.ValueToken ->
+			callback.visitValue(propName, token.value)
 
-				Token.LBRACE -> { // ... 
-				} 
-		}
+		Token.LBRACE -> { // ... 
+		} 
+	}
 }
 ```
 
@@ -465,39 +519,48 @@ private fun parsePropertyValue(propName: String, token: Token) {
 
 ```kotlin
 when (foo) {
-		true -> bar() // good false -> { baz() } // bad
+	true -> bar() // good false -> { baz() } // bad
 }
 ```
 
-**메소드 호출 형식**
+
+<br/>
+
+### 메소드 호출 형식
 
 - 긴 인자 목록을 가지는 메소드를 호출할 때, 여는 소괄호 다음 줄바꿈을 한 뒤 인자들을 4칸 공백으로 들여 쓰기 한다.
 - 밀접하게 관련된 인자끼리 그룹핑한다.
 
 ```kotlin
 drawSquare(
-		x = 10, y = 10,
-		width = 100, height = 100,
-		fill = true
+	x = 10, y = 10,
+	width = 100, height = 100,
+	fill = true
 )
 ```
 
 - 인자의 이름과 값을 구분하는 `=` 주변에 공백을 둔다.
 
-**체이닝 호출 형식**
+
+<br/>
+
+### 체이닝 호출 형식
 
 - 체이닝 형태로 호출할 때는 `.` 또는 `?.`는 들여 쓰기와 함께 개행처리한다.
 
 ```kotlin
 val anchor = owner
-		?.firstChild!!
-		.siblings(forward = true)
-		.dropWhile { it is PsiComment || it is PsiWhiteSpace }
+	?.firstChild!!
+	.siblings(forward = true)
+	.dropWhile { it is PsiComment || it is PsiWhiteSpace }
 ```
 
 - 체이닝의 첫 번째 호출은 보통 그 이전에 개행을 포함하지만, 코드가 그런 식으로 말이 된다면 생략해도 된다.
 
-**람다 형식**
+
+<br/>
+
+### 람다 형식
 
 - 람다 표현식에서 curly braces `{}` 주변에는 공백을 두어야 한다.
 - 파라미터를 나타내는 화살표 `>` 주변에도 공백을 두어야 한다.
@@ -511,9 +574,9 @@ list.filter { it > 10 }
 
 ```kotlin
 fun foo() {
-		ints.forEach lit@{ // 공백 x
-				// ...
-		}
+	ints.forEach lit@{ // 공백 x
+		// ...
+	}
 }
 ```
 
@@ -521,7 +584,7 @@ fun foo() {
 
 ```kotlin
 appendCommaSeparated(properties) { prop ->
-		val propertyValue = prop.get(obj) // ...
+	val propertyValue = prop.get(obj) // ...
 }
 ```
 
@@ -529,16 +592,20 @@ appendCommaSeparated(properties) { prop ->
 
 ```kotlin
 foo {
-		context: Context,
-		environment: Env
-		->
-		context.configureEnv(environment)
+	context: Context,
+	environment: Env
+	->
+	context.configureEnv(environment)
 }
 ```
 
-## Documentation comments
 
----
+
+
+<br/>
+<br/>
+
+## Documentation comments
 
 - 주석의 내용이 길 경우 `/**` 을 시작으로 각 라인은 ``으로 시작한다.
 
@@ -575,14 +642,19 @@ fun abs(number: Int) = ...
 fun abs(number: Int) = ...
 ```
 
-## Avoiding redundant constructs
 
----
+
+<br/>
+<br/>
+
+## Avoiding redundant constructs
 
 - Kotlin에서 특정 문법 구조가 선택사항이고 IDE에 의해 불필요하다고 강조된 경우 생략할 수 있다.
 - 명확성을 위해 불필요한 문법적 요소를 남겨두지 마라.
-- **Unit**
-    - 함수가 `Unit`을 반환한다면 반환 타입은 생략되어야 한다.
+
+**Unit**
+
+- 함수가 `Unit`을 반환한다면 반환 타입은 생략되어야 한다.
 
 ```kotlin
 fun foo() { // ": Unit" is omitted here
@@ -590,21 +662,27 @@ fun foo() { // ": Unit" is omitted here
 }
 ```
 
-- **세미콜론**
-    - 세미콜론은 가능한 생략해야 한다.
-- **문자열 템플릿**
-    - 간단한 변수 하나를 문자열에 템플릿에서 참조할 땐 curly braces `{}`를 사용하지 마라.
-    - curly braces `{}`는 긴 표현식에서만 사용해라.
+**세미콜론**
 
-    ```kotlin
-    println("$name has ${children.size} children")
-    ```
+- 세미콜론은 가능한 생략해야 한다.
+
+**문자열 템플릿**
+
+- 간단한 변수 하나를 문자열에 템플릿에서 참조할 땐 curly braces `{}`를사용하지 마라.
+- curly braces `{}`는 긴 표현식에서만 사용해라.
+
+```kotlin
+println("$name has ${children.size} children")
+```
+
+
+
+<br/>
+<br/>
 
 ## Idomatic use of language features
 
----
-
-**불변성**
+### 불변성
 
 - Immutable 컬렉션을 선언할 때는 항상 `Collection`, `List`, `Set`, `Map`과 같은 인터페이스를 사용해라.
 - 컬렉션 인스턴스를 생성할 때 가능한 Immutable 컬렉션 타입으로 생성해라.
@@ -625,7 +703,10 @@ val allowedValues = listOf("a", "b", "c")
 
 - 기본적으로 Kotlin에서 `List`는 Read-only
 
-**기본 인자 값**
+
+<br/>
+
+### 기본 인자 값
 
 - 오버 로딩을 선언하기 위해 기본 인자 값을 가지는 함수를 선언하는 것이 좋다.
 
@@ -638,7 +719,10 @@ fun foo(a: String) { ... }
 fun foo(a: String = "a") { ... }
 ```
 
-**타입 별칭**
+
+<br/>
+
+### 타입 별칭
 
 - 코드베이스에서 여러 번 사용되는 함수 타입이나 타입 파라미터의 경우 `type alias`를 사용하는 것이 좋다.
 
@@ -647,29 +731,41 @@ typealias MouseClickHandler = (Any, MouseEvent) -> Unit
 typealias PersonIndex = Map<String, Person>
 ```
 
-**람다 파라미터**
+
+<br/>
+
+### 람다 파라미터
 
 - 양이 짧고 중첩되지 않는 람다 구조에서는 명시적인 파라미터 선언보다 `it`을 사용하는 것을 추천한다.
 - 파라미터가 있는 중첩된 람다 구조에서는 파라미터를 명시적으로 선언해야 한다.
 
-**람다에서의 return**
+
+<br/>
+
+### 람다에서의 return
 
 - 람다 안에서 `label`이 붙은 `return`을 여러 개 사용하는 것을 피해라.
 - 하나의 탈출 포인트를 갖도록 구조를 바꾸는 것을 고려해라.
 - 만약 그것이 불가능하거나 충분히 명확하지 않다면, 람다를 익명 함수로 변환하는 것을 고려해라.
 - 람다의 마지막 문장에서 `label`이 붙은 `return`을 사용하지 마라.
 
-**이름 붙인 인자**
+
+<br/>
+
+### 이름 붙인 인자
 
 메소드가 동일한 기본 유형의 여러 매개 변수를 사용하거나, 매개 변수의 의미가 컨텍스트에서 완전히 명확하지 않은 경우 가독성 해결을 위해 매개 변수에 이름을 붙일 수 있다.
 
 ```kotlin
 drawSquare(x = 10, y = 10,
-					 width = 100, height = 100,
-					 fill = true)
+	 width = 100, height = 100,
+	 fill = true)
 ```
 
-**조건문 사용**
+
+<br/>
+
+### 조건문 사용
 
 - `try`, `if`, `when`은 아래와 같은 표현식을 사용하는 것이 좋다.
 
@@ -677,8 +773,8 @@ drawSquare(x = 10, y = 10,
 return if (x) foo() else bar()
 
 return when(x) {
-		0 -> "zero"
-		else -> "nonzero"
+	0 -> "zero"
+	else -> "nonzero"
 }
 ```
 
@@ -686,25 +782,28 @@ return when(x) {
 
 ```kotlin
 if (x)
-		return foo()
+	return foo()
 else
-		return bar()
+	return bar()
 
 when(x) {
-		0 -> return "zero"
-		else -> return "nonzero"
+	0 -> return "zero"
+	else -> return "nonzero"
 }
 ```
 
-**if vs when**
+
+<br/>
+
+### if vs when
 
 - 조건이 2개라면 `when`보다 `if`를 사용해라.
 
 ```kotlin
 // bad
 when (x) {
-		null -> ...
-		else -> ...
+	null -> ...
+	else -> ...
 } 
 
 // good
@@ -713,13 +812,19 @@ if (x == null) ... else ...
 
 - `when`은 조건이 3개 이상일 때나 더 많은 선택지가 있을 때 사용해라.
 
-**루프 사용**
+
+<br/>
+
+### 루프 사용
 
 - 루프에는 `filter`, `map`과 같은 고차 함수를 사용하는 것이 좋다.
 - 예외적으로 `forEach`의 경우 `forEach`의 리시버가 `nullable`이거나 `forEach`가 긴 호출 체인의 일부로 사용되는 경우가 아니라면 일반적인 `for` 루프가 더 좋다.
 - 복수의 고차 함수를 이용한 복잡한 표현과 루프를 선택할 때에는 각 상황에서 실행되는 operation들의 비용을 이해해야 하고 성능 고려 사항들을 유념해라.
 
-**범위 루프**
+
+<br/>
+
+### 범위 루프
 
 - 루프에서 범위를 지정할 때 `until`을 사용해라.
 
@@ -728,7 +833,10 @@ for (i in 0..n - 1) { ... } // bad
 for (i in 0 until n) { ... } // good
 ```
 
-**함수 vs 프로퍼티**
+
+<br/>
+
+### 함수 vs 프로퍼티
 
 - 몇몇 경우에 인자 없는 함수는 Read-only 프로퍼티로 교체될 수 있다.
 - 의미론적으로는 비슷할지라도 언제 어느 것을 더 선호할 것인가에 대한 몇몇 양식적인 관습들이 있다.
@@ -737,21 +845,30 @@ for (i in 0 until n) { ... } // good
     - 계산이 저렴하거나 한 번 실행 후 캐시 됨
     - 객체의 상태가 변경되지 않은 경우 호출에 대해 동일한 결과를 반환
 
-**확장 함수 사용**
+
+<br/>
+
+### 확장 함수 사용
 
 - 확장 함수를 자유롭게 사용해라.
 - 주로 객체에 대해 동작하는 함수가 있을 때마다 해당 객체를 리시버로 받는 확장 함수를 만드는 것을 고려해라.
 - API 공해를 최소화하기 위해 확장 함수의 가시성을 최대한 제한하라.
 - 필요에 따라 `private` 가시성을 가지는 로컬 확장 함수, 멤버 확장 함수, Top-level 확장 함수를 사용해라.
 
-**infix 함수 사용 : 두개의 변수 가운데 오는 함수**
+
+<br/>
+
+### infix 함수 사용 : 두개의 변수 가운데 오는 함수
 
 - 유사한 역할을 수행하는 두 객체에서 동작할 때만 `infix`로 선언해라.
 - 좋은 예제 : `and`, `to`, `zip`  → 객체의 state 변형 x
 - 나쁜 예제 : `add` → 객체의 state 변형 o
 - 리시버 객체를 변형시키는 경우 메소드를 `infix`로 선언하지 마라.
 
-**팩토리 함수**
+
+<br/>
+
+### 팩토리 함수
 
 - 클래스의 팩토리 함수를 선언한다면 클래스와 동일한 이름을 피해라.
 - 팩토리 함수의 동작이 왜 특별한지 명확하게 하기 위해 고유 이름을 사용해라.
@@ -759,17 +876,20 @@ for (i in 0 until n) { ... } // good
 
 ```kotlin
 class Point(val x: Double, val y: Double) {
-		companion object {
-				fun fromPolar(angle: Double, radius: Double) = Point(...)
-		}
+	companion object {
+		fun fromPolar(angle: Double, radius: Double) = Point(...)
+	}
 }
 ```
 
 - 만약 여러 개의 오버 로딩된 생성자를 가진 객체가 서로 다른 슈퍼 클래스 생성자를 호출하지 않고 기본 인자 값을 가진 단일 생성자로 축소할 수 없는 경우 오버 로딩된 생성자를 팩토리 함수로 교체하는 것이 좋다.
 
-**스코프 기능을 활용해라, `apply` / `with` / `run` / `also` / `let`**
 
-**간단하게 Scope 함수란?**
+<br/>
+
+### 스코프 기능을 활용해라, `apply` / `with` / `run` / `also` / `let`
+
+#### 간단하게 Scope 함수란?
 
 객체 컨텍스트 내에서 코드 블록을 실행하는 것이 유일한 목적인 여러 함수가 포함되어 있습니다. 제공된 람다 식 을 사용하여 개체에서 이러한 함수를 호출 하면 임시 범위가 형성됩니다.
 
@@ -794,13 +914,17 @@ alice.incrementAge()
 println(alice)
 ```
 
-**어떤 함수를 사용할지?**
+#### 어떤 함수를 사용할지?
 
-[for your purpose](https://www.notion.so/69ce8c367886418d91c1c3da77aae3a8)
+![for your purpose](/assets/images/2020-11-28-kotlin-coding-convention/scope_function.png)
+
+
+
+
+<br/>
+<br/>
 
 ## Coding conventions for libraries
-
----
 
 **라이브러리를 작성할 때 API의 안전성을 보장하기 위해 아래의 추가적인 규칙들을 따르는 것이 좋다.**
 
@@ -808,12 +932,14 @@ println(alice)
 - 항상 함수의 반환 타입과 속성 타입을 명시적으로 지정해라(구현 변경 시 의도치 않게 반환 타입이 변경되지 않도록)
 - 새로운 주석이 필요 없는 `override` 된 것들을 제외하고 모든 `public` 멤버에 대한 주석을 제공해라. (라이브러리 문서 생성을 지원하기 위해)
 
+
+
+
+<br/>
+<br/>
+
 ## Reference
 
----
-
-[[Kotlin] 코딩 컨벤션 정리](https://medium.com/@joongwon/kotlin-%EC%BD%94%EB%94%A9-%EC%BB%A8%EB%B2%A4%EC%85%98-%EC%A0%95%EB%A6%AC-7681cde920ce)
-
-[Coding Conventions](https://kotlinlang.org/docs/reference/coding-conventions.html)
-
-[Scope Functions](https://kotlinlang.org/docs/reference/scope-functions.html)
+- [Coding Conventions](https://kotlinlang.org/docs/reference/coding-conventions.html)
+- [Scope Functions](https://kotlinlang.org/docs/reference/scope-functions.html)
+- [[Kotlin] 코딩 컨벤션 정리](https://medium.com/@joongwon/kotlin-%EC%BD%94%EB%94%A9-%EC%BB%A8%EB%B2%A4%EC%85%98-%EC%A0%95%EB%A6%AC-7681cde920ce)
