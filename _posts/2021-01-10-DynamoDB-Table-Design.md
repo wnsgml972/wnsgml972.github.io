@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DynamoDB로 NoSQL 설계하기
+title: DynamoDB로 NoSQL Table 설계하기
 subtitle: Design nosql by dynamo db
 category: Database
 tags: ddb nosql todo
@@ -12,7 +12,7 @@ finished: true
 
 > 사내 MSA 환경에서 개발을 진행하며, 기존 제너럴하게 구성되어있던 데이터 모델을 특정 도메인으로 구체화하여 마이크로 서비스로 분리하는 작업을 진행하였습니다.
 > 해당 작업 진행 중 데이터베이스로 DynamoDB를 선택해서 사용하게 되었는데, 그에 따라 공부한 내용을 정리합니다.
-> 개인적으로 NoSQL 데이터 모델을 설계하며, 반복적으로 RDBMS 방식으로 생각하여 헷갈리곤 하였는데, NoSQL 설계 시 특정 Key에 대응되는 Vaule가 json 모델(?)이라고 생각하고 설계하면 조금 더 편한 것 같습니다.
+> 개인적으로 NoSQL 데이터 모델을 설계하며, 반복적으로 RDBMS 방식으로 생각하여 헷갈리곤 하였는데, NoSQL Table 설계 시 특정 Key에 대응되는 Vaule가 json 모델(?)이라고 생각하고 설계하면 조금 더 편한 것 같습니다.
 
 
 <br/>
@@ -51,9 +51,9 @@ Specific한 케이스의 설계인 만큼 대조적으로 대답해야 할 질�
 <br/>
 <br/>
 
-## NoSQL 설계에 접근
+## NoSQL Table 설계에 접근
 
-**NoSQL 설계의 첫 번째 단계는 시스템이 충족해야 하는 특정 쿼리 패턴을 파악하는 것입니다.**
+**NoSQL Table 설계의 첫 번째 단계는 시스템이 충족해야 하는 특정 쿼리 패턴을 파악하는 것입니다.**
 
 <br/>
 
