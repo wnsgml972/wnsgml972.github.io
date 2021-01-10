@@ -1030,13 +1030,35 @@ FFServer, Tomcat, 각종 패키지 모듈, 웹어플리케이션, MPTCP를 위�
 
 ## 그 외?
 
+### Windows Docker
+
 Docker에는 리눅스 컨테이너 뿐만 아니라, 다른 OS 환경의 컨테이너 또한 존재합니다. 아래 게시글은 Windows 기반 컨테이너에 관한 내용이 있습니다.
 
 * [Microsoft Windows Docker](https://docs.microsoft.com/ko-kr/virtualization/windowscontainers/)
 
+### Docker Command Archive
 
+__all docker container & images remove__
 
+~~~shell
+docker stop -f $(docker ps -a -q) # all-docker-container-stop.sh
+sudo docker rmi -f $(docker images -a -q) # all-docker-image-remove.sh
+~~~
 
+__pattern docker container & images remove__
+
+~~~shell
+# pattern example name: application
+docker ps -a | grep "application" | awk '{print $1}' | xargs docker rm  # application-docker-container-stop.sh
+docker images -a | grep "application" | awk '{print $3}' | xargs docker rmi # application-docker-image-remove.sh
+~~~
+
+__pattern docker log view__
+
+~~~shell
+# pattern example name: application
+docker ps -a | grep "application" | awk '{print $1}' | xargs docker logs
+~~~
 
 <br/><br/>
 
