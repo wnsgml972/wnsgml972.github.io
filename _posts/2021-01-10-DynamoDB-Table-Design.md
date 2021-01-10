@@ -3,7 +3,7 @@ layout: post
 title: DynamoDB로 NoSQL Table 설계하기
 subtitle: Design nosql by dynamo db
 category: Database
-tags: ddb nosql todo
+tags: ddb nosql
 date: 2021-01-10
 last_modified_at: 2021-01-10
 author: KimJunHee
