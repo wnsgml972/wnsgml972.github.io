@@ -1038,14 +1038,14 @@ Docker에는 리눅스 컨테이너 뿐만 아니라, 다른 OS 환경의 컨테
 
 ### Docker Command Archive
 
-__all docker container & images remove__
+__all docker containers & images remove__
 
 ~~~shell
 docker stop -f $(docker ps -a -q) # all-docker-container-stop.sh
 sudo docker rmi -f $(docker images -a -q) # all-docker-image-remove.sh
 ~~~
 
-__pattern docker container & images remove__
+__pattern docker containers & images remove__
 
 ~~~shell
 # pattern example name: application
