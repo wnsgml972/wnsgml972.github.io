@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "소프트웨어 아키텍처란 왜 중요할까?"
-subtitle: "The importance of Martin Fowler's software architecture"
+subtitle: "The importance of software architecture - Martin Fowler"
 category: Platform
 tags: architecture
 date: 2021-03-06
